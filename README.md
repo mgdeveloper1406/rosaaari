@@ -1,6 +1,6 @@
-![The Virgin of the Rosary by Bartolomé Esteban Murillo](/android-chrome-512x512.png)
-
 <h1>About</h1>
+
+![The Virgin of the Rosary by Bartolomé Esteban Murillo](/android-chrome-256x256.png)
 
 <p><a href="https://holyrosaryonline.com">HolyRosaryOnline.com</a>
     is a small website meant to help people pray the
