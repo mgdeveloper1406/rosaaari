@@ -1,3 +1,5 @@
+![The Virgin of the Rosary by Bartolomé Esteban Murillo](/android-chrome-512x512.png)
+
 <h1>About</h1>
 
 <p><a href="https://holyrosaryonline.com">HolyRosaryOnline.com</a>
