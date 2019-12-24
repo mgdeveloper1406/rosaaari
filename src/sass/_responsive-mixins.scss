@@ -1,0 +1,18 @@
+// Responsive mixins
+@mixin min($point) {
+    @media (min-width: $point) {
+        @content;
+    }
+}
+
+@mixin minmax($min, $max) {
+    @media (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}
+
+@mixin max($max) {
+    @media (max-width: $max) {
+        @content;
+    }
+}

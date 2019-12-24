@@ -1,0 +1,460 @@
+$red: #D40000;
+$gold: #806B21;
+$light-gold: #FFFBDC;
+$green: #006D0B;
+$text-color: #242424;
+
+$serif: serif;
+$sans-serif: sans-serif;
+
+// Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`.
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@import 'responsive-mixins';
+
+.sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important; // Fix for https://github.com/twbs/bootstrap/issues/25686
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+body {
+    line-height: 1.75;
+}
+
+body.fixed {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: $serif;
+}
+
+label, .label {
+    margin: 3em 0 0 0;
+    font-size: .7em;
+    font-family: $sans-serif;
+    color: lighten($text-color, 20%);
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1, h2, h3 {
+    font-style: normal;
+    font-family: $sans-serif;
+}
+
+p {
+    margin: 1em 0;
+}
+
+form {
+    label {
+        display: block;
+    }
+
+    input, select {
+        display: block;
+        margin: 1em 0;
+    }
+
+    input[type="submit"] {
+        margin-top: 3em;
+        padding: 1em;
+        border: none;
+        outline: none;
+        background-color: $green;
+        border: 1px solid darken($green, 20%);
+        color: #fff;
+        border-radius: 5px;
+        font-family: $sans-serif;
+    }
+
+    input[type="submit"][value="Save Changes"] {
+        background-color: $light-gold;
+        color: $text-color;
+        border: 1px solid $text-color;
+    }
+}
+
+a {
+    color: darken($red, 20%);
+    transition: color .3s ease;
+    text-decoration: underline;
+
+    &:hover, &:active {
+        color: darken($red, 10%);
+    }
+}
+
+.header {
+    position: absolute;
+    z-index: 500;
+    display: block;
+    top: 1em;
+    right: 1em;
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+        width: 60px;
+        justify-content: space-between;
+
+        li a {
+            opacity: .6;
+        }
+    }
+}
+
+.bead {
+    position: relative;
+    display: block;
+    width: 42px;
+    height: 42px;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 3px solid transparent;
+
+    &:after {
+        content: " ";
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 3px;
+        left: 3px;
+        border-radius: 100%;
+        background-color: $red;
+        box-shadow: inset 10px 10px 10px rgba(69, 63, 63, 0.26);
+        overflow: hidden;
+    }
+
+    &:focus, &:active, &--selected {
+        outline: none;
+        border: 3px solid $green;
+    }
+
+    &--filler {
+        outline: none;
+        border: none;
+        &:after {
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+        &:focus, &:active {
+            outline: none;
+            border: none;
+        }
+    }
+
+    &--medallion, &--crucifix {
+        outline: none;
+        border: none;
+
+        &:after {
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+        &:focus, &:active, &.bead--selected {
+            outline: none;
+            border: none;
+
+            &:before {
+                content: " ";
+                display: block;
+                position: absolute;
+                border: 3px solid $green;
+                border-radius: 100%;
+            }
+        }
+    }
+
+    &--medallion {
+        &:focus, &:active, &.bead--selected {
+            &:before {
+                top: -17px;
+                left: -8px;
+                width: 75px;
+                height: 75px;
+            }
+        }
+        width: 59px;
+        height: 52px;
+        transform: rotate(.26turn) translateY(8px) translateX(-3px);
+    }
+
+    &--crucifix {
+        &:focus, &:active, &.bead--selected {
+            &:before {
+                top: -9px;
+                left: -14px;
+                width: 71px;
+                height: 118px;
+            }
+        }
+        svg {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &--our-father {
+        width: 48px;
+        height: 48px;
+
+        &:after {
+            width: 36px;
+            height: 36px;
+        }
+
+    }
+}
+
+.rosary-wrapper-wrapper {
+    display: block;
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    right: calc(50% - 450px);
+    bottom: -750px;
+
+    @include min(1000px) {
+        right: -530px;
+        bottom: -530px;
+        transform: rotate(-45deg);
+    }
+}
+
+.rosary-wrapper {
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    top: 0;
+    left: 0;
+}
+
+.rosary {
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    top: 0;
+    left: 0;
+
+    #next-prayer-btn-within-beads {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 75px;
+        left: 75px;
+        width: calc(100% - 150px);
+        height: calc(100% - 150px);
+        background-color: transparent;
+        border-radius: 100%;
+        opacity: 0;
+    }
+}
+
+.rosary-intro {
+    position: absolute;
+    top: 62px;
+    left: calc(50% - 2px);
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+    z-index: 10;
+}
+
+.rosary-main-wrapper {
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    top: 0;
+    left: 0;
+    transform: rotate(-.29turn);
+    transform-origin: center;
+}
+
+.rosary-intro-chain {
+    position: absolute;
+    display: block;
+    top: 12px;
+    left: calc(50% - 3px);
+    width: 3px;
+    height: 450px;
+    background-color: $gold;
+    z-index: 0;
+}
+
+.rosary-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 450px;
+    height: 450px;
+
+    &:before {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(200% - 39px);
+        height: calc(200% - 39px);
+        transform: translate(-50%, -50%);
+        border: 3px solid $gold;
+        border-radius: 100%;
+    }
+
+    .bead-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform-origin: left;
+
+        @for $i from 1 through 65 {
+            &:nth-child(#{$i}) {
+                transform: rotate(#{$i/65 + 'turn'});
+            }
+        }
+
+        .bead {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            &--our-father {
+                margin-right: -3px;
+            }
+        }
+    }
+}
+
+.prayers {
+    position: absolute;
+    width: calc(50% - 50px);
+    height: calc(100vh - 100px);
+    //left: 100px;
+    right: calc(50%);
+    top: 50px;
+    color: $text-color;
+    transition: left .3s ease;
+    z-index: 100;
+    overflow: auto;
+    font-size: 1em;
+    background-color: #fff;
+    padding: 1em;
+    box-shadow: 0px 0px 14px 12px rgba(255,255,255,.95);
+
+    &:after {
+        content: " ";
+        display: block;
+        position: fixed;
+        top: calc(100vh - 100px);
+        width: calc(50% - 50px);
+        height: 50px;
+        background-image: linear-gradient(to bottom, transparent 0%, #fff 100%);
+    }
+
+    &:before {
+        content: " ";
+        display: block;
+        position: fixed;
+        top: 50px;
+        width: calc(50% - 50px);
+        height: 50px;
+        background-image: linear-gradient(to top, transparent 0%, #fff 100%);
+    }
+
+    @include max(1000px) {
+        //top: 0;
+        left: 0;
+        right: auto;
+        height: calc(100vh - 300px);
+        width: 100%;
+        box-shadow: 0px -20px 14px 40px rgba(255,255,255,.95);
+
+        &:after {
+            width: 100%;
+            top: calc(100vh - 300px);
+        }
+
+        &:before {
+            width: 100%;
+            top: 50px;
+        }
+    }
+
+    @include max(500px) {
+        font-size: .85em;
+    }
+
+    &__content {
+        position: relative;
+        margin-bottom: 100px;
+    }
+}
+
+.red-text {
+    color: $red;
+}
+
+.modal {
+    &__inner {
+        display: block;
+        position: relative;
+        padding: 5em 2em;
+        width: 100%;
+        margin: 0 auto;
+
+        @include min(1000px) {
+            width: 75%;
+        }
+
+        @include min(1300px) {
+            width: 50%;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 2em;
+        right: 2em;
+        opacity: .5;
+    }
+}
+
+#next-prayer {
+    opacity: 0;
+    z-index: 0;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
