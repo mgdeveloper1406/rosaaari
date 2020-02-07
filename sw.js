@@ -1,5 +1,5 @@
 // Files to cache
-var cacheName = 'hro-v1';
+var cacheName = 'hro-v2';
 var appShellFiles = [
     '/apple-touch-icon.png',
     '/favicon-32x32.png',
@@ -13,7 +13,10 @@ var appShellFiles = [
     '/js/main.js',
     '/js/vendor/modernizr-3.7.1.min.js',
     '/js/vendor/jquery-3.4.1.min.js',
-    '/js/plugins.js'
+    '/js/plugins.js',
+    '/fonts/Merriweather/Merriweather-Regular.ttf',
+    '/fonts/Merriweather/Merriweather-Bold.ttf',
+    '/fonts/Merriweather/Merriweather-Italic.ttf',
 ];
 var contentToCache = appShellFiles;
 
