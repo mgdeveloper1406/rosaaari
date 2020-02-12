@@ -84,148 +84,280 @@ export default function HomeJS() {
         var language = store.settings.rosaryLanguage;
         var mysteries = store.settings.mysteries;
         if(beadId === 'crucifix') {
-            prayers = [
-                {
-                    title: store.prayers.signOfTheCross[language].title,
-                    text: store.prayers.signOfTheCross[language].text
-                },
-                {
-                    title: store.prayers.apostlesCreed[language].title,
-                    text: store.prayers.apostlesCreed[language].text
-                }
-            ];
+            if(store.settings.anotherDevotion === 'none') {
+                prayers = [
+                    {
+                        title: store.prayers.signOfTheCross[language].title,
+                        text: store.prayers.signOfTheCross[language].text
+                    },
+                    {
+                        title: store.prayers.apostlesCreed[language].title,
+                        text: store.prayers.apostlesCreed[language].text
+                    }
+                ];
+            }
+
+            if(store.settings.anotherDevotion === 'divine-mercy-chaplet') {
+                prayers = [
+                    {
+                        title: store.prayers.signOfTheCross[language].title,
+                        text: store.prayers.signOfTheCross[language].text
+                    }
+                ];
+            }
         } else if(beadId.slice(0, 9) === 'intro-hai' || beadId.slice(0, 9) === 'hail-mary') {
-            prayers = [
-                {
-                    title: store.prayers.hailMary[language].title,
-                    text: store.prayers.hailMary[language].text
+            if(store.settings.anotherDevotion === 'none') {
+                prayers = [
+                    {
+                        title: store.prayers.hailMary[language].title,
+                        text: store.prayers.hailMary[language].text
+                    }
+                ];
+            }
+
+            if(store.settings.anotherDevotion === 'divine-mercy-chaplet') {
+                if(beadId.slice(0, 9) === 'hail-mary') {
+                    prayers = [
+                        {
+                            title: store.prayers.divineMercy.forTheSake[language].title,
+                            text: store.prayers.divineMercy.forTheSake[language].text
+                        }
+                    ];
                 }
-            ];
+
+                if(beadId === 'intro-hail-mary-1') {
+                    prayers = [
+                        {
+                            title: store.prayers.ourFather[language].title,
+                            text: store.prayers.ourFather[language].text
+                        }
+                    ];
+                }
+
+                if(beadId === 'intro-hail-mary-2') {
+                    prayers = [
+                        {
+                            title: store.prayers.hailMary[language].title,
+                            text: store.prayers.hailMary[language].text
+                        }
+                    ];
+                }
+
+                if(beadId === 'intro-hail-mary-3') {
+                    prayers = [
+                        {
+                            title: store.prayers.apostlesCreed[language].title,
+                            text: store.prayers.apostlesCreed[language].text
+                        }
+                    ];
+                }
+            }
         } else if(beadId === 'intro-our-father-1') {
-            prayers = [
-                {
-                    title: store.prayers.ourFather[language].title,
-                    text: store.prayers.ourFather[language].text
-                }
-            ];
+            if(store.settings.anotherDevotion === 'none') {
+                prayers = [
+                    {
+                        title: store.prayers.ourFather[language].title,
+                        text: store.prayers.ourFather[language].text
+                    }
+                ];
+            }
+
+            if(store.settings.anotherDevotion === 'divine-mercy-chaplet') {
+                prayers = [
+                    {
+                        title: store.prayers.divineMercy.optionalOpening[language].title,
+                        text: store.prayers.divineMercy.optionalOpening[language].text
+                    }
+                ];
+            }
         } else if(beadId === 'intro-our-father-2') {
-            prayers = [
-                {
-                    title: store.prayers.gloryBe[language].title,
-                    text: store.prayers.gloryBe[language].text
-                },
-                {
-                    title: store.prayers.fatimaPrayer[language].title,
-                    text: store.prayers.fatimaPrayer[language].text
-                },
-                {
-                    title: store.prayers.mysteries[mysteries][language][0].title,
-                    text: store.prayers.mysteries[mysteries][language][0].text
-                },
-                {
-                    title: store.prayers.ourFather[language].title,
-                    text: store.prayers.ourFather[language].text
-                }
-            ];
+            if(store.settings.anotherDevotion === 'none') {
+                prayers = [
+                    {
+                        title: store.prayers.gloryBe[language].title,
+                        text: store.prayers.gloryBe[language].text
+                    },
+                    {
+                        title: store.prayers.fatimaPrayer[language].title,
+                        text: store.prayers.fatimaPrayer[language].text
+                    },
+                    {
+                        title: store.prayers.mysteries[mysteries][language][0].title,
+                        text: store.prayers.mysteries[mysteries][language][0].text
+                    },
+                    {
+                        title: store.prayers.ourFather[language].title,
+                        text: store.prayers.ourFather[language].text
+                    }
+                ];
+            }
+
+            if(store.settings.anotherDevotion === 'divine-mercy-chaplet') {
+                prayers = [
+                    {
+                        title: store.prayers.divineMercy.eternalFather[language].title,
+                        text: store.prayers.divineMercy.eternalFather[language].text
+                    }
+                ];
+            }
         } else if(beadId === 'our-father-2') {
-            prayers = [
-                {
-                    title: store.prayers.gloryBe[language].title,
-                    text: store.prayers.gloryBe[language].text
-                },
-                {
-                    title: store.prayers.fatimaPrayer[language].title,
-                    text: store.prayers.fatimaPrayer[language].text
-                },
-                {
-                    title: store.prayers.mysteries[mysteries][language][1].title,
-                    text: store.prayers.mysteries[mysteries][language][1].text
-                },
-                {
-                    title: store.prayers.ourFather[language].title,
-                    text: store.prayers.ourFather[language].text
-                }
-            ];
+            if(store.settings.anotherDevotion === 'none') {
+                prayers = [
+                    {
+                        title: store.prayers.gloryBe[language].title,
+                        text: store.prayers.gloryBe[language].text
+                    },
+                    {
+                        title: store.prayers.fatimaPrayer[language].title,
+                        text: store.prayers.fatimaPrayer[language].text
+                    },
+                    {
+                        title: store.prayers.mysteries[mysteries][language][1].title,
+                        text: store.prayers.mysteries[mysteries][language][1].text
+                    },
+                    {
+                        title: store.prayers.ourFather[language].title,
+                        text: store.prayers.ourFather[language].text
+                    }
+                ];
+            }
+
+            if(store.settings.anotherDevotion === 'divine-mercy-chaplet') {
+                prayers = [
+                    {
+                        title: store.prayers.divineMercy.eternalFather[language].title,
+                        text: store.prayers.divineMercy.eternalFather[language].text
+                    }
+                ];
+            }
         } else if(beadId === 'our-father-3') {
-            prayers = [
-                {
-                    title: store.prayers.gloryBe[language].title,
-                    text: store.prayers.gloryBe[language].text
-                },
-                {
-                    title: store.prayers.fatimaPrayer[language].title,
-                    text: store.prayers.fatimaPrayer[language].text
-                },
-                {
-                    title: store.prayers.mysteries[mysteries][language][2].title,
-                    text: store.prayers.mysteries[mysteries][language][2].text
-                },
-                {
-                    title: store.prayers.ourFather[language].title,
-                    text: store.prayers.ourFather[language].text
-                }
-            ];
+            if(store.settings.anotherDevotion === 'none') {
+                prayers = [
+                    {
+                        title: store.prayers.gloryBe[language].title,
+                        text: store.prayers.gloryBe[language].text
+                    },
+                    {
+                        title: store.prayers.fatimaPrayer[language].title,
+                        text: store.prayers.fatimaPrayer[language].text
+                    },
+                    {
+                        title: store.prayers.mysteries[mysteries][language][2].title,
+                        text: store.prayers.mysteries[mysteries][language][2].text
+                    },
+                    {
+                        title: store.prayers.ourFather[language].title,
+                        text: store.prayers.ourFather[language].text
+                    }
+                ];
+            }
+
+            if(store.settings.anotherDevotion === 'divine-mercy-chaplet') {
+                prayers = [
+                    {
+                        title: store.prayers.divineMercy.eternalFather[language].title,
+                        text: store.prayers.divineMercy.eternalFather[language].text
+                    }
+                ];
+            }
         } else if(beadId === 'our-father-4') {
-            prayers = [
-                {
-                    title: store.prayers.gloryBe[language].title,
-                    text: store.prayers.gloryBe[language].text
-                },
-                {
-                    title: store.prayers.fatimaPrayer[language].title,
-                    text: store.prayers.fatimaPrayer[language].text
-                },
-                {
-                    title: store.prayers.mysteries[mysteries][language][3].title,
-                    text: store.prayers.mysteries[mysteries][language][3].text
-                },
-                {
-                    title: store.prayers.ourFather[language].title,
-                    text: store.prayers.ourFather[language].text
-                }
-            ];
+            if(store.settings.anotherDevotion === 'none') {
+                prayers = [
+                    {
+                        title: store.prayers.gloryBe[language].title,
+                        text: store.prayers.gloryBe[language].text
+                    },
+                    {
+                        title: store.prayers.fatimaPrayer[language].title,
+                        text: store.prayers.fatimaPrayer[language].text
+                    },
+                    {
+                        title: store.prayers.mysteries[mysteries][language][3].title,
+                        text: store.prayers.mysteries[mysteries][language][3].text
+                    },
+                    {
+                        title: store.prayers.ourFather[language].title,
+                        text: store.prayers.ourFather[language].text
+                    }
+                ];
+            }
+
+            if(store.settings.anotherDevotion === 'divine-mercy-chaplet') {
+                prayers = [
+                    {
+                        title: store.prayers.divineMercy.eternalFather[language].title,
+                        text: store.prayers.divineMercy.eternalFather[language].text
+                    }
+                ];
+            }
         } else if(beadId === 'our-father-5') {
-            prayers = [
-                {
-                    title: store.prayers.gloryBe[language].title,
-                    text: store.prayers.gloryBe[language].text
-                },
-                {
-                    title: store.prayers.fatimaPrayer[language].title,
-                    text: store.prayers.fatimaPrayer[language].text
-                },
-                {
-                    title: store.prayers.mysteries[mysteries][language][4].title,
-                    text: store.prayers.mysteries[mysteries][language][4].text
-                },
-                {
-                    title: store.prayers.ourFather[language].title,
-                    text: store.prayers.ourFather[language].text
-                }
-            ];
+            if(store.settings.anotherDevotion === 'none') {
+                prayers = [
+                    {
+                        title: store.prayers.gloryBe[language].title,
+                        text: store.prayers.gloryBe[language].text
+                    },
+                    {
+                        title: store.prayers.fatimaPrayer[language].title,
+                        text: store.prayers.fatimaPrayer[language].text
+                    },
+                    {
+                        title: store.prayers.mysteries[mysteries][language][4].title,
+                        text: store.prayers.mysteries[mysteries][language][4].text
+                    },
+                    {
+                        title: store.prayers.ourFather[language].title,
+                        text: store.prayers.ourFather[language].text
+                    }
+                ];
+            }
+
+            if(store.settings.anotherDevotion === 'divine-mercy-chaplet') {
+                prayers = [
+                    {
+                        title: store.prayers.divineMercy.eternalFather[language].title,
+                        text: store.prayers.divineMercy.eternalFather[language].text
+                    }
+                ];
+            }
         } else if(beadId === 'medallion') {
-            prayers = [
-                {
-                    title: store.prayers.gloryBe[language].title,
-                    text: store.prayers.gloryBe[language].text
-                },
-                {
-                    title: store.prayers.fatimaPrayer[language].title,
-                    text: store.prayers.fatimaPrayer[language].text
-                },
-                {
-                    title: store.prayers.hailHolyQueen[language].title,
-                    text: store.prayers.hailHolyQueen[language].text
-                },
-                {
-                    title: store.prayers.prayerAfterRosary[language].title,
-                    text: store.prayers.prayerAfterRosary[language].text
-                },
-                {
-                    title: store.prayers.signOfTheCross[language].title,
-                    text: store.prayers.signOfTheCross[language].text
-                }
-            ];
+            if(store.settings.anotherDevotion === 'none') {
+                prayers = [
+                    {
+                        title: store.prayers.gloryBe[language].title,
+                        text: store.prayers.gloryBe[language].text
+                    },
+                    {
+                        title: store.prayers.fatimaPrayer[language].title,
+                        text: store.prayers.fatimaPrayer[language].text
+                    },
+                    {
+                        title: store.prayers.hailHolyQueen[language].title,
+                        text: store.prayers.hailHolyQueen[language].text
+                    },
+                    {
+                        title: store.prayers.prayerAfterRosary[language].title,
+                        text: store.prayers.prayerAfterRosary[language].text
+                    },
+                    {
+                        title: store.prayers.signOfTheCross[language].title,
+                        text: store.prayers.signOfTheCross[language].text
+                    }
+                ];
+            }
+
+            if(store.settings.anotherDevotion === 'divine-mercy-chaplet') {
+                prayers = [
+                    {
+                        title: store.prayers.divineMercy.holyGod[language].title,
+                        text: store.prayers.divineMercy.holyGod[language].text
+                    },
+                    {
+                        title: store.prayers.divineMercy.optionalClosing[language].title,
+                        text: store.prayers.divineMercy.optionalClosing[language].text
+                    }
+                ];
+            }
         }
         var prayersHTML = prayers.reduce(function(output, prayer, idx, srcArr) {
             if(prayer.title) {

@@ -3,9 +3,10 @@ import renderView from './renderView';
 import HomeJS from './page-scripts/HomeJS';
 import SettingsJS from './page-scripts/SettingsJS';
 
-if('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js', { scope: '/' });
-};
+// Comment out during development
+// if('serviceWorker' in navigator) {
+//     navigator.serviceWorker.register('/sw.js', { scope: '/' });
+// };
 
 $( document ).ready(function() {
     window.nvgo_root = window.location.hostname === 'holyrosaryonline.com' ? 'https://holyrosaryonline.com' : 'http://holyrosaryonline.test';

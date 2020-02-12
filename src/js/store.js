@@ -4,7 +4,8 @@ export default {
     settings: {
         mysteries: localStorage.getItem('mysteries') || getMysteriesForCurrDay(),
         rosaryLanguage: localStorage.getItem('rosaryLanguage') || 'EN',
-        hidePrayers: localStorage.getItem('hidePrayers') === 'true' ? true : false
+        hidePrayers: localStorage.getItem('hidePrayers') === 'true' ? true : false,
+        anotherDevotion: localStorage.getItem('anotherDevotion') || 'none',
     },
     prayers: {
         signOfTheCross: {
@@ -476,6 +477,93 @@ export default {
                     }
                 ]
             }
-        }
+        },
+        divineMercy: {
+            eternalFather: {
+                EN: {
+                    title: 'Eternal Father',
+                    text: 'Eternal Father, I offer you the Body and Blood, Soul and Divinity of Your Dearly Beloved Son, Our Lord, Jesus Christ, in atonement for our sins and those of the whole world.',
+                    source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
+                },
+                EN_TRAD: {
+                    title: 'Eternal Father English Traditional',
+                    text: 'Coming Soon',
+                    source: 'Coming Soon'
+                },
+                LA: {
+                    title: 'Eternal Father Latin',
+                    text: 'Coming Soon',
+                    source: 'Coming Soon'
+                }
+            },
+            forTheSake: {
+                EN: {
+                    title: 'For the sake of His sorrowful Passion',
+                    text: 'For the sake of His sorrowful Passion, have mercy on us and on the whole world.',
+                    source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
+                },
+                EN_TRAD: {
+                    title: 'For the sake of His sorrowful Passion English Traditional',
+                    text: 'Coming Soon',
+                    source: 'Coming Soon'
+                },
+                LA: {
+                    title: 'For the sake of His sorrowful Passion Latin',
+                    text: 'Coming Soon',
+                    source: 'Coming Soon'
+                }
+            },
+            holyGod: {
+                EN: {
+                    title: 'Holy God',
+                    text: '<em>(Repeat 3 times)</em> Holy God, Holy Mighty One, Holy Immortal One, have mercy on us and on the whole world.',
+                    source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
+                },
+                EN_TRAD: {
+                    title: 'Holy God English Traditional',
+                    text: 'Coming Soon',
+                    source: 'Coming Soon'
+                },
+                LA: {
+                    title: 'Holy God Latin',
+                    text: 'Coming Soon',
+                    source: 'Coming Soon'
+                }
+            },
+            optionalOpening: {
+                EN: {
+                    title: 'Optional Opening',
+                    text: 'You expired, Jesus, but the source of life gushed forth for souls, and the ocean of mercy opened up for the whole world. O Fount of Life, unfathomable Divine Mercy, envelop the whole world and empty Yourself out upon us. <br><br> <em>(Repeat 3 times)</em> O Blood and Water, which gushed forth from the Heart of Jesus as a fountain of Mercy for us, I trust in You!',
+                    source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
+                },
+                EN_TRAD: {
+                    title: 'Optional Opening English Traditional',
+                    text: 'Coming Soon',
+                    source: 'Coming Soon'
+                },
+                LA: {
+                    title: 'Optional Opening',
+                    text: 'Coming Soon',
+                    source: 'Coming Soon'
+                }
+            },
+            optionalClosing: {
+                EN: {
+                    title: 'Optional Closing',
+                    text: 'Eternal God, in whom mercy is endless and the treasury of compassion inexhaustible, look kindly upon us and increase Your mercy in us, that in difficult moments we might not despair nor become despondent, but with great confidence submit ourselves to Your holy will, which is Love and Mercy itself.',
+                    source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
+                },
+                EN_TRAD: {
+                    title: 'Optional Closing English Traditional',
+                    text: 'Coming Soon',
+                    source: 'Coming Soon'
+                },
+                LA: {
+                    title: 'Optional Closing',
+                    text: 'Coming Soon',
+                    source: 'Coming Soon'
+                }
+            },
+        },
     }
 };

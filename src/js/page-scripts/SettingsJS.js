@@ -49,6 +49,15 @@ export default function SettingsJS() {
                 localStorage.setItem('hidePrayers', true);
                 hidePrayersCheckoxExists = true;
             }
+
+            if(field['name'] === 'another-devotion') {
+                if(field['value'] === 'none' || field['value'] === 'divine-mercy-chaplet') {
+
+                    store.settings.anotherDevotion = field['value'];
+                    localStorage.setItem('anotherDevotion', field['value']);
+                    
+                }
+            }
         }
 
         // Unchecked checkboxes don't show up in the form data.
@@ -64,6 +73,7 @@ export default function SettingsJS() {
         updateRosaryLanguage();
         updateHidePrayers();
         updateMysteries();
+        updateAnotherDevotion();
     }
 
     function updateRosaryLanguage() {
@@ -79,6 +89,12 @@ export default function SettingsJS() {
     function updateMysteries() {
         $('#form-settings-mysteries')
             .find('option[value="'+localStorage.getItem('mysteries')+'"]')
+            .attr('selected', 'selected');
+    }
+
+    function updateAnotherDevotion() {
+        $('#form-settings-another-devotion')
+            .find('option[value="'+store.settings.anotherDevotion+'"]')
             .attr('selected', 'selected');
     }
 };
