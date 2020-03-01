@@ -5,7 +5,7 @@ export default {
         mysteries: localStorage.getItem('mysteries') || getMysteriesForCurrDay(),
         rosaryLanguage: localStorage.getItem('rosaryLanguage') || 'EN',
         hidePrayers: localStorage.getItem('hidePrayers') === 'true' ? true : false,
-        anotherDevotion: localStorage.getItem('anotherDevotion') || 'none',
+        divineMercy: localStorage.getItem('divineMercy') === 'true' ? true : false,
     },
     prayers: {
         signOfTheCross: {

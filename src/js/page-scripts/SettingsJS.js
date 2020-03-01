@@ -3,16 +3,36 @@ import { getMysteriesForCurrDay } from '../utils';
 
 export default function SettingsJS() {
     updateFields();
+    if(!$('#form-settings-hide-prayers').is(':checked') &&
+        !$('#form-settings-divine-mercy').is(':checked')) {
+        $('#advanced-settings-more').hide();
+    } else {
+        $('#settings-more-btn').text('Hide'); 
+    }
+
+    
+
+    $('#settings-more-btn').click(function(event) {
+        $('#advanced-settings-more').slideToggle(300, function() {
+            if ($('#advanced-settings-more').is(':visible')) {
+                $('#settings-more-btn').text('Hide');                
+            } else {
+                $('#settings-more-btn').text('Show');                
+            }
+        });     
+    });
 
     $('#form-settings').change(function(event) {
-        $(this).find('input[type="submit"').val('Save Changes');
-    });    
+        //$(this).find('input[type="submit"').val('Save Changes');
+        $(this).submit();
+    });
 
     $('#form-settings').submit(function(event) {
         event.preventDefault();
 
         var fields = $(this).serializeArray();
         var hidePrayersCheckoxExists = false;
+        var anotherDevotionCheckoxExists = false;
 
         for (var i = 0; i < fields.length; i++) {
             var field = fields[i];
@@ -50,13 +70,10 @@ export default function SettingsJS() {
                 hidePrayersCheckoxExists = true;
             }
 
-            if(field['name'] === 'another-devotion') {
-                if(field['value'] === 'none' || field['value'] === 'divine-mercy-chaplet') {
-
-                    store.settings.anotherDevotion = field['value'];
-                    localStorage.setItem('anotherDevotion', field['value']);
-                    
-                }
+            if(field['name'] === 'divine-mercy') {
+                store.settings.divineMercy = true;
+                localStorage.setItem('divineMercy', true);
+                anotherDevotionCheckoxExists = true;
             }
         }
 
@@ -64,6 +81,10 @@ export default function SettingsJS() {
         if(!hidePrayersCheckoxExists) {
             store.settings.hidePrayers = false;
             localStorage.setItem('hidePrayers', false);
+        }
+        if(!anotherDevotionCheckoxExists) {
+            store.settings.divineMercy = false;
+            localStorage.setItem('divineMercy', false);
         }
 
         $(this).find('input[type="submit"').val('Saved!');
@@ -73,7 +94,7 @@ export default function SettingsJS() {
         updateRosaryLanguage();
         updateHidePrayers();
         updateMysteries();
-        updateAnotherDevotion();
+        updateDivineMercy();
     }
 
     function updateRosaryLanguage() {
@@ -83,7 +104,7 @@ export default function SettingsJS() {
     }
 
     function updateHidePrayers() {
-        $('#form-settings-hide-prayers').attr('checked', store.settings.hidePrayers)
+        $('#form-settings-hide-prayers').attr('checked', store.settings.hidePrayers);
     }
 
     function updateMysteries() {
@@ -92,9 +113,7 @@ export default function SettingsJS() {
             .attr('selected', 'selected');
     }
 
-    function updateAnotherDevotion() {
-        $('#form-settings-another-devotion')
-            .find('option[value="'+store.settings.anotherDevotion+'"]')
-            .attr('selected', 'selected');
+    function updateDivineMercy() {
+        $('#form-settings-divine-mercy').attr('checked', store.settings.divineMercy);
     }
 };

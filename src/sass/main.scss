@@ -96,12 +96,38 @@ form {
         color: #fff;
         border-radius: 5px;
         font-family: $sans-serif;
+
+        // Display none because we autosubmit on form change
+        display: none;
     }
 
     input[type="submit"][value="Save Changes"] {
         background-color: $light-gold;
         color: $text-color;
         border: 1px solid $text-color;
+    }
+
+    fieldset {
+        border: none;
+        padding: 0;
+    }
+
+    button[type="button"] {
+        margin: 1em 0;
+        padding: .5em 1em;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        color: $green;
+        border: 1px solid $green;
+        border-radius: 5px;
+        font-family: $sans-serif;
+    }
+
+    #advanced-settings-more {
+        label:first-child {
+            margin-top: 1em;
+        }
     }
 }
 

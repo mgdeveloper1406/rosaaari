@@ -84,7 +84,7 @@ export default function HomeJS() {
         var language = store.settings.rosaryLanguage;
         var mysteries = store.settings.mysteries;
         if(beadId === 'crucifix') {
-            if(store.settings.anotherDevotion === 'none') {
+            if(!store.settings.divineMercy) {
                 prayers = [
                     {
                         title: store.prayers.signOfTheCross[language].title,
@@ -95,9 +95,7 @@ export default function HomeJS() {
                         text: store.prayers.apostlesCreed[language].text
                     }
                 ];
-            }
-
-            if(store.settings.anotherDevotion === 'divine-mercy-chaplet') {
+            } else {
                 prayers = [
                     {
                         title: store.prayers.signOfTheCross[language].title,
@@ -106,16 +104,14 @@ export default function HomeJS() {
                 ];
             }
         } else if(beadId.slice(0, 9) === 'intro-hai' || beadId.slice(0, 9) === 'hail-mary') {
-            if(store.settings.anotherDevotion === 'none') {
+            if(!store.settings.divineMercy) {
                 prayers = [
                     {
                         title: store.prayers.hailMary[language].title,
                         text: store.prayers.hailMary[language].text
                     }
                 ];
-            }
-
-            if(store.settings.anotherDevotion === 'divine-mercy-chaplet') {
+            } else {
                 if(beadId.slice(0, 9) === 'hail-mary') {
                     prayers = [
                         {
@@ -153,16 +149,14 @@ export default function HomeJS() {
                 }
             }
         } else if(beadId === 'intro-our-father-1') {
-            if(store.settings.anotherDevotion === 'none') {
+            if(!store.settings.divineMercy) {
                 prayers = [
                     {
                         title: store.prayers.ourFather[language].title,
                         text: store.prayers.ourFather[language].text
                     }
                 ];
-            }
-
-            if(store.settings.anotherDevotion === 'divine-mercy-chaplet') {
+            } else {
                 prayers = [
                     {
                         title: store.prayers.divineMercy.optionalOpening[language].title,
@@ -171,7 +165,7 @@ export default function HomeJS() {
                 ];
             }
         } else if(beadId === 'intro-our-father-2') {
-            if(store.settings.anotherDevotion === 'none') {
+            if(!store.settings.divineMercy) {
                 prayers = [
                     {
                         title: store.prayers.gloryBe[language].title,
@@ -190,9 +184,7 @@ export default function HomeJS() {
                         text: store.prayers.ourFather[language].text
                     }
                 ];
-            }
-
-            if(store.settings.anotherDevotion === 'divine-mercy-chaplet') {
+            } else {
                 prayers = [
                     {
                         title: store.prayers.divineMercy.eternalFather[language].title,
@@ -201,7 +193,7 @@ export default function HomeJS() {
                 ];
             }
         } else if(beadId === 'our-father-2') {
-            if(store.settings.anotherDevotion === 'none') {
+            if(!store.settings.divineMercy) {
                 prayers = [
                     {
                         title: store.prayers.gloryBe[language].title,
@@ -220,9 +212,7 @@ export default function HomeJS() {
                         text: store.prayers.ourFather[language].text
                     }
                 ];
-            }
-
-            if(store.settings.anotherDevotion === 'divine-mercy-chaplet') {
+            } else {
                 prayers = [
                     {
                         title: store.prayers.divineMercy.eternalFather[language].title,
@@ -231,7 +221,7 @@ export default function HomeJS() {
                 ];
             }
         } else if(beadId === 'our-father-3') {
-            if(store.settings.anotherDevotion === 'none') {
+            if(!store.settings.divineMercy) {
                 prayers = [
                     {
                         title: store.prayers.gloryBe[language].title,
@@ -250,9 +240,7 @@ export default function HomeJS() {
                         text: store.prayers.ourFather[language].text
                     }
                 ];
-            }
-
-            if(store.settings.anotherDevotion === 'divine-mercy-chaplet') {
+            } else {
                 prayers = [
                     {
                         title: store.prayers.divineMercy.eternalFather[language].title,
@@ -261,7 +249,7 @@ export default function HomeJS() {
                 ];
             }
         } else if(beadId === 'our-father-4') {
-            if(store.settings.anotherDevotion === 'none') {
+            if(!store.settings.divineMercy) {
                 prayers = [
                     {
                         title: store.prayers.gloryBe[language].title,
@@ -280,9 +268,7 @@ export default function HomeJS() {
                         text: store.prayers.ourFather[language].text
                     }
                 ];
-            }
-
-            if(store.settings.anotherDevotion === 'divine-mercy-chaplet') {
+            } else {
                 prayers = [
                     {
                         title: store.prayers.divineMercy.eternalFather[language].title,
@@ -291,7 +277,7 @@ export default function HomeJS() {
                 ];
             }
         } else if(beadId === 'our-father-5') {
-            if(store.settings.anotherDevotion === 'none') {
+            if(!store.settings.divineMercy) {
                 prayers = [
                     {
                         title: store.prayers.gloryBe[language].title,
@@ -310,9 +296,7 @@ export default function HomeJS() {
                         text: store.prayers.ourFather[language].text
                     }
                 ];
-            }
-
-            if(store.settings.anotherDevotion === 'divine-mercy-chaplet') {
+            } else {
                 prayers = [
                     {
                         title: store.prayers.divineMercy.eternalFather[language].title,
@@ -321,7 +305,7 @@ export default function HomeJS() {
                 ];
             }
         } else if(beadId === 'medallion') {
-            if(store.settings.anotherDevotion === 'none') {
+            if(!store.settings.divineMercy) {
                 prayers = [
                     {
                         title: store.prayers.gloryBe[language].title,
@@ -344,9 +328,7 @@ export default function HomeJS() {
                         text: store.prayers.signOfTheCross[language].text
                     }
                 ];
-            }
-
-            if(store.settings.anotherDevotion === 'divine-mercy-chaplet') {
+            } else {
                 prayers = [
                     {
                         title: store.prayers.divineMercy.holyGod[language].title,

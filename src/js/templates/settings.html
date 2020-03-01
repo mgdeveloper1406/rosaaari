@@ -22,23 +22,32 @@
                 <option value="LA">Latin</option>
             </select>
 
-            <label for="form-settings-hide-prayers">
-                Hide the words to the prayers. Click blank space to go to the
-                next prayer.
-            </label>
-            <input type="checkbox" name="hide-prayers"
-                id="form-settings-hide-prayers">
+            
+
+            <h2 class="label">More Options</h2>
+            <button id="settings-more-btn" type="button">
+                Show
+            </button>
+            <div id="advanced-settings-more">
+                <label for="form-settings-hide-prayers">
+                    Hide the words to the prayers. Click blank space to go to the
+                    next prayer.
+                </label>
+                <input type="checkbox" name="hide-prayers"
+                    id="form-settings-hide-prayers">
+
+                <label for="form-settings-divine-mercy">
+                    Pray the Divine Mercy Chaplet instead.
+                </label>
+                <input id="form-settings-divine-mercy" name="divine-mercy"
+                    type="checkbox">
+            </div>
+
+            
 
             <input type="submit" value="Saved!">
 
-            <fieldset>
-                <h2>Advanced Settings</h2>
-                <label for="form-settings-another-devotion">Pray Another Devotion</label>
-                <select id="form-settings-another-devotion" name="another-devotion">
-                    <option value="none">None (Rosary)</option>
-                    <option value="divine-mercy-chaplet">Divine Mercy Chaplet</option>
-                </select>
-            </fieldset>
+            
         </form>
     </div>
 </div>
