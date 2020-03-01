@@ -1334,52 +1334,52 @@ __webpack_require__.r(__webpack_exports__);
       eternalFather: {
         EN: {
           title: 'Eternal Father',
-          text: 'Eternal Father, I offer you the Body and Blood, Soul and Divinity of Your Dearly Beloved Son, Our Lord, Jesus Christ, in atonement for our sins and those of the whole world.',
-          source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
+          text: 'Eternal Father, I offer You the Body and Blood, Soul and Divinity of Your dearly beloved Son, Our Lord Jesus Christ, in atonement for our sins and those of the whole world.',
+          source: 'Baronius Press, Daily Missal 1962'
         },
         EN_TRAD: {
-          title: 'Eternal Father English Traditional',
-          text: 'Coming Soon',
-          source: 'Coming Soon'
+          title: 'Eternal Father',
+          text: 'Eternal Father, I offer You the Body and Blood, Soul and Divinity of Your dearly beloved Son, Our Lord Jesus Christ, in atonement for our sins and those of the whole world.',
+          source: 'Baronius Press, Daily Missal 1962'
         },
         LA: {
-          title: 'Eternal Father Latin',
-          text: 'Coming Soon',
-          source: 'Coming Soon'
+          title: 'Pater Æterne',
+          text: 'Pater ætérne, óffero tibi Corpus et Sánguinem, ánimam et divinitátem dilectíssimi Fílii Tui, Dómini nostri, Jesu Christi, in propitiatióne pro peccátis nostris et totíus mundi.',
+          source: 'http://www.windsorlatinmass.org/wtnews/170423.pdf'
         }
       },
       forTheSake: {
         EN: {
-          title: 'For the sake of His sorrowful Passion',
+          title: 'For the Sake of His Sorrowful Passion',
           text: 'For the sake of His sorrowful Passion, have mercy on us and on the whole world.',
-          source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
+          source: 'Baronius Press, Daily Missal 1962'
         },
         EN_TRAD: {
-          title: 'For the sake of His sorrowful Passion English Traditional',
-          text: 'Coming Soon',
-          source: 'Coming Soon'
+          title: 'For the Sake of His Sorrowful Passion',
+          text: 'For the sake of His sorrowful Passion, have mercy on us and on the whole world.',
+          source: 'Baronius Press, Daily Missal 1962'
         },
         LA: {
-          title: 'For the sake of His sorrowful Passion Latin',
-          text: 'Coming Soon',
-          source: 'Coming Soon'
+          title: 'Pro Dolorosa Ejus Passione',
+          text: 'Pro dolorosa Ejus passióne, miserére nobis et totíus mundi.',
+          source: 'http://www.windsorlatinmass.org/wtnews/170423.pdf'
         }
       },
       holyGod: {
         EN: {
           title: 'Holy God',
-          text: '<em>(Repeat 3 times)</em> Holy God, Holy Mighty One, Holy Immortal One, have mercy on us and on the whole world.',
-          source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
+          text: '<em>Conclude with (three times):</em> Holy God, Holy Mighty One, Holy Immortal One, have mercy on us and on the whole world.',
+          source: 'Baronius Press, Daily Missal 1962'
         },
         EN_TRAD: {
-          title: 'Holy God English Traditional',
-          text: 'Coming Soon',
-          source: 'Coming Soon'
+          title: 'Holy God',
+          text: '<em>Conclude with (three times):</em> Holy God, Holy Mighty One, Holy Immortal One, have mercy on us and on the whole world.',
+          source: 'Baronius Press, Daily Missal 1962'
         },
         LA: {
-          title: 'Holy God Latin',
-          text: 'Coming Soon',
-          source: 'Coming Soon'
+          title: 'Sanctus Deus',
+          text: '<em>Conclude with (three times):</em> Sanctus Deus, Sanctus Fortis, Sanctus Immortális, miserére nobis et totíus mundi.',
+          source: 'http://www.windsorlatinmass.org/wtnews/170423.pdf'
         }
       },
       optionalOpening: {
@@ -1389,14 +1389,14 @@ __webpack_require__.r(__webpack_exports__);
           source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
         },
         EN_TRAD: {
-          title: 'Optional Opening English Traditional',
-          text: 'Coming Soon',
-          source: 'Coming Soon'
+          title: 'Optional Opening',
+          text: 'You expired, Jesus, but the source of life gushed forth for souls, and the ocean of mercy opened up for the whole world. O Fount of Life, unfathomable Divine Mercy, envelop the whole world and empty Yourself out upon us. <br><br> <em>(Repeat 3 times)</em> O Blood and Water, which gushed forth from the Heart of Jesus as a fountain of Mercy for us, I trust in You!',
+          source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
         },
         LA: {
           title: 'Optional Opening',
-          text: 'Coming Soon',
-          source: 'Coming Soon'
+          text: 'You expired, Jesus, but the source of life gushed forth for souls, and the ocean of mercy opened up for the whole world. O Fount of Life, unfathomable Divine Mercy, envelop the whole world and empty Yourself out upon us. <br><br> <em>(Repeat 3 times)</em> O Blood and Water, which gushed forth from the Heart of Jesus as a fountain of Mercy for us, I trust in You!',
+          source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
         }
       },
       optionalClosing: {
@@ -1406,14 +1406,14 @@ __webpack_require__.r(__webpack_exports__);
           source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
         },
         EN_TRAD: {
-          title: 'Optional Closing English Traditional',
-          text: 'Coming Soon',
-          source: 'Coming Soon'
+          title: 'Optional Closing',
+          text: 'Eternal God, in whom mercy is endless and the treasury of compassion inexhaustible, look kindly upon us and increase Your mercy in us, that in difficult moments we might not despair nor become despondent, but with great confidence submit ourselves to Your holy will, which is Love and Mercy itself.',
+          source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
         },
         LA: {
           title: 'Optional Closing',
-          text: 'Coming Soon',
-          source: 'Coming Soon'
+          text: 'Eternal God, in whom mercy is endless and the treasury of compassion inexhaustible, look kindly upon us and increase Your mercy in us, that in difficult moments we might not despair nor become despondent, but with great confidence submit ourselves to Your holy will, which is Love and Mercy itself.',
+          source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
         }
       }
     }
