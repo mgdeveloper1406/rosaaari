@@ -1,5 +1,5 @@
 // Files to cache
-var cacheName = 'hro-v3';
+var cacheName = 'hro-v4';
 var appShellFiles = [
     '/apple-touch-icon.png',
     '/favicon-32x32.png',
