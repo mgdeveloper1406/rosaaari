@@ -16,3 +16,9 @@
         @content;
     }
 }
+
+@mixin maxwxh($max1, $max2) {
+    @media (max-width: $max1) and (max-height: $max2) {
+        @content;
+    }
+}
