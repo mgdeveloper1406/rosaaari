@@ -150,27 +150,32 @@ export default {
                     {
                         title: 'The First Joyful Mystery',
                         text: 'The Annunciation of Gabriel to Mary. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-38</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf'
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/annunciation.jpg'
                     },
                     {
                         title: 'The Second Joyful Mystery',
                         text: 'The Visitation  of Mary to Elizabeth. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-56</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf'
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/visitation.jpg'
                     },
                     {
                         title: 'The Third Joyful Mystery',
                         text: 'The Birth of Our Lord. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-21</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf'
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/nativity.jpg'
                     },
                     {
                         title: 'The Fourth Joyful Mystery',
                         text: 'The Presentation of Our Lord. (<a href="/med_en_joyful_4" data-navigo>Luke 2:22-38</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf'
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/presentation.jpg'
                     },
                     {
                         title: 'The Fifth Joyful Mystery',
                         text: 'The Finding of Our Lord in the Temple. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-52</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf'
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/finding.jpg'
                     }
                 ],
                 EN_TRAD: [

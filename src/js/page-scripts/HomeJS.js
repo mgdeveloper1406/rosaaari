@@ -105,12 +105,61 @@ export default function HomeJS() {
             }
         } else if(beadId.slice(0, 9) === 'intro-hai' || beadId.slice(0, 9) === 'hail-mary') {
             if(!store.settings.divineMercy) {
-                prayers = [
-                    {
-                        title: store.prayers.hailMary[language].title,
-                        text: store.prayers.hailMary[language].text
-                    }
-                ];
+                if(beadId.slice(0, 9) === 'intro-hai') {
+                    prayers = [
+                        {
+                            title: store.prayers.hailMary[language].title,
+                            text: store.prayers.hailMary[language].text
+                        }
+                    ];
+                } else if(beadId.slice(0, 11) === 'hail-mary-1') {
+                    prayers = [
+                        {
+                            image: store.prayers.mysteries[mysteries][language][0].image,
+                            title: store.prayers.hailMary[language].title,
+                            text: store.prayers.hailMary[language].text
+                        }
+                    ];
+                } else if(beadId.slice(0, 11) === 'hail-mary-2') {
+                    prayers = [
+                        {
+                            image: store.prayers.mysteries[mysteries][language][1].image,
+                            title: store.prayers.hailMary[language].title,
+                            text: store.prayers.hailMary[language].text
+                        }
+                    ];
+                } else if(beadId.slice(0, 11) === 'hail-mary-3') {
+                    prayers = [
+                        {
+                            image: store.prayers.mysteries[mysteries][language][2].image,
+                            title: store.prayers.hailMary[language].title,
+                            text: store.prayers.hailMary[language].text
+                        }
+                    ];
+                } else if(beadId.slice(0, 11) === 'hail-mary-4') {
+                    prayers = [
+                        {
+                            image: store.prayers.mysteries[mysteries][language][3].image,
+                            title: store.prayers.hailMary[language].title,
+                            text: store.prayers.hailMary[language].text
+                        }
+                    ];
+                } else if(beadId.slice(0, 11) === 'hail-mary-5') {
+                    prayers = [
+                        {
+                            image: store.prayers.mysteries[mysteries][language][4].image,
+                            title: store.prayers.hailMary[language].title,
+                            text: store.prayers.hailMary[language].text
+                        }
+                    ];
+                } else {
+                    prayers = [
+                        {
+                            title: store.prayers.hailMary[language].title,
+                            text: store.prayers.hailMary[language].text
+                        }
+                    ];
+                }
             } else {
                 if(beadId.slice(0, 9) === 'hail-mary') {
                     prayers = [
@@ -169,7 +218,7 @@ export default function HomeJS() {
                 prayers = [
                     {
                         title: store.prayers.gloryBe[language].title,
-                        text: store.prayers.gloryBe[language].text
+                        text: store.prayers.gloryBe[language].text,
                     },
                     {
                         title: store.prayers.fatimaPrayer[language].title,
@@ -177,7 +226,8 @@ export default function HomeJS() {
                     },
                     {
                         title: store.prayers.mysteries[mysteries][language][0].title,
-                        text: store.prayers.mysteries[mysteries][language][0].text
+                        text: store.prayers.mysteries[mysteries][language][0].text,
+                        image: store.prayers.mysteries[mysteries][language][0].image
                     },
                     {
                         title: store.prayers.ourFather[language].title,
@@ -205,7 +255,8 @@ export default function HomeJS() {
                     },
                     {
                         title: store.prayers.mysteries[mysteries][language][1].title,
-                        text: store.prayers.mysteries[mysteries][language][1].text
+                        text: store.prayers.mysteries[mysteries][language][1].text,
+                        image: store.prayers.mysteries[mysteries][language][1].image
                     },
                     {
                         title: store.prayers.ourFather[language].title,
@@ -233,7 +284,8 @@ export default function HomeJS() {
                     },
                     {
                         title: store.prayers.mysteries[mysteries][language][2].title,
-                        text: store.prayers.mysteries[mysteries][language][2].text
+                        text: store.prayers.mysteries[mysteries][language][2].text,
+                        image: store.prayers.mysteries[mysteries][language][2].image
                     },
                     {
                         title: store.prayers.ourFather[language].title,
@@ -261,7 +313,8 @@ export default function HomeJS() {
                     },
                     {
                         title: store.prayers.mysteries[mysteries][language][3].title,
-                        text: store.prayers.mysteries[mysteries][language][3].text
+                        text: store.prayers.mysteries[mysteries][language][3].text,
+                        image: store.prayers.mysteries[mysteries][language][3].image
                     },
                     {
                         title: store.prayers.ourFather[language].title,
@@ -289,7 +342,8 @@ export default function HomeJS() {
                     },
                     {
                         title: store.prayers.mysteries[mysteries][language][4].title,
-                        text: store.prayers.mysteries[mysteries][language][4].text
+                        text: store.prayers.mysteries[mysteries][language][4].text,
+                        image: store.prayers.mysteries[mysteries][language][4].image
                     },
                     {
                         title: store.prayers.ourFather[language].title,
@@ -347,6 +401,10 @@ export default function HomeJS() {
             }
             if(prayer.text) {
                 output += '<p>'+prayer.text+'</p>';
+            }
+            if(prayer.image) {
+                output += '<div class="prayer-image"><img src="'+prayer.image+
+                    '" alt="'+prayer.title+'"></div>';
             }
             return output;
         }, '');
