@@ -182,54 +182,64 @@ export default {
                     {
                         title: 'The First Joyful Mystery',
                         text: 'The Annunciation. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-38</a>)',
-                        source: 'Baronius Press, Daily Missal 1962'
+                        source: 'Baronius Press, Daily Missal 1962',
+                        image: '/images/annunciation.jpg'
                     },
                     {
                         title: 'The Second Joyful Mystery',
                         text: 'The Visitation. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-56</a>)',
-                        source: 'Baronius Press, Daily Missal 1962'
+                        source: 'Baronius Press, Daily Missal 1962',
+                        image: '/images/visitation.jpg'
                     },
                     {
                         title: 'The Third Joyful Mystery',
                         text: 'The Nativity. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-21</a>)',
-                        source: 'Baronius Press, Daily Missal 1962'
+                        source: 'Baronius Press, Daily Missal 1962',
+                        image: '/images/nativity.jpg'
                     },
                     {
                         title: 'The Fourth Joyful Mystery',
                         text: 'The Presentation. (<a href="/med_en_joyful_4" data-navigo>Luke 2:22-38</a>)',
-                        source: 'Baronius Press, Daily Missal 1962'
+                        source: 'Baronius Press, Daily Missal 1962',
+                        image: '/images/presentation.jpg'
                     },
                     {
                         title: 'The Fifth Joyful Mystery',
                         text: 'The Finding in the Temple. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-52</a>)',
-                        source: 'Baronius Press, Daily Missal 1962'
+                        source: 'Baronius Press, Daily Missal 1962',
+                        image: '/images/finding.jpg'
                     }
                 ],
                 LA: [
                     {
                         title: 'Prímum Mystérium Gaudiósum',
                         text: 'Annuntiátio. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-38</a>)',
-                        source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+                        source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+                        image: '/images/annunciation.jpg'
                     },
                     {
                         title: 'Secúndum Mystérium Gaudiósum',
                         text: 'Visitátio. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-56</a>)',
-                        source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+                        source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+                        image: '/images/visitation.jpg'
                     },
                     {
                         title: 'Tértium Mystérium Gaudiósum',
                         text: 'Natívitas Dómini nostri Jesu Christi. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-21</a>)',
-                        source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+                        source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+                        image: '/images/nativity.jpg'
                     },
                     {
                         title: 'Quartum Mystérium Gaudiósum',
                         text: 'Præsentátio Púeri Jesu in Templo. (<a href="/med_en_joyful_4" data-navigo>Luke 2:22-38</a>)',
-                        source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+                        source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+                        image: '/images/presentation.jpg'
                     },
                     {
                         title: 'Quintum Mystérium Gaudiósum',
                         text: 'Invéntio Púeri Jesu in Templo. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-52</a>)',
-                        source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+                        source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+                        image: '/images/finding.jpg'
                     }
                 ]
             },

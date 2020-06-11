@@ -271,13 +271,14 @@ function HomeJS() {
   $('.rosary-main button.bead').click(function (event) {
     var currBeadIdx = $(this).data('bead-idx');
     rotateRosary(currBeadIdx);
+    var fromBeadId = $('.bead--selected').attr('id');
     setBeadSelectedClass($(this)); // reset intro drag
 
     $('.rosary-wrapper-wrapper').css({
       transform: getRosaryWrapperTransformRotation() + ' translateY(0)',
       transition: 'transform .3s ease'
     });
-    updatePrayers($(this).attr('id'));
+    updatePrayers($(this).attr('id'), fromBeadId);
     localStorage.setItem('beadId', $(this).attr('id'));
     centerPrayers();
   }); // Rotate back to beginning if necessary, then pull up/down to selected bead
@@ -290,13 +291,14 @@ function HomeJS() {
       transform: getRosaryWrapperTransformRotation() + ' translateY(' + dragDist + 'px)',
       transition: 'transform .3s ease'
     });
+    var fromBeadId = $('.bead--selected').attr('id');
     setBeadSelectedClass($(this));
-    updatePrayers($(this).attr('id'));
+    updatePrayers($(this).attr('id'), fromBeadId);
     localStorage.setItem('beadId', $(this).attr('id'));
     leftAlignPrayers();
   }); // Next Prayer button
 
-  $('#next-prayer, #next-prayer-btn-within-beads').click(nextPrayer); // Activate first click
+  $('#next-prayer, #next-prayer-btn-within-beads, .prayers__next').click(nextPrayer); // Activate first click
 
   var savedBeadId = localStorage.getItem('beadId');
 
@@ -305,6 +307,8 @@ function HomeJS() {
   } else {
     $('.bead--crucifix').click();
   }
+
+  $('.prayer').first().addClass('prayer--current');
 
   function rotateRosary(currBeadIdx) {
     var rotationAmount = (currBeadIdx - lastBeadIdx) * turnIncrement;
@@ -329,7 +333,7 @@ function HomeJS() {
     $bead.addClass('bead--selected');
   }
 
-  function updatePrayers(beadId) {
+  function updatePrayers(beadId, fromBeadId) {
     var prayers = [];
     var language = _store__WEBPACK_IMPORTED_MODULE_0__["default"].settings.rosaryLanguage;
     var mysteries = _store__WEBPACK_IMPORTED_MODULE_0__["default"].settings.mysteries;
@@ -573,6 +577,8 @@ function HomeJS() {
     }
 
     var prayersHTML = prayers.reduce(function (output, prayer, idx, srcArr) {
+      output += '<div class="prayer">' + '<div class="prayer__copy">';
+
       if (prayer.title) {
         output += '<h2 class="label">' + prayer.title + '</h2>';
       }
@@ -581,13 +587,27 @@ function HomeJS() {
         output += '<p>' + prayer.text + '</p>';
       }
 
+      output += '</div>';
+
       if (prayer.image) {
-        output += '<div class="prayer-image"><img src="' + prayer.image + '" alt="' + prayer.title + '"></div>';
+        output += '<div class="prayer__image"><img src="' + prayer.image + '" alt="Image of this mystery"></div>';
       }
 
+      output += '</div>';
       return output;
     }, '');
     $('#prayers-content').html(prayersHTML);
+    var $previousToFromBead = $('#' + fromBeadId).parent().prev();
+    if ($previousToFromBead.hasClass('bead-wrapper--filler')) $previousToFromBead = $previousToFromBead.prev();
+    var previousToFromBeadId = $previousToFromBead.find('.bead').attr('id');
+    if (fromBeadId === 'hail-mary-1-01') previousToFromBeadId = 'intro-our-father-2';
+
+    if (beadId === previousToFromBeadId) {
+      $('.prayer').last().addClass('prayer--current');
+    } else {
+      $('.prayer').first().addClass('prayer--current');
+    }
+
     window.nvgo_router.updatePageLinks();
   }
 
@@ -600,7 +620,8 @@ function HomeJS() {
   }
 
   function getRosaryWrapperTransformRotation() {
-    return window.matchMedia('(min-width: 1000px)').matches ? 'rotate(-45deg)' : '';
+    //return window.matchMedia('(min-width: 1000px)').matches ? 'rotate(-45deg)' : ''
+    return '';
   }
 
   function nextPrayer() {
@@ -608,8 +629,17 @@ function HomeJS() {
       return;
     }
 
+    var $currPrayer = $('.prayer--current');
+
+    if ($currPrayer.length && $currPrayer.next().length) {
+      $currPrayer.removeClass('prayer--current');
+      $currPrayer.next().addClass('prayer--current');
+      return;
+    }
+
     if ($('button.bead--selected').attr('id') === 'intro-our-father-2') {
       $('#hail-mary-1-01').click();
+      $('.prayer').first().addClass('prayer--current');
       return;
     }
 
@@ -622,6 +652,8 @@ function HomeJS() {
     } else {
       $('.bead--medallion').click();
     }
+
+    $('.prayer').first().addClass('prayer--current');
   }
 }
 ;
@@ -1149,44 +1181,54 @@ __webpack_require__.r(__webpack_exports__);
         EN_TRAD: [{
           title: 'The First Joyful Mystery',
           text: 'The Annunciation. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-38</a>)',
-          source: 'Baronius Press, Daily Missal 1962'
+          source: 'Baronius Press, Daily Missal 1962',
+          image: '/images/annunciation.jpg'
         }, {
           title: 'The Second Joyful Mystery',
           text: 'The Visitation. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-56</a>)',
-          source: 'Baronius Press, Daily Missal 1962'
+          source: 'Baronius Press, Daily Missal 1962',
+          image: '/images/visitation.jpg'
         }, {
           title: 'The Third Joyful Mystery',
           text: 'The Nativity. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-21</a>)',
-          source: 'Baronius Press, Daily Missal 1962'
+          source: 'Baronius Press, Daily Missal 1962',
+          image: '/images/nativity.jpg'
         }, {
           title: 'The Fourth Joyful Mystery',
           text: 'The Presentation. (<a href="/med_en_joyful_4" data-navigo>Luke 2:22-38</a>)',
-          source: 'Baronius Press, Daily Missal 1962'
+          source: 'Baronius Press, Daily Missal 1962',
+          image: '/images/presentation.jpg'
         }, {
           title: 'The Fifth Joyful Mystery',
           text: 'The Finding in the Temple. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-52</a>)',
-          source: 'Baronius Press, Daily Missal 1962'
+          source: 'Baronius Press, Daily Missal 1962',
+          image: '/images/finding.jpg'
         }],
         LA: [{
           title: 'Prímum Mystérium Gaudiósum',
           text: 'Annuntiátio. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-38</a>)',
-          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+          image: '/images/annunciation.jpg'
         }, {
           title: 'Secúndum Mystérium Gaudiósum',
           text: 'Visitátio. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-56</a>)',
-          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+          image: '/images/visitation.jpg'
         }, {
           title: 'Tértium Mystérium Gaudiósum',
           text: 'Natívitas Dómini nostri Jesu Christi. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-21</a>)',
-          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+          image: '/images/nativity.jpg'
         }, {
           title: 'Quartum Mystérium Gaudiósum',
           text: 'Præsentátio Púeri Jesu in Templo. (<a href="/med_en_joyful_4" data-navigo>Luke 2:22-38</a>)',
-          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+          image: '/images/presentation.jpg'
         }, {
           title: 'Quintum Mystérium Gaudiósum',
           text: 'Invéntio Púeri Jesu in Templo. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-52</a>)',
-          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+          image: '/images/finding.jpg'
         }]
       },
       luminous: {
@@ -1506,7 +1548,7 @@ module.exports = "<div id=\"template-about\" class=\"modal\">\n    <div class=\"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"template-home\">\n    <button id=\"next-prayer\">Next Prayer</button>\n\n    <div aria-live=\"polite\" class=\"prayers\" id=\"prayers\">\n        <div class=\"prayers__content\" id=\"prayers-content\">\n            \n        </div>\n    </div>\n\n    <div class=\"rosary-wrapper-wrapper\">\n    <div class=\"rosary-wrapper\">\n    <div class=\"rosary\">\n        <div class=\"rosary-intro-chain\"></div>\n        <div class=\"rosary-intro\">\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__crucifix bead bead--crucifix\" id=\"crucifix\">\n                <svg width=\"53\" height=\"102\" viewBox=\"0 0 53 102\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <path d=\"M30.2053 3.05746L30.1627 23.0574L50.1627 23.1L50.1478 30.1L37.1478 30.0723L35.6457 31.0691L32.6414 33.0627L30.1372 35.0574L30.1223 42.0574L31.118 44.0595L31.1117 47.0595L30.1042 50.5574L29.9999 99.5572L23 99.5423L23.0989 53.0425L22.5957 54.5414L21.1021 51.5382L21.1106 47.5382L22.6138 46.0414L21.6149 45.5393L21.6191 43.5393L23.1191 43.5425L21.6276 39.5393L21.1372 35.0382L19.1415 33.034L17.1436 32.0297L14.6457 31.0244L3.14577 30.9999L3.16279 23L23.1627 23.0425L23.2053 3.04256L30.2053 3.05746Z\" fill=\"#FFFBDC\" stroke=\"#806B21\" stroke-width=\"4\"/>\n                </svg>\n                <span class=\"sr-only\">Sign of the Cross</span>\n            </button></div>\n\n            <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__our-father bead bead--our-father\" id=\"intro-our-father-1\"><span class=\"sr-only\">Our Father</span></button></div>\n            <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__hail-mary bead\" id=\"intro-hail-mary-1\"><span class=\"sr-only\">Hail Mary</span></button></div>\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__hail-mary bead\" id=\"intro-hail-mary-2\"><span class=\"sr-only\">Hail Mary</span></button></div>\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__hail-mary bead\" id=\"intro-hail-mary-3\"><span class=\"sr-only\">Hail Mary</span></button></div>\n\n            <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__our-father bead bead--our-father\" id=\"intro-our-father-2\"><span class=\"sr-only\">Our Father</span></button></div>\n            <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n        </div>\n\n        <div class=\"rosary-main-wrapper\">\n            <div class=\"rosary-main\">\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n                <div class=\"bead-wrapper medallion\"><button class=\"bead bead--medallion\" id=\"medallion\">\n                    <!-- Medallion\n                    <div class=\"bead\"></div> -->\n                    <svg width=\"59\" height=\"52\" viewBox=\"0 0 59 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                        <path d=\"M35.6514 44.9919C32.7178 49.7185 25.8402 49.7185 22.9066 44.9919L3.64349 13.955C0.542614 8.95888 4.13567 2.5 10.0159 2.5H48.5421C54.4223 2.5 58.0154 8.95889 54.9145 13.955L35.6514 44.9919Z\" fill=\"#FFFBDC\" stroke=\"#806B21\" stroke-width=\"5\"/>\n                    </svg>\n                    <span class=\"sr-only\">Medallion, end of rosary</span>\n                </button></div>\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-01\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-02\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-03\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-04\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-05\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-06\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-07\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-08\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-09\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-10\"><span class=\"sr-only\">Hail Mary</span></button></div>\n\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n                <div class=\"bead-wrapper\"><button class=\"bead bead--our-father\" id=\"our-father-2\"><span class=\"sr-only\">Our Father</span></button></div>\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-01\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-02\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-03\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-04\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-05\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-06\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-07\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-08\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-09\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-10\"><span class=\"sr-only\">Hail Mary</span></button></div>\n\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n                <div class=\"bead-wrapper\"><button class=\"bead bead--our-father\" id=\"our-father-3\"><span class=\"sr-only\">Our Father</span></button></div>\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-01\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-02\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-03\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-04\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-05\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-06\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-07\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-08\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-09\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-10\"><span class=\"sr-only\">Hail Mary</span></button></div>\n\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n                <div class=\"bead-wrapper\"><button class=\"bead bead--our-father\" id=\"our-father-4\"><span class=\"sr-only\">Our Father</span></button></div>\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-01\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-02\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-03\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-04\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-05\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-06\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-07\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-08\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-09\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-10\"><span class=\"sr-only\">Hail Mary</span></button></div>\n\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n                <div class=\"bead-wrapper\"><button class=\"bead bead--our-father\" id=\"our-father-5\"><span class=\"sr-only\">Our Father</span></button></div>\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-01\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-02\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-03\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-04\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-05\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-06\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-07\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-08\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-09\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-10\"><span class=\"sr-only\">Hail Mary</span></button></div>\n            </div>\n        </div>\n    <button id=\"next-prayer-btn-within-beads\"><span class=\"sr-only\">Next Prayer</span></button>\n    </div>\n    </div>\n    </div>\n</div>";
+module.exports = "<div id=\"template-home\">\n    <button id=\"next-prayer\">Next Prayer</button>\n\n    <div aria-live=\"polite\" class=\"prayers\" id=\"prayers\">\n        <div class=\"prayers__content prayers-content\" id=\"prayers-content\">\n\n        </div>\n\n        <div class=\"prayers__prev-next\">\n            <button class=\"prayers__prev\">prev</button>\n            <button class=\"prayers__next\">next</button>\n        </div>\n    </div>\n\n    <div class=\"rosary-wrapper-wrapper\">\n    <div class=\"rosary-wrapper\">\n    <div class=\"rosary\">\n        <div class=\"rosary-intro-chain\"></div>\n        <div class=\"rosary-intro\">\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__crucifix bead bead--crucifix\" id=\"crucifix\">\n                <svg width=\"53\" height=\"102\" viewBox=\"0 0 53 102\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <path d=\"M30.2053 3.05746L30.1627 23.0574L50.1627 23.1L50.1478 30.1L37.1478 30.0723L35.6457 31.0691L32.6414 33.0627L30.1372 35.0574L30.1223 42.0574L31.118 44.0595L31.1117 47.0595L30.1042 50.5574L29.9999 99.5572L23 99.5423L23.0989 53.0425L22.5957 54.5414L21.1021 51.5382L21.1106 47.5382L22.6138 46.0414L21.6149 45.5393L21.6191 43.5393L23.1191 43.5425L21.6276 39.5393L21.1372 35.0382L19.1415 33.034L17.1436 32.0297L14.6457 31.0244L3.14577 30.9999L3.16279 23L23.1627 23.0425L23.2053 3.04256L30.2053 3.05746Z\" fill=\"#FFFBDC\" stroke=\"#806B21\" stroke-width=\"4\"/>\n                </svg>\n                <span class=\"sr-only\">Sign of the Cross</span>\n            </button></div>\n\n            <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__our-father bead bead--our-father\" id=\"intro-our-father-1\"><span class=\"sr-only\">Our Father</span></button></div>\n            <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__hail-mary bead\" id=\"intro-hail-mary-1\"><span class=\"sr-only\">Hail Mary</span></button></div>\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__hail-mary bead\" id=\"intro-hail-mary-2\"><span class=\"sr-only\">Hail Mary</span></button></div>\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__hail-mary bead\" id=\"intro-hail-mary-3\"><span class=\"sr-only\">Hail Mary</span></button></div>\n\n            <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__our-father bead bead--our-father\" id=\"intro-our-father-2\"><span class=\"sr-only\">Our Father</span></button></div>\n            <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n        </div>\n\n        <div class=\"rosary-main-wrapper\">\n            <div class=\"rosary-main\">\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n                <div class=\"bead-wrapper medallion\"><button class=\"bead bead--medallion\" id=\"medallion\">\n                    <!-- Medallion\n                    <div class=\"bead\"></div> -->\n                    <svg width=\"59\" height=\"52\" viewBox=\"0 0 59 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                        <path d=\"M35.6514 44.9919C32.7178 49.7185 25.8402 49.7185 22.9066 44.9919L3.64349 13.955C0.542614 8.95888 4.13567 2.5 10.0159 2.5H48.5421C54.4223 2.5 58.0154 8.95889 54.9145 13.955L35.6514 44.9919Z\" fill=\"#FFFBDC\" stroke=\"#806B21\" stroke-width=\"5\"/>\n                    </svg>\n                    <span class=\"sr-only\">Medallion, end of rosary</span>\n                </button></div>\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-01\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-02\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-03\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-04\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-05\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-06\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-07\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-08\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-09\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-10\"><span class=\"sr-only\">Hail Mary</span></button></div>\n\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n                <div class=\"bead-wrapper\"><button class=\"bead bead--our-father\" id=\"our-father-2\"><span class=\"sr-only\">Our Father</span></button></div>\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-01\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-02\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-03\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-04\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-05\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-06\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-07\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-08\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-09\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-10\"><span class=\"sr-only\">Hail Mary</span></button></div>\n\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n                <div class=\"bead-wrapper\"><button class=\"bead bead--our-father\" id=\"our-father-3\"><span class=\"sr-only\">Our Father</span></button></div>\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-01\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-02\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-03\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-04\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-05\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-06\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-07\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-08\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-09\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-10\"><span class=\"sr-only\">Hail Mary</span></button></div>\n\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n                <div class=\"bead-wrapper\"><button class=\"bead bead--our-father\" id=\"our-father-4\"><span class=\"sr-only\">Our Father</span></button></div>\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-01\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-02\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-03\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-04\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-05\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-06\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-07\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-08\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-09\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-10\"><span class=\"sr-only\">Hail Mary</span></button></div>\n\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n                <div class=\"bead-wrapper\"><button class=\"bead bead--our-father\" id=\"our-father-5\"><span class=\"sr-only\">Our Father</span></button></div>\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-01\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-02\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-03\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-04\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-05\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-06\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-07\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-08\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-09\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-10\"><span class=\"sr-only\">Hail Mary</span></button></div>\n            </div>\n        </div>\n    <button id=\"next-prayer-btn-within-beads\"><span class=\"sr-only\">Next Prayer</span></button>\n    </div>\n    </div>\n    </div>\n</div>";
 
 /***/ }),
 

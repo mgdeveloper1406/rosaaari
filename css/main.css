@@ -291,15 +291,6 @@ a:active {
   bottom: -650px;
 }
 
-@media (min-width: 1000px) {
-  .rosary-wrapper-wrapper {
-    right: -530px;
-    bottom: -530px;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-  }
-}
-
 .rosary-wrapper {
   position: absolute;
   width: 900px;
@@ -751,15 +742,10 @@ a:active {
   background-color: #fff;
   padding: 1em;
   box-shadow: 0px 0px 14px 12px rgba(255, 255, 255, 0.95), inset 0px 0px 14px 12px rgba(255, 255, 255, 0.95);
-}
-
-@media (max-width: 1000px) {
-  .prayers {
-    left: 0;
-    right: auto;
-    height: calc(100vh - 60vh);
-    width: 100%;
-  }
+  left: 0;
+  right: auto;
+  height: calc(100vh - 60vh);
+  width: 100%;
 }
 
 @media (max-width: 500px) {
@@ -770,25 +756,27 @@ a:active {
 
 .prayers__content {
   position: relative;
-  margin-bottom: 100px;
 }
 
-.prayer-image {
+.prayer {
+  display: none;
+}
+
+.prayer--current {
+  display: block;
+}
+
+.prayer__image {
   display: block;
   position: relative;
   width: 100%;
 }
 
-.prayer-image img {
+.prayer__image img {
   position: relative;
   display: block;
   width: 50%;
-}
-
-@media (max-width: 500px) {
-  .prayer-image img {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 .red-text {
@@ -801,18 +789,6 @@ a:active {
   padding: 5em 2em;
   width: 100%;
   margin: 0 auto;
-}
-
-@media (min-width: 1000px) {
-  .modal__inner {
-    width: 75%;
-  }
-}
-
-@media (min-width: 1300px) {
-  .modal__inner {
-    width: 50%;
-  }
 }
 
 .modal__close {
@@ -833,16 +809,14 @@ a:active {
   left: 0;
 }
 
-@media (max-width: 1000px) {
-  #template-home::after {
-    content: " ";
-    display: block;
-    position: absolute;
-    height: 50px;
-    width: 100%;
-    background-color: #fff;
-    top: 0;
-    left: 0;
-  }
+#template-home::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  top: 0;
+  left: 0;
 }
 
