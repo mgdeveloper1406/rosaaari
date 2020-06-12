@@ -298,7 +298,9 @@ function HomeJS() {
     leftAlignPrayers();
   }); // Next Prayer button
 
-  $('#next-prayer, #next-prayer-btn-within-beads, .prayers__next').click(nextPrayer); // Activate first click
+  $('#next-prayer, #next-prayer-btn-within-beads, .prayers__next').click(nextPrayer); // Prev Prayer button
+
+  $('.prayers__prev').click(prevPrayer); // Activate first click
 
   var savedBeadId = localStorage.getItem('beadId');
 
@@ -655,6 +657,8 @@ function HomeJS() {
 
     $('.prayer').first().addClass('prayer--current');
   }
+
+  function prevPrayer() {}
 }
 ;
 

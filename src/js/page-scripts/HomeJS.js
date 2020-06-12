@@ -54,6 +54,9 @@ export default function HomeJS() {
     // Next Prayer button
     $('#next-prayer, #next-prayer-btn-within-beads, .prayers__next').click(nextPrayer);
 
+    // Prev Prayer button
+    $('.prayers__prev').click(prevPrayer);
+
     // Activate first click
     var savedBeadId = localStorage.getItem('beadId');
     if(savedBeadId) {
@@ -482,5 +485,9 @@ export default function HomeJS() {
         }
 
         $('.prayer').first().addClass('prayer--current');
+    }
+
+    function prevPrayer() {
+        
     }
 };
