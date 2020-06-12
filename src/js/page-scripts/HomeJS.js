@@ -28,7 +28,7 @@ export default function HomeJS() {
         // reset intro drag
         $('.rosary-wrapper-wrapper').css({
             transform: getRosaryWrapperTransformRotation()+' translateY(0)',
-            transition: 'transform .3s ease'
+            transition: 'transform .5s ease'
         });
         updatePrayers($(this).attr('id'), fromBeadId);
         localStorage.setItem('beadId', $(this).attr('id'))
@@ -42,7 +42,7 @@ export default function HomeJS() {
         var dragDist = ((currBeadIdx - 10)*42);
         $('.rosary-wrapper-wrapper').css({
             transform: getRosaryWrapperTransformRotation()+' translateY('+dragDist+'px)',
-            transition: 'transform .3s ease'
+            transition: 'transform .5s ease'
         });
         var fromBeadId = $('.bead--selected').attr('id');
         setBeadSelectedClass($(this));
@@ -56,6 +56,9 @@ export default function HomeJS() {
 
     // Prev Prayer button
     $('.prayers__prev').click(prevPrayer);
+
+    // Reset button
+    $('.prayers__reset').click(resetRosary);
 
     // Activate first click
     var savedBeadId = localStorage.getItem('beadId');
@@ -75,7 +78,7 @@ export default function HomeJS() {
         }
         var rotation = rotationAmount+lastRotation;
         $('.rosary-wrapper').css({
-            transition: 'transform .3s ease',
+            transition: 'transform .5s ease',
             transform: 'rotate(' + -(rotation) + 'turn)'
         });
         lastRotation = rotation;
@@ -468,6 +471,7 @@ export default function HomeJS() {
 
         if($('button.bead--selected').attr('id') === 'intro-our-father-2') {
             $('#hail-mary-1-01').click();
+            $('.prayer').removeClass('prayer--current');
             $('.prayer').first().addClass('prayer--current');
             return;
         }
@@ -484,10 +488,47 @@ export default function HomeJS() {
             $('.bead--medallion').click();
         }
 
+        $('.prayer').removeClass('prayer--current');
         $('.prayer').first().addClass('prayer--current');
     }
 
     function prevPrayer() {
-        
+        var $currPrayer = $('.prayer--current');
+        if($currPrayer.length && $currPrayer.prev().length) {
+            $currPrayer.removeClass('prayer--current');
+            $currPrayer.prev().addClass('prayer--current');
+            return;
+        }
+
+        if($('button.bead--selected').attr('id') === 'hail-mary-1-01') {
+            $('#intro-our-father-2').click();
+            $('.prayer').removeClass('prayer--current');
+            $('.prayer').last().addClass('prayer--current');
+            return;
+        }
+
+        var $prev = $('button.bead--selected')
+            .parent()
+            .prev();
+
+        if(!$prev.hasClass('bead-wrapper--filler') && $prev.length) {
+            $prev.find('.bead').click();
+            $('.prayer').removeClass('prayer--current');
+            $('.prayer').last().addClass('prayer--current');
+            return;
+        }
+
+        if($prev.prev().length) {
+            $prev.prev().find('.bead').click();
+            $('.prayer').removeClass('prayer--current');
+            $('.prayer').last().addClass('prayer--current');
+            return;
+        }
+    }
+
+    function resetRosary() {
+        $('#crucifix').click();
+        $('.prayer').removeClass('prayer--current');
+        $('.prayer').first().addClass('prayer--current');
     }
 };
