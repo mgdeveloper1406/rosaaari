@@ -26,6 +26,8 @@ import header from './templates/partials/header.html';
 
 export default function renderView(pathname, params) {
     $('div#app').html(' ');
+    // Remove our crazy mystery image
+    $('body > .prayer__image').remove();
 
     switch (pathname) {
         case '/':

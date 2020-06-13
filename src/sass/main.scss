@@ -188,7 +188,8 @@ a {
         left: 3px;
         border-radius: 100%;
         background-color: #fff;
-        box-shadow: inset 10px 10px 10px rgba(69, 63, 63, 0.26);
+        box-shadow: inset 10px 10px 10px rgba(69, 63, 63, 0.26),
+            0px 0px 10px #000;
         overflow: hidden;
     }
 
@@ -292,7 +293,7 @@ a {
     position: absolute;
     width: 900px;
     height: 900px;
-    right: calc(50% - 465px);
+    right: calc(50% - 455px);
     bottom: -690px;
     z-index: 200;
 }
@@ -426,7 +427,7 @@ a {
 
     &__content {
         position: relative;
-        padding: 0 50px;
+        padding: 0 40px;
     }
 }
 
@@ -434,13 +435,14 @@ a {
     position: relative;
     display: none;
     color: #fff;
+    text-shadow: 1px 1px 2px black;
 
     h1, h2, p {
         color: #fff;
     }
 
     .label {
-        margin-top: 0;
+        margin-top: 6px;
     }
 
     &--current {
@@ -474,9 +476,19 @@ a {
             height: 100%;
             background-image: linear-gradient(
                 to bottom,
-                rgba(0,0,0,.75),
+                rgba(0,0,0,.90),
                 transparent
             );
+        }
+
+        &--hide-prayers {
+            &:after {
+                height: 25%;
+            }
+        }
+
+        .prayer--current & {
+            display: none;
         }
 
         img {
@@ -491,23 +503,14 @@ a {
 }
 
 .prayers-prev-next {
-    position: absolute;
+    position: fixed;
     left: 12px;
-    top: 0;
+    top: 60px;
     width: calc(100% - 24px);
-    height: calc(50vh - 62px);
+    height: calc(50vh - 60px);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    &__reset {
-        position: fixed;
-        top: 1.5em;
-        left: 1em;
-        background: none;
-        border: none;
-        color: #fff;
-    }
 
     &__prev, &__next {
         display: flex;
@@ -519,12 +522,31 @@ a {
         margin: 0;
         background: none;
         border: none;
+        outline: 0;
+
+        &:focus {
+            outline: 0;
+
+            svg {
+                outline: 1px dotted #999;
+            }
+        }
 
         svg {
             display: block;
             fill: #fff;
         }
     }
+}
+
+.prayers-reset {
+    position: fixed;
+    top: 1.5em;
+    left: 1em;
+    background: none;
+    border: none;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
 }
 
 .red-text {

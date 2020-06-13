@@ -431,7 +431,9 @@ export default function HomeJS() {
             }
             output += '</div>'
             if(prayer.image) {
-                output += '<div class="prayer__image"><img src="'+prayer.image+
+                var noGradient = store.settings.hidePrayers ?
+                    'prayer__image--hide-prayers' : '';
+                output += '<div class="prayer__image '+noGradient+'"><img src="'+prayer.image+
                     '" alt="Image of this mystery"></div>';
             }
             output += '</div>';
@@ -448,15 +450,12 @@ export default function HomeJS() {
         var previousToFromBeadId = $previousToFromBead.find('.bead').attr('id');
         if(fromBeadId === 'hail-mary-1-01')
             previousToFromBeadId = 'intro-our-father-2';
-        if(beadId === previousToFromBeadId) {
+        if(beadId === previousToFromBeadId || store.settings.hidePrayers) {
             $('.prayer').last().addClass('prayer--current');
         } else {
             $('.prayer').first().addClass('prayer--current');
         }
-        // Prevent image from hiding scroll in .prayers div
-        $('body > .prayer__image').remove();
-        $('.prayer--current .prayer__image').prependTo('body');
-        $('.prayer .prayer__image').remove();
+        prependImageToBody();
 
         window.nvgo_router.updatePageLinks();
     }
@@ -482,17 +481,21 @@ export default function HomeJS() {
             return;
         }
 
-        var $currPrayer = $('.prayer--current');
-        if($currPrayer.length && $currPrayer.next().length) {
-            $currPrayer.removeClass('prayer--current');
-            $currPrayer.next().addClass('prayer--current');
-            return;
+        if(!store.settings.hidePrayers) {
+            var $currPrayer = $('.prayer--current');
+            if($currPrayer.length && $currPrayer.next().length) {
+                $currPrayer.removeClass('prayer--current');
+                $currPrayer.next().addClass('prayer--current');
+                prependImageToBody();
+                return;
+            }
         }
+
 
         if($('button.bead--selected').attr('id') === 'intro-our-father-2') {
             $('#hail-mary-1-01').click();
-            $('.prayer').removeClass('prayer--current');
-            $('.prayer').first().addClass('prayer--current');
+            // $('.prayer').removeClass('prayer--current');
+            // $('.prayer').first().addClass('prayer--current');
             return;
         }
 
@@ -508,8 +511,9 @@ export default function HomeJS() {
             $('.bead--medallion').click();
         }
 
-        $('.prayer').removeClass('prayer--current');
-        $('.prayer').first().addClass('prayer--current');
+        // $('.prayer').removeClass('prayer--current');
+        // $('.prayer').first().addClass('prayer--current');
+        // prependImageToBody();
     }
 
     function prevPrayer() {
@@ -517,6 +521,7 @@ export default function HomeJS() {
         if($currPrayer.length && $currPrayer.prev().length) {
             $currPrayer.removeClass('prayer--current');
             $currPrayer.prev().addClass('prayer--current');
+            prependImageToBody();
             return;
         }
 
@@ -550,5 +555,11 @@ export default function HomeJS() {
         $('#crucifix').click();
         $('.prayer').removeClass('prayer--current');
         $('.prayer').first().addClass('prayer--current');
+    }
+
+    function prependImageToBody() {
+        // Prevent image from hiding scroll in .prayers div
+        $('body > .prayer__image').remove();
+        $('.prayer--current .prayer__image').clone().prependTo('body');
     }
 };
