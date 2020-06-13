@@ -453,6 +453,10 @@ export default function HomeJS() {
         } else {
             $('.prayer').first().addClass('prayer--current');
         }
+        // Prevent image from hiding scroll in .prayers div
+        $('body > .prayer__image').remove();
+        $('.prayer--current .prayer__image').prependTo('body');
+        $('.prayer .prayer__image').remove();
 
         window.nvgo_router.updatePageLinks();
     }
