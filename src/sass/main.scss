@@ -275,6 +275,28 @@ a {
     }
 }
 
+.rosary-wrapper-wrapper-mask {
+    height: 325px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+    // Not gonna work when I do full width image, duh
+    // &:after {
+    //     content: " ";
+    //     display: block;
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 0;
+    //     top: 0;
+    //     left: 0;
+    //     z-index: 300;
+    //     box-shadow: rgb(255, 255, 255) 0px 0px 1em 1em;
+    // }
+}
+
 .rosary-wrapper-wrapper {
     display: block;
     position: absolute;
@@ -282,6 +304,7 @@ a {
     height: 900px;
     right: calc(50% - 450px);
     bottom: -650px;
+    z-index: 200;
 }
 
 .rosary-wrapper {
@@ -395,7 +418,7 @@ a {
 .prayers {
     position: absolute;
     width: 100%;
-    height: calc(100vh - 60vh);
+    height: calc(100vh - 400px);
     left: 0;
     right: auto;
     top: 50px;
@@ -404,10 +427,7 @@ a {
     z-index: 100;
     overflow: auto;
     font-size: 1em;
-    background-color: #fff;
     padding: 1em;
-    box-shadow: 0px 0px 14px 12px rgba(255,255,255,.95),
-        inset 0px 0px 14px 12px rgba(255,255,255,0.95);
 
     @include max(500px) {
         font-size: .85em;
@@ -415,25 +435,75 @@ a {
 
     &__content {
         position: relative;
+        padding: 0 50px;
     }
 }
 
 .prayer {
+    position: relative;
     display: none;
+    color: #fff;
+
+    h1, h2, p {
+        color: #fff;
+    }
 
     &--current {
         display: block;
     }
 
-    &__image {
-        display: block;
+    &__copy {
         position: relative;
+        z-index: 100;
+    }
+
+    &__image {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
         width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $text-color;
 
         img {
             position: relative;
             display: block;
             width: 100%;
+        }
+    }
+}
+
+.prayers-prev-next {
+    position: absolute;
+    left: 12px;
+    top: 75px;
+    width: calc(100% - 24px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__reset {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    &__prev, &__next {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        margin: 0;
+
+        svg {
+            display: block;
+            fill: $text-color;
         }
     }
 }
@@ -471,14 +541,14 @@ a {
 }
 
 #template-home {
-    &::after {
-        content: " ";
-        display: block;
-        position: absolute;
-        height: 50px;
-        width: 100%;
-        background-color: #fff;
-        top: 0;
-        left: 0;
-    }
+    // &::after {
+    //     content: " ";
+    //     display: block;
+    //     position: absolute;
+    //     height: 50px;
+    //     width: 100%;
+    //     background-color: #fff;
+    //     top: 0;
+    //     left: 0;
+    // }
 }

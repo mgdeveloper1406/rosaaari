@@ -277,6 +277,15 @@ a:active {
   height: 36px;
 }
 
+.rosary-wrapper-wrapper-mask {
+  height: 325px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
 .rosary-wrapper-wrapper {
   display: block;
   position: absolute;
@@ -284,6 +293,7 @@ a:active {
   height: 900px;
   right: calc(50% - 450px);
   bottom: -650px;
+  z-index: 200;
 }
 
 .rosary-wrapper {
@@ -651,7 +661,7 @@ a:active {
 .prayers {
   position: absolute;
   width: 100%;
-  height: calc(100vh - 60vh);
+  height: calc(100vh - 400px);
   left: 0;
   right: auto;
   top: 50px;
@@ -660,9 +670,7 @@ a:active {
   z-index: 100;
   overflow: auto;
   font-size: 1em;
-  background-color: #fff;
   padding: 1em;
-  box-shadow: 0px 0px 14px 12px rgba(255, 255, 255, 0.95), inset 0px 0px 14px 12px rgba(255, 255, 255, 0.95);
 }
 
 @media (max-width: 500px) {
@@ -673,26 +681,80 @@ a:active {
 
 .prayers__content {
   position: relative;
+  padding: 0 50px;
 }
 
 .prayer {
+  position: relative;
   display: none;
+  color: #fff;
+}
+
+.prayer h1,
+.prayer h2,
+.prayer p {
+  color: #fff;
 }
 
 .prayer--current {
   display: block;
 }
 
-.prayer__image {
-  display: block;
+.prayer__copy {
   position: relative;
+  z-index: 100;
+}
+
+.prayer__image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
   width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #242424;
 }
 
 .prayer__image img {
   position: relative;
   display: block;
   width: 100%;
+}
+
+.prayers-prev-next {
+  position: absolute;
+  left: 12px;
+  top: 75px;
+  width: calc(100% - 24px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.prayers-prev-next__reset {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.prayers-prev-next__prev,
+.prayers-prev-next__next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.prayers-prev-next__prev svg,
+.prayers-prev-next__next svg {
+  display: block;
+  fill: #242424;
 }
 
 .red-text {
@@ -721,17 +783,6 @@ a:active {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  top: 0;
-  left: 0;
-}
-
-#template-home::after {
-  content: " ";
-  display: block;
-  position: absolute;
-  height: 50px;
-  width: 100%;
-  background-color: #fff;
   top: 0;
   left: 0;
 }
