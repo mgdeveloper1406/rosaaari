@@ -51,6 +51,7 @@ body {
     font-family: $serif;
     color: $text-color;
     background-color: $bg-color;
+    text-shadow: 1px 1px 2px black;
 }
 
 body.fixed {
@@ -434,12 +435,6 @@ a {
 .prayer {
     position: relative;
     display: none;
-    color: #fff;
-    text-shadow: 1px 1px 2px black;
-
-    h1, h2, p {
-        color: #fff;
-    }
 
     .label {
         margin-top: 6px;
@@ -515,10 +510,10 @@ a {
     &__prev, &__next {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         width: 30px;
         height: 100%;
-        padding: 0;
+        padding: 50px 0 0 0;
         margin: 0;
         background: none;
         border: none;

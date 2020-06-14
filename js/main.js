@@ -246,8 +246,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../store */ "./src/js/store.js");
 
 function HomeJS() {
-  $('body').css('background-color', '#242424');
-
   if (_store__WEBPACK_IMPORTED_MODULE_0__["default"].settings.hidePrayers) {
     $('.prayers').css({
       display: 'none'

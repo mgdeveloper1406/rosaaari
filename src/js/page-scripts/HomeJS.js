@@ -1,7 +1,6 @@
 import store from '../store';
 
 export default function HomeJS() {
-    $('body').css('background-color', '#242424')
     if(store.settings.hidePrayers) {
         $('.prayers').css({display: 'none'})
     }
