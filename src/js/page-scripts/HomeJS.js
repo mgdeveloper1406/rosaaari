@@ -31,7 +31,8 @@ export default function HomeJS() {
             transition: 'transform .5s ease'
         });
         updatePrayers($(this).attr('id'), fromBeadId);
-        localStorage.setItem('beadId', $(this).attr('id'))
+        localStorage.setItem('beadId', $(this).attr('id'));
+        localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
         centerPrayers();
     });
 
@@ -48,6 +49,7 @@ export default function HomeJS() {
         setBeadSelectedClass($(this));
         updatePrayers($(this).attr('id'), fromBeadId);
         localStorage.setItem('beadId', $(this).attr('id'));
+        localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
         leftAlignPrayers();
     });
 
@@ -61,13 +63,25 @@ export default function HomeJS() {
     $('[data-rosary-reset]').click(resetRosary);
 
     // Activate first click
+    var savedPrayerId = localStorage.getItem('prayerId');
     var savedBeadId = localStorage.getItem('beadId');
+
     if(savedBeadId) {
         $('#'+savedBeadId).click();
     } else {
         $('.bead--crucifix').click();
     }
-    $('.prayer').first().addClass('prayer--current');
+
+    $('.prayer').removeClass('prayer--current');
+    if(savedPrayerId) {
+        $('#'+savedPrayerId).addClass('prayer--current');
+        prependImageToBody();
+        localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
+    } else {
+        $('.prayer').first().addClass('prayer--current');
+        prependImageToBody();
+        localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
+    }
 
     function rotateRosary(currBeadIdx) {
         var rotationAmount = (currBeadIdx - lastBeadIdx)*turnIncrement;
@@ -420,7 +434,7 @@ export default function HomeJS() {
             }
         }
         var prayersHTML = prayers.reduce(function(output, prayer, idx, srcArr) {
-            output += '<div class="prayer">'+
+            output += '<div class="prayer" id="prayer-'+idx+'">'+
                 '<div class="prayer__copy">';
             if(prayer.title) {
                 output += '<h2 class="label">'+prayer.title+'</h2>';
@@ -455,6 +469,7 @@ export default function HomeJS() {
             $('.prayer').first().addClass('prayer--current');
         }
         prependImageToBody();
+        localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
 
         window.nvgo_router.updatePageLinks();
     }
@@ -486,6 +501,7 @@ export default function HomeJS() {
                 $currPrayer.removeClass('prayer--current');
                 $currPrayer.next().addClass('prayer--current');
                 prependImageToBody();
+                localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
                 return;
             }
         }
@@ -520,6 +536,7 @@ export default function HomeJS() {
         if($currPrayer.length && $currPrayer.prev().length) {
             $currPrayer.removeClass('prayer--current');
             $currPrayer.prev().addClass('prayer--current');
+            localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
             prependImageToBody();
             return;
         }
@@ -539,6 +556,7 @@ export default function HomeJS() {
             $prev.find('.bead').click();
             $('.prayer').removeClass('prayer--current');
             $('.prayer').last().addClass('prayer--current');
+            localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
             return;
         }
 
@@ -546,6 +564,7 @@ export default function HomeJS() {
             $prev.prev().find('.bead').click();
             $('.prayer').removeClass('prayer--current');
             $('.prayer').last().addClass('prayer--current');
+            localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
             return;
         }
     }

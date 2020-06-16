@@ -280,6 +280,7 @@ function HomeJS() {
     });
     updatePrayers($(this).attr('id'), fromBeadId);
     localStorage.setItem('beadId', $(this).attr('id'));
+    localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
     centerPrayers();
   }); // Rotate back to beginning if necessary, then pull up/down to selected bead
 
@@ -295,6 +296,7 @@ function HomeJS() {
     setBeadSelectedClass($(this));
     updatePrayers($(this).attr('id'), fromBeadId);
     localStorage.setItem('beadId', $(this).attr('id'));
+    localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
     leftAlignPrayers();
   }); // Next Prayer button
 
@@ -304,6 +306,7 @@ function HomeJS() {
 
   $('[data-rosary-reset]').click(resetRosary); // Activate first click
 
+  var savedPrayerId = localStorage.getItem('prayerId');
   var savedBeadId = localStorage.getItem('beadId');
 
   if (savedBeadId) {
@@ -312,7 +315,17 @@ function HomeJS() {
     $('.bead--crucifix').click();
   }
 
-  $('.prayer').first().addClass('prayer--current');
+  $('.prayer').removeClass('prayer--current');
+
+  if (savedPrayerId) {
+    $('#' + savedPrayerId).addClass('prayer--current');
+    prependImageToBody();
+    localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
+  } else {
+    $('.prayer').first().addClass('prayer--current');
+    prependImageToBody();
+    localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
+  }
 
   function rotateRosary(currBeadIdx) {
     var rotationAmount = (currBeadIdx - lastBeadIdx) * turnIncrement;
@@ -596,7 +609,7 @@ function HomeJS() {
     }
 
     var prayersHTML = prayers.reduce(function (output, prayer, idx, srcArr) {
-      output += '<div class="prayer">' + '<div class="prayer__copy">';
+      output += '<div class="prayer" id="prayer-' + idx + '">' + '<div class="prayer__copy">';
 
       if (prayer.title) {
         output += '<h2 class="label">' + prayer.title + '</h2>';
@@ -629,6 +642,7 @@ function HomeJS() {
     }
 
     prependImageToBody();
+    localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
     window.nvgo_router.updatePageLinks();
   }
 
@@ -657,6 +671,7 @@ function HomeJS() {
         $currPrayer.removeClass('prayer--current');
         $currPrayer.next().addClass('prayer--current');
         prependImageToBody();
+        localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
         return;
       }
     }
@@ -688,6 +703,7 @@ function HomeJS() {
     if ($currPrayer.length && $currPrayer.prev().length) {
       $currPrayer.removeClass('prayer--current');
       $currPrayer.prev().addClass('prayer--current');
+      localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
       prependImageToBody();
       return;
     }
@@ -705,6 +721,7 @@ function HomeJS() {
       $prev.find('.bead').click();
       $('.prayer').removeClass('prayer--current');
       $('.prayer').last().addClass('prayer--current');
+      localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
       return;
     }
 
@@ -712,6 +729,7 @@ function HomeJS() {
       $prev.prev().find('.bead').click();
       $('.prayer').removeClass('prayer--current');
       $('.prayer').last().addClass('prayer--current');
+      localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
       return;
     }
   }
