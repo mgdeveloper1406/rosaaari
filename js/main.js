@@ -380,30 +380,35 @@ function HomeJS() {
         } else if (beadId.slice(0, 11) === 'hail-mary-1') {
           prayers = [{
             image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][0].image,
+            imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][0].imagePosition,
             title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.hailMary[language].title,
             text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.hailMary[language].text
           }];
         } else if (beadId.slice(0, 11) === 'hail-mary-2') {
           prayers = [{
             image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][1].image,
+            imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][1].imagePosition,
             title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.hailMary[language].title,
             text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.hailMary[language].text
           }];
         } else if (beadId.slice(0, 11) === 'hail-mary-3') {
           prayers = [{
             image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][2].image,
+            imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][2].imagePosition,
             title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.hailMary[language].title,
             text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.hailMary[language].text
           }];
         } else if (beadId.slice(0, 11) === 'hail-mary-4') {
           prayers = [{
             image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][3].image,
+            imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][3].imagePosition,
             title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.hailMary[language].title,
             text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.hailMary[language].text
           }];
         } else if (beadId.slice(0, 11) === 'hail-mary-5') {
           prayers = [{
             image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][4].image,
+            imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][4].imagePosition,
             title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.hailMary[language].title,
             text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.hailMary[language].text
           }];
@@ -465,11 +470,13 @@ function HomeJS() {
         }, {
           title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][0].title,
           text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][0].text,
-          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][0].image
+          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][0].image,
+          imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][0].imagePosition
         }, {
           title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.ourFather[language].title,
           text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.ourFather[language].text,
-          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][0].image
+          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][0].image,
+          imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][0].imagePosition
         }];
       } else {
         prayers = [{
@@ -482,19 +489,23 @@ function HomeJS() {
         prayers = [{
           title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.gloryBe[language].title,
           text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.gloryBe[language].text,
-          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][0].image
+          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][0].image,
+          imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][0].imagePosition
         }, {
           title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.fatimaPrayer[language].title,
           text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.fatimaPrayer[language].text,
-          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][0].image
+          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][0].image,
+          imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][0].imagePosition
         }, {
           title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][1].title,
           text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][1].text,
-          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][1].image
+          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][1].image,
+          imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][1].imagePosition
         }, {
           title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.ourFather[language].title,
           text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.ourFather[language].text,
-          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][1].image
+          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][1].image,
+          imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][1].imagePosition
         }];
       } else {
         prayers = [{
@@ -507,19 +518,23 @@ function HomeJS() {
         prayers = [{
           title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.gloryBe[language].title,
           text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.gloryBe[language].text,
-          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][1].image
+          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][1].image,
+          imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][1].imagePosition
         }, {
           title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.fatimaPrayer[language].title,
           text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.fatimaPrayer[language].text,
-          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][1].image
+          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][1].image,
+          imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][1].imagePosition
         }, {
           title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][2].title,
           text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][2].text,
-          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][2].image
+          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][2].image,
+          imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][2].imagePosition
         }, {
           title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.ourFather[language].title,
           text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.ourFather[language].text,
-          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][2].image
+          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][2].image,
+          imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][2].imagePosition
         }];
       } else {
         prayers = [{
@@ -532,19 +547,23 @@ function HomeJS() {
         prayers = [{
           title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.gloryBe[language].title,
           text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.gloryBe[language].text,
-          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][2].image
+          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][2].image,
+          imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][2].imagePosition
         }, {
           title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.fatimaPrayer[language].title,
           text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.fatimaPrayer[language].text,
-          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][2].image
+          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][2].image,
+          imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][2].imagePosition
         }, {
           title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][3].title,
           text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][3].text,
-          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][3].image
+          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][3].image,
+          imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][3].imagePosition
         }, {
           title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.ourFather[language].title,
           text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.ourFather[language].text,
-          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][3].image
+          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][3].image,
+          imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][3].imagePosition
         }];
       } else {
         prayers = [{
@@ -557,19 +576,23 @@ function HomeJS() {
         prayers = [{
           title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.gloryBe[language].title,
           text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.gloryBe[language].text,
-          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][3].image
+          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][3].image,
+          imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][3].imagePosition
         }, {
           title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.fatimaPrayer[language].title,
           text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.fatimaPrayer[language].text,
-          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][3].image
+          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][3].image,
+          imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][3].imagePosition
         }, {
           title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][4].title,
           text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][4].text,
-          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][4].image
+          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][4].image,
+          imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][4].imagePosition
         }, {
           title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.ourFather[language].title,
           text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.ourFather[language].text,
-          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][4].image
+          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][4].image,
+          imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][4].imagePosition
         }];
       } else {
         prayers = [{
@@ -582,11 +605,13 @@ function HomeJS() {
         prayers = [{
           title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.gloryBe[language].title,
           text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.gloryBe[language].text,
-          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][4].image
+          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][4].image,
+          imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][4].imagePosition
         }, {
           title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.fatimaPrayer[language].title,
           text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.fatimaPrayer[language].text,
-          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][4].image
+          image: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][4].image,
+          imagePosition: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.mysteries[mysteries][language][4].imagePosition
         }, {
           title: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.hailHolyQueen[language].title,
           text: _store__WEBPACK_IMPORTED_MODULE_0__["default"].prayers.hailHolyQueen[language].text
@@ -623,7 +648,10 @@ function HomeJS() {
 
       if (prayer.image) {
         var noGradient = _store__WEBPACK_IMPORTED_MODULE_0__["default"].settings.hidePrayers ? 'prayer__image--hide-prayers' : '';
-        output += '<div class="prayer__image ' + noGradient + '"><img src="' + prayer.image + '" alt="Image of this mystery"></div>';
+        output += '<div class="prayer__image ' + noGradient + '"><img src="' + prayer.image + '" alt="Image of this mystery" class="object-position-' + prayer.imagePosition.split(' ').join('-') + '"></div>';
+      } else {
+        var noGradient = _store__WEBPACK_IMPORTED_MODULE_0__["default"].settings.hidePrayers ? 'prayer__image--hide-prayers' : '';
+        output += '<div class="prayer__image ' + noGradient + '"><img src="' + '/images/default/default.jpg' + '" alt="Image of this mystery" class="object-position-center-top"></div>';
       }
 
       output += '</div>';
@@ -712,6 +740,12 @@ function HomeJS() {
       $('#intro-our-father-2').click();
       $('.prayer').removeClass('prayer--current');
       $('.prayer').last().addClass('prayer--current');
+      localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
+      return;
+    }
+
+    if ($('button.bead--selected').attr('id') === 'medallion') {
+      $('#hail-mary-5-10').click();
       return;
     }
 
@@ -1248,274 +1282,379 @@ __webpack_require__.r(__webpack_exports__);
           title: 'The First Joyful Mystery',
           text: 'The Annunciation of Gabriel to Mary. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-38</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
-          image: '/images/annunciation.jpg'
+          image: '/images/default/annunciation.jpg',
+          imagePosition: 'center'
         }, {
           title: 'The Second Joyful Mystery',
           text: 'The Visitation  of Mary to Elizabeth. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-56</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
-          image: '/images/visitation.jpg'
+          image: '/images/default/visitation.jpg',
+          imagePosition: 'center'
         }, {
           title: 'The Third Joyful Mystery',
           text: 'The Birth of Our Lord. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-21</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
-          image: '/images/nativity.jpg'
+          image: '/images/default/nativity.jpg',
+          imagePosition: 'center'
         }, {
           title: 'The Fourth Joyful Mystery',
           text: 'The Presentation of Our Lord. (<a href="/med_en_joyful_4" data-navigo>Luke 2:22-38</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
-          image: '/images/presentation.jpg'
+          image: '/images/default/presentation.jpg',
+          imagePosition: 'center'
         }, {
           title: 'The Fifth Joyful Mystery',
           text: 'The Finding of Our Lord in the Temple. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-52</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
-          image: '/images/finding.jpg'
+          image: '/images/default/finding.jpg',
+          imagePosition: 'right center'
         }],
         EN_TRAD: [{
           title: 'The First Joyful Mystery',
           text: 'The Annunciation. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-38</a>)',
           source: 'Baronius Press, Daily Missal 1962',
-          image: '/images/annunciation.jpg'
+          image: '/images/default/annunciation.jpg',
+          imagePosition: 'center'
         }, {
           title: 'The Second Joyful Mystery',
           text: 'The Visitation. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-56</a>)',
           source: 'Baronius Press, Daily Missal 1962',
-          image: '/images/visitation.jpg'
+          image: '/images/default/visitation.jpg',
+          imagePosition: 'center'
         }, {
           title: 'The Third Joyful Mystery',
           text: 'The Nativity. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-21</a>)',
           source: 'Baronius Press, Daily Missal 1962',
-          image: '/images/nativity.jpg'
+          image: '/images/default/nativity.jpg',
+          imagePosition: 'center'
         }, {
           title: 'The Fourth Joyful Mystery',
           text: 'The Presentation. (<a href="/med_en_joyful_4" data-navigo>Luke 2:22-38</a>)',
           source: 'Baronius Press, Daily Missal 1962',
-          image: '/images/presentation.jpg'
+          image: '/images/default/presentation.jpg',
+          imagePosition: 'center'
         }, {
           title: 'The Fifth Joyful Mystery',
           text: 'The Finding in the Temple. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-52</a>)',
           source: 'Baronius Press, Daily Missal 1962',
-          image: '/images/finding.jpg'
+          image: '/images/default/finding.jpg',
+          imagePosition: 'right center'
         }],
         LA: [{
           title: 'Prímum Mystérium Gaudiósum',
           text: 'Annuntiátio. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-38</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
-          image: '/images/annunciation.jpg'
+          image: '/images/default/annunciation.jpg',
+          imagePosition: 'center'
         }, {
           title: 'Secúndum Mystérium Gaudiósum',
           text: 'Visitátio. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-56</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
-          image: '/images/visitation.jpg'
+          image: '/images/default/visitation.jpg',
+          imagePosition: 'center'
         }, {
           title: 'Tértium Mystérium Gaudiósum',
           text: 'Natívitas Dómini nostri Jesu Christi. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-21</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
-          image: '/images/nativity.jpg'
+          image: '/images/default/nativity.jpg',
+          imagePosition: 'center'
         }, {
           title: 'Quartum Mystérium Gaudiósum',
           text: 'Præsentátio Púeri Jesu in Templo. (<a href="/med_en_joyful_4" data-navigo>Luke 2:22-38</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
-          image: '/images/presentation.jpg'
+          image: '/images/default/presentation.jpg',
+          imagePosition: 'center'
         }, {
           title: 'Quintum Mystérium Gaudiósum',
           text: 'Invéntio Púeri Jesu in Templo. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-52</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
-          image: '/images/finding.jpg'
+          image: '/images/default/finding.jpg',
+          imagePosition: 'right center'
         }]
       },
       luminous: {
         EN: [{
           title: 'The First Luminous Mystery',
           text: 'The Baptism of Our Lord in the River Jordan. (<a href="/med_en_luminous_1" data-navigo>Matthew 3:13-16</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf'
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/baptism.jpg',
+          imagePosition: 'center'
         }, {
           title: 'The Second Luminous Mystery',
           text: 'The Wedding at Cana, when Christ manifested Himself. (<a href="/med_en_luminous_2" data-navigo>John 2:1-11</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf'
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/cana.jpg',
+          imagePosition: 'left center'
         }, {
           title: 'The Third Luminous Mystery',
           text: 'The Proclamation of the Kingdom of God. (<a href="/med_en_luminous_3" data-navigo>Mark 1:14-15</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf'
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/proclamation.jpg',
+          imagePosition: 'center'
         }, {
           title: 'The Fourth Luminous Mystery',
           text: 'The Transfiguration of Our Lord. (<a href="/med_en_luminous_4" data-navigo>Matthew 17:1-8</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf'
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/transfiguration.jpg',
+          imagePosition: 'center top'
         }, {
           title: 'The Fifth Luminous Mystery',
           text: 'The Last Supper, when Our Lord gave us the Holy Eucharist. (<a href="/med_en_luminous_5" data-navigo>Matthew 26:17-29</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf'
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/eucharist.jpg',
+          imagePosition: 'center'
         }],
         EN_TRAD: [{
           title: 'The First Luminous Mystery',
           text: 'The Baptism of Christ in the Jordan. (<a href="/med_en_luminous_1" data-navigo>Matthew 3:13-16</a>)',
-          source: 'http://www.usccb.org/prayer-and-worship/prayers-and-devotions/rosaries/how-to-pray-the-rosary.cfm'
+          source: 'http://www.usccb.org/prayer-and-worship/prayers-and-devotions/rosaries/how-to-pray-the-rosary.cfm',
+          image: '/images/default/baptism.jpg',
+          imagePosition: 'center'
         }, {
           title: 'The Second Luminous Mystery',
           text: 'The Wedding Feast at Cana. (<a href="/med_en_luminous_2" data-navigo>John 2:1-11</a>)',
-          source: 'http://www.usccb.org/prayer-and-worship/prayers-and-devotions/rosaries/how-to-pray-the-rosary.cfm'
+          source: 'http://www.usccb.org/prayer-and-worship/prayers-and-devotions/rosaries/how-to-pray-the-rosary.cfm',
+          image: '/images/default/cana.jpg',
+          imagePosition: 'left center'
         }, {
           title: 'The Third Luminous Mystery',
           text: 'Jesus&rsquo; Proclamation of the Coming of the Kingdom of God. (<a href="/med_en_luminous_3" data-navigo>Mark 1:14-15</a>)',
-          source: 'http://www.usccb.org/prayer-and-worship/prayers-and-devotions/rosaries/how-to-pray-the-rosary.cfm'
+          source: 'http://www.usccb.org/prayer-and-worship/prayers-and-devotions/rosaries/how-to-pray-the-rosary.cfm',
+          image: '/images/default/proclamation.jpg',
+          imagePosition: 'center'
         }, {
           title: 'The Fourth Luminous Mystery',
           text: 'The Transfiguration. (<a href="/med_en_luminous_4" data-navigo>Matthew 17:1-8</a>)',
-          source: 'http://www.usccb.org/prayer-and-worship/prayers-and-devotions/rosaries/how-to-pray-the-rosary.cfm'
+          source: 'http://www.usccb.org/prayer-and-worship/prayers-and-devotions/rosaries/how-to-pray-the-rosary.cfm',
+          image: '/images/default/transfiguration.jpg',
+          imagePosition: 'center top'
         }, {
           title: 'The Fifth Luminous Mystery',
           text: 'The Institution of the Eucharist. (<a href="/med_en_luminous_5" data-navigo>Matthew 26:17-29</a>)',
-          source: 'http://www.usccb.org/prayer-and-worship/prayers-and-devotions/rosaries/how-to-pray-the-rosary.cfm'
+          source: 'http://www.usccb.org/prayer-and-worship/prayers-and-devotions/rosaries/how-to-pray-the-rosary.cfm',
+          image: '/images/default/eucharist.jpg',
+          imagePosition: 'center'
         }],
         LA: [{
           title: 'Prímum Mystérium Luminósum',
           text: 'Baptísma Dómini nostri Jesu Christi apud Jordánem. (<a href="/med_en_luminous_1" data-navigo>Matthew 3:13-16</a>)',
-          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+          image: '/images/default/baptism.jpg',
+          imagePosition: 'center'
         }, {
           title: 'Secúndum Mystérium Luminósum',
           text: 'Núptiæ Canénses. (<a href="/med_en_luminous_2" data-navigo>John 2:1-11</a>)',
-          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+          image: '/images/default/cana.jpg',
+          imagePosition: 'left center'
         }, {
           title: 'Tértium Mystérium Luminósum',
           text: 'Proclamátio Regni Dei. (<a href="/med_en_luminous_3" data-navigo>Mark 1:14-15</a>)',
-          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+          image: '/images/default/proclamation.jpg',
+          imagePosition: 'center'
         }, {
           title: 'Quartum Mystérium Luminósum',
           text: 'Transfigurátio. (<a href="/med_en_luminous_4" data-navigo>Matthew 17:1-8</a>)',
-          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+          image: '/images/default/transfiguration.jpg',
+          imagePosition: 'center top'
         }, {
           title: 'Quintum Mystérium Luminósum',
           text: 'Institútio Eucharístiæ. (<a href="/med_en_luminous_5" data-navigo>Matthew 26:17-29</a>)',
-          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+          image: '/images/default/eucharist.jpg',
+          imagePosition: 'center'
         }]
       },
       sorrowful: {
         EN: [{
           title: 'The First Sorrowful Mystery',
           text: 'The Agony of Our Lord in the Garden. (<a href="/med_en_sorrowful_1" data-navigo>Matthew 26:36-56</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf'
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/agony.jpg',
+          imagePosition: 'center'
         }, {
           title: 'The Second Sorrowful Mystery',
           text: 'Our Lord is Scourged at the Pillar. (<a href="/med_en_sorrowful_2" data-navigo>Matthew 27:24-26</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf'
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/scourging.jpg',
+          imagePosition: 'center top'
         }, {
           title: 'The Third Sorrowful Mystery',
           text: 'Our Lord is Crowned with Thorns. (<a href="/med_en_sorrowful_3" data-navigo>Matthew 27:27-31</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf'
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/thorns.jpg',
+          imagePosition: 'center top'
         }, {
           title: 'The Fourth Sorrowful Mystery',
           text: 'Our Lord Carries the Cross to Calvary. (<a href="/med_en_sorrowful_4" data-navigo>Matthew 27:32</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf'
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/cross.jpg',
+          imagePosition: 'center'
         }, {
           title: 'The Fifth Sorrowful Mystery',
           text: 'The Crucifixion of Our Lord. (<a href="/med_en_sorrowful_5" data-navigo>Matthew 27:33-56</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf'
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/crucifixion.jpg',
+          imagePosition: 'center top'
         }],
         EN_TRAD: [{
           title: 'The First Sorrowful Mystery',
           text: 'The Agony in the Garden. (<a href="/med_en_sorrowful_1" data-navigo>Matthew 26:36-56</a>)',
-          source: 'Baronius Press, Daily Missal 1962'
+          source: 'Baronius Press, Daily Missal 1962',
+          image: '/images/default/agony.jpg',
+          imagePosition: 'center'
         }, {
           title: 'The Second Sorrowful Mystery',
           text: 'The Scourging of Our Blessed Lord at the Pillar. (<a href="/med_en_sorrowful_2" data-navigo>Matthew 27:24-26</a>)',
-          source: 'Baronius Press, Daily Missal 1962'
+          source: 'Baronius Press, Daily Missal 1962',
+          image: '/images/default/scourging.jpg',
+          imagePosition: 'center top'
         }, {
           title: 'The Third Sorrowful Mystery',
           text: 'The Crowning of our Blessed Lord with Thorns. (<a href="/med_en_sorrowful_3" data-navigo>Matthew 27:27-31</a>)',
-          source: 'Baronius Press, Daily Missal 1962'
+          source: 'Baronius Press, Daily Missal 1962',
+          image: '/images/default/thorns.jpg',
+          imagePosition: 'center top'
         }, {
           title: 'The Fourth Sorrowful Mystery',
           text: 'Our Blessed Lord carrying His Cross. (<a href="/med_en_sorrowful_4" data-navigo>Matthew 27:32</a>)',
-          source: 'Baronius Press, Daily Missal 1962'
+          source: 'Baronius Press, Daily Missal 1962',
+          image: '/images/default/cross.jpg',
+          imagePosition: 'center'
         }, {
           title: 'The Fifth Sorrowful Mystery',
           text: 'The Crucifixion. (<a href="/med_en_sorrowful_5" data-navigo>Matthew 27:33-56</a>)',
-          source: 'Baronius Press, Daily Missal 1962'
+          source: 'Baronius Press, Daily Missal 1962',
+          image: '/images/default/crucifixion.jpg',
+          imagePosition: 'center top'
         }],
         LA: [{
           title: 'Prímum Mystérium Dolorósum',
           text: 'Agónia in Horto. (<a href="/med_en_sorrowful_1" data-navigo>Matthew 26:36-56</a>)',
-          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+          image: '/images/default/agony.jpg',
+          imagePosition: 'center'
         }, {
           title: 'Secúndum Mystérium Dolorósum',
           text: 'Flagellátio. (<a href="/med_en_sorrowful_2" data-navigo>Matthew 27:24-26</a>)',
-          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+          image: '/images/default/scourging.jpg',
+          imagePosition: 'center top'
         }, {
           title: 'Tértium Mystérium Dolorósum',
           text: 'Coronátio spinis. (<a href="/med_en_sorrowful_3" data-navigo>Matthew 27:27-31</a>)',
-          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+          image: '/images/default/thorns.jpg',
+          imagePosition: 'center top'
         }, {
           title: 'Quartum Mystérium Dolorósum',
           text: 'Bajulátio Crucis. (<a href="/med_en_sorrowful_4" data-navigo>Matthew 27:32</a>)',
-          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+          image: '/images/default/cross.jpg',
+          imagePosition: 'center'
         }, {
           title: 'Quintum Mystérium Dolorósum',
           text: 'Crucifíxio et Mors Dómini nostri Jesu Christi. (<a href="/med_en_sorrowful_5" data-navigo>Matthew 27:33-56</a>)',
-          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+          image: '/images/default/crucifixion.jpg',
+          imagePosition: 'center top'
         }]
       },
       glorious: {
         EN: [{
           title: 'The First Glorious Mystery',
           text: 'The Glorious Resurrection of Our Lord. (<a href="/med_en_glorious_1" data-navigo>John 20:1-29</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf'
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/resurrection.jpg',
+          imagePosition: 'center'
         }, {
           title: 'The Second Glorious Mystery',
           text: 'The Ascension of Our Lord. (<a href="/med_en_glorious_2" data-navigo>Luke 24:36-53</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf'
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/ascension.jpg',
+          imagePosition: 'center top'
         }, {
           title: 'The Third Glorious Mystery',
           text: 'The Descent of the Holy Spirit at Pentecost. (<a href="/med_en_glorious_3" data-navigo>Acts 2:1-41</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf'
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/descent.jpg',
+          imagePosition: 'center'
         }, {
           title: 'The Fourth Glorious Mystery',
           text: 'The Assumption of Mary into Heaven. (<a href="/med_en_glorious_4" data-navigo>St. John of Damascus, Excerpt from Second Sermon On the Assumption of Mary</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf'
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/assumption.jpg',
+          imagePosition: 'center top'
         }, {
           title: 'The Fifth Glorious Mystery',
           text: 'The Coronation of Mary as Queen of Heaven and Earth. (<a href="/med_en_glorious_5" data-navigo>Sermon of St. Peter Canisius On the Incomparable Virgin Mary, Mother of God</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf'
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/coronation.jpg',
+          imagePosition: 'center top'
         }],
         EN_TRAD: [{
           title: 'The First Glorious Mystery',
           text: 'The Resurrection. (<a href="/med_en_glorious_1" data-navigo>John 20:1-29</a>)',
-          source: 'Baronius Press, Daily Missal 1962'
+          source: 'Baronius Press, Daily Missal 1962',
+          image: '/images/default/resurrection.jpg',
+          imagePosition: 'center'
         }, {
           title: 'The Second Glorious Mystery',
           text: 'The Ascension. (<a href="/med_en_glorious_2" data-navigo>Luke 24:36-53</a>)',
-          source: 'Baronius Press, Daily Missal 1962'
+          source: 'Baronius Press, Daily Missal 1962',
+          image: '/images/default/ascension.jpg',
+          imagePosition: 'center top'
         }, {
           title: 'The Third Glorious Mystery',
           text: 'The Descent of the Holy Ghost on the Apostles. (<a href="/med_en_glorious_3" data-navigo>Acts 2:1-41</a>)',
-          source: 'Baronius Press, Daily Missal 1962'
+          source: 'Baronius Press, Daily Missal 1962',
+          image: '/images/default/descent.jpg',
+          imagePosition: 'center'
         }, {
           title: 'The Fourth Glorious Mystery',
           text: 'The Assumption of Our Lady into Heaven. (<a href="/med_en_glorious_4" data-navigo>St. John of Damascus, Excerpt from Second Sermon On the Assumption of Mary</a>)',
-          source: 'Baronius Press, Daily Missal 1962'
+          source: 'Baronius Press, Daily Missal 1962',
+          image: '/images/default/assumption.jpg',
+          imagePosition: 'center top'
         }, {
           title: 'The Fifth Glorious Mystery',
           text: 'The Coronation of Our Lady and the Glory of all the Saints. (<a href="/med_en_glorious_5" data-navigo>Sermon of St. Peter Canisius On the Incomparable Virgin Mary, Mother of God</a>)',
-          source: 'Baronius Press, Daily Missal 1962'
+          source: 'Baronius Press, Daily Missal 1962',
+          image: '/images/default/coronation.jpg',
+          imagePosition: 'center top'
         }],
         LA: [{
           title: 'Prímum Mystérium Gloriósum',
           text: 'Resurréctio. (<a href="/med_en_glorious_1" data-navigo>John 20:1-29</a>)',
-          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+          image: '/images/default/resurrection.jpg',
+          imagePosition: 'center'
         }, {
           title: 'Secúndum Mystérium Gloriósum',
           text: 'Ascénsio. (<a href="/med_en_glorious_2" data-navigo>Luke 24:36-53</a>)',
-          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+          image: '/images/default/ascension.jpg',
+          imagePosition: 'center top'
         }, {
           title: 'Tértium Mystérium Gloriósum',
           text: 'Descénsus Spíritus Sancti. (<a href="/med_en_glorious_3" data-navigo>Acts 2:1-41</a>)',
-          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+          image: '/images/default/descent.jpg',
+          imagePosition: 'center'
         }, {
           title: 'Quartum Mystérium Gloriósum',
           text: 'Assúmptio. (<a href="/med_en_glorious_4" data-navigo>St. John of Damascus, Excerpt from Second Sermon On the Assumption of Mary</a>)',
-          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+          image: '/images/default/assumption.jpg',
+          imagePosition: 'center top'
         }, {
           title: 'Quintum Mystérium Gloriósum',
           text: 'Coronátio Beátæ Maríæ Vírginis in Cælis. (<a href="/med_en_glorious_5" data-navigo>Sermon of St. Peter Canisius On the Incomparable Virgin Mary, Mother of God</a>)',
-          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf'
+          source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+          image: '/images/default/coronation.jpg',
+          imagePosition: 'center top'
         }]
       }
     },

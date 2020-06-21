@@ -139,6 +139,7 @@ export default function HomeJS() {
                     prayers = [
                         {
                             image: store.prayers.mysteries[mysteries][language][0].image,
+                            imagePosition: store.prayers.mysteries[mysteries][language][0].imagePosition,
                             title: store.prayers.hailMary[language].title,
                             text: store.prayers.hailMary[language].text
                         }
@@ -147,6 +148,7 @@ export default function HomeJS() {
                     prayers = [
                         {
                             image: store.prayers.mysteries[mysteries][language][1].image,
+                            imagePosition: store.prayers.mysteries[mysteries][language][1].imagePosition,
                             title: store.prayers.hailMary[language].title,
                             text: store.prayers.hailMary[language].text
                         }
@@ -155,6 +157,7 @@ export default function HomeJS() {
                     prayers = [
                         {
                             image: store.prayers.mysteries[mysteries][language][2].image,
+                            imagePosition: store.prayers.mysteries[mysteries][language][2].imagePosition,
                             title: store.prayers.hailMary[language].title,
                             text: store.prayers.hailMary[language].text
                         }
@@ -163,6 +166,7 @@ export default function HomeJS() {
                     prayers = [
                         {
                             image: store.prayers.mysteries[mysteries][language][3].image,
+                            imagePosition: store.prayers.mysteries[mysteries][language][3].imagePosition,
                             title: store.prayers.hailMary[language].title,
                             text: store.prayers.hailMary[language].text
                         }
@@ -171,6 +175,7 @@ export default function HomeJS() {
                     prayers = [
                         {
                             image: store.prayers.mysteries[mysteries][language][4].image,
+                            imagePosition: store.prayers.mysteries[mysteries][language][4].imagePosition,
                             title: store.prayers.hailMary[language].title,
                             text: store.prayers.hailMary[language].text
                         }
@@ -250,12 +255,14 @@ export default function HomeJS() {
                     {
                         title: store.prayers.mysteries[mysteries][language][0].title,
                         text: store.prayers.mysteries[mysteries][language][0].text,
-                        image: store.prayers.mysteries[mysteries][language][0].image
+                        image: store.prayers.mysteries[mysteries][language][0].image,
+                        imagePosition: store.prayers.mysteries[mysteries][language][0].imagePosition
                     },
                     {
                         title: store.prayers.ourFather[language].title,
                         text: store.prayers.ourFather[language].text,
-                        image: store.prayers.mysteries[mysteries][language][0].image
+                        image: store.prayers.mysteries[mysteries][language][0].image,
+                        imagePosition: store.prayers.mysteries[mysteries][language][0].imagePosition
                     }
                 ];
             } else {
@@ -272,22 +279,26 @@ export default function HomeJS() {
                     {
                         title: store.prayers.gloryBe[language].title,
                         text: store.prayers.gloryBe[language].text,
-                        image: store.prayers.mysteries[mysteries][language][0].image
+                        image: store.prayers.mysteries[mysteries][language][0].image,
+                        imagePosition: store.prayers.mysteries[mysteries][language][0].imagePosition
                     },
                     {
                         title: store.prayers.fatimaPrayer[language].title,
                         text: store.prayers.fatimaPrayer[language].text,
-                        image: store.prayers.mysteries[mysteries][language][0].image
+                        image: store.prayers.mysteries[mysteries][language][0].image,
+                        imagePosition: store.prayers.mysteries[mysteries][language][0].imagePosition
                     },
                     {
                         title: store.prayers.mysteries[mysteries][language][1].title,
                         text: store.prayers.mysteries[mysteries][language][1].text,
-                        image: store.prayers.mysteries[mysteries][language][1].image
+                        image: store.prayers.mysteries[mysteries][language][1].image,
+                        imagePosition: store.prayers.mysteries[mysteries][language][1].imagePosition
                     },
                     {
                         title: store.prayers.ourFather[language].title,
                         text: store.prayers.ourFather[language].text,
-                        image: store.prayers.mysteries[mysteries][language][1].image
+                        image: store.prayers.mysteries[mysteries][language][1].image,
+                        imagePosition: store.prayers.mysteries[mysteries][language][1].imagePosition
                     }
                 ];
             } else {
@@ -304,22 +315,26 @@ export default function HomeJS() {
                     {
                         title: store.prayers.gloryBe[language].title,
                         text: store.prayers.gloryBe[language].text,
-                        image: store.prayers.mysteries[mysteries][language][1].image
+                        image: store.prayers.mysteries[mysteries][language][1].image,
+                        imagePosition: store.prayers.mysteries[mysteries][language][1].imagePosition
                     },
                     {
                         title: store.prayers.fatimaPrayer[language].title,
                         text: store.prayers.fatimaPrayer[language].text,
-                        image: store.prayers.mysteries[mysteries][language][1].image
+                        image: store.prayers.mysteries[mysteries][language][1].image,
+                        imagePosition: store.prayers.mysteries[mysteries][language][1].imagePosition
                     },
                     {
                         title: store.prayers.mysteries[mysteries][language][2].title,
                         text: store.prayers.mysteries[mysteries][language][2].text,
-                        image: store.prayers.mysteries[mysteries][language][2].image
+                        image: store.prayers.mysteries[mysteries][language][2].image,
+                        imagePosition: store.prayers.mysteries[mysteries][language][2].imagePosition
                     },
                     {
                         title: store.prayers.ourFather[language].title,
                         text: store.prayers.ourFather[language].text,
-                        image: store.prayers.mysteries[mysteries][language][2].image
+                        image: store.prayers.mysteries[mysteries][language][2].image,
+                        imagePosition: store.prayers.mysteries[mysteries][language][2].imagePosition
                     }
                 ];
             } else {
@@ -336,22 +351,26 @@ export default function HomeJS() {
                     {
                         title: store.prayers.gloryBe[language].title,
                         text: store.prayers.gloryBe[language].text,
-                        image: store.prayers.mysteries[mysteries][language][2].image
+                        image: store.prayers.mysteries[mysteries][language][2].image,
+                        imagePosition: store.prayers.mysteries[mysteries][language][2].imagePosition
                     },
                     {
                         title: store.prayers.fatimaPrayer[language].title,
                         text: store.prayers.fatimaPrayer[language].text,
-                        image: store.prayers.mysteries[mysteries][language][2].image
+                        image: store.prayers.mysteries[mysteries][language][2].image,
+                        imagePosition: store.prayers.mysteries[mysteries][language][2].imagePosition
                     },
                     {
                         title: store.prayers.mysteries[mysteries][language][3].title,
                         text: store.prayers.mysteries[mysteries][language][3].text,
-                        image: store.prayers.mysteries[mysteries][language][3].image
+                        image: store.prayers.mysteries[mysteries][language][3].image,
+                        imagePosition: store.prayers.mysteries[mysteries][language][3].imagePosition
                     },
                     {
                         title: store.prayers.ourFather[language].title,
                         text: store.prayers.ourFather[language].text,
-                        image: store.prayers.mysteries[mysteries][language][3].image
+                        image: store.prayers.mysteries[mysteries][language][3].image,
+                        imagePosition: store.prayers.mysteries[mysteries][language][3].imagePosition
                     }
                 ];
             } else {
@@ -368,22 +387,26 @@ export default function HomeJS() {
                     {
                         title: store.prayers.gloryBe[language].title,
                         text: store.prayers.gloryBe[language].text,
-                        image: store.prayers.mysteries[mysteries][language][3].image
+                        image: store.prayers.mysteries[mysteries][language][3].image,
+                        imagePosition: store.prayers.mysteries[mysteries][language][3].imagePosition
                     },
                     {
                         title: store.prayers.fatimaPrayer[language].title,
                         text: store.prayers.fatimaPrayer[language].text,
-                        image: store.prayers.mysteries[mysteries][language][3].image
+                        image: store.prayers.mysteries[mysteries][language][3].image,
+                        imagePosition: store.prayers.mysteries[mysteries][language][3].imagePosition
                     },
                     {
                         title: store.prayers.mysteries[mysteries][language][4].title,
                         text: store.prayers.mysteries[mysteries][language][4].text,
-                        image: store.prayers.mysteries[mysteries][language][4].image
+                        image: store.prayers.mysteries[mysteries][language][4].image,
+                        imagePosition: store.prayers.mysteries[mysteries][language][4].imagePosition
                     },
                     {
                         title: store.prayers.ourFather[language].title,
                         text: store.prayers.ourFather[language].text,
-                        image: store.prayers.mysteries[mysteries][language][4].image
+                        image: store.prayers.mysteries[mysteries][language][4].image,
+                        imagePosition: store.prayers.mysteries[mysteries][language][4].imagePosition
                     }
                 ];
             } else {
@@ -400,12 +423,14 @@ export default function HomeJS() {
                     {
                         title: store.prayers.gloryBe[language].title,
                         text: store.prayers.gloryBe[language].text,
-                        image: store.prayers.mysteries[mysteries][language][4].image
+                        image: store.prayers.mysteries[mysteries][language][4].image,
+                        imagePosition: store.prayers.mysteries[mysteries][language][4].imagePosition
                     },
                     {
                         title: store.prayers.fatimaPrayer[language].title,
                         text: store.prayers.fatimaPrayer[language].text,
-                        image: store.prayers.mysteries[mysteries][language][4].image
+                        image: store.prayers.mysteries[mysteries][language][4].image,
+                        imagePosition: store.prayers.mysteries[mysteries][language][4].imagePosition
                     },
                     {
                         title: store.prayers.hailHolyQueen[language].title,
@@ -447,7 +472,14 @@ export default function HomeJS() {
                 var noGradient = store.settings.hidePrayers ?
                     'prayer__image--hide-prayers' : '';
                 output += '<div class="prayer__image '+noGradient+'"><img src="'+prayer.image+
-                    '" alt="Image of this mystery"></div>';
+                    '" alt="Image of this mystery" class="object-position-'+
+                    prayer.imagePosition.split(' ').join('-')+'"></div>';
+            } else {
+                var noGradient = store.settings.hidePrayers ?
+                    'prayer__image--hide-prayers' : '';
+                output += '<div class="prayer__image '+noGradient+'"><img src="'+
+                    '/images/default/default.jpg'+
+                    '" alt="Image of this mystery" class="object-position-center-top"></div>';
             }
             output += '</div>';
             return output;
@@ -545,6 +577,12 @@ export default function HomeJS() {
             $('#intro-our-father-2').click();
             $('.prayer').removeClass('prayer--current');
             $('.prayer').last().addClass('prayer--current');
+            localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
+            return;
+        }
+
+        if($('button.bead--selected').attr('id') === 'medallion') {
+            $('#hail-mary-5-10').click();
             return;
         }
 
