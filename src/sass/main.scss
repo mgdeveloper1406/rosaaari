@@ -25,6 +25,8 @@ $bg-color: #242424;
 $serif: Merriweather, serif;
 $sans-serif: Merriweather, sans-serif;
 
+$desktop: 900px;
+
 // Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`.
 *,
 *::before,
@@ -325,6 +327,12 @@ a {
     width: 100%;
     bottom: 0;
     left: 0;
+
+    @include min($desktop) {
+        width: 50%;
+        left: auto;
+        right: 0;
+    }
 }
 
 .rosary-wrapper-wrapper {
@@ -464,6 +472,12 @@ a {
         font-size: .85em;
     }
 
+    @include min($desktop) {
+        width: 50%;
+        left: auto;
+        right: 0;
+    }
+
     &__content {
         position: relative;
         padding: 0 40px;
@@ -499,6 +513,10 @@ a {
         align-items: flex-end;
         background-color: $bg-color;
 
+        @include min($desktop) {
+            width: 50%;
+        }
+
         &:after {
             content: " ";
             display: block;
@@ -512,6 +530,10 @@ a {
                 rgba(0,0,0,.90),
                 transparent
             );
+
+            @include min($desktop) {
+                display: none;
+            }
         }
 
         &--hide-prayers {
@@ -544,6 +566,12 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @include min($desktop) {
+        width: calc(50% - 24px);
+        left: auto;
+        right: 12px;
+    }
 
     &__prev, &__next {
         display: flex;
@@ -580,6 +608,10 @@ a {
     border: none;
     color: #fff;
     text-shadow: 1px 1px 2px black;
+
+    @include min($desktop) {
+        left: calc(50% + 1em);
+    }
 }
 
 .red-text {

@@ -334,6 +334,14 @@ a:active {
   left: 0;
 }
 
+@media (min-width: 900px) {
+  .rosary-wrapper-wrapper-mask {
+    width: 50%;
+    left: auto;
+    right: 0;
+  }
+}
+
 .rosary-wrapper-wrapper {
   display: block;
   position: absolute;
@@ -727,6 +735,14 @@ a:active {
   }
 }
 
+@media (min-width: 900px) {
+  .prayers {
+    width: 50%;
+    left: auto;
+    right: 0;
+  }
+}
+
 .prayers__content {
   position: relative;
   padding: 0 40px;
@@ -763,6 +779,12 @@ a:active {
   background-color: #242424;
 }
 
+@media (min-width: 900px) {
+  .prayer__image {
+    width: 50%;
+  }
+}
+
 .prayer__image:after {
   content: " ";
   display: block;
@@ -772,6 +794,12 @@ a:active {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent);
+}
+
+@media (min-width: 900px) {
+  .prayer__image:after {
+    display: none;
+  }
 }
 
 .prayer__image--hide-prayers:after {
@@ -801,6 +829,14 @@ a:active {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+@media (min-width: 900px) {
+  .prayers-prev-next {
+    width: calc(50% - 24px);
+    left: auto;
+    right: 12px;
+  }
 }
 
 .prayers-prev-next__prev,
@@ -841,6 +877,12 @@ a:active {
   border: none;
   color: #fff;
   text-shadow: 1px 1px 2px black;
+}
+
+@media (min-width: 900px) {
+  .prayers-reset {
+    left: calc(50% + 1em);
+  }
 }
 
 .red-text {
