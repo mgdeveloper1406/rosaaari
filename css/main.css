@@ -86,6 +86,14 @@ body {
   text-shadow: 1px 1px 2px black;
 }
 
+@media (min-width: 900px) {
+  body {
+    color: #0d0d0d;
+    background-color: #f2f2f2;
+    text-shadow: none;
+  }
+}
+
 body.fixed {
   position: fixed;
   width: 100vw;
@@ -102,6 +110,14 @@ label,
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.15em;
+}
+
+@media (min-width: 900px) {
+  label,
+  .label {
+    color: #595959;
+    text-shadow: none;
+  }
 }
 
 h1,
@@ -138,10 +154,27 @@ form input[type=submit] {
   display: none;
 }
 
+@media (min-width: 900px) {
+  form input[type=submit] {
+    color: #0d0d0d;
+    background-color: #f2f2f2;
+    text-shadow: none;
+  }
+}
+
 form input[type=submit][value="Save Changes"] {
   background-color: #FFFBDC;
   color: #fff;
   border: 1px solid #fff;
+}
+
+@media (min-width: 900px) {
+  form input[type=submit][value="Save Changes"] {
+    color: #0d0d0d;
+    background-color: #f2f2f2;
+    text-shadow: none;
+    border: 1px solid #0d0d0d;
+  }
 }
 
 form fieldset {
@@ -161,6 +194,14 @@ form button[type=button] {
   font-family: Merriweather, sans-serif;
 }
 
+@media (min-width: 900px) {
+  form button[type=button] {
+    color: #0d0d0d;
+    text-shadow: none;
+    border: 1px solid #0d0d0d;
+  }
+}
+
 form #advanced-settings-more label:first-child {
   margin-top: 1em;
 }
@@ -171,9 +212,23 @@ a {
   text-decoration: underline;
 }
 
+@media (min-width: 900px) {
+  a {
+    color: #0d0d0d;
+    text-shadow: none;
+  }
+}
+
 a:hover,
 a:active {
   color: #e6e6e6;
+}
+
+@media (min-width: 900px) {
+  a:hover,
+  a:active {
+    color: #595959;
+  }
 }
 
 .header {
@@ -195,6 +250,12 @@ a:active {
 
 .header nav ul svg {
   fill: #fff;
+}
+
+@media (min-width: 900px) {
+  .header nav ul svg {
+    fill: #595959;
+  }
 }
 
 .bead {
@@ -225,11 +286,25 @@ a:active {
   overflow: hidden;
 }
 
+@media (min-width: 900px) {
+  .bead:after {
+    border-color: #737373;
+  }
+}
+
 .bead:focus,
 .bead:active,
 .bead--selected {
   outline: none;
   border: 3px solid #ccc;
+}
+
+@media (min-width: 900px) {
+  .bead:focus,
+  .bead:active,
+  .bead--selected {
+    border-color: #737373;
+  }
 }
 
 .bead--filler {
@@ -284,10 +359,22 @@ a:active {
   border-radius: 100%;
 }
 
+@media (min-width: 900px) {
+  .bead--medallion:focus:before,
+  .bead--medallion:active:before,
+  .bead--medallion.bead--selected:before,
+  .bead--crucifix:focus:before,
+  .bead--crucifix:active:before,
+  .bead--crucifix.bead--selected:before {
+    border-color: #737373;
+  }
+}
+
 .bead--medallion {
   width: 59px;
   height: 52px;
   transform: rotate(0.26turn) translateY(8px) translateX(-3px);
+  stroke: #ccc;
 }
 
 .bead--medallion:focus:before,
@@ -297,6 +384,12 @@ a:active {
   left: -8px;
   width: 75px;
   height: 75px;
+}
+
+@media (min-width: 900px) {
+  .bead--medallion {
+    stroke: #737373;
+  }
 }
 
 .bead--crucifix:focus:before,
@@ -313,6 +406,13 @@ a:active {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  stroke: #ccc;
+}
+
+@media (min-width: 900px) {
+  .bead--crucifix svg {
+    stroke: #737373;
+  }
 }
 
 .bead--our-father {
@@ -414,6 +514,12 @@ a:active {
   z-index: 0;
 }
 
+@media (min-width: 900px) {
+  .rosary-intro-chain {
+    background-color: #737373;
+  }
+}
+
 .rosary-main {
   position: absolute;
   top: 50%;
@@ -434,6 +540,12 @@ a:active {
   transform: translate(-50%, -50%);
   border: 3px solid #fff;
   border-radius: 100%;
+}
+
+@media (min-width: 900px) {
+  .rosary-main:before {
+    border-color: #737373;
+  }
 }
 
 .rosary-main .bead-wrapper {
@@ -740,6 +852,8 @@ a:active {
     width: 50%;
     left: auto;
     right: 0;
+    color: #0d0d0d;
+    text-shadow: none;
   }
 }
 
@@ -869,6 +983,13 @@ a:active {
   fill: #fff;
 }
 
+@media (min-width: 900px) {
+  .prayers-prev-next__prev svg,
+  .prayers-prev-next__next svg {
+    fill: #595959;
+  }
+}
+
 .prayers-reset {
   position: fixed;
   top: 1.5em;
@@ -882,11 +1003,19 @@ a:active {
 @media (min-width: 900px) {
   .prayers-reset {
     left: calc(50% + 1em);
+    color: #595959;
+    text-shadow: none;
   }
 }
 
 .red-text {
   color: #ccc;
+}
+
+@media (min-width: 900px) {
+  .red-text {
+    color: #D40000;
+  }
 }
 
 .modal__inner {
@@ -897,6 +1026,12 @@ a:active {
   margin: 0 auto;
 }
 
+@media (min-width: 900px) {
+  .modal__inner {
+    width: 50%;
+  }
+}
+
 .modal__close {
   position: absolute;
   top: 2em;
@@ -905,6 +1040,12 @@ a:active {
 
 .modal__close svg {
   fill: #fff;
+}
+
+@media (min-width: 900px) {
+  .modal__close svg {
+    fill: #595959;
+  }
 }
 
 #next-prayer {

@@ -529,6 +529,31 @@ export default function HomeJS() {
 
         if(!store.settings.hidePrayers) {
             var $currPrayer = $('.prayer--current');
+            var $beadSelected = $('button.bead--selected');
+            if($currPrayer.attr('id') === 'prayer-4' &&
+                $beadSelected.attr('id') === 'medallion') {
+                if(store.settings.mysteries === 'joyful') {
+                    store.settings.mysteries = 'luminous';
+                    localStorage.setItem('mysteries', 'luminous');
+                } else if(store.settings.mysteries === 'luminous') {
+                    store.settings.mysteries = 'sorrowful';
+                    localStorage.setItem('mysteries', 'sorrowful');
+                } else if(store.settings.mysteries === 'sorrowful') {
+                    store.settings.mysteries = 'glorious';
+                    localStorage.setItem('mysteries', 'glorious');
+                } else if(store.settings.mysteries === 'glorious') {
+                    store.settings.mysteries = 'joyful';
+                    localStorage.setItem('mysteries', 'joyful');
+                }
+                $('#intro-our-father-2').click();
+                nextPrayer();
+                nextPrayer();
+                return;
+            }
+        }
+
+        if(!store.settings.hidePrayers) {
+            var $currPrayer = $('.prayer--current');
             if($currPrayer.length && $currPrayer.next().length) {
                 $currPrayer.removeClass('prayer--current');
                 $currPrayer.next().addClass('prayer--current');
@@ -541,8 +566,6 @@ export default function HomeJS() {
 
         if($('button.bead--selected').attr('id') === 'intro-our-father-2') {
             $('#hail-mary-1-01').click();
-            // $('.prayer').removeClass('prayer--current');
-            // $('.prayer').first().addClass('prayer--current');
             return;
         }
 

@@ -21,6 +21,8 @@ $light-gold: #FFFBDC;
 $green: #006D0B;
 $text-color: #fff;
 $bg-color: #242424;
+$dark-text-color: lighten(#000, 5%);
+$white-bg-color: darken(#fff, 5%);
 
 $serif: Merriweather, serif;
 $sans-serif: Merriweather, sans-serif;
@@ -92,6 +94,12 @@ body {
     color: $text-color;
     background-color: $bg-color;
     text-shadow: 1px 1px 2px black;
+
+    @include min($desktop) {
+        color: $dark-text-color;
+        background-color: $white-bg-color;
+        text-shadow: none;
+    }
 }
 
 body.fixed {
@@ -109,6 +117,11 @@ label, .label {
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.15em;
+
+    @include min($desktop) {
+        color: lighten($dark-text-color, 30%);
+        text-shadow: none;
+    }
 }
 
 h1, h2, h3 {
@@ -143,12 +156,25 @@ form {
 
         // Display none because we autosubmit on form change
         display: none;
+
+        @include min($desktop) {
+            color: $dark-text-color;
+            background-color: $white-bg-color;
+            text-shadow: none;
+        }
     }
 
     input[type="submit"][value="Save Changes"] {
         background-color: $light-gold;
         color: $text-color;
         border: 1px solid $text-color;
+
+        @include min($desktop) {
+            color: $dark-text-color;
+            background-color: $white-bg-color;
+            text-shadow: none;
+            border: 1px solid $dark-text-color;
+        }
     }
 
     fieldset {
@@ -166,6 +192,12 @@ form {
         border: 1px solid #ccc;
         border-radius: 5px;
         font-family: $sans-serif;
+
+        @include min($desktop) {
+            color: $dark-text-color;
+            text-shadow: none;
+            border: 1px solid $dark-text-color;
+        }
     }
 
     #advanced-settings-more {
@@ -180,8 +212,17 @@ a {
     transition: color .3s ease;
     text-decoration: underline;
 
+    @include min($desktop) {
+        color: $dark-text-color;
+        text-shadow: none;
+    }
+
     &:hover, &:active {
         color: darken(#fff, 10%);
+
+        @include min($desktop) {
+            color: lighten($dark-text-color, 30%);
+        }
     }
 }
 
@@ -202,6 +243,10 @@ a {
 
         svg {
             fill: #fff;
+
+            @include min($desktop) {
+                fill: lighten($dark-text-color, 30%);
+            }
         }
     }
 }
@@ -232,11 +277,19 @@ a {
         box-shadow: inset 10px 10px 10px rgba(69, 63, 63, 0.26),
             0px 0px 10px #000;
         overflow: hidden;
+
+        @include min($desktop) {
+            border-color: lighten($dark-text-color, 40%);
+        }
     }
 
     &:focus, &:active, &--selected {
         outline: none;
         border: 3px solid #ccc;
+
+        @include min($desktop) {
+            border-color: lighten($dark-text-color, 40%);
+        }
     }
 
     &--filler {
@@ -273,6 +326,10 @@ a {
                 position: absolute;
                 border: 3px solid #ccc;
                 border-radius: 100%;
+
+                @include min($desktop) {
+                    border-color: lighten($dark-text-color, 40%);
+                }
             }
         }
     }
@@ -289,6 +346,11 @@ a {
         width: 59px;
         height: 52px;
         transform: rotate(.26turn) translateY(8px) translateX(-3px);
+        stroke: #ccc;
+
+        @include min($desktop) {
+            stroke: lighten($dark-text-color, 40%);
+        }
     }
 
     &--crucifix {
@@ -305,6 +367,11 @@ a {
             top: 0;
             left: 50%;
             transform: translateX(-50%);
+            stroke: #ccc;
+
+            @include min($desktop) {
+                stroke: lighten($dark-text-color, 40%);
+            }
         }
     }
 
@@ -406,6 +473,10 @@ a {
     height: 450px;
     background-color: #fff;
     z-index: 0;
+
+    @include min($desktop) {
+        background-color: lighten($dark-text-color, 40%);
+    }
 }
 
 .rosary-main {
@@ -427,6 +498,10 @@ a {
         transform: translate(-50%, -50%);
         border: 3px solid #fff;
         border-radius: 100%;
+
+        @include min($desktop) {
+            border-color: lighten($dark-text-color, 40%);
+        }
     }
 
     .bead-wrapper {
@@ -476,6 +551,8 @@ a {
         width: 50%;
         left: auto;
         right: 0;
+        color: $dark-text-color;
+        text-shadow: none;
     }
 
     &__content {
@@ -596,6 +673,10 @@ a {
         svg {
             display: block;
             fill: #fff;
+
+            @include min($desktop) {
+                fill: lighten($dark-text-color, 30%);
+            }
         }
     }
 }
@@ -611,11 +692,17 @@ a {
 
     @include min($desktop) {
         left: calc(50% + 1em);
+        color: lighten($dark-text-color, 30%);
+        text-shadow: none;
     }
 }
 
 .red-text {
     color: #ccc;
+
+    @include min($desktop) {
+        color: $red;
+    }
 }
 
 .modal {
@@ -625,6 +712,10 @@ a {
         padding: 5em 2em;
         width: 100%;
         margin: 0 auto;
+
+        @include min($desktop) {
+            width: 50%;
+        }
     }
 
     &__close {
@@ -634,6 +725,10 @@ a {
 
         svg {
             fill: #fff;
+
+            @include min($desktop) {
+                fill: lighten($dark-text-color, 30%);
+            }
         }
     }
 }
