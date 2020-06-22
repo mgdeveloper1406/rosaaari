@@ -136,6 +136,7 @@ p {
 form {
     label {
         display: block;
+        margin-bottom: 1em;
     }
 
     input, select {
@@ -275,11 +276,13 @@ a {
         border-radius: 100%;
         background-color: #fff;
         box-shadow: inset 10px 10px 10px rgba(69, 63, 63, 0.26),
-            0px 0px 10px #000;
+            0px 0px 5px #000;
         overflow: hidden;
 
         @include min($desktop) {
             border-color: lighten($dark-text-color, 40%);
+            box-shadow: inset 10px 10px 10px rgba(69, 63, 63, 0.26),
+                0px 0px 7px #000;
         }
     }
 
@@ -348,8 +351,11 @@ a {
         transform: rotate(.26turn) translateY(8px) translateX(-3px);
         stroke: #ccc;
 
-        @include min($desktop) {
-            stroke: lighten($dark-text-color, 40%);
+        svg {
+            fill: #fff;
+            @include min($desktop) {
+                stroke: lighten($dark-text-color, 40%);
+            }
         }
     }
 
@@ -368,6 +374,7 @@ a {
             left: 50%;
             transform: translateX(-50%);
             stroke: #ccc;
+            fill: #fff;
 
             @include min($desktop) {
                 stroke: lighten($dark-text-color, 40%);
@@ -742,17 +749,4 @@ a {
     position: fixed;
     top: 0;
     left: 0;
-}
-
-#template-home {
-    // &::after {
-    //     content: " ";
-    //     display: block;
-    //     position: absolute;
-    //     height: 50px;
-    //     width: 100%;
-    //     background-color: #fff;
-    //     top: 0;
-    //     left: 0;
-    // }
 }

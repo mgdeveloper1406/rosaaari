@@ -4,6 +4,17 @@ export default function HomeJS() {
     if(store.settings.hidePrayers) {
         $('.prayers').css({display: 'none'})
     }
+    // Add user-selected bead color style element
+    $('#template-home').prepend(`
+        <style>
+            .bead::after {
+                background-color: ${store.settings.rosaryColor};
+            }
+            .bead--filler::after, .bead--medallion::after, .bead--crucifix::after {
+                background-color: transparent;
+            }
+        </style>
+    `);
     // Add index data to each bead, main loop and intro separated
     $('.rosary-main .bead').each(function(idx, el) {
         // index - 1 because medallion is actually second bead, the one before

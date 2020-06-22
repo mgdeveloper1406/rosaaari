@@ -3,6 +3,25 @@ import { getMysteriesForCurrDay } from '../utils';
 
 export default function SettingsJS() {
     updateFields();
+
+    $('#form-settings-rosary-color').spectrum({
+        type: "color",
+        showPalette: false,
+        showInitial: true,
+        showAlpha: false,
+        allowEmpty: false,
+        change: function(color) {
+            $('#form-settings-rosary-color').val(color.toHexString());
+            $('#form-settings').submit();
+        }
+    });
+
+    $('#form-settings-reset-rosary-color').click(function(event) {
+        event.preventDefault();
+        $('#form-settings-rosary-color').spectrum('set', '#fff4d9');
+        $('#form-settings').submit();
+    });
+
     if(!$('#form-settings-hide-prayers').is(':checked') &&
         !$('#form-settings-divine-mercy').is(':checked')) {
         $('#advanced-settings-more').hide();
@@ -10,14 +29,12 @@ export default function SettingsJS() {
         $('#settings-more-btn').text('Hide'); 
     }
 
-    
-
     $('#settings-more-btn').click(function(event) {
         $('#advanced-settings-more').slideToggle(300, function() {
             if ($('#advanced-settings-more').is(':visible')) {
-                $('#settings-more-btn').text('Hide');                
+                $('#settings-more-btn').text('Hide');                  
             } else {
-                $('#settings-more-btn').text('Show');                
+                $('#settings-more-btn').text('Show');            
             }
         });     
     });
@@ -64,6 +81,11 @@ export default function SettingsJS() {
                 }
             }
 
+            if(field['name'] === 'rosary-color') {
+                store.settings.rosaryColor = field['value'];
+                localStorage.setItem('rosaryColor', field['value']);
+            }
+
             if(field['name'] === 'hide-prayers') {
                 store.settings.hidePrayers = true;
                 localStorage.setItem('hidePrayers', true);
@@ -95,12 +117,17 @@ export default function SettingsJS() {
         updateHidePrayers();
         updateMysteries();
         updateDivineMercy();
+        updateRosaryColor()
     }
 
     function updateRosaryLanguage() {
         $('#form-settings-rosary-language')
             .find('option[value="'+store.settings.rosaryLanguage+'"]')
             .attr('selected', 'selected');
+    }
+
+    function updateRosaryColor() {
+        $('#form-settings-rosary-color').val(store.settings.rosaryColor);
     }
 
     function updateHidePrayers() {

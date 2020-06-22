@@ -4,6 +4,7 @@ export default {
     settings: {
         mysteries: localStorage.getItem('mysteries') || getMysteriesForCurrDay(),
         rosaryLanguage: localStorage.getItem('rosaryLanguage') || 'EN',
+        rosaryColor: localStorage.getItem('rosaryColor') || '#fff4d9',
         hidePrayers: localStorage.getItem('hidePrayers') === 'true' ? true : false,
         divineMercy: localStorage.getItem('divineMercy') === 'true' ? true : false,
     },
