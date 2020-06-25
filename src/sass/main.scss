@@ -620,7 +620,7 @@ a {
                 transparent
             );
 
-            @include min-landscape($tablet) {
+            @include min($tablet) {
                 display: none;
             }
         }
@@ -642,6 +642,18 @@ a {
             height: 100%;
             object-fit: cover;
             pointer-events: none;
+
+            @include min($tablet) {
+                width: 50%;
+                height: 50%;
+                transform: translateY(-50%);
+            }
+
+            @include min-landscape($tablet) {
+                width: 100%;
+                height: 100%;
+                transform: none;
+            }
         }
     }
 }
