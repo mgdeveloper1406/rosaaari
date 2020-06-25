@@ -108,7 +108,7 @@ export default function SettingsJS() {
             store.settings.divineMercy = false;
             localStorage.setItem('divineMercy', false);
         }
-
+        
         $(this).find('input[type="submit"').val('Saved!');
     });
 

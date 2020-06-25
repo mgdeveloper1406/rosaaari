@@ -543,18 +543,42 @@ export default function HomeJS() {
             var $beadSelected = $('button.bead--selected');
             if($currPrayer.attr('id') === 'prayer-4' &&
                 $beadSelected.attr('id') === 'medallion') {
+                var byDayReminder = '';
+                if(!localStorage.getItem('mysteries')) {
+                    byDayReminder = ' You will need to switch back to "By Day" in Settings tomorrow.';
+                }
                 if(store.settings.mysteries === 'joyful') {
-                    store.settings.mysteries = 'luminous';
-                    localStorage.setItem('mysteries', 'luminous');
+                    var advanceMysteries = confirm(
+                        'Would you like to switch to the Luminous mysteries?'+byDayReminder
+                    );
+                    if(advanceMysteries) {
+                        store.settings.mysteries = 'luminous';
+                        localStorage.setItem('mysteries', 'luminous');
+                    }
                 } else if(store.settings.mysteries === 'luminous') {
-                    store.settings.mysteries = 'sorrowful';
-                    localStorage.setItem('mysteries', 'sorrowful');
+                    var advanceMysteries = confirm(
+                        'Would you like to switch to the Sorrowful mysteries?'+byDayReminder
+                    );
+                    if(advanceMysteries) {
+                        store.settings.mysteries = 'sorrowful';
+                        localStorage.setItem('mysteries', 'sorrowful');
+                    }
                 } else if(store.settings.mysteries === 'sorrowful') {
-                    store.settings.mysteries = 'glorious';
-                    localStorage.setItem('mysteries', 'glorious');
+                    var advanceMysteries = confirm(
+                        'Would you like to switch to the Glorious mysteries?'+byDayReminder
+                    );
+                    if(advanceMysteries) {
+                        store.settings.mysteries = 'glorious';
+                        localStorage.setItem('mysteries', 'glorious');
+                    }
                 } else if(store.settings.mysteries === 'glorious') {
-                    store.settings.mysteries = 'joyful';
-                    localStorage.setItem('mysteries', 'joyful');
+                    var advanceMysteries = confirm(
+                        'Would you like to switch to the Joyful mysteries?'+byDayReminder
+                    );
+                    if(advanceMysteries) {
+                        store.settings.mysteries = 'joyful';
+                        localStorage.setItem('mysteries', 'joyful');
+                    }
                 }
                 $('#intro-our-father-2').click();
                 nextPrayer();

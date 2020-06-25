@@ -86,7 +86,7 @@ body {
   text-shadow: 1px 1px 2px black;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   body {
     color: #0d0d0d;
     background-color: #f2f2f2;
@@ -112,7 +112,7 @@ label,
   letter-spacing: 0.15em;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   label,
   .label {
     color: #595959;
@@ -155,7 +155,7 @@ form input[type=submit] {
   display: none;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   form input[type=submit] {
     color: #0d0d0d;
     background-color: #f2f2f2;
@@ -169,7 +169,7 @@ form input[type=submit][value="Save Changes"] {
   border: 1px solid #fff;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   form input[type=submit][value="Save Changes"] {
     color: #0d0d0d;
     background-color: #f2f2f2;
@@ -195,7 +195,7 @@ form button[type=button] {
   font-family: Merriweather, sans-serif;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   form button[type=button] {
     color: #0d0d0d;
     text-shadow: none;
@@ -213,7 +213,7 @@ a {
   text-decoration: underline;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   a {
     color: #0d0d0d;
     text-shadow: none;
@@ -225,7 +225,7 @@ a:active {
   color: #e6e6e6;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   a:hover,
   a:active {
     color: #595959;
@@ -253,7 +253,7 @@ a:active {
   fill: #fff;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   .header nav ul svg {
     fill: #595959;
   }
@@ -287,7 +287,7 @@ a:active {
   overflow: hidden;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   .bead:after {
     border-color: #737373;
     box-shadow: inset 10px 10px 10px rgba(69, 63, 63, 0.26), 0px 0px 7px #000;
@@ -301,7 +301,7 @@ a:active {
   border: 3px solid #ccc;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   .bead:focus,
   .bead:active,
   .bead--selected {
@@ -361,7 +361,7 @@ a:active {
   border-radius: 100%;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   .bead--medallion:focus:before,
   .bead--medallion:active:before,
   .bead--medallion.bead--selected:before,
@@ -392,7 +392,7 @@ a:active {
   fill: #fff;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   .bead--medallion svg {
     stroke: #737373;
   }
@@ -416,7 +416,7 @@ a:active {
   fill: #fff;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   .bead--crucifix svg {
     stroke: #737373;
   }
@@ -441,7 +441,7 @@ a:active {
   left: 0;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   .rosary-wrapper-wrapper-mask {
     width: 50%;
     left: auto;
@@ -455,8 +455,14 @@ a:active {
   width: 900px;
   height: 900px;
   right: calc(50% - 455px);
-  bottom: -690px;
+  bottom: -750px;
   z-index: 200;
+}
+
+@media (min-height: 433px) {
+  .rosary-wrapper-wrapper {
+    bottom: -690px;
+  }
 }
 
 .rosary-wrapper {
@@ -521,7 +527,7 @@ a:active {
   z-index: 0;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   .rosary-intro-chain {
     background-color: #737373;
   }
@@ -549,7 +555,7 @@ a:active {
   border-radius: 100%;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   .rosary-main:before {
     border-color: #737373;
   }
@@ -854,7 +860,7 @@ a:active {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   .prayers {
     width: 50%;
     left: auto;
@@ -900,7 +906,7 @@ a:active {
   background-color: #242424;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   .prayer__image {
     width: 50%;
   }
@@ -917,7 +923,7 @@ a:active {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   .prayer__image:after {
     display: none;
   }
@@ -952,7 +958,7 @@ a:active {
   justify-content: space-between;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   .prayers-prev-next {
     width: calc(50% - 24px);
     left: auto;
@@ -990,7 +996,7 @@ a:active {
   fill: #fff;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   .prayers-prev-next__prev svg,
   .prayers-prev-next__next svg {
     fill: #595959;
@@ -1007,7 +1013,7 @@ a:active {
   text-shadow: 1px 1px 2px black;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   .prayers-reset {
     left: calc(50% + 1em);
     color: #595959;
@@ -1019,7 +1025,7 @@ a:active {
   color: #ccc;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   .red-text {
     color: #D40000;
   }
@@ -1033,7 +1039,7 @@ a:active {
   margin: 0 auto;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   .modal__inner {
     width: 50%;
   }
@@ -1049,7 +1055,7 @@ a:active {
   fill: #fff;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   .modal__close svg {
     fill: #595959;
   }

@@ -5,6 +5,18 @@
     }
 }
 
+@mixin min-landscape($point) {
+    @media (min-width: $point) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin minh($point) {
+    @media (min-height: $point) {
+        @content;
+    }
+}
+
 @mixin minmax($min, $max) {
     @media (min-width: $min) and (max-width: $max) {
         @content;
