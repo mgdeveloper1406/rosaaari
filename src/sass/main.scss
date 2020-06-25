@@ -570,6 +570,10 @@ a {
     &__content {
         position: relative;
         padding: 0 40px;
+
+        @include min($tablet) {
+            padding: 0 100px;
+        }
     }
 }
 
@@ -685,6 +689,10 @@ a {
         background: none;
         border: none;
         outline: 0;
+
+        @include min($tablet) {
+            width: 100px;
+        }
 
         &:focus {
             outline: 0;

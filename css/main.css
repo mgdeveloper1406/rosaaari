@@ -875,6 +875,12 @@ a:active {
   padding: 0 40px;
 }
 
+@media (min-width: 900px) {
+  .prayers__content {
+    padding: 0 100px;
+  }
+}
+
 .prayer {
   position: relative;
   display: none;
@@ -994,6 +1000,13 @@ a:active {
   background: none;
   border: none;
   outline: 0;
+}
+
+@media (min-width: 900px) {
+  .prayers-prev-next__prev,
+  .prayers-prev-next__next {
+    width: 100px;
+  }
 }
 
 .prayers-prev-next__prev:focus,
