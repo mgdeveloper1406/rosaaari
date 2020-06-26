@@ -15,6 +15,8 @@ export default function HomeJS() {
             }
         </style>
     `);
+    // Reset prev image window variable
+    window.HRO_prev_appended = null;
     // Add index data to each bead, main loop and intro separated
     $('.rosary-main .bead').each(function(idx, el) {
         // index - 1 because medallion is actually second bead, the one before

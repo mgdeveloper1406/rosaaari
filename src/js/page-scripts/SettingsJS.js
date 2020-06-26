@@ -22,23 +22,6 @@ export default function SettingsJS() {
         $('#form-settings').submit();
     });
 
-    if(!$('#form-settings-hide-prayers').is(':checked') &&
-        !$('#form-settings-divine-mercy').is(':checked')) {
-        $('#advanced-settings-more').hide();
-    } else {
-        $('#settings-more-btn').text('Hide'); 
-    }
-
-    $('#settings-more-btn').click(function(event) {
-        $('#advanced-settings-more').slideToggle(300, function() {
-            if ($('#advanced-settings-more').is(':visible')) {
-                $('#settings-more-btn').text('Hide');                  
-            } else {
-                $('#settings-more-btn').text('Show');            
-            }
-        });     
-    });
-
     $('#form-settings').change(function(event) {
         //$(this).find('input[type="submit"').val('Save Changes');
         $(this).submit();

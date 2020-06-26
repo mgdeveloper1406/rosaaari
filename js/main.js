@@ -253,7 +253,9 @@ function HomeJS() {
   } // Add user-selected bead color style element
 
 
-  $('#template-home').prepend("\n        <style>\n            .bead::after {\n                background-color: ".concat(_store__WEBPACK_IMPORTED_MODULE_0__["default"].settings.rosaryColor, ";\n            }\n            .bead--filler::after, .bead--medallion::after, .bead--crucifix::after {\n                background-color: transparent;\n            }\n        </style>\n    ")); // Add index data to each bead, main loop and intro separated
+  $('#template-home').prepend("\n        <style>\n            .bead::after {\n                background-color: ".concat(_store__WEBPACK_IMPORTED_MODULE_0__["default"].settings.rosaryColor, ";\n            }\n            .bead--filler::after, .bead--medallion::after, .bead--crucifix::after {\n                background-color: transparent;\n            }\n        </style>\n    ")); // Reset prev image window variable
+
+  window.HRO_prev_appended = null; // Add index data to each bead, main loop and intro separated
 
   $('.rosary-main .bead').each(function (idx, el) {
     // index - 1 because medallion is actually second bead, the one before
@@ -860,22 +862,6 @@ function SettingsJS() {
     event.preventDefault();
     $('#form-settings-rosary-color').spectrum('set', '#fff4d9');
     $('#form-settings').submit();
-  });
-
-  if (!$('#form-settings-hide-prayers').is(':checked') && !$('#form-settings-divine-mercy').is(':checked')) {
-    $('#advanced-settings-more').hide();
-  } else {
-    $('#settings-more-btn').text('Hide');
-  }
-
-  $('#settings-more-btn').click(function (event) {
-    $('#advanced-settings-more').slideToggle(300, function () {
-      if ($('#advanced-settings-more').is(':visible')) {
-        $('#settings-more-btn').text('Hide');
-      } else {
-        $('#settings-more-btn').text('Show');
-      }
-    });
   });
   $('#form-settings').change(function (event) {
     //$(this).find('input[type="submit"').val('Save Changes');
@@ -2093,7 +2079,7 @@ module.exports = "<header class=\"header\">\n    <h1 class=\"sr-only\">Holy Rosa
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"template-settings\" class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\">Home</span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n        <h1>Settings</h1>\n        <form action=\"\" method=\"post\" id=\"form-settings\">\n            <label for=\"form-settings-mysteries\">Mysteries</label>\n            <select id=\"form-settings-mysteries\" name=\"mysteries\">\n                <option value=\"byday\">By day</option>\n                <option value=\"joyful\">Joyful</option>\n                <option value=\"luminous\">Luminous</option>\n                <option value=\"sorrowful\">Sorrowful</option>\n                <option value=\"glorious\">Glorious</option>\n            </select>\n\n            <label for=\"form-settings-rosary-language\">Rosary Language</label>\n            <select id=\"form-settings-rosary-language\" name=\"rosary-language\">\n                <option value=\"EN\">English</option>\n                <option value=\"EN_TRAD\">English - Traditional</option>\n                <option value=\"LA\">Latin</option>\n            </select>\n\n            <label for=\"form-settings-rosary-color\">\n                Rosary Color\n            </label>\n            <input id=\"form-settings-rosary-color\" value=\"\"\n                name=\"rosary-color\"><br>\n            <button id=\"form-settings-reset-rosary-color\" type=\"button\">\n                Reset Color\n            </button>\n\n            <h2 class=\"label\">More Options</h2>\n            <button id=\"settings-more-btn\" type=\"button\">\n                Show\n            </button>\n            <div id=\"advanced-settings-more\">\n                <label for=\"form-settings-hide-prayers\">\n                    Hide the words to the prayers. Click blank space to go to the\n                    next prayer.\n                </label>\n                <input type=\"checkbox\" name=\"hide-prayers\"\n                    id=\"form-settings-hide-prayers\">\n\n                <label for=\"form-settings-divine-mercy\">\n                    Pray the Divine Mercy Chaplet instead.\n                </label>\n                <input id=\"form-settings-divine-mercy\" name=\"divine-mercy\"\n                    type=\"checkbox\">\n\n            </div>\n\n            \n\n            <input type=\"submit\" value=\"Saved!\">\n\n            \n        </form>\n    </div>\n</div>";
+module.exports = "<div id=\"template-settings\" class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\">Home</span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n        <h1>Settings</h1>\n        <form action=\"\" method=\"post\" id=\"form-settings\">\n            <label for=\"form-settings-mysteries\">Mysteries</label>\n            <select id=\"form-settings-mysteries\" name=\"mysteries\">\n                <option value=\"byday\">By day</option>\n                <option value=\"joyful\">Joyful</option>\n                <option value=\"luminous\">Luminous</option>\n                <option value=\"sorrowful\">Sorrowful</option>\n                <option value=\"glorious\">Glorious</option>\n            </select>\n\n            <label for=\"form-settings-rosary-language\">Rosary Language</label>\n            <select id=\"form-settings-rosary-language\" name=\"rosary-language\">\n                <option value=\"EN\">English</option>\n                <option value=\"EN_TRAD\">English - Traditional</option>\n                <option value=\"LA\">Latin</option>\n            </select>\n\n            <label for=\"form-settings-rosary-color\">\n                Rosary Color\n            </label>\n            <input id=\"form-settings-rosary-color\" value=\"\"\n                name=\"rosary-color\">&nbsp;\n            <button id=\"form-settings-reset-rosary-color\" type=\"button\">\n                Reset Color\n            </button>\n\n            <label for=\"form-settings-hide-prayers\">\n                Hide the words to the prayers. Click blank space to go to the\n                next prayer.\n            </label>\n            <input type=\"checkbox\" name=\"hide-prayers\"\n                id=\"form-settings-hide-prayers\">\n\n            <label for=\"form-settings-divine-mercy\">\n                Pray the Divine Mercy Chaplet instead.\n            </label>\n            <input id=\"form-settings-divine-mercy\" name=\"divine-mercy\"\n                type=\"checkbox\">\n\n            <input type=\"submit\" value=\"Saved!\">\n\n        </form>\n    </div>\n</div>";
 
 /***/ }),
 
