@@ -277,7 +277,7 @@ function HomeJS() {
     setBeadSelectedClass($(this)); // reset intro drag
 
     $('.rosary-wrapper-wrapper').css({
-      transform: getRosaryWrapperTransformRotation() + ' translateY(0)',
+      transform: 'translateY(0)',
       transition: 'transform .5s ease'
     });
     updatePrayers($(this).attr('id'), fromBeadId);
@@ -291,7 +291,7 @@ function HomeJS() {
     var currBeadIdx = $(this).data('bead-idx');
     var dragDist = (currBeadIdx - 10) * 42;
     $('.rosary-wrapper-wrapper').css({
-      transform: getRosaryWrapperTransformRotation() + ' translateY(' + dragDist + 'px)',
+      transform: 'translateY(' + dragDist + 'px)',
       transition: 'transform .5s ease'
     });
     var fromBeadId = $('.bead--selected').attr('id');
@@ -684,11 +684,6 @@ function HomeJS() {
     $('.prayers').removeClass('prayers--centered');
   }
 
-  function getRosaryWrapperTransformRotation() {
-    //return window.matchMedia('(min-width: 1000px)').matches ? 'rotate(-45deg)' : ''
-    return '';
-  }
-
   function nextPrayer() {
     if ($(this).attr('id') === 'next-prayer' && !_store__WEBPACK_IMPORTED_MODULE_0__["default"].settings.hidePrayers) {
       return;
@@ -824,8 +819,10 @@ function HomeJS() {
 
   function prependImageToBody() {
     // Prevent image from hiding scroll in .prayers div
+    if ($('.prayer--current .prayer__image').find('img').attr('src') === window.HRO_prev_appended && $('.prayer--current .prayer__image').find('img').attr('src').length) return;
     $('body > .prayer__image').remove();
     $('.prayer--current .prayer__image').clone().prependTo('body');
+    window.HRO_prev_appended = $('body > .prayer__image').find('img').attr('src');
   }
 }
 ;
