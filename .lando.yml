@@ -1,0 +1,4 @@
+name: holyrosaryonline
+recipe: lamp
+config:
+    webroot: .

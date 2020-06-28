@@ -17,27 +17,27 @@ var appShellFiles = [
     '/fonts/Merriweather/Merriweather-Regular.ttf',
     '/fonts/Merriweather/Merriweather-Bold.ttf',
     '/fonts/Merriweather/Merriweather-Italic.ttf',
-    '/images/agony.jpg',
-    '/images/annunciation.jpg',
-    '/images/ascension.jpg',
-    '/images/assumption.jpg',
-    '/images/baptism.jpg',
-    '/images/cana.jpg',
-    '/images/coronation.jpg',
-    '/images/cross.jpg',
-    '/images/crucifixion.jpg',
-    '/images/default.jpg',
-    '/images/descent.jpg',
-    '/images/eucharist.jpg',
-    '/images/finding.jpg',
-    '/images/nativity.jpg',
-    '/images/presentation.jpg',
-    '/images/proclamation.jpg',
-    '/images/resurrection.jpg',
-    '/images/scourging.jpg',
-    '/images/thorns.jpg',
-    '/images/transfiguration.jpg',
-    '/images/visitation.jpg'
+    // '/images/default/agony.jpg',
+    // '/images/default/annunciation.jpg',
+    // '/images/default/ascension.jpg',
+    // '/images/default/assumption.jpg',
+    // '/images/default/baptism.jpg',
+    // '/images/default/cana.jpg',
+    // '/images/default/coronation.jpg',
+    // '/images/default/cross.jpg',
+    // '/images/default/crucifixion.jpg',
+    // '/images/default/default.jpg',
+    // '/images/default/descent.jpg',
+    // '/images/default/eucharist.jpg',
+    // '/images/default/finding.jpg',
+    // '/images/default/nativity.jpg',
+    // '/images/default/presentation.jpg',
+    // '/images/default/proclamation.jpg',
+    // '/images/default/resurrection.jpg',
+    // '/images/default/scourging.jpg',
+    // '/images/default/thorns.jpg',
+    // '/images/default/transfiguration.jpg',
+    // '/images/default/visitation.jpg'
 ];
 var contentToCache = appShellFiles;
 
@@ -46,7 +46,7 @@ self.addEventListener('install', function(e) {
     e.waitUntil(
         caches.open(cacheName).then(function(cache) {
             return cache.addAll(appShellFiles);
-        })
+        }).catch((err) => console.log(err))
     );
 });
 

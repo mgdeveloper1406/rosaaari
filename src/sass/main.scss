@@ -39,6 +39,16 @@ $rosary-escapes-cutoff-height: 433px;
 
 @import 'responsive-mixins';
 
+button, input[type="button"], a {
+    &:focus {
+        outline: 1px dotted #fff;
+
+        @include min-landscape($tablet) {
+            outline: 1px dotted #333;
+        }
+    }
+}
+
 .sr-only {
     position: absolute !important;
     width: 1px !important;
@@ -700,7 +710,7 @@ a {
             outline: 0;
 
             svg {
-                outline: 1px dotted #999;
+                outline: 1px dotted #333;
             }
         }
 
