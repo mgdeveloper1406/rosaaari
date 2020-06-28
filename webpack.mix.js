@@ -11,7 +11,25 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('src/js/main.js', 'js/').sass('src/sass/main.scss', 'css/');
+mix.js('src/js/main.js', 'js/').sass('src/sass/main.scss', 'css/')
+    .webpackConfig({
+        module: {
+            rules: [{
+                test: /\.md$/,
+                use: [
+                    {
+                        loader: "html-loader"
+                    },
+                    {
+                        loader: "markdown-loader",
+                        options: {
+                            /* your options here */
+                        }
+                    }
+                ]
+            }]
+        }
+    });
 
 // Full API
 // mix.js(src, output);

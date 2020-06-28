@@ -1,6 +1,7 @@
 import Home from './templates/home.html';
 import Settings from './templates/settings.html';
 import About from './templates/about.html';
+import Artwork from './templates/artwork.html';
 import NotFound from './templates/404.html';
 import med_en_joyful_1 from './templates/meditations/med_en_joyful_1.html';
 import med_en_joyful_2 from './templates/meditations/med_en_joyful_2.html';
@@ -43,6 +44,11 @@ export default function renderView(pathname, params) {
         case '/about':
             $('body').removeClass('fixed');
             $('div#app').append(About);
+            break;
+
+        case '/artwork':
+            $('body').removeClass('fixed');
+            $('div#app').append(Artwork);
             break;
 
         case '/med_en_joyful_1':

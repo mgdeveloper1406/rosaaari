@@ -2,6 +2,7 @@ import Navigo from 'navigo';
 import renderView from './renderView';
 import HomeJS from './page-scripts/HomeJS';
 import SettingsJS from './page-scripts/SettingsJS';
+import ArtworkJS from './page-scripts/ArtworkJS';
 
 // Comment out during development
 // if('serviceWorker' in navigator) {
@@ -22,6 +23,11 @@ $( document ).ready(function() {
         },
         'about': function () {
             renderView('/about');
+            window.nvgo_router.updatePageLinks();
+        },
+        'artwork': function () {
+            renderView('/artwork');
+            ArtworkJS();
             window.nvgo_router.updatePageLinks();
         },
         'med_en_joyful_1': function () {

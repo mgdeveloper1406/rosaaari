@@ -1,6 +1,5 @@
 // Files to cache
-return;
-var cacheName = 'hro-v4';
+var cacheName = 'hro-20200627191356';
 var appShellFiles = [
     '/apple-touch-icon.png',
     '/favicon-32x32.png',
@@ -18,6 +17,27 @@ var appShellFiles = [
     '/fonts/Merriweather/Merriweather-Regular.ttf',
     '/fonts/Merriweather/Merriweather-Bold.ttf',
     '/fonts/Merriweather/Merriweather-Italic.ttf',
+    '/images/agony.jpg',
+    '/images/annunciation.jpg',
+    '/images/ascension.jpg',
+    '/images/assumption.jpg',
+    '/images/baptism.jpg',
+    '/images/cana.jpg',
+    '/images/coronation.jpg',
+    '/images/cross.jpg',
+    '/images/crucifixion.jpg',
+    '/images/default.jpg',
+    '/images/descent.jpg',
+    '/images/eucharist.jpg',
+    '/images/finding.jpg',
+    '/images/nativity.jpg',
+    '/images/presentation.jpg',
+    '/images/proclamation.jpg',
+    '/images/resurrection.jpg',
+    '/images/scourging.jpg',
+    '/images/thorns.jpg',
+    '/images/transfiguration.jpg',
+    '/images/visitation.jpg'
 ];
 var contentToCache = appShellFiles;
 

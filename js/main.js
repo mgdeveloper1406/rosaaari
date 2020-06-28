@@ -86,6 +86,237 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./images/default/agony.md":
+/*!*********************************!*\
+  !*** ./images/default/agony.md ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 id=\"the-agony-in-the-garden\">The Agony in the Garden</h1>\n<p>Artist: Cristóbal de Villalpando</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:The_Agony_in_the_Garden_(Crist%C3%B3bal_de_Villalpando).jpg\">https://commons.wikimedia.org/wiki/File:The_Agony_in_the_Garden_(Crist%C3%B3bal_de_Villalpando).jpg</a></p>\n";
+
+/***/ }),
+
+/***/ "./images/default/annunciation.md":
+/*!****************************************!*\
+  !*** ./images/default/annunciation.md ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 id=\"annunciation\">Annunciation</h1>\n<p>Artist: Bartolomé Esteban Murillo</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Bartolom%C3%A9_Esteban_Perez_Murillo_-_Annunciation_-_WGA16375.jpg\">https://commons.wikimedia.org/wiki/File:Bartolom%C3%A9_Esteban_Perez_Murillo_-_Annunciation_-_WGA16375.jpg</a></p>\n";
+
+/***/ }),
+
+/***/ "./images/default/ascension.md":
+/*!*************************************!*\
+  !*** ./images/default/ascension.md ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 id=\"the-ascension\">The Ascension</h1>\n<p>Artist: Paolo Veronese</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Veronese_-_The_Ascension_-_Google_Art_Project.jpg\">https://commons.wikimedia.org/wiki/File:Veronese_-_The_Ascension_-_Google_Art_Project.jpg</a></p>\n";
+
+/***/ }),
+
+/***/ "./images/default/assumption.md":
+/*!**************************************!*\
+  !*** ./images/default/assumption.md ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 id=\"assumption-of-the-virgin\">Assumption of the Virgin</h1>\n<p>Artist: Bartolomé Esteban Murillo</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Bartolome_Murillo_-_Assumption_of_the_Virgin.jpg\">https://commons.wikimedia.org/wiki/File:Bartolome_Murillo_-_Assumption_of_the_Virgin.jpg</a></p>\n";
+
+/***/ }),
+
+/***/ "./images/default/baptism.md":
+/*!***********************************!*\
+  !*** ./images/default/baptism.md ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 id=\"the-baptism-of-christ\">The Baptism of Christ</h1>\n<p>Artist: Bartolomé Esteban Murillo</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Bartolom%C3%A9_Esteban_Perez_Murillo_-_Baptism_of_Christ_-_WGA16366.jpg\">https://commons.wikimedia.org/wiki/File:Bartolom%C3%A9_Esteban_Perez_Murillo_-_Baptism_of_Christ_-_WGA16366.jpg</a></p>\n";
+
+/***/ }),
+
+/***/ "./images/default/cana.md":
+/*!********************************!*\
+  !*** ./images/default/cana.md ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 id=\"the-marriage-feast-at-cana\">The Marriage Feast at Cana</h1>\n<p>Artist: Bartolomé Esteban Murillo</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:The_Barber_Institute_of_Fine_Arts_-_Bartolom%C3%A9_Esteban_Murillo_-_The_Marriage_Feast_at_Cana.jpg\">https://commons.wikimedia.org/wiki/File:The_Barber_Institute_of_Fine_Arts_-_Bartolom%C3%A9_Esteban_Murillo_-_The_Marriage_Feast_at_Cana.jpg</a></p>\n";
+
+/***/ }),
+
+/***/ "./images/default/coronation.md":
+/*!**************************************!*\
+  !*** ./images/default/coronation.md ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 id=\"coronation-of-the-virgin\">Coronation of the Virgin</h1>\n<p>Artist: Diego Velázquez</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_-_Coronation_of_the_Virgin_-_Prado.jpg\">https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_-_Coronation_of_the_Virgin_-_Prado.jpg</a></p>\n";
+
+/***/ }),
+
+/***/ "./images/default/cross.md":
+/*!*********************************!*\
+  !*** ./images/default/cross.md ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 id=\"christ-carrying-the-cross\">Christ Carrying the Cross</h1>\n<p>Artist: Titian</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Titian_-_Christ_Carrying_the_Cross_-_WGA22830.jpg\">https://commons.wikimedia.org/wiki/File:Titian_-_Christ_Carrying_the_Cross_-_WGA22830.jpg</a></p>\n";
+
+/***/ }),
+
+/***/ "./images/default/crucifixion.md":
+/*!***************************************!*\
+  !*** ./images/default/crucifixion.md ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 id=\"christ-crucified\">Christ Crucified</h1>\n<p>Artist: Diego Velázquez</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_-_Christ_on_the_Cross_-_WGA24389.jpg\">https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_-_Christ_on_the_Cross_-_WGA24389.jpg</a></p>\n";
+
+/***/ }),
+
+/***/ "./images/default/default.md":
+/*!***********************************!*\
+  !*** ./images/default/default.md ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 id=\"virgin-and-child-with-a-rosary\">Virgin and Child with a Rosary</h1>\n<p>Artist: Bartolomé Esteban Murillo</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Bartolom%C3%A9_Esteban_Perez_Murillo_-_Virgin_and_Child_with_a_Rosary_-_WGA16360.jpg\">https://commons.wikimedia.org/wiki/File:Bartolom%C3%A9_Esteban_Perez_Murillo_-_Virgin_and_Child_with_a_Rosary_-_WGA16360.jpg</a></p>\n";
+
+/***/ }),
+
+/***/ "./images/default/descent.md":
+/*!***********************************!*\
+  !*** ./images/default/descent.md ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 id=\"pentecost\">Pentecost</h1>\n<p>Artist: Juan Bautista Maíno</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Maino_Pentecost%C3%A9s,_1620-1625._Museo_del_Prado.jpg\">https://commons.wikimedia.org/wiki/File:Maino_Pentecost%C3%A9s,_1620-1625._Museo_del_Prado.jpg</a></p>\n";
+
+/***/ }),
+
+/***/ "./images/default/eucharist.md":
+/*!*************************************!*\
+  !*** ./images/default/eucharist.md ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 id=\"the-last-supper\">The Last Supper</h1>\n<p>Artist: Joan de Joanes</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:La_%C3%9Altima_Cena_(Juan_de_Juanes)_(restaurada).jpg\">https://commons.wikimedia.org/wiki/File:La_%C3%9Altima_Cena_(Juan_de_Juanes)_(restaurada).jpg</a></p>\n";
+
+/***/ }),
+
+/***/ "./images/default/finding.md":
+/*!***********************************!*\
+  !*** ./images/default/finding.md ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 id=\"christ-among-the-doctors\">Christ among the Doctors</h1>\n<p>Artist: Circle of Jusepe de Ribera</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Follower_of_Ribera_-_Christ_among_the_Doctors.jpg\">https://commons.wikimedia.org/wiki/File:Follower_of_Ribera_-_Christ_among_the_Doctors.jpg</a></p>\n";
+
+/***/ }),
+
+/***/ "./images/default/nativity.md":
+/*!************************************!*\
+  !*** ./images/default/nativity.md ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 id=\"nativity-with-the-annunciation-to-the-shepherds\">Nativity with the Annunciation to the Shepherds</h1>\n<p>Artist: Bartolomé Esteban Murillo</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Murillo-atribucion_natividad_con_el_anuncio_a_los_pastores.jpg\">https://commons.wikimedia.org/wiki/File:Murillo-atribucion_natividad_con_el_anuncio_a_los_pastores.jpg</a></p>\n";
+
+/***/ }),
+
+/***/ "./images/default/presentation.md":
+/*!****************************************!*\
+  !*** ./images/default/presentation.md ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 id=\"presentation-of-jesus-christ-at-the-temple\">Presentation of Jesus Christ at the Temple</h1>\n<p>Artist: Palma il Giovane</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Palma_il_giovane_-_Presentation_of_Jesus_Christ_at_the_Temple_-_San_Giorgio_Maggiore.jpg\">https://commons.wikimedia.org/wiki/File:Palma_il_giovane_-_Presentation_of_Jesus_Christ_at_the_Temple_-_San_Giorgio_Maggiore.jpg</a></p>\n";
+
+/***/ }),
+
+/***/ "./images/default/proclamation.md":
+/*!****************************************!*\
+  !*** ./images/default/proclamation.md ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 id=\"sermon-on-the-mount\">Sermon on the Mount</h1>\n<p>Artist: Cosimo Rosselli</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Cosimo_Rosselli_Sermone_della_Montagna.jpg\">https://commons.wikimedia.org/wiki/File:Cosimo_Rosselli_Sermone_della_Montagna.jpg</a></p>\n";
+
+/***/ }),
+
+/***/ "./images/default/resurrection.md":
+/*!****************************************!*\
+  !*** ./images/default/resurrection.md ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 id=\"the-resurrected-christ-appears-to-the-virgin\">The Resurrected Christ Appears to the Virgin</h1>\n<p>Artist: Guercino</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Guercino_Cr_ris_Madonna.jpg\">https://commons.wikimedia.org/wiki/File:Guercino_Cr_ris_Madonna.jpg</a></p>\n";
+
+/***/ }),
+
+/***/ "./images/default/scourging.md":
+/*!*************************************!*\
+  !*** ./images/default/scourging.md ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 id=\"the-scourging-of-christ\">The Scourging of Christ</h1>\n<p>Artist: Giulio Cesare Procaccini</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Giulio_Cesare_Procaccini_-_The_Scourging_of_Christ_-_1981.353_-_Museum_of_Fine_Arts.jpg\">https://commons.wikimedia.org/wiki/File:Giulio_Cesare_Procaccini_-_The_Scourging_of_Christ_-_1981.353_-_Museum_of_Fine_Arts.jpg</a></p>\n";
+
+/***/ }),
+
+/***/ "./images/default/thorns.md":
+/*!**********************************!*\
+  !*** ./images/default/thorns.md ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 id=\"christ-crowned-with-thorns\">Christ Crowned with Thorns</h1>\n<p>Artist: Caravaggio</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:CaravaggioCrowning01.jpg\">https://commons.wikimedia.org/wiki/File:CaravaggioCrowning01.jpg</a></p>\n";
+
+/***/ }),
+
+/***/ "./images/default/transfiguration.md":
+/*!*******************************************!*\
+  !*** ./images/default/transfiguration.md ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 id=\"transfiguration\">Transfiguration</h1>\n<p>Artist: Raphael</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Cosimo_Rosselli_Sermone_della_Montagna.jpg\">https://commons.wikimedia.org/wiki/File:Cosimo_Rosselli_Sermone_della_Montagna.jpg</a></p>\n";
+
+/***/ }),
+
+/***/ "./images/default/visitation.md":
+/*!**************************************!*\
+  !*** ./images/default/visitation.md ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 id=\"visitation\">Visitation</h1>\n<p>Artist: Mariotto Albertinelli</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Mariotto_Albertinelli_-_Visitation_-_WGA0129.jpg\">https://commons.wikimedia.org/wiki/File:Mariotto_Albertinelli_-_Visitation_-_WGA0129.jpg</a></p>\n";
+
+/***/ }),
+
 /***/ "./node_modules/navigo/lib/navigo.min.js":
 /*!***********************************************!*\
   !*** ./node_modules/navigo/lib/navigo.min.js ***!
@@ -113,6 +344,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _renderView__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./renderView */ "./src/js/renderView.js");
 /* harmony import */ var _page_scripts_HomeJS__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./page-scripts/HomeJS */ "./src/js/page-scripts/HomeJS.js");
 /* harmony import */ var _page_scripts_SettingsJS__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./page-scripts/SettingsJS */ "./src/js/page-scripts/SettingsJS.js");
+/* harmony import */ var _page_scripts_ArtworkJS__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./page-scripts/ArtworkJS */ "./src/js/page-scripts/ArtworkJS.js");
+
 
 
 
@@ -136,6 +369,11 @@ $(document).ready(function () {
     },
     'about': function about() {
       Object(_renderView__WEBPACK_IMPORTED_MODULE_1__["default"])('/about');
+      window.nvgo_router.updatePageLinks();
+    },
+    'artwork': function artwork() {
+      Object(_renderView__WEBPACK_IMPORTED_MODULE_1__["default"])('/artwork');
+      Object(_page_scripts_ArtworkJS__WEBPACK_IMPORTED_MODULE_4__["default"])();
       window.nvgo_router.updatePageLinks();
     },
     'med_en_joyful_1': function med_en_joyful_1() {
@@ -230,6 +468,116 @@ $(document).ready(function () {
     window.nvgo_router.updatePageLinks();
   }).resolve();
 });
+
+/***/ }),
+
+/***/ "./src/js/page-scripts/ArtworkJS.js":
+/*!******************************************!*\
+  !*** ./src/js/page-scripts/ArtworkJS.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ArtworkJS; });
+/* harmony import */ var _images_default_agony_md__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../images/default/agony.md */ "./images/default/agony.md");
+/* harmony import */ var _images_default_agony_md__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_images_default_agony_md__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _images_default_annunciation_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../images/default/annunciation.md */ "./images/default/annunciation.md");
+/* harmony import */ var _images_default_annunciation_md__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_default_annunciation_md__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _images_default_ascension_md__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../images/default/ascension.md */ "./images/default/ascension.md");
+/* harmony import */ var _images_default_ascension_md__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_default_ascension_md__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _images_default_assumption_md__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../images/default/assumption.md */ "./images/default/assumption.md");
+/* harmony import */ var _images_default_assumption_md__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_default_assumption_md__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _images_default_baptism_md__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../images/default/baptism.md */ "./images/default/baptism.md");
+/* harmony import */ var _images_default_baptism_md__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_default_baptism_md__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _images_default_cana_md__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../images/default/cana.md */ "./images/default/cana.md");
+/* harmony import */ var _images_default_cana_md__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_default_cana_md__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _images_default_coronation_md__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../images/default/coronation.md */ "./images/default/coronation.md");
+/* harmony import */ var _images_default_coronation_md__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_images_default_coronation_md__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _images_default_cross_md__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../images/default/cross.md */ "./images/default/cross.md");
+/* harmony import */ var _images_default_cross_md__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_images_default_cross_md__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _images_default_crucifixion_md__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../images/default/crucifixion.md */ "./images/default/crucifixion.md");
+/* harmony import */ var _images_default_crucifixion_md__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_images_default_crucifixion_md__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _images_default_default_md__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../images/default/default.md */ "./images/default/default.md");
+/* harmony import */ var _images_default_default_md__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_images_default_default_md__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _images_default_descent_md__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../images/default/descent.md */ "./images/default/descent.md");
+/* harmony import */ var _images_default_descent_md__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_images_default_descent_md__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _images_default_eucharist_md__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../images/default/eucharist.md */ "./images/default/eucharist.md");
+/* harmony import */ var _images_default_eucharist_md__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_images_default_eucharist_md__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _images_default_finding_md__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../images/default/finding.md */ "./images/default/finding.md");
+/* harmony import */ var _images_default_finding_md__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_images_default_finding_md__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _images_default_nativity_md__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../images/default/nativity.md */ "./images/default/nativity.md");
+/* harmony import */ var _images_default_nativity_md__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_images_default_nativity_md__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _images_default_presentation_md__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../images/default/presentation.md */ "./images/default/presentation.md");
+/* harmony import */ var _images_default_presentation_md__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_images_default_presentation_md__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _images_default_proclamation_md__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../images/default/proclamation.md */ "./images/default/proclamation.md");
+/* harmony import */ var _images_default_proclamation_md__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_images_default_proclamation_md__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _images_default_resurrection_md__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../../images/default/resurrection.md */ "./images/default/resurrection.md");
+/* harmony import */ var _images_default_resurrection_md__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_images_default_resurrection_md__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _images_default_scourging_md__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../../images/default/scourging.md */ "./images/default/scourging.md");
+/* harmony import */ var _images_default_scourging_md__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_images_default_scourging_md__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _images_default_thorns_md__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../../images/default/thorns.md */ "./images/default/thorns.md");
+/* harmony import */ var _images_default_thorns_md__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_images_default_thorns_md__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _images_default_transfiguration_md__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../../images/default/transfiguration.md */ "./images/default/transfiguration.md");
+/* harmony import */ var _images_default_transfiguration_md__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_images_default_transfiguration_md__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var _images_default_visitation_md__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../../images/default/visitation.md */ "./images/default/visitation.md");
+/* harmony import */ var _images_default_visitation_md__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_images_default_visitation_md__WEBPACK_IMPORTED_MODULE_20__);
+
+
+
+
+
+
+
+
+ // Default is reserved in js I think
+
+
+
+
+
+
+
+
+
+
+
+
+
+function ArtworkJS() {
+  appendHTML('#artwork-joyful', _images_default_annunciation_md__WEBPACK_IMPORTED_MODULE_1___default.a, 'annunciation');
+  appendHTML('#artwork-joyful', _images_default_visitation_md__WEBPACK_IMPORTED_MODULE_20___default.a, 'visitation');
+  appendHTML('#artwork-joyful', _images_default_nativity_md__WEBPACK_IMPORTED_MODULE_13___default.a, 'nativity');
+  appendHTML('#artwork-joyful', _images_default_presentation_md__WEBPACK_IMPORTED_MODULE_14___default.a, 'presentation');
+  appendHTML('#artwork-joyful', _images_default_finding_md__WEBPACK_IMPORTED_MODULE_12___default.a, 'finding');
+  appendHTML('#artwork-sorrowful', _images_default_agony_md__WEBPACK_IMPORTED_MODULE_0___default.a, 'agony');
+  appendHTML('#artwork-sorrowful', _images_default_scourging_md__WEBPACK_IMPORTED_MODULE_17___default.a, 'scourging');
+  appendHTML('#artwork-sorrowful', _images_default_thorns_md__WEBPACK_IMPORTED_MODULE_18___default.a, 'thorns');
+  appendHTML('#artwork-sorrowful', _images_default_cross_md__WEBPACK_IMPORTED_MODULE_7___default.a, 'cross');
+  appendHTML('#artwork-sorrowful', _images_default_crucifixion_md__WEBPACK_IMPORTED_MODULE_8___default.a, 'crucifixion');
+  appendHTML('#artwork-glorious', _images_default_resurrection_md__WEBPACK_IMPORTED_MODULE_16___default.a, 'resurrection');
+  appendHTML('#artwork-glorious', _images_default_ascension_md__WEBPACK_IMPORTED_MODULE_2___default.a, 'ascension');
+  appendHTML('#artwork-glorious', _images_default_descent_md__WEBPACK_IMPORTED_MODULE_10___default.a, 'descent');
+  appendHTML('#artwork-glorious', _images_default_assumption_md__WEBPACK_IMPORTED_MODULE_3___default.a, 'assumption');
+  appendHTML('#artwork-glorious', _images_default_coronation_md__WEBPACK_IMPORTED_MODULE_6___default.a, 'coronation');
+  appendHTML('#artwork-luminous', _images_default_baptism_md__WEBPACK_IMPORTED_MODULE_4___default.a, 'baptism');
+  appendHTML('#artwork-luminous', _images_default_cana_md__WEBPACK_IMPORTED_MODULE_5___default.a, 'cana');
+  appendHTML('#artwork-luminous', _images_default_proclamation_md__WEBPACK_IMPORTED_MODULE_15___default.a, 'proclamation');
+  appendHTML('#artwork-luminous', _images_default_transfiguration_md__WEBPACK_IMPORTED_MODULE_19___default.a, 'transfiguration');
+  appendHTML('#artwork-luminous', _images_default_eucharist_md__WEBPACK_IMPORTED_MODULE_11___default.a, 'eucharist');
+
+  function appendHTML(el, copy, img) {
+    $(el).append('<div id="img-copy' + img + '">' + copy + '</div>');
+    var title = $('#img-copy' + img).find('h1').html();
+    $('#img-copy' + img).find('h1').remove();
+    $('#img-copy' + img).prepend('<h3>' + title + '</h3>');
+    var url = document.createElement('a');
+    url.href = $('#img-copy' + img).find('a').attr('href');
+    $('#img-copy' + img).find('a').text(url.hostname + ' ...');
+    $('<img src="/images/default/' + img + '.jpg" alt="Image of this mystery"' + 'style="width: 100%; height: auto;">').insertAfter('#img-copy' + img + ' > h3');
+  }
+}
 
 /***/ }),
 
@@ -1001,50 +1349,53 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _templates_settings_html__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_templates_settings_html__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _templates_about_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./templates/about.html */ "./src/js/templates/about.html");
 /* harmony import */ var _templates_about_html__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_templates_about_html__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _templates_404_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./templates/404.html */ "./src/js/templates/404.html");
-/* harmony import */ var _templates_404_html__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_templates_404_html__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _templates_meditations_med_en_joyful_1_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./templates/meditations/med_en_joyful_1.html */ "./src/js/templates/meditations/med_en_joyful_1.html");
-/* harmony import */ var _templates_meditations_med_en_joyful_1_html__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_joyful_1_html__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _templates_meditations_med_en_joyful_2_html__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./templates/meditations/med_en_joyful_2.html */ "./src/js/templates/meditations/med_en_joyful_2.html");
-/* harmony import */ var _templates_meditations_med_en_joyful_2_html__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_joyful_2_html__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _templates_meditations_med_en_joyful_3_html__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./templates/meditations/med_en_joyful_3.html */ "./src/js/templates/meditations/med_en_joyful_3.html");
-/* harmony import */ var _templates_meditations_med_en_joyful_3_html__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_joyful_3_html__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _templates_meditations_med_en_joyful_4_html__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./templates/meditations/med_en_joyful_4.html */ "./src/js/templates/meditations/med_en_joyful_4.html");
-/* harmony import */ var _templates_meditations_med_en_joyful_4_html__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_joyful_4_html__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _templates_meditations_med_en_joyful_5_html__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./templates/meditations/med_en_joyful_5.html */ "./src/js/templates/meditations/med_en_joyful_5.html");
-/* harmony import */ var _templates_meditations_med_en_joyful_5_html__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_joyful_5_html__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _templates_meditations_med_en_sorrowful_1_html__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./templates/meditations/med_en_sorrowful_1.html */ "./src/js/templates/meditations/med_en_sorrowful_1.html");
-/* harmony import */ var _templates_meditations_med_en_sorrowful_1_html__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_sorrowful_1_html__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _templates_meditations_med_en_sorrowful_2_html__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./templates/meditations/med_en_sorrowful_2.html */ "./src/js/templates/meditations/med_en_sorrowful_2.html");
-/* harmony import */ var _templates_meditations_med_en_sorrowful_2_html__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_sorrowful_2_html__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _templates_meditations_med_en_sorrowful_3_html__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./templates/meditations/med_en_sorrowful_3.html */ "./src/js/templates/meditations/med_en_sorrowful_3.html");
-/* harmony import */ var _templates_meditations_med_en_sorrowful_3_html__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_sorrowful_3_html__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _templates_meditations_med_en_sorrowful_4_html__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./templates/meditations/med_en_sorrowful_4.html */ "./src/js/templates/meditations/med_en_sorrowful_4.html");
-/* harmony import */ var _templates_meditations_med_en_sorrowful_4_html__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_sorrowful_4_html__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _templates_meditations_med_en_sorrowful_5_html__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./templates/meditations/med_en_sorrowful_5.html */ "./src/js/templates/meditations/med_en_sorrowful_5.html");
-/* harmony import */ var _templates_meditations_med_en_sorrowful_5_html__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_sorrowful_5_html__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _templates_meditations_med_en_glorious_1_html__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./templates/meditations/med_en_glorious_1.html */ "./src/js/templates/meditations/med_en_glorious_1.html");
-/* harmony import */ var _templates_meditations_med_en_glorious_1_html__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_glorious_1_html__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _templates_meditations_med_en_glorious_2_html__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./templates/meditations/med_en_glorious_2.html */ "./src/js/templates/meditations/med_en_glorious_2.html");
-/* harmony import */ var _templates_meditations_med_en_glorious_2_html__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_glorious_2_html__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var _templates_meditations_med_en_glorious_3_html__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./templates/meditations/med_en_glorious_3.html */ "./src/js/templates/meditations/med_en_glorious_3.html");
-/* harmony import */ var _templates_meditations_med_en_glorious_3_html__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_glorious_3_html__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var _templates_meditations_med_en_glorious_4_html__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./templates/meditations/med_en_glorious_4.html */ "./src/js/templates/meditations/med_en_glorious_4.html");
-/* harmony import */ var _templates_meditations_med_en_glorious_4_html__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_glorious_4_html__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var _templates_meditations_med_en_glorious_5_html__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./templates/meditations/med_en_glorious_5.html */ "./src/js/templates/meditations/med_en_glorious_5.html");
-/* harmony import */ var _templates_meditations_med_en_glorious_5_html__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_glorious_5_html__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var _templates_meditations_med_en_luminous_1_html__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./templates/meditations/med_en_luminous_1.html */ "./src/js/templates/meditations/med_en_luminous_1.html");
-/* harmony import */ var _templates_meditations_med_en_luminous_1_html__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_luminous_1_html__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var _templates_meditations_med_en_luminous_2_html__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./templates/meditations/med_en_luminous_2.html */ "./src/js/templates/meditations/med_en_luminous_2.html");
-/* harmony import */ var _templates_meditations_med_en_luminous_2_html__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_luminous_2_html__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var _templates_meditations_med_en_luminous_3_html__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./templates/meditations/med_en_luminous_3.html */ "./src/js/templates/meditations/med_en_luminous_3.html");
-/* harmony import */ var _templates_meditations_med_en_luminous_3_html__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_luminous_3_html__WEBPACK_IMPORTED_MODULE_21__);
-/* harmony import */ var _templates_meditations_med_en_luminous_4_html__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./templates/meditations/med_en_luminous_4.html */ "./src/js/templates/meditations/med_en_luminous_4.html");
-/* harmony import */ var _templates_meditations_med_en_luminous_4_html__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_luminous_4_html__WEBPACK_IMPORTED_MODULE_22__);
-/* harmony import */ var _templates_meditations_med_en_luminous_5_html__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./templates/meditations/med_en_luminous_5.html */ "./src/js/templates/meditations/med_en_luminous_5.html");
-/* harmony import */ var _templates_meditations_med_en_luminous_5_html__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_luminous_5_html__WEBPACK_IMPORTED_MODULE_23__);
-/* harmony import */ var _templates_partials_header_html__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./templates/partials/header.html */ "./src/js/templates/partials/header.html");
-/* harmony import */ var _templates_partials_header_html__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(_templates_partials_header_html__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var _templates_artwork_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./templates/artwork.html */ "./src/js/templates/artwork.html");
+/* harmony import */ var _templates_artwork_html__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_templates_artwork_html__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _templates_404_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./templates/404.html */ "./src/js/templates/404.html");
+/* harmony import */ var _templates_404_html__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_templates_404_html__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _templates_meditations_med_en_joyful_1_html__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./templates/meditations/med_en_joyful_1.html */ "./src/js/templates/meditations/med_en_joyful_1.html");
+/* harmony import */ var _templates_meditations_med_en_joyful_1_html__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_joyful_1_html__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _templates_meditations_med_en_joyful_2_html__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./templates/meditations/med_en_joyful_2.html */ "./src/js/templates/meditations/med_en_joyful_2.html");
+/* harmony import */ var _templates_meditations_med_en_joyful_2_html__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_joyful_2_html__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _templates_meditations_med_en_joyful_3_html__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./templates/meditations/med_en_joyful_3.html */ "./src/js/templates/meditations/med_en_joyful_3.html");
+/* harmony import */ var _templates_meditations_med_en_joyful_3_html__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_joyful_3_html__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _templates_meditations_med_en_joyful_4_html__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./templates/meditations/med_en_joyful_4.html */ "./src/js/templates/meditations/med_en_joyful_4.html");
+/* harmony import */ var _templates_meditations_med_en_joyful_4_html__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_joyful_4_html__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _templates_meditations_med_en_joyful_5_html__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./templates/meditations/med_en_joyful_5.html */ "./src/js/templates/meditations/med_en_joyful_5.html");
+/* harmony import */ var _templates_meditations_med_en_joyful_5_html__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_joyful_5_html__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _templates_meditations_med_en_sorrowful_1_html__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./templates/meditations/med_en_sorrowful_1.html */ "./src/js/templates/meditations/med_en_sorrowful_1.html");
+/* harmony import */ var _templates_meditations_med_en_sorrowful_1_html__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_sorrowful_1_html__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _templates_meditations_med_en_sorrowful_2_html__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./templates/meditations/med_en_sorrowful_2.html */ "./src/js/templates/meditations/med_en_sorrowful_2.html");
+/* harmony import */ var _templates_meditations_med_en_sorrowful_2_html__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_sorrowful_2_html__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _templates_meditations_med_en_sorrowful_3_html__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./templates/meditations/med_en_sorrowful_3.html */ "./src/js/templates/meditations/med_en_sorrowful_3.html");
+/* harmony import */ var _templates_meditations_med_en_sorrowful_3_html__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_sorrowful_3_html__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _templates_meditations_med_en_sorrowful_4_html__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./templates/meditations/med_en_sorrowful_4.html */ "./src/js/templates/meditations/med_en_sorrowful_4.html");
+/* harmony import */ var _templates_meditations_med_en_sorrowful_4_html__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_sorrowful_4_html__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _templates_meditations_med_en_sorrowful_5_html__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./templates/meditations/med_en_sorrowful_5.html */ "./src/js/templates/meditations/med_en_sorrowful_5.html");
+/* harmony import */ var _templates_meditations_med_en_sorrowful_5_html__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_sorrowful_5_html__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _templates_meditations_med_en_glorious_1_html__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./templates/meditations/med_en_glorious_1.html */ "./src/js/templates/meditations/med_en_glorious_1.html");
+/* harmony import */ var _templates_meditations_med_en_glorious_1_html__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_glorious_1_html__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _templates_meditations_med_en_glorious_2_html__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./templates/meditations/med_en_glorious_2.html */ "./src/js/templates/meditations/med_en_glorious_2.html");
+/* harmony import */ var _templates_meditations_med_en_glorious_2_html__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_glorious_2_html__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _templates_meditations_med_en_glorious_3_html__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./templates/meditations/med_en_glorious_3.html */ "./src/js/templates/meditations/med_en_glorious_3.html");
+/* harmony import */ var _templates_meditations_med_en_glorious_3_html__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_glorious_3_html__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _templates_meditations_med_en_glorious_4_html__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./templates/meditations/med_en_glorious_4.html */ "./src/js/templates/meditations/med_en_glorious_4.html");
+/* harmony import */ var _templates_meditations_med_en_glorious_4_html__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_glorious_4_html__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _templates_meditations_med_en_glorious_5_html__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./templates/meditations/med_en_glorious_5.html */ "./src/js/templates/meditations/med_en_glorious_5.html");
+/* harmony import */ var _templates_meditations_med_en_glorious_5_html__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_glorious_5_html__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var _templates_meditations_med_en_luminous_1_html__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./templates/meditations/med_en_luminous_1.html */ "./src/js/templates/meditations/med_en_luminous_1.html");
+/* harmony import */ var _templates_meditations_med_en_luminous_1_html__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_luminous_1_html__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var _templates_meditations_med_en_luminous_2_html__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./templates/meditations/med_en_luminous_2.html */ "./src/js/templates/meditations/med_en_luminous_2.html");
+/* harmony import */ var _templates_meditations_med_en_luminous_2_html__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_luminous_2_html__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var _templates_meditations_med_en_luminous_3_html__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./templates/meditations/med_en_luminous_3.html */ "./src/js/templates/meditations/med_en_luminous_3.html");
+/* harmony import */ var _templates_meditations_med_en_luminous_3_html__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_luminous_3_html__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var _templates_meditations_med_en_luminous_4_html__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./templates/meditations/med_en_luminous_4.html */ "./src/js/templates/meditations/med_en_luminous_4.html");
+/* harmony import */ var _templates_meditations_med_en_luminous_4_html__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_luminous_4_html__WEBPACK_IMPORTED_MODULE_23__);
+/* harmony import */ var _templates_meditations_med_en_luminous_5_html__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./templates/meditations/med_en_luminous_5.html */ "./src/js/templates/meditations/med_en_luminous_5.html");
+/* harmony import */ var _templates_meditations_med_en_luminous_5_html__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_luminous_5_html__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var _templates_partials_header_html__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./templates/partials/header.html */ "./src/js/templates/partials/header.html");
+/* harmony import */ var _templates_partials_header_html__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(_templates_partials_header_html__WEBPACK_IMPORTED_MODULE_25__);
+
 
 
 
@@ -1078,7 +1429,7 @@ function renderView(pathname, params) {
   switch (pathname) {
     case '/':
       $('body').addClass('fixed');
-      $('div#app').append(_templates_partials_header_html__WEBPACK_IMPORTED_MODULE_24___default.a + _templates_home_html__WEBPACK_IMPORTED_MODULE_0___default.a);
+      $('div#app').append(_templates_partials_header_html__WEBPACK_IMPORTED_MODULE_25___default.a + _templates_home_html__WEBPACK_IMPORTED_MODULE_0___default.a);
       break;
 
     case '/settings':
@@ -1091,114 +1442,119 @@ function renderView(pathname, params) {
       $('div#app').append(_templates_about_html__WEBPACK_IMPORTED_MODULE_2___default.a);
       break;
 
+    case '/artwork':
+      $('body').removeClass('fixed');
+      $('div#app').append(_templates_artwork_html__WEBPACK_IMPORTED_MODULE_3___default.a);
+      break;
+
     case '/med_en_joyful_1':
       $('body').removeClass('fixed');
-      $('div#app').append(_templates_meditations_med_en_joyful_1_html__WEBPACK_IMPORTED_MODULE_4___default.a);
+      $('div#app').append(_templates_meditations_med_en_joyful_1_html__WEBPACK_IMPORTED_MODULE_5___default.a);
       break;
 
     case '/med_en_joyful_2':
       $('body').removeClass('fixed');
-      $('div#app').append(_templates_meditations_med_en_joyful_2_html__WEBPACK_IMPORTED_MODULE_5___default.a);
+      $('div#app').append(_templates_meditations_med_en_joyful_2_html__WEBPACK_IMPORTED_MODULE_6___default.a);
       break;
 
     case '/med_en_joyful_3':
       $('body').removeClass('fixed');
-      $('div#app').append(_templates_meditations_med_en_joyful_3_html__WEBPACK_IMPORTED_MODULE_6___default.a);
+      $('div#app').append(_templates_meditations_med_en_joyful_3_html__WEBPACK_IMPORTED_MODULE_7___default.a);
       break;
 
     case '/med_en_joyful_4':
       $('body').removeClass('fixed');
-      $('div#app').append(_templates_meditations_med_en_joyful_4_html__WEBPACK_IMPORTED_MODULE_7___default.a);
+      $('div#app').append(_templates_meditations_med_en_joyful_4_html__WEBPACK_IMPORTED_MODULE_8___default.a);
       break;
 
     case '/med_en_joyful_5':
       $('body').removeClass('fixed');
-      $('div#app').append(_templates_meditations_med_en_joyful_5_html__WEBPACK_IMPORTED_MODULE_8___default.a);
+      $('div#app').append(_templates_meditations_med_en_joyful_5_html__WEBPACK_IMPORTED_MODULE_9___default.a);
       break;
 
     case '/med_en_luminous_1':
       $('body').removeClass('fixed');
-      $('div#app').append(_templates_meditations_med_en_luminous_1_html__WEBPACK_IMPORTED_MODULE_19___default.a);
+      $('div#app').append(_templates_meditations_med_en_luminous_1_html__WEBPACK_IMPORTED_MODULE_20___default.a);
       break;
 
     case '/med_en_luminous_2':
       $('body').removeClass('fixed');
-      $('div#app').append(_templates_meditations_med_en_luminous_2_html__WEBPACK_IMPORTED_MODULE_20___default.a);
+      $('div#app').append(_templates_meditations_med_en_luminous_2_html__WEBPACK_IMPORTED_MODULE_21___default.a);
       break;
 
     case '/med_en_luminous_3':
       $('body').removeClass('fixed');
-      $('div#app').append(_templates_meditations_med_en_luminous_3_html__WEBPACK_IMPORTED_MODULE_21___default.a);
+      $('div#app').append(_templates_meditations_med_en_luminous_3_html__WEBPACK_IMPORTED_MODULE_22___default.a);
       break;
 
     case '/med_en_luminous_4':
       $('body').removeClass('fixed');
-      $('div#app').append(_templates_meditations_med_en_luminous_4_html__WEBPACK_IMPORTED_MODULE_22___default.a);
+      $('div#app').append(_templates_meditations_med_en_luminous_4_html__WEBPACK_IMPORTED_MODULE_23___default.a);
       break;
 
     case '/med_en_luminous_5':
       $('body').removeClass('fixed');
-      $('div#app').append(_templates_meditations_med_en_luminous_5_html__WEBPACK_IMPORTED_MODULE_23___default.a);
+      $('div#app').append(_templates_meditations_med_en_luminous_5_html__WEBPACK_IMPORTED_MODULE_24___default.a);
       break;
 
     case '/med_en_sorrowful_1':
       $('body').removeClass('fixed');
-      $('div#app').append(_templates_meditations_med_en_sorrowful_1_html__WEBPACK_IMPORTED_MODULE_9___default.a);
+      $('div#app').append(_templates_meditations_med_en_sorrowful_1_html__WEBPACK_IMPORTED_MODULE_10___default.a);
       break;
 
     case '/med_en_sorrowful_2':
       $('body').removeClass('fixed');
-      $('div#app').append(_templates_meditations_med_en_sorrowful_2_html__WEBPACK_IMPORTED_MODULE_10___default.a);
+      $('div#app').append(_templates_meditations_med_en_sorrowful_2_html__WEBPACK_IMPORTED_MODULE_11___default.a);
       break;
 
     case '/med_en_sorrowful_3':
       $('body').removeClass('fixed');
-      $('div#app').append(_templates_meditations_med_en_sorrowful_3_html__WEBPACK_IMPORTED_MODULE_11___default.a);
+      $('div#app').append(_templates_meditations_med_en_sorrowful_3_html__WEBPACK_IMPORTED_MODULE_12___default.a);
       break;
 
     case '/med_en_sorrowful_4':
       $('body').removeClass('fixed');
-      $('div#app').append(_templates_meditations_med_en_sorrowful_4_html__WEBPACK_IMPORTED_MODULE_12___default.a);
+      $('div#app').append(_templates_meditations_med_en_sorrowful_4_html__WEBPACK_IMPORTED_MODULE_13___default.a);
       break;
 
     case '/med_en_sorrowful_5':
       $('body').removeClass('fixed');
-      $('div#app').append(_templates_meditations_med_en_sorrowful_5_html__WEBPACK_IMPORTED_MODULE_13___default.a);
+      $('div#app').append(_templates_meditations_med_en_sorrowful_5_html__WEBPACK_IMPORTED_MODULE_14___default.a);
       break;
 
     case '/med_en_glorious_1':
       $('body').removeClass('fixed');
-      $('div#app').append(_templates_meditations_med_en_glorious_1_html__WEBPACK_IMPORTED_MODULE_14___default.a);
+      $('div#app').append(_templates_meditations_med_en_glorious_1_html__WEBPACK_IMPORTED_MODULE_15___default.a);
       break;
 
     case '/med_en_glorious_2':
       $('body').removeClass('fixed');
-      $('div#app').append(_templates_meditations_med_en_glorious_2_html__WEBPACK_IMPORTED_MODULE_15___default.a);
+      $('div#app').append(_templates_meditations_med_en_glorious_2_html__WEBPACK_IMPORTED_MODULE_16___default.a);
       break;
 
     case '/med_en_glorious_3':
       $('body').removeClass('fixed');
-      $('div#app').append(_templates_meditations_med_en_glorious_3_html__WEBPACK_IMPORTED_MODULE_16___default.a);
+      $('div#app').append(_templates_meditations_med_en_glorious_3_html__WEBPACK_IMPORTED_MODULE_17___default.a);
       break;
 
     case '/med_en_glorious_4':
       $('body').removeClass('fixed');
-      $('div#app').append(_templates_meditations_med_en_glorious_4_html__WEBPACK_IMPORTED_MODULE_17___default.a);
+      $('div#app').append(_templates_meditations_med_en_glorious_4_html__WEBPACK_IMPORTED_MODULE_18___default.a);
       break;
 
     case '/med_en_glorious_5':
       $('body').removeClass('fixed');
-      $('div#app').append(_templates_meditations_med_en_glorious_5_html__WEBPACK_IMPORTED_MODULE_18___default.a);
+      $('div#app').append(_templates_meditations_med_en_glorious_5_html__WEBPACK_IMPORTED_MODULE_19___default.a);
       break;
 
     case '404':
       $('body').removeClass('fixed');
-      $('div#app').append(_templates_404_html__WEBPACK_IMPORTED_MODULE_3___default.a);
+      $('div#app').append(_templates_404_html__WEBPACK_IMPORTED_MODULE_4___default.a);
       break;
 
     default:
       $('body').removeClass('fixed');
-      $('div#app').append(_templates_404_html__WEBPACK_IMPORTED_MODULE_3___default.a);
+      $('div#app').append(_templates_404_html__WEBPACK_IMPORTED_MODULE_4___default.a);
   }
 }
 
@@ -1853,7 +2209,18 @@ module.exports = "<div id=\"template-about\" class=\"modal\">\n    <div class=\"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"template-about\" class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\">Home</span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1>About</h1>\n\n        <p>HolyRosaryOnline.com is a small website meant to help people pray the\n        Rosary. It is an open source project maintained by web developer Matt\n        Watson. Different options are available in\n        <a href=\"/settings\" data-navigo>Settings</a>.</p>\n\n        <p>Click the beads as you go along, or click anywhere inside the rosary\n        to go to the next bead.</p>\n\n        <p>Email <a href=\"mailto:matt@mattwatson.org\">matt@mattwatson.org</a>\n        for questions or <a href=\"https://github.com/mateowatson/holyrosaryonline/issues\">\n        leave an issue on the GitHub page</a>.</p>\n\n        <h2>Sources</h2>\n\n        <p>The texts of the prayers were taken in fair use from various sources.\n            The source for each prayer is noted in the source code,\n        but overall, they include:</p>\n\n        <ul>\n            <li>The regular English prayers are primarily taken from:\n                <a href=\"http://www.newadvent.org/images/rosary.pdf\">\n                    www.newadvent.org</a>.\n            </li>\n            <li>The &ldquo;English - Traditional&rdquo; and Latin prayers are primarily taken from:<br>\n                <em>The Daily Missal and Liturgical Manual</em>. Summorum Pontificum\n                    Edition. Baronius Press, 2019.\n            </li>\n            <li>The mysteries in Latin are taken from:\n                <a href=\"http://www.windsorlatinmass.org/wtnews/070408.pdf\">\n                    www.windsorlatinmass.org\n                </a>.\n            </li>\n            <li>Some Latin prayers not included in the Baronius Press missal,\n                as well as some prayer titles in Latin,\n                are taken from:\n                <a href=\"http://prayers.gleeson.us\">prayers.gleeson.us</a>.\n            </li>\n            <li>The luminous mysteries in \"English - Traditional\" are taken from:\n                <a href=\"http://www.usccb.org/prayer-and-worship/prayers-and-devotions/rosaries/how-to-pray-the-rosary.cfm\">\n                    www.usccb.org</a>.\n            </li>\n        </ul>\n    </div>\n</div>";
+module.exports = "<div id=\"template-about\" class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\">Home</span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1>About</h1>\n\n        <p>HolyRosaryOnline.com is a website meant to help people pray the\n        Rosary. It is an open source project maintained by web developer Matt\n        Watson. Different options are available in\n        <a href=\"/settings\" data-navigo>Settings</a>.</p>\n\n        <p>Click the beads as you go along, or click anywhere inside the rosary\n        to go to the next bead.</p>\n\n        <p>Email <a href=\"mailto:matt@mattwatson.org\">matt@mattwatson.org</a>\n        for questions or <a href=\"https://github.com/mateowatson/holyrosaryonline/issues\">\n        leave an issue on the GitHub page</a>.</p>\n\n        <h2>Sources</h2>\n\n        <p>The texts of the prayers were taken in fair use from various sources.\n            The source for each prayer is noted in the source code,\n        but overall, they include:</p>\n\n        <ul>\n            <li>The regular English prayers are primarily taken from:\n                <a href=\"http://www.newadvent.org/images/rosary.pdf\">\n                    www.newadvent.org</a>.\n            </li>\n            <li>The &ldquo;English - Traditional&rdquo; and Latin prayers are primarily taken from:<br>\n                <em>The Daily Missal and Liturgical Manual</em>. Summorum Pontificum\n                    Edition. Baronius Press, 2019.\n            </li>\n            <li>The mysteries in Latin are taken from:\n                <a href=\"http://www.windsorlatinmass.org/wtnews/070408.pdf\">\n                    www.windsorlatinmass.org\n                </a>.\n            </li>\n            <li>Some Latin prayers not included in the Baronius Press missal,\n                as well as some prayer titles in Latin,\n                are taken from:\n                <a href=\"http://prayers.gleeson.us\">prayers.gleeson.us</a>.\n            </li>\n            <li>The luminous mysteries in \"English - Traditional\" are taken from:\n                <a href=\"http://www.usccb.org/prayer-and-worship/prayers-and-devotions/rosaries/how-to-pray-the-rosary.cfm\">\n                    www.usccb.org</a>.\n            </li>\n        </ul>\n\n        <h2>Artwork</h2>\n\n        <p>Artwork has been added by default as an aid to contemplation. You may\n            find out more about thes images on the <a href=\"/artwork\">artwork\n            page</a>.</p>\n    </div>\n</div>";
+
+/***/ }),
+
+/***/ "./src/js/templates/artwork.html":
+/*!***************************************!*\
+  !*** ./src/js/templates/artwork.html ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"template-artwork\" class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\">Home</span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1>Artwork Titles, Artist Names and Links</h1>\n\n        <h2>Depictions of the joyful mysteries</h2>\n\n        <div id=\"artwork-joyful\"></div>\n\n        <h2>Depictions of the luminous mysteries</h2>\n\n        <div id=\"artwork-luminous\"></div>\n\n        <h2>Depictions of the sorrowful mysteries</h2>\n\n        <div id=\"artwork-sorrowful\"></div>\n\n        <h2>Depictions of the glorious mysteries</h2>\n\n        <div id=\"artwork-glorious\"></div>\n\n    </div>\n</div>";
 
 /***/ }),
 

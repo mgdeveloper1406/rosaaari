@@ -101,6 +101,10 @@ body {
         background-color: $white-bg-color;
         text-shadow: none;
     }
+
+    @include max(500px) {
+        font-size: .85em;
+    }
 }
 
 body.fixed {
@@ -538,10 +542,6 @@ a {
     overflow: auto;
     font-size: 1em;
     padding: 1em;
-
-    @include max(500px) {
-        font-size: .85em;
-    }
 
     @include min-landscape($tablet) {
         width: 50%;
