@@ -32,6 +32,7 @@ export default function SettingsJS() {
 
         var fields = $(this).serializeArray();
         var hidePrayersCheckoxExists = false;
+        var hideImagesCheckoxExists = false;
         var anotherDevotionCheckoxExists = false;
 
         for (var i = 0; i < fields.length; i++) {
@@ -69,6 +70,12 @@ export default function SettingsJS() {
                 localStorage.setItem('rosaryColor', field['value']);
             }
 
+            if(field['name'] === 'hide-images') {
+                store.settings.hideImages = true;
+                localStorage.setItem('hideImages', true);
+                hideImagesCheckoxExists = true;
+            }
+
             if(field['name'] === 'hide-prayers') {
                 store.settings.hidePrayers = true;
                 localStorage.setItem('hidePrayers', true);
@@ -83,6 +90,10 @@ export default function SettingsJS() {
         }
 
         // Unchecked checkboxes don't show up in the form data.
+        if(!hideImagesCheckoxExists) {
+            store.settings.hideImages = false;
+            localStorage.setItem('hideImages', false);
+        }
         if(!hidePrayersCheckoxExists) {
             store.settings.hidePrayers = false;
             localStorage.setItem('hidePrayers', false);
@@ -92,12 +103,13 @@ export default function SettingsJS() {
             localStorage.setItem('divineMercy', false);
         }
         
-        $(this).find('input[type="submit"').val('Saved!');
+        $(this).find('input[type="submit"]').val('Saved!');
     });
 
     function updateFields() {
         updateRosaryLanguage();
         updateHidePrayers();
+        updateHideImages();
         updateMysteries();
         updateDivineMercy();
         updateRosaryColor()
@@ -111,6 +123,10 @@ export default function SettingsJS() {
 
     function updateRosaryColor() {
         $('#form-settings-rosary-color').val(store.settings.rosaryColor);
+    }
+
+    function updateHideImages() {
+        $('#form-settings-hide-images').attr('checked', store.settings.hideImages);
     }
 
     function updateHidePrayers() {

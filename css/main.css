@@ -426,6 +426,14 @@ a:active {
   }
 }
 
+@media (min-width: 900px) and (orientation: landscape) {
+  .rosary-wrapper-wrapper-mask--no-images {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+}
+
 .rosary-wrapper-wrapper {
   display: block;
   position: absolute;
@@ -847,6 +855,14 @@ a:active {
   }
 }
 
+@media (min-width: 900px) and (orientation: landscape) {
+  .prayers--no-images {
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .prayers__content {
   position: relative;
   padding: 0 40px;
@@ -965,6 +981,16 @@ a:active {
   }
 }
 
+@media (min-width: 900px) and (orientation: landscape) {
+  .prayers-prev-next--no-images {
+    right: 50%;
+    transform: translateX(50%);
+    width: calc(100% - 24px);
+    top: 12px;
+    height: calc(50vh - 100px);
+  }
+}
+
 .prayers-prev-next__prev,
 .prayers-prev-next__next {
   display: flex;
@@ -1024,6 +1050,12 @@ a:active {
     left: calc(50% + 1em);
     color: #595959;
     text-shadow: none;
+  }
+}
+
+@media (min-width: 900px) and (orientation: landscape) {
+  .prayers-reset--no-images {
+    left: 1em;
   }
 }
 

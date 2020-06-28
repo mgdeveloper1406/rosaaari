@@ -32,6 +32,17 @@ export default function HomeJS() {
     var turnIncrement = 1/65;
     var lastRotation = 0;
     var lastBeadIdx = 0;
+    // Set no-images classes if necessary
+    if(store.settings.hideImages) {
+        $('.rosary-wrapper-wrapper-mask')
+            .addClass('rosary-wrapper-wrapper-mask--no-images');
+        $('.prayers')
+            .addClass('prayers--no-images');
+        $('.prayers-prev-next')
+            .addClass('prayers-prev-next--no-images');
+        $('.prayers-reset')
+            .addClass('prayers-reset--no-images');
+    }
     // Rotate on click
     $('.rosary-main button.bead').click(function(event) {
         var currBeadIdx = $(this).data('bead-idx');
@@ -481,13 +492,13 @@ export default function HomeJS() {
                 output += '<p>'+prayer.text+'</p>';
             }
             output += '</div>'
-            if(prayer.image) {
+            if(prayer.image && !store.settings.hideImages) {
                 var noGradient = store.settings.hidePrayers ?
                     'prayer__image--hide-prayers' : '';
                 output += '<div class="prayer__image '+noGradient+'"><img src="'+prayer.image+
                     '" alt="Image of this mystery" class="object-position-'+
                     prayer.imagePosition.split(' ').join('-')+'"></div>';
-            } else {
+            } else if(!store.settings.hideImages) {
                 var noGradient = store.settings.hidePrayers ?
                     'prayer__image--hide-prayers' : '';
                 output += '<div class="prayer__image '+noGradient+'"><img src="'+
@@ -670,6 +681,7 @@ export default function HomeJS() {
 
     function prependImageToBody() {
         // Prevent image from hiding scroll in .prayers div
+        if(store.settings.hideImages) return;
         if(
             $('.prayer--current .prayer__image').find('img').attr('src') ===
                 window.HRO_prev_appended &&
