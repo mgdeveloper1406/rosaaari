@@ -47,7 +47,7 @@ export default function ArtworkJS() {
         $(el).append('<div id="img-copy'+img+'">'+copy+'</div>');
         var title = $('#img-copy'+img).find('h1').html();
         $('#img-copy'+img).find('h1').remove();
-        $('#img-copy'+img).prepend('<h3>'+title+'</h3>');
+        $('#img-copy'+img).prepend('<h3>&ldquo;'+title+'&rdquo;</h3>');
         var url = document.createElement('a');
         url.href = $('#img-copy'+img).find('a').attr('href');
         $('#img-copy'+img).find('a').text(url.hostname+' ...');

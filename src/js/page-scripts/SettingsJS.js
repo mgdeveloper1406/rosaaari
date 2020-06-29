@@ -18,7 +18,7 @@ export default function SettingsJS() {
 
     $('#form-settings-reset-rosary-color').click(function(event) {
         event.preventDefault();
-        $('#form-settings-rosary-color').spectrum('set', '#fff4d9');
+        $('#form-settings-rosary-color').spectrum('set', '#f1e4c4');
         $('#form-settings').submit();
     });
 
