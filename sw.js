@@ -1,5 +1,7 @@
-// Files to cache
+// Service worker version. Should be updated when site changes.
 var cacheName = 'hro-20200627191356';
+// Files to cache. This is just the "app shell." This script also stores images
+// and all other docs in ServiceWorker cache as they are requested
 var appShellFiles = [
     '/apple-touch-icon.png',
     '/favicon-32x32.png',
@@ -16,28 +18,7 @@ var appShellFiles = [
     '/js/plugins.js',
     '/fonts/Merriweather/Merriweather-Regular.ttf',
     '/fonts/Merriweather/Merriweather-Bold.ttf',
-    '/fonts/Merriweather/Merriweather-Italic.ttf',
-    // '/images/default/agony.jpg',
-    // '/images/default/annunciation.jpg',
-    // '/images/default/ascension.jpg',
-    // '/images/default/assumption.jpg',
-    // '/images/default/baptism.jpg',
-    // '/images/default/cana.jpg',
-    // '/images/default/coronation.jpg',
-    // '/images/default/cross.jpg',
-    // '/images/default/crucifixion.jpg',
-    // '/images/default/default.jpg',
-    // '/images/default/descent.jpg',
-    // '/images/default/eucharist.jpg',
-    // '/images/default/finding.jpg',
-    // '/images/default/nativity.jpg',
-    // '/images/default/presentation.jpg',
-    // '/images/default/proclamation.jpg',
-    // '/images/default/resurrection.jpg',
-    // '/images/default/scourging.jpg',
-    // '/images/default/thorns.jpg',
-    // '/images/default/transfiguration.jpg',
-    // '/images/default/visitation.jpg'
+    '/fonts/Merriweather/Merriweather-Italic.ttf'
 ];
 var contentToCache = appShellFiles;
 

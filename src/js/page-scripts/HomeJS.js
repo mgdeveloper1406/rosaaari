@@ -1,4 +1,5 @@
 import store from '../store';
+import { preloadImages } from '../utils';
 
 export default function HomeJS() {
     if(store.settings.hidePrayers) {
@@ -482,6 +483,7 @@ export default function HomeJS() {
                 ];
             }
         }
+
         var prayersHTML = prayers.reduce(function(output, prayer, idx, srcArr) {
             output += '<div class="prayer" id="prayer-'+idx+'">'+
                 '<div class="prayer__copy">';
@@ -509,7 +511,16 @@ export default function HomeJS() {
             return output;
         }, '');
 
-        
+        // Preload all images for this mystery (mainly for first time visitors
+        // or visitors without a ServiceWorker)
+        var imagesToPreload = store.prayers.mysteries[mysteries][language]
+            .reduce(function(output, mystery) {
+                if(mystery.image)
+                    output.push(mystery.image);
+                return output;
+            }, []);
+
+        preloadImages(imagesToPreload);
 
         $('#prayers-content').html(prayersHTML);
 
