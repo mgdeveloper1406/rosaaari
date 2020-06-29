@@ -1,5 +1,5 @@
 // Service worker version. Should be updated when site changes.
-var cacheName = 'hro-20200627191356';
+var cacheName = 'hro-20200629184451';
 // Files to cache. This is just the "app shell." This script also stores images
 // and all other docs in ServiceWorker cache as they are requested
 var appShellFiles = [
@@ -11,10 +11,12 @@ var appShellFiles = [
     '/favicon.ico',
     '/css/normalize.css',
     '/css/main.css',
+    '/css/spectrum.min.css',
     '/index.html',
     '/js/main.js',
     '/js/vendor/modernizr-3.7.1.min.js',
     '/js/vendor/jquery-3.4.1.min.js',
+    '/js/vendor/spectrum.min.js',
     '/js/plugins.js',
     '/fonts/Merriweather/Merriweather-Regular.ttf',
     '/fonts/Merriweather/Merriweather-Bold.ttf',
@@ -24,6 +26,8 @@ var contentToCache = appShellFiles;
 
 // Installing Service Worker
 self.addEventListener('install', function(e) {
+    // Skip waiting on the user to completely shut down the app
+    self.skipWaiting();
     e.waitUntil(
         caches.open(cacheName).then(function(cache) {
             return cache.addAll(appShellFiles);
