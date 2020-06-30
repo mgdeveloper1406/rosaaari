@@ -1,5 +1,5 @@
 // Service worker version. Should be updated when site changes.
-var cacheName = 'hro-20200629190920-2-1';
+var cacheName = 'hro-20200629190920-2-1-2';
 // Files to cache. This is just the "app shell." This script also stores images
 // and all other docs in ServiceWorker cache as they are requested
 var appShellFiles = [

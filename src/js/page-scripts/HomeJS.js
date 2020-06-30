@@ -1,5 +1,5 @@
 import store from '../store';
-import { preloadImages } from '../utils';
+import { preloadImages, getMysteriesForCurrDay } from '../utils';
 
 export default function HomeJS() {
     if(store.settings.hidePrayers) {
@@ -132,6 +132,9 @@ export default function HomeJS() {
         var language = store.settings.rosaryLanguage;
         var mysteries = store.settings.mysteries;
         if(beadId === 'crucifix') {
+            // Sense day change if necessary
+            if(!localStorage.getItem('mysteries'))
+                store.settings.mysteries = getMysteriesForCurrDay();
             if(!store.settings.divineMercy) {
                 prayers = [
                     {

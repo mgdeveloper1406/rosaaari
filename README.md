@@ -3,19 +3,19 @@
 ![The Virgin of the Rosary by Bartolomé Esteban Murillo](/android-chrome-256x256.png)
 
 <p><a href="https://holyrosaryonline.com">HolyRosaryOnline.com</a>
-    is a small website meant to help people pray the
+is a website meant to help people pray the
 Rosary. It is an open source project maintained by web developer Matt
-Watson. Different options are available in Settings.</p>
+Watson. Different options are available in
+<a href="/settings">Settings</a>.</p>
 
 <p>Click the beads as you go along, or click anywhere inside the rosary
 to go to the next bead.</p>
 
 <p>Email <a href="mailto:matt@mattwatson.org">matt@mattwatson.org</a>
 for questions or <a href="https://github.com/mateowatson/holyrosaryonline/issues">
-    leave an issue on the GitHub page
-</a>.</p>
+leave an issue on the GitHub page</a>.</p>
 
-<h3>Sources</h3>
+<h2>Sources</h2>
 
 <p>The texts of the prayers were taken in fair use from various sources.
     The source for each prayer is noted in the source code,
@@ -45,3 +45,10 @@ but overall, they include:</p>
             www.usccb.org</a>.
     </li>
 </ul>
+
+<h2>Artwork</h2>
+
+<p>Artwork has been added by default as an aid to contemplation. You may
+find out more about these images on the
+<a href="https://holyrosaryonline.com/artwork">artwork
+page</a>.</p>
