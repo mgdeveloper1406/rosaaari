@@ -1,11 +1,14 @@
 // Service worker version. Should be updated when site changes.
-var cacheName = 'hro-20200629184451';
+var cacheName = 'hro-20200629190920-2-1';
 // Files to cache. This is just the "app shell." This script also stores images
 // and all other docs in ServiceWorker cache as they are requested
 var appShellFiles = [
     '/apple-touch-icon.png',
     '/favicon-32x32.png',
     '/favicon-16x16.png',
+    '/android-chrome-512x512.png',
+    '/android-chrome-256x256.png',
+    '/android-chrome-192x192.png',
     '/site.webmanifest',
     '/safari-pinned-tab.svg',
     '/favicon.ico',
