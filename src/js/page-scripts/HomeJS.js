@@ -55,6 +55,15 @@ export default function HomeJS() {
             transform: 'translateY(0)',
             transition: 'transform .5s ease'
         });
+        // If same bead, go to next prayer in bead, or if on last one, stop
+        if (fromBeadId === $('.bead--selected').attr('id')) {
+            if($('.prayer--current ~ .prayer').length) {
+                $('[data-rosary-next]').click()
+                return;
+            } else {
+                return;
+            }
+        }
         updatePrayers($(this).attr('id'), fromBeadId);
         localStorage.setItem('beadId', $(this).attr('id'));
         localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
@@ -72,6 +81,15 @@ export default function HomeJS() {
         });
         var fromBeadId = $('.bead--selected').attr('id');
         setBeadSelectedClass($(this));
+        // If same bead, go to next prayer in bead, or if on last one, stop
+        if (fromBeadId === $('.bead--selected').attr('id')) {
+            if($('.prayer--current ~ .prayer').length) {
+                $('[data-rosary-next]').click()
+                return;
+            } else {
+                return;
+            }
+        }
         updatePrayers($(this).attr('id'), fromBeadId);
         localStorage.setItem('beadId', $(this).attr('id'));
         localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
