@@ -1625,6 +1625,11 @@ __webpack_require__.r(__webpack_exports__);
         text: '<span class="red-text">+</span> In the name of the Father, and of the Son, and of the Holy Ghost. Amen.',
         source: 'Baronius Press, Daily Missal 1962'
       },
+      ES: {
+        title: 'La Señal de la Cruz',
+        text: '<span class="red-text">+</span> En el nombre del Padre, y del Hijo, y del Espíritu Santo.',
+        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479'
+      },
       LA: {
         title: 'Signum Crucis',
         text: '<span class="red-text">+</span> In Nómine Patris, et Fílii, et Spíritus Sancti. Amen.',
@@ -1641,6 +1646,11 @@ __webpack_require__.r(__webpack_exports__);
         title: 'Apostle&rsquo;s Creed',
         text: 'I believe in God the Father Almighty, Creator of heaven and earth. And in Jesus Christ, His only Son, our Lord, Who was conceived by the Holy Ghost, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died, and buried: He descended into Hell, the third day He rose again from the dead, He ascended into heaven, sitteth at the right hand of God the Father Almighty, from thence He shall come to judge the living and the dead. I believe in the Holy Ghost, the holy Catholic Church, the communion of Saints, the forgiveness of sins, the resurrection of the body, and life everlasting. Amen.',
         source: 'Baronius Press, Daily Missal 1962'
+      },
+      ES: {
+        title: 'Símbolo de los Apóstoles',
+        text: 'Creo en Dios Padre, Todopoderoso, Creador del cielo y de la tierra. Y en Jesucristo su único Hijo, Nuestro Señor; que fue concebido por obra y gracia del Espíritu Santo; y nació de Santa María Virgen; padeció bajo el poder de Poncio Pilato; fué crucificado, muerto y sepultado; descendió a los infiernos; al tercer día resucitó de entre los muertos; subió a los cielos y está sentado a la diestra de Dios Padre Todopoderoso; desde allí ha de venir a juzgar a los vivos y a los muertos. Creo en el Esprítu Santo, en la Santa Iglesia Católica; la comunión de los santos; el perdón de los pecados; la resurrección de la carne y la vida eterna. Amén.',
+        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479'
       },
       LA: {
         title: 'Symbólum Apostolórum',
@@ -1659,6 +1669,11 @@ __webpack_require__.r(__webpack_exports__);
         text: 'Our Father, who art in heaven, hallowed be Thy Name. Thy kingdom come. Thy will be done on earth, as it is in heaven: Give us this day our daily bread. And forgive us our trespasses, as we forgive those that trespass against us. And lead us not into temptation, but deliver us from evil. Amen.',
         source: 'Baronius Press, Daily Missal 1962'
       },
+      ES: {
+        title: 'El Padre Nuestro',
+        text: 'Padre nuestro, que estás en el cielo, santificado sea tu Nombre; venga a nosotros tu reino; hágase tu voluntad, en la tierra como en el cielo. Danos hoy nuestro pan de cada día; perdona nuestras ofensas, como también nosotros perdonamos a los que nos ofenden; no nos dejes caer en tentación, y líbranos del mal. Amén.',
+        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479'
+      },
       LA: {
         title: 'Pater Noster',
         text: 'Pater noster, qui es in cœlis, sanctificétur nomen tuum. Advéniat regnum tuum. Fiat volúntas tua, sicut in cœlo et in terra. Panem nostrum quotidiánum da nobis hódie. Et dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris. Et ne nos indúcas in tentatiónem: sed líbera nos a malo. Amen.',
@@ -1675,6 +1690,11 @@ __webpack_require__.r(__webpack_exports__);
         title: 'Hail Mary',
         text: 'Hail Mary, full of grace, the Lord is with thee; blessed art thou amongst women, and blessed is the Fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.',
         source: 'Baronius Press, Daily Missal 1962'
+      },
+      ES: {
+        title: 'El Ave María',
+        text: 'Dios te salve, María; llena eres de gracia; el Señor es contigo; bendita Tú eres entre todas las mujeres, y bendito es el fruto de tu vientre Jesús. Santa María, Madre de Dios, ruega por nosotros, pecadores, ahora y en la hora de nuestra muerte. Amén.',
+        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479'
       },
       LA: {
         title: 'Ave María',
@@ -1693,6 +1713,11 @@ __webpack_require__.r(__webpack_exports__);
         text: 'Glory be to the Father, and to the Son, and to the Holy Ghost. As it was in the beginning, is now, and ever shall be, world without end. Amen.',
         source: 'Baronius Press, Daily Missal 1962'
       },
+      ES: {
+        title: 'El Gloria',
+        text: 'Gloria al Padre, y al Hijo, y al Espíritu Santo. Como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.',
+        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479'
+      },
       LA: {
         title: 'Gloria Patri',
         text: 'Gloria Patri, et Fílio, et Spirítui Sancto. Sicut erat in princípio et nunc et semper et in sæcula sæculórum. Amen.',
@@ -1709,6 +1734,11 @@ __webpack_require__.r(__webpack_exports__);
         title: 'Fatima Prayer',
         text: 'O my Jesus, forgive us our sins, save us from the fires of Hell. Lead all souls to heaven, especially those most in need of your mercy. Amen.',
         source: 'Baronius Press, Daily Missal 1962'
+      },
+      ES: {
+        title: 'Oración de Fátima',
+        text: 'Oh Jesús, perdónanos nuestros pecados, sálvanos del fuego del infierno y guía todas las almas al Cielo, especialmente aquellas que necesitan más de tu misericordia.',
+        source: 'http://www.devocionario.com/maria/rosario_1.html'
       },
       LA: {
         title: 'Orátio Fátimæ',
@@ -1727,6 +1757,11 @@ __webpack_require__.r(__webpack_exports__);
         text: 'Hail Holy Queen, mother of mercy; our life, our sweetness, and our hope. To thee we cry, poor banished children of Eve. To thee we send up our sighs, mourning and weeping in this vale of tears. Turn, then, most gracious advocate, thine eyes of mercy toward us. And after this, our exile, show unto us the blessed fruit of thy womb, Jesus. O clement, O loving, O sweet Virgin Mary. Pray for us, O holy Mother of God, that we may be made worthy of the promises of Christ. Amen.',
         source: 'http://www.newadvent.org/images/rosary.pdf'
       },
+      ES: {
+        title: 'La Salve',
+        text: 'Dios te salve, Reina y Madre de misericordia, vida, dulzura y esperanza nuestra; Dios te salve. A Ti llamamos los desterrados hijos de Eva; a Ti suspiramos gimiendo y llorando, en este valle de lágrimas. Ea, pues, Señora nuestra, vuelve a nosotros esos tus ojos misericordiosos; y después de este destierro muéstranos a Jesús, fruto bendito de tu vientre. ¡Oh clementísima, oh piadosa, oh dulce siempre Virgen María! Ruega por nosotros, Santa Madre de Dios, para que seamos dignos de alcanzar las promesas de Nuestro Señor Jesucristo. Amén.',
+        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479'
+      },
       LA: {
         title: 'Salve Regína',
         text: 'Salve, Regína, mater misericórdiæ, vita, dulcédo et spes nostra, salve. Ad te clamámus, exsúles fílii Evæ. Ad te suspirámus, geméntes et ﬂentes in hac lacrimárum valle. Eja ergo, advocáta nostra, illos tuos misericórdes óculos ad nos convérte, et Jesum, benedíctum fructum ventris tui, nobis post hoc exsílium osténde. O clemens, o pia, o dulcis Virgo María. <br>(V. Ora pro nobis, sancta Dei Génetrix. <br>R. Ut digni efﬁciámur promissiónibus Christi.) <br>Amen.',
@@ -1743,6 +1778,11 @@ __webpack_require__.r(__webpack_exports__);
         title: 'Final Prayer',
         text: 'Let us pray. O God, whose only begotten Son by His life, death and resurrection, has purchased for us the rewards of eternal life, grant, we beseech Thee, that by meditating upon these mysteries of the Most Holy Rosary of the Blessed Virgin Mary, we may imitate what they contain and obtain what they promise, through the same Christ Our Lord. Amen.',
         source: 'http://www.newadvent.org/images/rosary.pdf'
+      },
+      ES: {
+        title: 'Oración Final',
+        text: 'Omnipotente y sempiterno Dios, que con la cooperación del Espíritu Santo, preparaste el cuerpo y el alma de la gloriosa Virgen y Madre María para que fuese merecedora de ser digna morada de tu Hijo; concédenos que, pues celebramos con alegría su conmemoración, por su piadosa intercesión seamos liberados de los males presentes y de la muerte eterna. Por el mismo Cristo nuestro Señor. Amén.',
+        source: 'http://www.devocionario.com/maria/rosario_1.html'
       },
       LA: {
         title: 'Ad Finem Rosárii Dicéndæ',
