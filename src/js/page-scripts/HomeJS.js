@@ -116,7 +116,7 @@ export default function HomeJS() {
     }
 
     $('.prayer').removeClass('prayer--current');
-    if(savedPrayerId) {
+    if(savedPrayerId && $('#'+savedPrayerId).length) {
         $('#'+savedPrayerId).addClass('prayer--current');
         prependImageToBody();
         localStorage.setItem('prayerId', $('.prayer--current').attr('id'));

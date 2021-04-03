@@ -5,9 +5,9 @@ import SettingsJS from './page-scripts/SettingsJS';
 import ArtworkJS from './page-scripts/ArtworkJS';
 
 // Comment out during development
-if('serviceWorker' in navigator) {
+/* if('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js', { scope: '/' });
-};
+}; */
 
 $( document ).ready(function() {
     window.nvgo_root = window.location.hostname === 'holyrosaryonline.com' ? 'https://holyrosaryonline.com' : 'http://'+window.location.host;

@@ -31,9 +31,9 @@ export default function SettingsJS() {
         event.preventDefault();
 
         var fields = $(this).serializeArray();
-        var hidePrayersCheckoxExists = false;
-        var hideImagesCheckoxExists = false;
-        var anotherDevotionCheckoxExists = false;
+        var hidePrayersCheckboxExists = false;
+        var hideImagesCheckboxExists = false;
+        var anotherDevotionCheckboxExists = false;
 
         for (var i = 0; i < fields.length; i++) {
             var field = fields[i];
@@ -73,32 +73,32 @@ export default function SettingsJS() {
             if(field['name'] === 'hide-images') {
                 store.settings.hideImages = true;
                 localStorage.setItem('hideImages', true);
-                hideImagesCheckoxExists = true;
+                hideImagesCheckboxExists = true;
             }
 
             if(field['name'] === 'hide-prayers') {
                 store.settings.hidePrayers = true;
                 localStorage.setItem('hidePrayers', true);
-                hidePrayersCheckoxExists = true;
+                hidePrayersCheckboxExists = true;
             }
 
             if(field['name'] === 'divine-mercy') {
                 store.settings.divineMercy = true;
                 localStorage.setItem('divineMercy', true);
-                anotherDevotionCheckoxExists = true;
+                anotherDevotionCheckboxExists = true;
             }
         }
 
         // Unchecked checkboxes don't show up in the form data.
-        if(!hideImagesCheckoxExists) {
+        if(!hideImagesCheckboxExists) {
             store.settings.hideImages = false;
             localStorage.setItem('hideImages', false);
         }
-        if(!hidePrayersCheckoxExists) {
+        if(!hidePrayersCheckboxExists) {
             store.settings.hidePrayers = false;
             localStorage.setItem('hidePrayers', false);
         }
-        if(!anotherDevotionCheckoxExists) {
+        if(!anotherDevotionCheckboxExists) {
             store.settings.divineMercy = false;
             localStorage.setItem('divineMercy', false);
         }
