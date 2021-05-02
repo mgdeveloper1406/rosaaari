@@ -26,6 +26,11 @@ __webpack_require__.r(__webpack_exports__);
 /* if('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js', { scope: '/' });
 }; */
+// Fix any legacy rosary language settings
+
+if (_store__WEBPACK_IMPORTED_MODULE_2__.default.settings.rosaryLanguage !== 'ES' || _store__WEBPACK_IMPORTED_MODULE_2__.default.settings.rosaryLanguage !== 'EN' || _store__WEBPACK_IMPORTED_MODULE_2__.default.settings.rosaryLanguage !== 'LA') {
+  _store__WEBPACK_IMPORTED_MODULE_2__.default.settings.rosaryLanguage = 'EN';
+}
 
 $(document).ready(function () {
   window.nvgo_root = window.location.hostname === 'holyrosaryonline.com' ? 'https://holyrosaryonline.com' : 'http://' + window.location.host;
@@ -1026,6 +1031,7 @@ function SettingsJS() {
     var hidePrayersCheckboxExists = false;
     var hideImagesCheckboxExists = false;
     var anotherDevotionCheckboxExists = false;
+    var enableLatinCheckboxExists = false;
 
     for (var i = 0; i < fields.length; i++) {
       var field = fields[i];
@@ -1042,17 +1048,21 @@ function SettingsJS() {
         }
       }
 
+      if (field['name'] === 'latin') {
+        _store__WEBPACK_IMPORTED_MODULE_0__.default.settings.rosaryLanguage = 'LA';
+        localStorage.setItem('rosaryLanguage', 'LA');
+        enableLatinCheckboxExists = true;
+      }
+
       if (field['name'] === 'language') {
         if (field['value'] === 'EN' || field['value'] === 'ES') {
           _store__WEBPACK_IMPORTED_MODULE_0__.default.settings.language = field['value'];
           localStorage.setItem('language', field['value']);
-        }
-      }
 
-      if (field['name'] === 'rosary-language') {
-        if (field['value'] === 'EN' || field['value'] === 'EN_TRAD' || field['value'] === 'LA' || field['value'] === 'ES') {
-          _store__WEBPACK_IMPORTED_MODULE_0__.default.settings.rosaryLanguage = field['value'];
-          localStorage.setItem('rosaryLanguage', field['value']);
+          if (_store__WEBPACK_IMPORTED_MODULE_0__.default.settings.rosaryLanguage !== 'LA') {
+            _store__WEBPACK_IMPORTED_MODULE_0__.default.settings.rosaryLanguage = field['value'];
+            localStorage.setItem('rosaryLanguage', field['value']);
+          }
         }
       }
 
@@ -1096,13 +1106,18 @@ function SettingsJS() {
       localStorage.setItem('divineMercy', false);
     }
 
+    if (!enableLatinCheckboxExists) {
+      _store__WEBPACK_IMPORTED_MODULE_0__.default.settings.rosaryLanguage = _store__WEBPACK_IMPORTED_MODULE_0__.default.settings.language;
+      localStorage.setItem('rosaryLanguage', false);
+    }
+
     $(this).find('input[type="submit"]').val('Saved!');
   });
 
   function updateFields() {
     updateLanguage();
-    updateRosaryLanguage();
     updateHidePrayers();
+    updateEnableLatin();
     updateHideImages();
     updateMysteries();
     updateDivineMercy();
@@ -1113,16 +1128,16 @@ function SettingsJS() {
     $('#form-settings-language').find('option[value="' + _store__WEBPACK_IMPORTED_MODULE_0__.default.settings.language + '"]').attr('selected', 'selected');
   }
 
-  function updateRosaryLanguage() {
-    $('#form-settings-rosary-language').find('option[value="' + _store__WEBPACK_IMPORTED_MODULE_0__.default.settings.rosaryLanguage + '"]').attr('selected', 'selected');
-  }
-
   function updateRosaryColor() {
     $('#form-settings-rosary-color').val(_store__WEBPACK_IMPORTED_MODULE_0__.default.settings.rosaryColor);
   }
 
   function updateHideImages() {
     $('#form-settings-hide-images').attr('checked', _store__WEBPACK_IMPORTED_MODULE_0__.default.settings.hideImages);
+  }
+
+  function updateEnableLatin() {
+    $('#form-settings-latin').attr('checked', _store__WEBPACK_IMPORTED_MODULE_0__.default.settings.rosaryLanguage === 'LA' ? true : false);
   }
 
   function updateHidePrayers() {
@@ -3067,7 +3082,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<div id=\"template-settings\" class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\"><hro-localize>Home</hro-localize></span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n        <h1><hro-localize>Settings</hro-localize></h1>\n        <form action=\"\" method=\"post\" id=\"form-settings\">\n            <label for=\"form-settings-language\"><hro-localize>Language</hro-localize></label>\n            <select id=\"form-settings-language\" name=\"language\">\n                <option value=\"EN\">English</option>\n                <option value=\"ES\">Español</option>\n            </select>\n\n            <label for=\"form-settings-mysteries\"><hro-localize>Mysteries</hro-localize></label>\n            <select id=\"form-settings-mysteries\" name=\"mysteries\">\n                <option value=\"byday\" data-hro-localize>By day</option>\n                <option value=\"joyful\" data-hro-localize>Joyful</option>\n                <option value=\"luminous\" data-hro-localize>Luminous</option>\n                <option value=\"sorrowful\" data-hro-localize>Sorrowful</option>\n                <option value=\"glorious\" data-hro-localize>Glorious</option>\n            </select>\n\n            <label for=\"form-settings-rosary-language\"><hro-localize>Rosary Language</hro-localize></label>\n            <select id=\"form-settings-rosary-language\" name=\"rosary-language\">\n                <option value=\"EN\">English</option>\n                <option value=\"EN_TRAD\">English - Traditional</option>\n                <option value=\"LA\" data-hro-localize>Latin</option>\n                <option value=\"ES\">Español</option>\n            </select>\n\n            <label for=\"form-settings-rosary-color\">\n                <hro-localize>Rosary Color</hro-localize>\n            </label>\n            <input id=\"form-settings-rosary-color\" value=\"\"\n                name=\"rosary-color\">&nbsp;\n            <button id=\"form-settings-reset-rosary-color\" type=\"button\">\n                <hro-localize>Reset Color</hro-localize>\n            </button>\n\n            <label for=\"form-settings-hide-images\">\n                <hro-localize>Hide the prayer images.</hro-localize>\n            </label>\n            <input type=\"checkbox\" name=\"hide-images\"\n                id=\"form-settings-hide-images\">\n\n            <label for=\"form-settings-hide-prayers\">\n                <hro-localize>Hide the words to the prayers. Click blank space to go to the next prayer.</hro-localize>\n            </label>\n            <input type=\"checkbox\" name=\"hide-prayers\"\n                id=\"form-settings-hide-prayers\">\n\n            <label for=\"form-settings-divine-mercy\">\n                <hro-localize>Pray the Divine Mercy Chaplet instead.</hro-localize>\n            </label>\n            <input id=\"form-settings-divine-mercy\" name=\"divine-mercy\"\n                type=\"checkbox\">\n\n            <input type=\"submit\" value=\"Saved!\">\n\n        </form>\n    </div>\n</div>";
+var code = "<div id=\"template-settings\" class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\"><hro-localize>Home</hro-localize></span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n        <h1><hro-localize>Settings</hro-localize></h1>\n        <form action=\"\" method=\"post\" id=\"form-settings\">\n            <label for=\"form-settings-language\"><hro-localize>Language</hro-localize></label>\n            <select id=\"form-settings-language\" name=\"language\">\n                <option value=\"EN\">English</option>\n                <option value=\"ES\">Español</option>\n            </select>\n\n            <label for=\"form-settings-mysteries\"><hro-localize>Mysteries</hro-localize></label>\n            <select id=\"form-settings-mysteries\" name=\"mysteries\">\n                <option value=\"byday\" data-hro-localize>By day</option>\n                <option value=\"joyful\" data-hro-localize>Joyful</option>\n                <option value=\"luminous\" data-hro-localize>Luminous</option>\n                <option value=\"sorrowful\" data-hro-localize>Sorrowful</option>\n                <option value=\"glorious\" data-hro-localize>Glorious</option>\n            </select>\n\n            <label for=\"form-settings-latin\">\n                <hro-localize>Enable Latin</hro-localize>\n            </label>\n            <input id=\"form-settings-latin\" name=\"latin\"\n                type=\"checkbox\">\n\n            <label for=\"form-settings-rosary-color\">\n                <hro-localize>Rosary Color</hro-localize>\n            </label>\n            <input id=\"form-settings-rosary-color\" value=\"\"\n                name=\"rosary-color\">&nbsp;\n            <button id=\"form-settings-reset-rosary-color\" type=\"button\">\n                <hro-localize>Reset Color</hro-localize>\n            </button>\n\n            <label for=\"form-settings-hide-images\">\n                <hro-localize>Hide the prayer images.</hro-localize>\n            </label>\n            <input type=\"checkbox\" name=\"hide-images\"\n                id=\"form-settings-hide-images\">\n\n            <label for=\"form-settings-hide-prayers\">\n                <hro-localize>Hide the words to the prayers. Click blank space to go to the next prayer.</hro-localize>\n            </label>\n            <input type=\"checkbox\" name=\"hide-prayers\"\n                id=\"form-settings-hide-prayers\">\n\n            <label for=\"form-settings-divine-mercy\">\n                <hro-localize>Pray the Divine Mercy Chaplet instead.</hro-localize>\n            </label>\n            <input id=\"form-settings-divine-mercy\" name=\"divine-mercy\"\n                type=\"checkbox\">\n\n            <input type=\"submit\" value=\"Saved!\">\n\n        </form>\n    </div>\n</div>";
 // Exports
 module.exports = code;
 

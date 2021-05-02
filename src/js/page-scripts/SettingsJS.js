@@ -34,6 +34,7 @@ export default function SettingsJS() {
         var hidePrayersCheckboxExists = false;
         var hideImagesCheckboxExists = false;
         var anotherDevotionCheckboxExists = false;
+        var enableLatinCheckboxExists = false;
 
         for (var i = 0; i < fields.length; i++) {
             var field = fields[i];
@@ -55,21 +56,22 @@ export default function SettingsJS() {
                 }
             }
 
+            if(field['name'] === 'latin') {
+                store.settings.rosaryLanguage = 'LA'
+                localStorage.setItem('rosaryLanguage', 'LA');
+                enableLatinCheckboxExists = true;
+            }
+
             if(field['name'] === 'language') {
                 if(field['value'] === 'EN' || field['value'] === 'ES') {
 
                     store.settings.language = field['value'];
                     localStorage.setItem('language', field['value']);
-                    
-                }
-            }
 
-            if(field['name'] === 'rosary-language') {
-                if(field['value'] === 'EN' || field['value'] === 'EN_TRAD' ||
-                    field['value'] === 'LA' || field['value'] === 'ES') {
-
-                    store.settings.rosaryLanguage = field['value'];
-                    localStorage.setItem('rosaryLanguage', field['value']);
+                    if(store.settings.rosaryLanguage !== 'LA') {
+                        store.settings.rosaryLanguage = field['value'];
+                        localStorage.setItem('rosaryLanguage', field['value']);
+                    }
                     
                 }
             }
@@ -111,14 +113,18 @@ export default function SettingsJS() {
             store.settings.divineMercy = false;
             localStorage.setItem('divineMercy', false);
         }
+        if(!enableLatinCheckboxExists) {
+            store.settings.rosaryLanguage = store.settings.language;
+            localStorage.setItem('rosaryLanguage', false);
+        }
         
         $(this).find('input[type="submit"]').val('Saved!');
     });
 
     function updateFields() {
         updateLanguage();
-        updateRosaryLanguage();
         updateHidePrayers();
+        updateEnableLatin();
         updateHideImages();
         updateMysteries();
         updateDivineMercy();
@@ -131,18 +137,19 @@ export default function SettingsJS() {
             .attr('selected', 'selected');
     }
 
-    function updateRosaryLanguage() {
-        $('#form-settings-rosary-language')
-            .find('option[value="'+store.settings.rosaryLanguage+'"]')
-            .attr('selected', 'selected');
-    }
-
     function updateRosaryColor() {
         $('#form-settings-rosary-color').val(store.settings.rosaryColor);
     }
 
     function updateHideImages() {
         $('#form-settings-hide-images').attr('checked', store.settings.hideImages);
+    }
+
+    function updateEnableLatin() {
+        $('#form-settings-latin').attr(
+            'checked',
+            store.settings.rosaryLanguage === 'LA' ? true : false
+        );
     }
 
     function updateHidePrayers() {

@@ -10,6 +10,12 @@ import ArtworkJS from './page-scripts/ArtworkJS';
     navigator.serviceWorker.register('/sw.js', { scope: '/' });
 }; */
 
+// Fix any legacy rosary language settings
+if(store.settings.rosaryLanguage !== 'ES' || store.settings.rosaryLanguage !== 'EN' ||
+    store.settings.rosaryLanguage !== 'LA') {
+    store.settings.rosaryLanguage = 'EN';
+}
+
 $( document ).ready(function() {
     window.nvgo_root = window.location.hostname === 'holyrosaryonline.com' ? 'https://holyrosaryonline.com' : 'http://'+window.location.host;
     window.nvgo_useHash = false; // Defaults to: false
