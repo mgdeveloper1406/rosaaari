@@ -55,6 +55,15 @@ export default function SettingsJS() {
                 }
             }
 
+            if(field['name'] === 'language') {
+                if(field['value'] === 'EN' || field['value'] === 'ES') {
+
+                    store.settings.language = field['value'];
+                    localStorage.setItem('language', field['value']);
+                    
+                }
+            }
+
             if(field['name'] === 'rosary-language') {
                 if(field['value'] === 'EN' || field['value'] === 'EN_TRAD' ||
                     field['value'] === 'LA') {
@@ -107,12 +116,19 @@ export default function SettingsJS() {
     });
 
     function updateFields() {
+        updateLanguage();
         updateRosaryLanguage();
         updateHidePrayers();
         updateHideImages();
         updateMysteries();
         updateDivineMercy();
         updateRosaryColor()
+    }
+
+    function updateLanguage() {
+        $('#form-settings-language')
+            .find('option[value="'+store.settings.language+'"]')
+            .attr('selected', 'selected');
     }
 
     function updateRosaryLanguage() {

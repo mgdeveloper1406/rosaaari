@@ -3,6 +3,7 @@ import { getMysteriesForCurrDay } from './utils';
 export default {
     settings: {
         mysteries: localStorage.getItem('mysteries') || getMysteriesForCurrDay(),
+        language: localStorage.getItem('language') || 'EN',
         rosaryLanguage: localStorage.getItem('rosaryLanguage') || 'EN',
         rosaryColor: localStorage.getItem('rosaryColor') || '#f1e4c4',
         hideImages: localStorage.getItem('hideImages') === 'true' ? true : false,
