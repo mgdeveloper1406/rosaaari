@@ -23,7 +23,18 @@ import med_en_luminous_2 from './templates/meditations/med_en_luminous_2.html';
 import med_en_luminous_3 from './templates/meditations/med_en_luminous_3.html';
 import med_en_luminous_4 from './templates/meditations/med_en_luminous_4.html';
 import med_en_luminous_5 from './templates/meditations/med_en_luminous_5.html';
+import med_es_joyful_1 from './templates/meditations/med_es_joyful_1.html';
+import med_es_joyful_2 from './templates/meditations/med_es_joyful_2.html';
+import med_es_joyful_3 from './templates/meditations/med_es_joyful_3.html';
+import med_es_joyful_4 from './templates/meditations/med_es_joyful_4.html';
+import med_es_joyful_5 from './templates/meditations/med_es_joyful_5.html';
+import med_es_glorious_1 from './templates/meditations/med_es_glorious_1.html';
+import med_es_glorious_2 from './templates/meditations/med_es_glorious_2.html';
+import med_es_glorious_3 from './templates/meditations/med_es_glorious_3.html';
+import med_es_glorious_4 from './templates/meditations/med_es_glorious_4.html';
+import med_es_glorious_5 from './templates/meditations/med_es_glorious_5.html';
 import header from './templates/partials/header.html';
+import store from './store';
 
 export default function renderView(pathname, params) {
     $('div#app').html(' ');
@@ -33,6 +44,14 @@ export default function renderView(pathname, params) {
     switch (pathname) {
         case '/':
             $('body').addClass('fixed');
+            /* var spotsToTranslate = Home.match(/{{.*}}/g);
+            for(var i = 0; i < spotsToTranslate.length; i++) {
+                var phrase = spotsToTranslate[i].replace('{{', '');
+                phrase = phrase.replace('}}', '');
+                phrase = phrase.trim();
+                phrase = store.localization.ES[phrase];
+                Home = Home.replace(spotsToTranslate[i], phrase);
+            } */
             $('div#app').append(header+Home);
             break;
 
@@ -149,6 +168,56 @@ export default function renderView(pathname, params) {
         case '/med_en_glorious_5':
             $('body').removeClass('fixed');
             $('div#app').append(med_en_glorious_5);
+            break;
+
+        case '/med_es_joyful_1':
+            $('body').removeClass('fixed');
+            $('div#app').append(med_es_joyful_1);
+            break;
+
+        case '/med_es_joyful_2':
+            $('body').removeClass('fixed');
+            $('div#app').append(med_es_joyful_2);
+            break;
+
+        case '/med_es_joyful_3':
+            $('body').removeClass('fixed');
+            $('div#app').append(med_es_joyful_3);
+            break;
+
+        case '/med_es_joyful_4':
+            $('body').removeClass('fixed');
+            $('div#app').append(med_es_joyful_4);
+            break;
+
+        case '/med_es_joyful_5':
+            $('body').removeClass('fixed');
+            $('div#app').append(med_es_joyful_5);
+            break;
+
+        case '/med_es_glorious_1':
+            $('body').removeClass('fixed');
+            $('div#app').append(med_es_glorious_1);
+            break;
+
+        case '/med_es_glorious_2':
+            $('body').removeClass('fixed');
+            $('div#app').append(med_es_glorious_2);
+            break;
+
+        case '/med_es_glorious_3':
+            $('body').removeClass('fixed');
+            $('div#app').append(med_es_glorious_3);
+            break;
+
+        case '/med_es_glorious_4':
+            $('body').removeClass('fixed');
+            $('div#app').append(med_es_glorious_4);
+            break;
+
+        case '/med_es_glorious_5':
+            $('body').removeClass('fixed');
+            $('div#app').append(med_es_glorious_5);
             break;
 
         case '404':

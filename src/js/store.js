@@ -10,6 +10,36 @@ export default {
         hidePrayers: localStorage.getItem('hidePrayers') === 'true' ? true : false,
         divineMercy: localStorage.getItem('divineMercy') === 'true' ? true : false,
     },
+    localization: {
+        ES: {
+            "Holy Rosary Online": "Santo Rosario en Línea (Holy Rosary Online)",
+            "Settings": "Configuración",
+            "About": "Información",
+            "Home": "Página Principal",
+            "Reset": "Reinicie",
+            "Next Prayer": "Adelante",
+            "Previous": "Atrás",
+            "Next": "Adelante",
+            "Sign of the Cross": "La Señal de la Cruz",
+            "Our Father": "Padre Nuestro",
+            "Hail Mary": "Ave María",
+            "Medallion, end of rosary": "Medallón, fin del rosario",
+            "Language": "Idioma",
+            "Mysteries": "Misterios",
+            "Rosary Language": "Idioma del rosario",
+            "By day": "Por día",
+            "Joyful": "De gozos",
+            "Luminous": "De luz",
+            "Sorrowful": "De dolor",
+            "Glorious": "De gloria",
+            "Latin": "Latín",
+            "Rosary Color": "Color del rosario",
+            "Reset Color": "Use el color predeterminado",
+            "Hide the prayer images.": "Esconda las pinturas de los misterios.",
+            "Hide the words to the prayers. Click blank space to go to the next prayer.": "Esconda las palabras de las oraciones. Haga clíc en el espacio dentro del rosario para ir adelante.",
+            "Pray the Divine Mercy Chaplet instead.": "Rece la Coronilla de la Divina Misericordia"
+        }
+    },
     prayers: {
         signOfTheCross: {
             EN: {
@@ -299,10 +329,47 @@ export default {
                         image: '/images/default/finding.jpg',
                         imagePosition: 'right center'
                     }
-                ]
+                ],
+                ES: [
+                    {
+                        title: 'The First Joyful Mystery',
+                        text: 'The Annunciation of Gabriel to Mary. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-38</a>)',
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/default/annunciation.jpg',
+                        imagePosition: 'center'
+                    },
+                    {
+                        title: 'The Second Joyful Mystery',
+                        text: 'The Visitation  of Mary to Elizabeth. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-56</a>)',
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/default/visitation.jpg',
+                        imagePosition: 'center'
+                    },
+                    {
+                        title: 'The Third Joyful Mystery',
+                        text: 'The Birth of Our Lord. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-21</a>)',
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/default/nativity.jpg',
+                        imagePosition: 'center'
+                    },
+                    {
+                        title: 'The Fourth Joyful Mystery',
+                        text: 'The Presentation of Our Lord. (<a href="/med_en_joyful_4" data-navigo>Luke 2:22-38</a>)',
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/default/presentation.jpg',
+                        imagePosition: 'center'
+                    },
+                    {
+                        title: 'The Fifth Joyful Mystery',
+                        text: 'The Finding of Our Lord in the Temple. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-52</a>)',
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/default/finding.jpg',
+                        imagePosition: 'right center'
+                    }
+                ],
             },
             luminous: {
-               EN: [
+                EN: [
                     {
                         title: 'The First Luminous Mystery',
                         text: 'The Baptism of Our Lord in the River Jordan. (<a href="/med_en_luminous_1" data-navigo>Matthew 3:13-16</a>)',
@@ -412,7 +479,44 @@ export default {
                         image: '/images/default/eucharist.jpg',
                         imagePosition: 'center'
                     }
-                ]
+                ],
+                ES: [
+                    {
+                        title: 'The First Luminous Mystery',
+                        text: 'The Baptism of Our Lord in the River Jordan. (<a href="/med_en_luminous_1" data-navigo>Matthew 3:13-16</a>)',
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/default/baptism.jpg',
+                        imagePosition: 'center'
+                    },
+                    {
+                        title: 'The Second Luminous Mystery',
+                        text: 'The Wedding at Cana, when Christ manifested Himself. (<a href="/med_en_luminous_2" data-navigo>John 2:1-11</a>)',
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/default/cana.jpg',
+                        imagePosition: 'left center'
+                    },
+                    {
+                        title: 'The Third Luminous Mystery',
+                        text: 'The Proclamation of the Kingdom of God. (<a href="/med_en_luminous_3" data-navigo>Mark 1:14-15</a>)',
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/default/proclamation.jpg',
+                        imagePosition: 'center'
+                    },
+                    {
+                        title: 'The Fourth Luminous Mystery',
+                        text: 'The Transfiguration of Our Lord. (<a href="/med_en_luminous_4" data-navigo>Matthew 17:1-8</a>)',
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/default/transfiguration.jpg',
+                        imagePosition: 'center top'
+                    },
+                    {
+                        title: 'The Fifth Luminous Mystery',
+                        text: 'The Last Supper, when Our Lord gave us the Holy Eucharist. (<a href="/med_en_luminous_5" data-navigo>Matthew 26:17-29</a>)',
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/default/eucharist.jpg',
+                        imagePosition: 'center'
+                    }
+                ],
             },
             sorrowful: {
                 EN: [
@@ -525,7 +629,44 @@ export default {
                         image: '/images/default/crucifixion.jpg',
                         imagePosition: 'center top'
                     }
-                ]
+                ],
+                ES: [
+                    {
+                        title: 'The First Sorrowful Mystery',
+                        text: 'The Agony of Our Lord in the Garden. (<a href="/med_en_sorrowful_1" data-navigo>Matthew 26:36-56</a>)',
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/default/agony.jpg',
+                        imagePosition: 'center'
+                    },
+                    {
+                        title: 'The Second Sorrowful Mystery',
+                        text: 'Our Lord is Scourged at the Pillar. (<a href="/med_en_sorrowful_2" data-navigo>Matthew 27:24-26</a>)',
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/default/scourging.jpg',
+                        imagePosition: 'center top'
+                    },
+                    {
+                        title: 'The Third Sorrowful Mystery',
+                        text: 'Our Lord is Crowned with Thorns. (<a href="/med_en_sorrowful_3" data-navigo>Matthew 27:27-31</a>)',
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/default/thorns.jpg',
+                        imagePosition: 'center top'
+                    },
+                    {
+                        title: 'The Fourth Sorrowful Mystery',
+                        text: 'Our Lord Carries the Cross to Calvary. (<a href="/med_en_sorrowful_4" data-navigo>Matthew 27:32</a>)',
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/default/cross.jpg',
+                        imagePosition: 'center'
+                    },
+                    {
+                        title: 'The Fifth Sorrowful Mystery',
+                        text: 'The Crucifixion of Our Lord. (<a href="/med_en_sorrowful_5" data-navigo>Matthew 27:33-56</a>)',
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/default/crucifixion.jpg',
+                        imagePosition: 'center top'
+                    }
+                ],
             },
             glorious: {
                 EN: [
@@ -638,7 +779,44 @@ export default {
                         image: '/images/default/coronation.jpg',
                         imagePosition: 'center top'
                     }
-                ]
+                ],
+                ES: [
+                    {
+                        title: 'The First Glorious Mystery',
+                        text: 'The Glorious Resurrection of Our Lord. (<a href="/med_en_glorious_1" data-navigo>John 20:1-29</a>)',
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/default/resurrection.jpg',
+                        imagePosition: 'center'
+                    },
+                    {
+                        title: 'The Second Glorious Mystery',
+                        text: 'The Ascension of Our Lord. (<a href="/med_en_glorious_2" data-navigo>Luke 24:36-53</a>)',
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/default/ascension.jpg',
+                        imagePosition: 'center top'
+                    },
+                    {
+                        title: 'The Third Glorious Mystery',
+                        text: 'The Descent of the Holy Spirit at Pentecost. (<a href="/med_en_glorious_3" data-navigo>Acts 2:1-41</a>)',
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/default/descent.jpg',
+                        imagePosition: 'center'
+                    },
+                    {
+                        title: 'The Fourth Glorious Mystery',
+                        text: 'The Assumption of Mary into Heaven. (<a href="/med_en_glorious_4" data-navigo>St. John of Damascus, Excerpt from Second Sermon On the Assumption of Mary</a>)',
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/default/assumption.jpg',
+                        imagePosition: 'center top'
+                    },
+                    {
+                        title: 'The Fifth Glorious Mystery',
+                        text: 'The Coronation of Mary as Queen of Heaven and Earth. (<a href="/med_en_glorious_5" data-navigo>Sermon of St. Peter Canisius On the Incomparable Virgin Mary, Mother of God</a>)',
+                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        image: '/images/default/coronation.jpg',
+                        imagePosition: 'center top'
+                    }
+                ],
             }
         },
         divineMercy: {

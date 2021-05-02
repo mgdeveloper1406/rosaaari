@@ -12,9 +12,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var navigo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! navigo */ "./node_modules/navigo/lib/navigo.min.js");
 /* harmony import */ var navigo__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(navigo__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _renderView__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./renderView */ "./src/js/renderView.js");
-/* harmony import */ var _page_scripts_HomeJS__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./page-scripts/HomeJS */ "./src/js/page-scripts/HomeJS.js");
-/* harmony import */ var _page_scripts_SettingsJS__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./page-scripts/SettingsJS */ "./src/js/page-scripts/SettingsJS.js");
-/* harmony import */ var _page_scripts_ArtworkJS__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./page-scripts/ArtworkJS */ "./src/js/page-scripts/ArtworkJS.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./store */ "./src/js/store.js");
+/* harmony import */ var _page_scripts_HomeJS__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./page-scripts/HomeJS */ "./src/js/page-scripts/HomeJS.js");
+/* harmony import */ var _page_scripts_SettingsJS__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./page-scripts/SettingsJS */ "./src/js/page-scripts/SettingsJS.js");
+/* harmony import */ var _page_scripts_ArtworkJS__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./page-scripts/ArtworkJS */ "./src/js/page-scripts/ArtworkJS.js");
+
 
 
 
@@ -35,109 +37,197 @@ $(document).ready(function () {
   window.nvgo_router.on({
     'settings': function settings() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/settings');
-      (0,_page_scripts_SettingsJS__WEBPACK_IMPORTED_MODULE_3__.default)();
+      (0,_page_scripts_SettingsJS__WEBPACK_IMPORTED_MODULE_4__.default)();
       window.nvgo_router.updatePageLinks();
+      hro_localize();
     },
     'about': function about() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/about');
       window.nvgo_router.updatePageLinks();
+      hro_localize();
     },
     'artwork': function artwork() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/artwork');
-      (0,_page_scripts_ArtworkJS__WEBPACK_IMPORTED_MODULE_4__.default)();
+      (0,_page_scripts_ArtworkJS__WEBPACK_IMPORTED_MODULE_5__.default)();
       window.nvgo_router.updatePageLinks();
+      hro_localize();
     },
     'med_en_joyful_1': function med_en_joyful_1() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_joyful_1');
       window.nvgo_router.updatePageLinks();
+      hro_localize();
     },
     'med_en_joyful_2': function med_en_joyful_2() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_joyful_2');
       window.nvgo_router.updatePageLinks();
+      hro_localize();
     },
     'med_en_joyful_3': function med_en_joyful_3() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_joyful_3');
       window.nvgo_router.updatePageLinks();
+      hro_localize();
     },
     'med_en_joyful_4': function med_en_joyful_4() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_joyful_4');
       window.nvgo_router.updatePageLinks();
+      hro_localize();
     },
     'med_en_joyful_5': function med_en_joyful_5() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_joyful_5');
       window.nvgo_router.updatePageLinks();
+      hro_localize();
     },
     'med_en_luminous_1': function med_en_luminous_1() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_luminous_1');
       window.nvgo_router.updatePageLinks();
+      hro_localize();
     },
     'med_en_luminous_2': function med_en_luminous_2() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_luminous_2');
       window.nvgo_router.updatePageLinks();
+      hro_localize();
     },
     'med_en_luminous_3': function med_en_luminous_3() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_luminous_3');
       window.nvgo_router.updatePageLinks();
+      hro_localize();
     },
     'med_en_luminous_4': function med_en_luminous_4() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_luminous_4');
       window.nvgo_router.updatePageLinks();
+      hro_localize();
     },
     'med_en_luminous_5': function med_en_luminous_5() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_luminous_5');
       window.nvgo_router.updatePageLinks();
+      hro_localize();
     },
     'med_en_sorrowful_1': function med_en_sorrowful_1() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_sorrowful_1');
       window.nvgo_router.updatePageLinks();
+      hro_localize();
     },
     'med_en_sorrowful_2': function med_en_sorrowful_2() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_sorrowful_2');
       window.nvgo_router.updatePageLinks();
+      hro_localize();
     },
     'med_en_sorrowful_3': function med_en_sorrowful_3() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_sorrowful_3');
       window.nvgo_router.updatePageLinks();
+      hro_localize();
     },
     'med_en_sorrowful_4': function med_en_sorrowful_4() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_sorrowful_4');
       window.nvgo_router.updatePageLinks();
+      hro_localize();
     },
     'med_en_sorrowful_5': function med_en_sorrowful_5() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_sorrowful_5');
       window.nvgo_router.updatePageLinks();
+      hro_localize();
     },
     'med_en_glorious_1': function med_en_glorious_1() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_glorious_1');
       window.nvgo_router.updatePageLinks();
+      hro_localize();
     },
     'med_en_glorious_2': function med_en_glorious_2() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_glorious_2');
       window.nvgo_router.updatePageLinks();
+      hro_localize();
     },
     'med_en_glorious_3': function med_en_glorious_3() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_glorious_3');
       window.nvgo_router.updatePageLinks();
+      hro_localize();
     },
     'med_en_glorious_4': function med_en_glorious_4() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_glorious_4');
       window.nvgo_router.updatePageLinks();
+      hro_localize();
     },
     'med_en_glorious_5': function med_en_glorious_5() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_glorious_5');
       window.nvgo_router.updatePageLinks();
+      hro_localize();
+    },
+    // SPANISH
+    'med_es_joyful_1': function med_es_joyful_1() {
+      (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_joyful_1');
+      window.nvgo_router.updatePageLinks();
+      hro_localize();
+    },
+    'med_es_joyful_2': function med_es_joyful_2() {
+      (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_joyful_2');
+      window.nvgo_router.updatePageLinks();
+      hro_localize();
+    },
+    'med_es_joyful_3': function med_es_joyful_3() {
+      (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_joyful_3');
+      window.nvgo_router.updatePageLinks();
+      hro_localize();
+    },
+    'med_es_joyful_4': function med_es_joyful_4() {
+      (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_joyful_4');
+      window.nvgo_router.updatePageLinks();
+      hro_localize();
+    },
+    'med_es_joyful_5': function med_es_joyful_5() {
+      (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_joyful_5');
+      window.nvgo_router.updatePageLinks();
+      hro_localize();
+    },
+    'med_es_glorious_1': function med_es_glorious_1() {
+      (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_glorious_1');
+      window.nvgo_router.updatePageLinks();
+      hro_localize();
+    },
+    'med_es_glorious_2': function med_es_glorious_2() {
+      (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_glorious_2');
+      window.nvgo_router.updatePageLinks();
+      hro_localize();
+    },
+    'med_es_glorious_3': function med_es_glorious_3() {
+      (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_glorious_3');
+      window.nvgo_router.updatePageLinks();
+      hro_localize();
+    },
+    'med_es_glorious_4': function med_es_glorious_4() {
+      (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_glorious_4');
+      window.nvgo_router.updatePageLinks();
+      hro_localize();
+    },
+    'med_es_glorious_5': function med_es_glorious_5() {
+      (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_glorious_5');
+      window.nvgo_router.updatePageLinks();
+      hro_localize();
     }
   }).resolve(); // Seems for home and 404, we have to do it this way :(
 
   window.nvgo_router.on('/', function () {
     (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/');
-    (0,_page_scripts_HomeJS__WEBPACK_IMPORTED_MODULE_2__.default)();
+    (0,_page_scripts_HomeJS__WEBPACK_IMPORTED_MODULE_3__.default)();
     window.nvgo_router.updatePageLinks();
+    hro_localize();
   }).resolve();
   window.nvgo_router.notFound(function () {
     (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('404');
     window.nvgo_router.updatePageLinks();
-  }).resolve();
+    hro_localize();
+  }).resolve(); // Localize. We either surround the text in the <hro-localize> tag, or when that's not
+  // possible, as in, for some reason, select options, then we put the data-hro-localize
+  // attribute on the element, with it not set to equal anything
+
+  function hro_localize() {
+    $('hro-localize, [data-hro-localize]').text(function (idx, text) {
+      if (_store__WEBPACK_IMPORTED_MODULE_2__.default.localization.ES[text]) {
+        text = _store__WEBPACK_IMPORTED_MODULE_2__.default.localization.ES[text];
+      }
+
+      return text;
+    });
+  }
 });
 
 /***/ }),
@@ -960,7 +1050,7 @@ function SettingsJS() {
       }
 
       if (field['name'] === 'rosary-language') {
-        if (field['value'] === 'EN' || field['value'] === 'EN_TRAD' || field['value'] === 'LA') {
+        if (field['value'] === 'EN' || field['value'] === 'EN_TRAD' || field['value'] === 'LA' || field['value'] === 'ES') {
           _store__WEBPACK_IMPORTED_MODULE_0__.default.settings.rosaryLanguage = field['value'];
           localStorage.setItem('rosaryLanguage', field['value']);
         }
@@ -1112,8 +1202,40 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _templates_meditations_med_en_luminous_4_html__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_luminous_4_html__WEBPACK_IMPORTED_MODULE_23__);
 /* harmony import */ var _templates_meditations_med_en_luminous_5_html__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./templates/meditations/med_en_luminous_5.html */ "./src/js/templates/meditations/med_en_luminous_5.html");
 /* harmony import */ var _templates_meditations_med_en_luminous_5_html__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_en_luminous_5_html__WEBPACK_IMPORTED_MODULE_24__);
-/* harmony import */ var _templates_partials_header_html__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./templates/partials/header.html */ "./src/js/templates/partials/header.html");
-/* harmony import */ var _templates_partials_header_html__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(_templates_partials_header_html__WEBPACK_IMPORTED_MODULE_25__);
+/* harmony import */ var _templates_meditations_med_es_joyful_1_html__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./templates/meditations/med_es_joyful_1.html */ "./src/js/templates/meditations/med_es_joyful_1.html");
+/* harmony import */ var _templates_meditations_med_es_joyful_1_html__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_es_joyful_1_html__WEBPACK_IMPORTED_MODULE_25__);
+/* harmony import */ var _templates_meditations_med_es_joyful_2_html__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./templates/meditations/med_es_joyful_2.html */ "./src/js/templates/meditations/med_es_joyful_2.html");
+/* harmony import */ var _templates_meditations_med_es_joyful_2_html__WEBPACK_IMPORTED_MODULE_26___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_es_joyful_2_html__WEBPACK_IMPORTED_MODULE_26__);
+/* harmony import */ var _templates_meditations_med_es_joyful_3_html__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./templates/meditations/med_es_joyful_3.html */ "./src/js/templates/meditations/med_es_joyful_3.html");
+/* harmony import */ var _templates_meditations_med_es_joyful_3_html__WEBPACK_IMPORTED_MODULE_27___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_es_joyful_3_html__WEBPACK_IMPORTED_MODULE_27__);
+/* harmony import */ var _templates_meditations_med_es_joyful_4_html__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./templates/meditations/med_es_joyful_4.html */ "./src/js/templates/meditations/med_es_joyful_4.html");
+/* harmony import */ var _templates_meditations_med_es_joyful_4_html__WEBPACK_IMPORTED_MODULE_28___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_es_joyful_4_html__WEBPACK_IMPORTED_MODULE_28__);
+/* harmony import */ var _templates_meditations_med_es_joyful_5_html__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./templates/meditations/med_es_joyful_5.html */ "./src/js/templates/meditations/med_es_joyful_5.html");
+/* harmony import */ var _templates_meditations_med_es_joyful_5_html__WEBPACK_IMPORTED_MODULE_29___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_es_joyful_5_html__WEBPACK_IMPORTED_MODULE_29__);
+/* harmony import */ var _templates_meditations_med_es_glorious_1_html__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./templates/meditations/med_es_glorious_1.html */ "./src/js/templates/meditations/med_es_glorious_1.html");
+/* harmony import */ var _templates_meditations_med_es_glorious_1_html__WEBPACK_IMPORTED_MODULE_30___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_es_glorious_1_html__WEBPACK_IMPORTED_MODULE_30__);
+/* harmony import */ var _templates_meditations_med_es_glorious_2_html__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./templates/meditations/med_es_glorious_2.html */ "./src/js/templates/meditations/med_es_glorious_2.html");
+/* harmony import */ var _templates_meditations_med_es_glorious_2_html__WEBPACK_IMPORTED_MODULE_31___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_es_glorious_2_html__WEBPACK_IMPORTED_MODULE_31__);
+/* harmony import */ var _templates_meditations_med_es_glorious_3_html__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./templates/meditations/med_es_glorious_3.html */ "./src/js/templates/meditations/med_es_glorious_3.html");
+/* harmony import */ var _templates_meditations_med_es_glorious_3_html__WEBPACK_IMPORTED_MODULE_32___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_es_glorious_3_html__WEBPACK_IMPORTED_MODULE_32__);
+/* harmony import */ var _templates_meditations_med_es_glorious_4_html__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./templates/meditations/med_es_glorious_4.html */ "./src/js/templates/meditations/med_es_glorious_4.html");
+/* harmony import */ var _templates_meditations_med_es_glorious_4_html__WEBPACK_IMPORTED_MODULE_33___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_es_glorious_4_html__WEBPACK_IMPORTED_MODULE_33__);
+/* harmony import */ var _templates_meditations_med_es_glorious_5_html__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./templates/meditations/med_es_glorious_5.html */ "./src/js/templates/meditations/med_es_glorious_5.html");
+/* harmony import */ var _templates_meditations_med_es_glorious_5_html__WEBPACK_IMPORTED_MODULE_34___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_es_glorious_5_html__WEBPACK_IMPORTED_MODULE_34__);
+/* harmony import */ var _templates_partials_header_html__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./templates/partials/header.html */ "./src/js/templates/partials/header.html");
+/* harmony import */ var _templates_partials_header_html__WEBPACK_IMPORTED_MODULE_35___default = /*#__PURE__*/__webpack_require__.n(_templates_partials_header_html__WEBPACK_IMPORTED_MODULE_35__);
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./store */ "./src/js/store.js");
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1148,7 +1270,16 @@ function renderView(pathname, params) {
   switch (pathname) {
     case '/':
       $('body').addClass('fixed');
-      $('div#app').append((_templates_partials_header_html__WEBPACK_IMPORTED_MODULE_25___default()) + (_templates_home_html__WEBPACK_IMPORTED_MODULE_0___default()));
+      /* var spotsToTranslate = Home.match(/{{.*}}/g);
+      for(var i = 0; i < spotsToTranslate.length; i++) {
+          var phrase = spotsToTranslate[i].replace('{{', '');
+          phrase = phrase.replace('}}', '');
+          phrase = phrase.trim();
+          phrase = store.localization.ES[phrase];
+          Home = Home.replace(spotsToTranslate[i], phrase);
+      } */
+
+      $('div#app').append((_templates_partials_header_html__WEBPACK_IMPORTED_MODULE_35___default()) + (_templates_home_html__WEBPACK_IMPORTED_MODULE_0___default()));
       break;
 
     case '/settings':
@@ -1266,6 +1397,56 @@ function renderView(pathname, params) {
       $('div#app').append((_templates_meditations_med_en_glorious_5_html__WEBPACK_IMPORTED_MODULE_19___default()));
       break;
 
+    case '/med_es_joyful_1':
+      $('body').removeClass('fixed');
+      $('div#app').append((_templates_meditations_med_es_joyful_1_html__WEBPACK_IMPORTED_MODULE_25___default()));
+      break;
+
+    case '/med_es_joyful_2':
+      $('body').removeClass('fixed');
+      $('div#app').append((_templates_meditations_med_es_joyful_2_html__WEBPACK_IMPORTED_MODULE_26___default()));
+      break;
+
+    case '/med_es_joyful_3':
+      $('body').removeClass('fixed');
+      $('div#app').append((_templates_meditations_med_es_joyful_3_html__WEBPACK_IMPORTED_MODULE_27___default()));
+      break;
+
+    case '/med_es_joyful_4':
+      $('body').removeClass('fixed');
+      $('div#app').append((_templates_meditations_med_es_joyful_4_html__WEBPACK_IMPORTED_MODULE_28___default()));
+      break;
+
+    case '/med_es_joyful_5':
+      $('body').removeClass('fixed');
+      $('div#app').append((_templates_meditations_med_es_joyful_5_html__WEBPACK_IMPORTED_MODULE_29___default()));
+      break;
+
+    case '/med_es_glorious_1':
+      $('body').removeClass('fixed');
+      $('div#app').append((_templates_meditations_med_es_glorious_1_html__WEBPACK_IMPORTED_MODULE_30___default()));
+      break;
+
+    case '/med_es_glorious_2':
+      $('body').removeClass('fixed');
+      $('div#app').append((_templates_meditations_med_es_glorious_2_html__WEBPACK_IMPORTED_MODULE_31___default()));
+      break;
+
+    case '/med_es_glorious_3':
+      $('body').removeClass('fixed');
+      $('div#app').append((_templates_meditations_med_es_glorious_3_html__WEBPACK_IMPORTED_MODULE_32___default()));
+      break;
+
+    case '/med_es_glorious_4':
+      $('body').removeClass('fixed');
+      $('div#app').append((_templates_meditations_med_es_glorious_4_html__WEBPACK_IMPORTED_MODULE_33___default()));
+      break;
+
+    case '/med_es_glorious_5':
+      $('body').removeClass('fixed');
+      $('div#app').append((_templates_meditations_med_es_glorious_5_html__WEBPACK_IMPORTED_MODULE_34___default()));
+      break;
+
     case '404':
       $('body').removeClass('fixed');
       $('div#app').append((_templates_404_html__WEBPACK_IMPORTED_MODULE_4___default()));
@@ -1301,6 +1482,36 @@ __webpack_require__.r(__webpack_exports__);
     hideImages: localStorage.getItem('hideImages') === 'true' ? true : false,
     hidePrayers: localStorage.getItem('hidePrayers') === 'true' ? true : false,
     divineMercy: localStorage.getItem('divineMercy') === 'true' ? true : false
+  },
+  localization: {
+    ES: {
+      "Holy Rosary Online": "Santo Rosario en Línea (Holy Rosary Online)",
+      "Settings": "Configuración",
+      "About": "Información",
+      "Home": "Página Principal",
+      "Reset": "Reinicie",
+      "Next Prayer": "Adelante",
+      "Previous": "Atrás",
+      "Next": "Adelante",
+      "Sign of the Cross": "La Señal de la Cruz",
+      "Our Father": "Padre Nuestro",
+      "Hail Mary": "Ave María",
+      "Medallion, end of rosary": "Medallón, fin del rosario",
+      "Language": "Idioma",
+      "Mysteries": "Misterios",
+      "Rosary Language": "Idioma del rosario",
+      "By day": "Por día",
+      "Joyful": "De gozos",
+      "Luminous": "De luz",
+      "Sorrowful": "De dolor",
+      "Glorious": "De gloria",
+      "Latin": "Latín",
+      "Rosary Color": "Color del rosario",
+      "Reset Color": "Use el color predeterminado",
+      "Hide the prayer images.": "Esconda las pinturas de los misterios.",
+      "Hide the words to the prayers. Click blank space to go to the next prayer.": "Esconda las palabras de las oraciones. Haga clíc en el espacio dentro del rosario para ir adelante.",
+      "Pray the Divine Mercy Chaplet instead.": "Rece la Coronilla de la Divina Misericordia"
+    }
   },
   prayers: {
     signOfTheCross: {
@@ -1573,6 +1784,37 @@ __webpack_require__.r(__webpack_exports__);
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/finding.jpg',
           imagePosition: 'right center'
+        }],
+        ES: [{
+          title: 'The First Joyful Mystery',
+          text: 'The Annunciation of Gabriel to Mary. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-38</a>)',
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/annunciation.jpg',
+          imagePosition: 'center'
+        }, {
+          title: 'The Second Joyful Mystery',
+          text: 'The Visitation  of Mary to Elizabeth. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-56</a>)',
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/visitation.jpg',
+          imagePosition: 'center'
+        }, {
+          title: 'The Third Joyful Mystery',
+          text: 'The Birth of Our Lord. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-21</a>)',
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/nativity.jpg',
+          imagePosition: 'center'
+        }, {
+          title: 'The Fourth Joyful Mystery',
+          text: 'The Presentation of Our Lord. (<a href="/med_en_joyful_4" data-navigo>Luke 2:22-38</a>)',
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/presentation.jpg',
+          imagePosition: 'center'
+        }, {
+          title: 'The Fifth Joyful Mystery',
+          text: 'The Finding of Our Lord in the Temple. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-52</a>)',
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/finding.jpg',
+          imagePosition: 'right center'
         }]
       },
       luminous: {
@@ -1666,6 +1908,37 @@ __webpack_require__.r(__webpack_exports__);
           title: 'Quintum Mystérium Luminósum',
           text: 'Institútio Eucharístiæ. (<a href="/med_en_luminous_5" data-navigo>Matthew 26:17-29</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+          image: '/images/default/eucharist.jpg',
+          imagePosition: 'center'
+        }],
+        ES: [{
+          title: 'The First Luminous Mystery',
+          text: 'The Baptism of Our Lord in the River Jordan. (<a href="/med_en_luminous_1" data-navigo>Matthew 3:13-16</a>)',
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/baptism.jpg',
+          imagePosition: 'center'
+        }, {
+          title: 'The Second Luminous Mystery',
+          text: 'The Wedding at Cana, when Christ manifested Himself. (<a href="/med_en_luminous_2" data-navigo>John 2:1-11</a>)',
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/cana.jpg',
+          imagePosition: 'left center'
+        }, {
+          title: 'The Third Luminous Mystery',
+          text: 'The Proclamation of the Kingdom of God. (<a href="/med_en_luminous_3" data-navigo>Mark 1:14-15</a>)',
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/proclamation.jpg',
+          imagePosition: 'center'
+        }, {
+          title: 'The Fourth Luminous Mystery',
+          text: 'The Transfiguration of Our Lord. (<a href="/med_en_luminous_4" data-navigo>Matthew 17:1-8</a>)',
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/transfiguration.jpg',
+          imagePosition: 'center top'
+        }, {
+          title: 'The Fifth Luminous Mystery',
+          text: 'The Last Supper, when Our Lord gave us the Holy Eucharist. (<a href="/med_en_luminous_5" data-navigo>Matthew 26:17-29</a>)',
+          source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/eucharist.jpg',
           imagePosition: 'center'
         }]
@@ -1763,6 +2036,37 @@ __webpack_require__.r(__webpack_exports__);
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/crucifixion.jpg',
           imagePosition: 'center top'
+        }],
+        ES: [{
+          title: 'The First Sorrowful Mystery',
+          text: 'The Agony of Our Lord in the Garden. (<a href="/med_en_sorrowful_1" data-navigo>Matthew 26:36-56</a>)',
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/agony.jpg',
+          imagePosition: 'center'
+        }, {
+          title: 'The Second Sorrowful Mystery',
+          text: 'Our Lord is Scourged at the Pillar. (<a href="/med_en_sorrowful_2" data-navigo>Matthew 27:24-26</a>)',
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/scourging.jpg',
+          imagePosition: 'center top'
+        }, {
+          title: 'The Third Sorrowful Mystery',
+          text: 'Our Lord is Crowned with Thorns. (<a href="/med_en_sorrowful_3" data-navigo>Matthew 27:27-31</a>)',
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/thorns.jpg',
+          imagePosition: 'center top'
+        }, {
+          title: 'The Fourth Sorrowful Mystery',
+          text: 'Our Lord Carries the Cross to Calvary. (<a href="/med_en_sorrowful_4" data-navigo>Matthew 27:32</a>)',
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/cross.jpg',
+          imagePosition: 'center'
+        }, {
+          title: 'The Fifth Sorrowful Mystery',
+          text: 'The Crucifixion of Our Lord. (<a href="/med_en_sorrowful_5" data-navigo>Matthew 27:33-56</a>)',
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/crucifixion.jpg',
+          imagePosition: 'center top'
         }]
       },
       glorious: {
@@ -1856,6 +2160,37 @@ __webpack_require__.r(__webpack_exports__);
           title: 'Quintum Mystérium Gloriósum',
           text: 'Coronátio Beátæ Maríæ Vírginis in Cælis. (<a href="/med_en_glorious_5" data-navigo>Sermon of St. Peter Canisius On the Incomparable Virgin Mary, Mother of God</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
+          image: '/images/default/coronation.jpg',
+          imagePosition: 'center top'
+        }],
+        ES: [{
+          title: 'The First Glorious Mystery',
+          text: 'The Glorious Resurrection of Our Lord. (<a href="/med_en_glorious_1" data-navigo>John 20:1-29</a>)',
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/resurrection.jpg',
+          imagePosition: 'center'
+        }, {
+          title: 'The Second Glorious Mystery',
+          text: 'The Ascension of Our Lord. (<a href="/med_en_glorious_2" data-navigo>Luke 24:36-53</a>)',
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/ascension.jpg',
+          imagePosition: 'center top'
+        }, {
+          title: 'The Third Glorious Mystery',
+          text: 'The Descent of the Holy Spirit at Pentecost. (<a href="/med_en_glorious_3" data-navigo>Acts 2:1-41</a>)',
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/descent.jpg',
+          imagePosition: 'center'
+        }, {
+          title: 'The Fourth Glorious Mystery',
+          text: 'The Assumption of Mary into Heaven. (<a href="/med_en_glorious_4" data-navigo>St. John of Damascus, Excerpt from Second Sermon On the Assumption of Mary</a>)',
+          source: 'http://www.newadvent.org/images/rosary.pdf',
+          image: '/images/default/assumption.jpg',
+          imagePosition: 'center top'
+        }, {
+          title: 'The Fifth Glorious Mystery',
+          text: 'The Coronation of Mary as Queen of Heaven and Earth. (<a href="/med_en_glorious_5" data-navigo>Sermon of St. Peter Canisius On the Incomparable Virgin Mary, Mother of God</a>)',
+          source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/coronation.jpg',
           imagePosition: 'center top'
         }]
@@ -2316,7 +2651,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<div id=\"template-home\">\n    <button id=\"next-prayer\">Next Prayer</button>\n    <button class=\"prayers-reset\" data-rosary-reset>\n        Reset\n    </button>\n\n    <div aria-live=\"polite\" class=\"prayers\" id=\"prayers\">\n        <div class=\"prayers__content prayers-content\" id=\"prayers-content\">\n\n        </div>\n        <div class=\"prayers-prev-next\">\n            <button class=\"prayers-prev-next__prev\" data-rosary-prev>\n                <span class=\"sr-only\">Previous</span>\n                <span class=\"prayers-prev-next__prev-icon\">\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z\"/></svg>\n                </span>\n            </button>\n            <button class=\"prayers-prev-next__next\" data-rosary-next>\n                <span class=\"sr-only\">Next</span>\n                <span class=\"prayers-prev-next__next-icon\">\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z\"/></svg>\n                </span>\n            </button>\n        </div>\n        \n    </div>\n\n    \n    <div class=\"rosary-wrapper-wrapper-mask\">\n    <div class=\"rosary-wrapper-wrapper\">\n    <div class=\"rosary-wrapper\">\n    <div class=\"rosary\">\n        <div class=\"rosary-intro-chain\"></div>\n        <div class=\"rosary-intro\">\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__crucifix bead bead--crucifix\" id=\"crucifix\">\n                <svg width=\"53\" height=\"102\" viewBox=\"0 0 53 102\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <path d=\"M30.2053 3.05746L30.1627 23.0574L50.1627 23.1L50.1478 30.1L37.1478 30.0723L35.6457 31.0691L32.6414 33.0627L30.1372 35.0574L30.1223 42.0574L31.118 44.0595L31.1117 47.0595L30.1042 50.5574L29.9999 99.5572L23 99.5423L23.0989 53.0425L22.5957 54.5414L21.1021 51.5382L21.1106 47.5382L22.6138 46.0414L21.6149 45.5393L21.6191 43.5393L23.1191 43.5425L21.6276 39.5393L21.1372 35.0382L19.1415 33.034L17.1436 32.0297L14.6457 31.0244L3.14577 30.9999L3.16279 23L23.1627 23.0425L23.2053 3.04256L30.2053 3.05746Z\" stroke-width=\"4\"/>\n                </svg>\n                <span class=\"sr-only\">Sign of the Cross</span>\n            </button></div>\n\n            <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__our-father bead bead--our-father bead--correct-rotation\" id=\"intro-our-father-1\"><span class=\"sr-only\">Our Father</span></button></div>\n            <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__hail-mary bead bead--correct-rotation\" id=\"intro-hail-mary-1\"><span class=\"sr-only\">Hail Mary</span></button></div>\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__hail-mary bead bead--correct-rotation\" id=\"intro-hail-mary-2\"><span class=\"sr-only\">Hail Mary</span></button></div>\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__hail-mary bead bead--correct-rotation\" id=\"intro-hail-mary-3\"><span class=\"sr-only\">Hail Mary</span></button></div>\n\n            <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__our-father bead bead--our-father bead--correct-rotation\" id=\"intro-our-father-2\"><span class=\"sr-only\">Our Father</span></button></div>\n            <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n        </div>\n\n        <div class=\"rosary-main-wrapper\">\n            <div class=\"rosary-main\">\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n                <div class=\"bead-wrapper medallion\"><button class=\"bead bead--medallion\" id=\"medallion\">\n                    <!-- Medallion\n                    <div class=\"bead\"></div> -->\n                    <svg width=\"59\" height=\"52\" viewBox=\"0 0 59 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                        <path d=\"M35.6514 44.9919C32.7178 49.7185 25.8402 49.7185 22.9066 44.9919L3.64349 13.955C0.542614 8.95888 4.13567 2.5 10.0159 2.5H48.5421C54.4223 2.5 58.0154 8.95889 54.9145 13.955L35.6514 44.9919Z\" stroke-width=\"5\"/>\n                    </svg>\n                    <span class=\"sr-only\">Medallion, end of rosary</span>\n                </button></div>\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-01\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-02\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-03\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-04\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-05\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-06\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-07\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-08\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-09\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-10\"><span class=\"sr-only\">Hail Mary</span></button></div>\n\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n                <div class=\"bead-wrapper\"><button class=\"bead bead--our-father\" id=\"our-father-2\"><span class=\"sr-only\">Our Father</span></button></div>\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-01\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-02\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-03\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-04\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-05\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-06\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-07\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-08\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-09\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-10\"><span class=\"sr-only\">Hail Mary</span></button></div>\n\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n                <div class=\"bead-wrapper\"><button class=\"bead bead--our-father\" id=\"our-father-3\"><span class=\"sr-only\">Our Father</span></button></div>\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-01\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-02\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-03\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-04\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-05\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-06\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-07\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-08\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-09\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-10\"><span class=\"sr-only\">Hail Mary</span></button></div>\n\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n                <div class=\"bead-wrapper\"><button class=\"bead bead--our-father\" id=\"our-father-4\"><span class=\"sr-only\">Our Father</span></button></div>\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-01\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-02\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-03\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-04\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-05\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-06\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-07\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-08\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-09\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-10\"><span class=\"sr-only\">Hail Mary</span></button></div>\n\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n                <div class=\"bead-wrapper\"><button class=\"bead bead--our-father\" id=\"our-father-5\"><span class=\"sr-only\">Our Father</span></button></div>\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-01\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-02\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-03\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-04\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-05\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-06\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-07\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-08\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-09\"><span class=\"sr-only\">Hail Mary</span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-10\"><span class=\"sr-only\">Hail Mary</span></button></div>\n            </div>\n        </div>\n    <button id=\"next-prayer-btn-within-beads\"><span class=\"sr-only\">Next Prayer</span></button>\n    </div>\n    </div>\n    </div>\n    </div>\n</div>";
+var code = "<div id=\"template-home\">\n    <button id=\"next-prayer\"><hro-localize>Next Prayer</hro-localize></button>\n    <button class=\"prayers-reset\" data-rosary-reset>\n        <hro-localize>Reset</hro-localize>\n    </button>\n\n    <div aria-live=\"polite\" class=\"prayers\" id=\"prayers\">\n        <div class=\"prayers__content prayers-content\" id=\"prayers-content\">\n\n        </div>\n        <div class=\"prayers-prev-next\">\n            <button class=\"prayers-prev-next__prev\" data-rosary-prev>\n                <span class=\"sr-only\"><hro-localize>Previous</hro-localize></span>\n                <span class=\"prayers-prev-next__prev-icon\">\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z\"/></svg>\n                </span>\n            </button>\n            <button class=\"prayers-prev-next__next\" data-rosary-next>\n                <span class=\"sr-only\"><hro-localize>Next</hro-localize></span>\n                <span class=\"prayers-prev-next__next-icon\">\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z\"/></svg>\n                </span>\n            </button>\n        </div>\n        \n    </div>\n\n    \n    <div class=\"rosary-wrapper-wrapper-mask\">\n    <div class=\"rosary-wrapper-wrapper\">\n    <div class=\"rosary-wrapper\">\n    <div class=\"rosary\">\n        <div class=\"rosary-intro-chain\"></div>\n        <div class=\"rosary-intro\">\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__crucifix bead bead--crucifix\" id=\"crucifix\">\n                <svg width=\"53\" height=\"102\" viewBox=\"0 0 53 102\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <path d=\"M30.2053 3.05746L30.1627 23.0574L50.1627 23.1L50.1478 30.1L37.1478 30.0723L35.6457 31.0691L32.6414 33.0627L30.1372 35.0574L30.1223 42.0574L31.118 44.0595L31.1117 47.0595L30.1042 50.5574L29.9999 99.5572L23 99.5423L23.0989 53.0425L22.5957 54.5414L21.1021 51.5382L21.1106 47.5382L22.6138 46.0414L21.6149 45.5393L21.6191 43.5393L23.1191 43.5425L21.6276 39.5393L21.1372 35.0382L19.1415 33.034L17.1436 32.0297L14.6457 31.0244L3.14577 30.9999L3.16279 23L23.1627 23.0425L23.2053 3.04256L30.2053 3.05746Z\" stroke-width=\"4\"/>\n                </svg>\n                <span class=\"sr-only\"><hro-localize>Sign of the Cross</hro-localize></span>\n            </button></div>\n\n            <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__our-father bead bead--our-father bead--correct-rotation\" id=\"intro-our-father-1\"><span class=\"sr-only\"><hro-localize>Our Father</hro-localize></span></button></div>\n            <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__hail-mary bead bead--correct-rotation\" id=\"intro-hail-mary-1\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__hail-mary bead bead--correct-rotation\" id=\"intro-hail-mary-2\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__hail-mary bead bead--correct-rotation\" id=\"intro-hail-mary-3\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n\n            <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n            <div class=\"bead-wrapper\"><button class=\"rosary-intro__our-father bead bead--our-father bead--correct-rotation\" id=\"intro-our-father-2\"><span class=\"sr-only\"><hro-localize>Our Father</hro-localize></span></button></div>\n            <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n        </div>\n\n        <div class=\"rosary-main-wrapper\">\n            <div class=\"rosary-main\">\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n                <div class=\"bead-wrapper medallion\"><button class=\"bead bead--medallion\" id=\"medallion\">\n                    <!-- Medallion\n                    <div class=\"bead\"></div> -->\n                    <svg width=\"59\" height=\"52\" viewBox=\"0 0 59 52\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                        <path d=\"M35.6514 44.9919C32.7178 49.7185 25.8402 49.7185 22.9066 44.9919L3.64349 13.955C0.542614 8.95888 4.13567 2.5 10.0159 2.5H48.5421C54.4223 2.5 58.0154 8.95889 54.9145 13.955L35.6514 44.9919Z\" stroke-width=\"5\"/>\n                    </svg>\n                    <span class=\"sr-only\"><hro-localize>Medallion, end of rosary</hro-localize></span>\n                </button></div>\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-01\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-02\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-03\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-04\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-05\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-06\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-07\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-08\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-09\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-1-10\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n                <div class=\"bead-wrapper\"><button class=\"bead bead--our-father\" id=\"our-father-2\"><span class=\"sr-only\"><hro-localize><hro-localize>Our Father</hro-localize></hro-localize></span></button></div>\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-01\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-02\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-03\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-04\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-05\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-06\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-07\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-08\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-09\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-2-10\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n                <div class=\"bead-wrapper\"><button class=\"bead bead--our-father\" id=\"our-father-3\"><span class=\"sr-only\"><hro-localize>Our Father</hro-localize></span></button></div>\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-01\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-02\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-03\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-04\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-05\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-06\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-07\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-08\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-09\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-3-10\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n                <div class=\"bead-wrapper\"><button class=\"bead bead--our-father\" id=\"our-father-4\"><span class=\"sr-only\"><hro-localize>Our Father</hro-localize></span></button></div>\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-01\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-02\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-03\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-04\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-05\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-06\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-07\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-08\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-09\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-4-10\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n                <div class=\"bead-wrapper\"><button class=\"bead bead--our-father\" id=\"our-father-5\"><span class=\"sr-only\"><hro-localize>Our Father</hro-localize></span></button></div>\n                <div class=\"bead-wrapper bead-wrapper--filler\"><div class=\"bead bead--filler\"></div></div>\n\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-01\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-02\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-03\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-04\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-05\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-06\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-07\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-08\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-09\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n                <div class=\"bead-wrapper\"><button class=\"rosary-main__hail-mary bead\" id=\"hail-mary-5-10\"><span class=\"sr-only\"><hro-localize>Hail Mary</hro-localize></span></button></div>\n            </div>\n        </div>\n    <button id=\"next-prayer-btn-within-beads\"><span class=\"sr-only\">Next Prayer</span></button>\n    </div>\n    </div>\n    </div>\n    </div>\n</div>";
 // Exports
 module.exports = code;
 
@@ -2582,6 +2917,136 @@ module.exports = code;
 
 /***/ }),
 
+/***/ "./src/js/templates/meditations/med_es_glorious_1.html":
+/*!*************************************************************!*\
+  !*** ./src/js/templates/meditations/med_es_glorious_1.html ***!
+  \*************************************************************/
+/***/ ((module) => {
+
+// Module
+var code = "<div class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\">Home</span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1 class=\"label\">San Juan 20, 1-9 (Nácar-Colunga)</h1>\n\n        <p>El día primero de la semana, María Magdalena vino muy de madrugada, cuando aún era de noche, al monumento, y vio la piedra quitada del monumento. Corrió, pues, y vino a Simón Pedro y al otro discípulo a quien Jesús amaba, y les dijo: Han quitado al Señor del monumento y no sabemos dónde le han puesto.</p>\n\n        <p>Salió, pues, Pedro y con él otro discípulo, y fueron al monumento. Ambos corrían, pero el otro discípulo corrió más aprisa que Pedro y llegó primero al monumento, e inclinándose vió las bandas; sin embargo, no entró. Llegó, pues, Simón Pedro después de él, y entró en el monumento, y vió las fajas allí colocadas, y el sudario que estaba sobre su cabeza, no puesto con las fajas, sino envuelto en un sitio aparte. Entonces entró también el otro discípulo, que vino primero al monumento, y vió y creyó; porque aún no se habían dado cuenta de la Escritura, según la cual era preciso que El resucitase de entre los muertos.</p>\n\n\n\n        <hr>\n\n        <p><em>Sagrada Biblia</em>.\n        Eloíno Nácar Fuster y Alberto Colunga.\n        La Editorial Católica: Madrid, 1944\n        <a href=\"https://archive.org/details/SagradaBibliaNacarColunga19441Edicin/\">archive.org</a></p>\n    </div>\n</div>";
+// Exports
+module.exports = code;
+
+/***/ }),
+
+/***/ "./src/js/templates/meditations/med_es_glorious_2.html":
+/*!*************************************************************!*\
+  !*** ./src/js/templates/meditations/med_es_glorious_2.html ***!
+  \*************************************************************/
+/***/ ((module) => {
+
+// Module
+var code = "<div class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\">Home</span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1 class=\"label\">San Lucas 24, 44-53 (Nácar-Colunga)</h1>\n\n        <p>Les dijo: Esto es lo que yo os decía estando aún con vosotros: que era preciso que se cumpliera todo lo que está escrito en la ley de Moisés y en los Profetas y en los Salmos de mí. Entonces les abrió la inteligencia para que entendiesen las Escrituras, y les dijo: Que así estaba escrito, que el Mesías padeciese y al tercer día resucitase de entre los muertos. Y que se predicase en su nombre la penitencia para la remisión de los pecados a todas las naciones, comenzando por Jerusalén.</p>\n\n        <p>Vosotros daréis testimonio de esto. Pues yo os enviaré lo prometido por mi Padre: pero habéis de permanecer en la ciudad hasta que seáis revestidos de lo alto.</p>\n\n        <p>Los llevó hasta cerca de Betania, y levantando sus manos los bendijo, y mientras los bendecía se alejaba de ellos, y era llevado al cielo. Ellos se postraron ante El, y se volvieron a Jerusalén con grande gozo y estaban de continuo en el templo bendiciendo a Dios.</p>\n\n        <hr>\n\n        <p><em>Sagrada Biblia</em>.\n        Eloíno Nácar Fuster y Alberto Colunga.\n        La Editorial Católica: Madrid, 1944\n        <a href=\"https://archive.org/details/SagradaBibliaNacarColunga19441Edicin/\">archive.org</a></p>\n    </div>\n</div>";
+// Exports
+module.exports = code;
+
+/***/ }),
+
+/***/ "./src/js/templates/meditations/med_es_glorious_3.html":
+/*!*************************************************************!*\
+  !*** ./src/js/templates/meditations/med_es_glorious_3.html ***!
+  \*************************************************************/
+/***/ ((module) => {
+
+// Module
+var code = "<div class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\">Home</span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1 class=\"label\">Apóstoles 2, 1-4 (Nácar-Colunga)</h1>\n\n        <p>Cuando llegó el día de Pentecostés, estando todos juntos en un lugar, se produjo de repente un ruido del cielo, así como el de un viento impetuoso, que invadió toda la casa en que residían. Y aparecieron, como divididas, lenguas de fuego, que se posaron sobre cada uno de ellos, quedando todos llenos del Espíritu Santo; y comenzaron a hablar en lenguas extrañas, según que el Espíritu les daba.</p>\n\n        <hr>\n\n        <p><em>Sagrada Biblia</em>.\n        Eloíno Nácar Fuster y Alberto Colunga.\n        La Editorial Católica: Madrid, 1944\n        <a href=\"https://archive.org/details/SagradaBibliaNacarColunga19441Edicin/\">archive.org</a></p>\n    </div>\n</div>";
+// Exports
+module.exports = code;
+
+/***/ }),
+
+/***/ "./src/js/templates/meditations/med_es_glorious_4.html":
+/*!*************************************************************!*\
+  !*** ./src/js/templates/meditations/med_es_glorious_4.html ***!
+  \*************************************************************/
+/***/ ((module) => {
+
+// Module
+var code = "<div class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\">Home</span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1 class=\"label\">Sermón de San Juan Damasceno. Segundo sobre la dormición de la Santísima Virgen.</h1>\n\n        <p>El arca santa y animada del Dios viviente, que concibió en su seno a su Criador, descansa hoy en el templo del Señor no construido por mano de hombre. David exulta de alegría, y con él, le cantan himnos los Ángeles, la celebran los Arcángeles, la glorifican las Virtudes, se estremecen de júbilo los Principados, se regocijan con ellos las Potestades, manifiestan su alegría las Dominaciones, la festejan los Tronos y repiten sus alabanzas los Serafines. Hoy es recibido en el celestial Edén el paraíso animado del nuevo Adán, en el cual fue revocada nuestra condenación, plantado el árbol de la vida y cubierta nuestra desnudez.</p>\n\n        <hr>\n\n        <p>\n            Divinum Officium Project. Maitines del 15 de agosto de 2018, rúbrica de 1960.\n            <a href=\"http://divinumofficium.com\">\n                divinumofficium.com\n            </a>\n        </p>\n    </div>\n</div>";
+// Exports
+module.exports = code;
+
+/***/ }),
+
+/***/ "./src/js/templates/meditations/med_es_glorious_5.html":
+/*!*************************************************************!*\
+  !*** ./src/js/templates/meditations/med_es_glorious_5.html ***!
+  \*************************************************************/
+/***/ ((module) => {
+
+// Module
+var code = "<div class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\">Home</span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1 class=\"label\">Sermón de San Pedro Canisio, Presbítero. De María Madre de Dios, Virgen incomparable</h1>\n\n        <p>Si seguimos a San Juan Damasceno, San Atanasio y otros, ¿por qué no llamar a María Reina, ya que su padre David recibe la mayor alabanza en la Escritura como un rey famoso, y su hijo como Rey de reyes y Señor de señores, reinando para siempre? Ella es la reina, además, en comparación con los santos que reinan como reyes en el reino celestial, coherederos con Cristo, el gran Rey, puestos en el mismo trono con Él, como dice la Escritura. Y como Reina supera en dignidad a los elegidos, y se eleva tanto más arriba que los Ángeles y los santos, que nada puede ser más elevado o más santo que ella, que es la única que tiene al mismo Hijo que Dios Padre, y que ve por encima de ella solo Dios y Cristo, y debajo de Ella sus criaturas.</p>\n\n        <hr>\n\n        <p>\n            Divinum Officium Project. Maitines del 31 de mayo de 2019, rúbrica de 1960.\n            <a href=\"http://divinumofficium.com\">\n                divinumofficium.com\n            </a>\n        </p>\n    </div>\n</div>";
+// Exports
+module.exports = code;
+
+/***/ }),
+
+/***/ "./src/js/templates/meditations/med_es_joyful_1.html":
+/*!***********************************************************!*\
+  !*** ./src/js/templates/meditations/med_es_joyful_1.html ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+// Module
+var code = "<div class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\">Home</span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1 class=\"label\">San Lucas 1, 26-31 (Nácar-Colunga)</h1>\n\n        <p>En el mes sexto fué enviado el ángel Gabriel de parte de Dios a una ciudad de Galilea llamada Nazaret, a una virgen, desposada con un varón de nombre José, de la casa de David; el nombre de la virgen era María. Y entrando a ella le dijo: Dios te salve, llena de gracia, el Señor es contigo. Y ella se turbó al oír estas palabras y discurría qué podría significar aquella salutación. Y el ángel le dijo: No temas, María, porque has hallado gracia delante de Dios y concebirás en tu seno y darás a luz un hijo, a quien pondrás por nombre Jesús.</p>\n\n        <hr>\n\n        <p><em>Sagrada Biblia</em>.\n            Eloíno Nácar Fuster y Alberto Colunga.\n            La Editorial Católica: Madrid, 1944\n            <a href=\"https://archive.org/details/SagradaBibliaNacarColunga19441Edicin/\">archive.org</a></p>\n    </div>\n</div>";
+// Exports
+module.exports = code;
+
+/***/ }),
+
+/***/ "./src/js/templates/meditations/med_es_joyful_2.html":
+/*!***********************************************************!*\
+  !*** ./src/js/templates/meditations/med_es_joyful_2.html ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+// Module
+var code = "<div class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\">Home</span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1 class=\"label\">San Lucas 1, 39-45 (Nácar-Colunga)</h1>\n\n        <p>En aquellos días se puso María en camino y con presteza se fué a la montaña, a una ciudad de Judá y entró en casa de Zacarías y saludó a Isabel. Y así que oyó Isabel el saludo de María saltó el niño en su seno, e Isabel se llenó del Espíritu Santo, y clamó con fuerte voz: ¡Bendita tú entre las mujeres y bendito el fruto de tu vientre! ¿De dónde a mí, que la madre de mi Señor venga a mí? Porque apenas sonó la voz de tu salutación en mis oídos ha saltado de gozo el niño en mi seno. Dichosa tú que has creído, porque se cumplirá lo que se te ha dicho de parte del Señor.</p>\n\n        <hr>\n\n        <p><em>Sagrada Biblia</em>.\n            Eloíno Nácar Fuster y Alberto Colunga.\n            La Editorial Católica: Madrid, 1944\n            <a href=\"https://archive.org/details/SagradaBibliaNacarColunga19441Edicin/\">archive.org</a></p>\n    </div>\n</div>";
+// Exports
+module.exports = code;
+
+/***/ }),
+
+/***/ "./src/js/templates/meditations/med_es_joyful_3.html":
+/*!***********************************************************!*\
+  !*** ./src/js/templates/meditations/med_es_joyful_3.html ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+// Module
+var code = "<div class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\">Home</span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1 class=\"label\">San Lucas 2, 1-7 (Nácar-Colunga)</h1>\n\n        <p>Aconteció, pues, en los días aquellos que salió un edicto de César Augusto para que se empadronase todo el mundo. Fué este empadronamiento anterior al hecho siendo gobernador de Siria Cirino. Iban todos a empadronarse, cada uno en su ciudad. Y subió de Galilea José, de la ciudad de Naret, a Judea, a la ciudad de David, que se llama de Belén, por ser de la casa y de la familia de David, para empadronarse con María su esposa, que estaba encinta. Y estando allí, se cumplieron los días de su parto y dió a luz a su hijo primogénito y le envolvió en pañales y le acostó en un pesebre, por no haber sitio para ellos en el mesón.</p>\n\n        <hr>\n\n        <p><em>Sagrada Biblia</em>.\n            Eloíno Nácar Fuster y Alberto Colunga.\n            La Editorial Católica: Madrid, 1944\n            <a href=\"https://archive.org/details/SagradaBibliaNacarColunga19441Edicin/\">archive.org</a></p>\n    </div>\n</div>";
+// Exports
+module.exports = code;
+
+/***/ }),
+
+/***/ "./src/js/templates/meditations/med_es_joyful_4.html":
+/*!***********************************************************!*\
+  !*** ./src/js/templates/meditations/med_es_joyful_4.html ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+// Module
+var code = "<div class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\">Home</span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1 class=\"label\">San Lucas 2, 25-32 (Nácar-Colunga)</h1>\n\n        <p>Había en Jerusalén un hombre llamado Simeón, que era justo y piadoso y esperaba la consolación de Israel, y el Espíritu Santo estaba en él. 26 Y le había sido revelado por el Espíritu Santo que no vería la muerte antes de ver al Cristo del Señor. 27 Movido del Espíritu vino al templo, y al entrar los padres con el niño Jesús para cumplir lo que prescribe la Ley sobre El, Simeón le tomó en sus brazos (1), y bendi¬ ciendo a Dios, dijo:</p>\n\n        <blockquote>Ahora, Señor, puedes dejar ir a tu siervo<br>\n            en paz según tu palabra;<br>\n            porque han visto mis ojos tu salud,<br>\n            la que has preparado ante la faz de todos los pueblos,<br>\n            luz para iluminación de las gentes,<br>\n            y gloria de tu pueblo Israel.</blockquote>\n\n        <hr>\n\n        <p><em>Sagrada Biblia</em>.\n            Eloíno Nácar Fuster y Alberto Colunga.\n            La Editorial Católica: Madrid, 1944\n            <a href=\"https://archive.org/details/SagradaBibliaNacarColunga19441Edicin/\">archive.org</a></p>\n    </div>\n</div>";
+// Exports
+module.exports = code;
+
+/***/ }),
+
+/***/ "./src/js/templates/meditations/med_es_joyful_5.html":
+/*!***********************************************************!*\
+  !*** ./src/js/templates/meditations/med_es_joyful_5.html ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+// Module
+var code = "<div class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\">Home</span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1 class=\"label\">San Lucas 2, 41-51 (Nácar-Colunga)</h1>\n\n        <p>Sus padres iban cada año a Jerusalén en la fiesta de la Pascua. Y cuando era ya de doce años, al subir sus padres según el rito festivo, al volverse acabados los días, el niño Jesús se quedó en Jerusalén, sin que sus padres lo echasen de ver. Pensando que estaba en la caravana, anduvieron camino de un día. Buscáronle entre los parientes y conocidos, y al no hallarlo, se volvieron a Jerusalén en busca suya. Y aconteció que al cabo de tres días le hallaron en el templo, sentado en medio de los doctores, oyéndolos y preguntándoles. Y cuantos le oían se maravillaban de su inteligencia y de sus respuestas</p>\n\n        <p>Cuando sus padres le vieron se maravillaron, y le dijo su madre: Hijo, ¿por qué nos has hecho así? Mira que tu padre y yo, apenados, te andábamos buscando. Y El les dijo: ¿Y por qué me buscábais? ¿No sabíais que conviene que me ocupe en las cosas de mi Padre? Y ellos no entendieron lo que les decía. Bajó con ellos, y vino a Nazaret, y les estaba sujeto, y su madre conservaba todo esto en su corazón.</p>\n\n        <hr>\n\n        <p><em>Sagrada Biblia</em>.\n            Eloíno Nácar Fuster y Alberto Colunga.\n            La Editorial Católica: Madrid, 1944\n            <a href=\"https://archive.org/details/SagradaBibliaNacarColunga19441Edicin/\">archive.org</a></p>\n    </div>\n</div>";
+// Exports
+module.exports = code;
+
+/***/ }),
+
 /***/ "./src/js/templates/partials/header.html":
 /*!***********************************************!*\
   !*** ./src/js/templates/partials/header.html ***!
@@ -2589,7 +3054,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<header class=\"header\">\n    <h1 class=\"sr-only\">Holy Rosary Online</h1>\n\n    <nav>\n        <ul>\n            <li>\n                <a href=\"/about\" data-navigo title=\"About\">\n                    <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n                        <path d=\"M10.5 7.125C10.5 6.50625 11.0063 6 11.625 6H12.375C12.9938 6 13.5 6.50625 13.5 7.125V7.875C13.5 8.49375 12.9938 9 12.375 9H11.625C11.0063 9 10.5 8.49375 10.5 7.875V7.125Z\"/>\n                        <path d=\"M15 18H9V16.5H10.5V12H9V10.5H13.5V16.5H15V18Z\"/>\n                        <path d=\"M12 0C5.37225 0 0 5.37225 0 12C0 18.6278 5.37225 24 12 24C18.6278 24 24 18.6278 24 12C24 5.37225 18.6278 0 12 0ZM12 21.75C6.615 21.75 2.25 17.385 2.25 12C2.25 6.615 6.615 2.25 12 2.25C17.385 2.25 21.75 6.615 21.75 12C21.75 17.385 17.385 21.75 12 21.75Z\"/>\n                    </svg>\n                    <span class=\"sr-only\">About</span>\n                </a>\n            </li>\n            <li>\n                <a href=\"/settings\" data-navigo title=\"Settings\">\n                    <svg width=\"24\" height=\"25\" viewBox=\"0 0 24 25\" xmlns=\"http://www.w3.org/2000/svg\">\n                        <path d=\"M22.2469 14.8263C20.9416 12.5656 21.7268 9.66888 24 8.35192L21.555 4.11726C20.8569 4.52697 20.0444 4.76175 19.1776 4.76175C16.5647 4.76175 14.447 2.63004 14.447 0H9.55771C9.56393 0.811635 9.3618 1.63493 8.92721 2.38671C7.62191 4.64747 4.72055 5.41635 2.44424 4.1056L0 8.34025C0.703573 8.74063 1.31308 9.32603 1.7461 10.077C3.04908 12.3339 2.26854 15.2259 0.00388714 16.5445L2.4489 20.7791C3.1447 20.3733 3.95322 20.1416 4.81539 20.1416C7.41978 20.1416 9.53205 22.2601 9.54527 24.8777H14.4345C14.4322 24.0739 14.6359 23.2607 15.065 22.5159C16.368 20.259 19.2623 19.4886 21.5371 20.7908L23.9821 16.5561C23.2832 16.1557 22.6776 15.5719 22.2469 14.8256V14.8263ZM11.9996 17.4766C9.21797 17.4766 6.96265 15.2213 6.96265 12.4396C6.96265 9.658 9.21797 7.40268 11.9996 7.40268C14.7813 7.40268 17.0366 9.658 17.0366 12.4396C17.0366 15.2213 14.7813 17.4766 11.9996 17.4766Z\"/>\n                    </svg>\n                    <span class=\"sr-only\">Settings</span>\n                </a>\n            </li>\n        </ul>\n    </nav>\n</header>";
+var code = "<header class=\"header\">\n    <h1 class=\"sr-only\"><hro-localize>Holy Rosary Online</hro-localize></h1>\n\n    <nav>\n        <ul>\n            <li>\n                <a href=\"/about\" data-navigo title=\"About\">\n                    <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n                        <path d=\"M10.5 7.125C10.5 6.50625 11.0063 6 11.625 6H12.375C12.9938 6 13.5 6.50625 13.5 7.125V7.875C13.5 8.49375 12.9938 9 12.375 9H11.625C11.0063 9 10.5 8.49375 10.5 7.875V7.125Z\"/>\n                        <path d=\"M15 18H9V16.5H10.5V12H9V10.5H13.5V16.5H15V18Z\"/>\n                        <path d=\"M12 0C5.37225 0 0 5.37225 0 12C0 18.6278 5.37225 24 12 24C18.6278 24 24 18.6278 24 12C24 5.37225 18.6278 0 12 0ZM12 21.75C6.615 21.75 2.25 17.385 2.25 12C2.25 6.615 6.615 2.25 12 2.25C17.385 2.25 21.75 6.615 21.75 12C21.75 17.385 17.385 21.75 12 21.75Z\"/>\n                    </svg>\n                    <span class=\"sr-only\"><hro-localize>About</hro-localize></span>\n                </a>\n            </li>\n            <li>\n                <a href=\"/settings\" data-navigo title=\"Settings\">\n                    <svg width=\"24\" height=\"25\" viewBox=\"0 0 24 25\" xmlns=\"http://www.w3.org/2000/svg\">\n                        <path d=\"M22.2469 14.8263C20.9416 12.5656 21.7268 9.66888 24 8.35192L21.555 4.11726C20.8569 4.52697 20.0444 4.76175 19.1776 4.76175C16.5647 4.76175 14.447 2.63004 14.447 0H9.55771C9.56393 0.811635 9.3618 1.63493 8.92721 2.38671C7.62191 4.64747 4.72055 5.41635 2.44424 4.1056L0 8.34025C0.703573 8.74063 1.31308 9.32603 1.7461 10.077C3.04908 12.3339 2.26854 15.2259 0.00388714 16.5445L2.4489 20.7791C3.1447 20.3733 3.95322 20.1416 4.81539 20.1416C7.41978 20.1416 9.53205 22.2601 9.54527 24.8777H14.4345C14.4322 24.0739 14.6359 23.2607 15.065 22.5159C16.368 20.259 19.2623 19.4886 21.5371 20.7908L23.9821 16.5561C23.2832 16.1557 22.6776 15.5719 22.2469 14.8256V14.8263ZM11.9996 17.4766C9.21797 17.4766 6.96265 15.2213 6.96265 12.4396C6.96265 9.658 9.21797 7.40268 11.9996 7.40268C14.7813 7.40268 17.0366 9.658 17.0366 12.4396C17.0366 15.2213 14.7813 17.4766 11.9996 17.4766Z\"/>\n                    </svg>\n                    <span class=\"sr-only\"><hro-localize>Settings</hro-localize></span>\n                </a>\n            </li>\n        </ul>\n    </nav>\n</header>";
 // Exports
 module.exports = code;
 
@@ -2602,7 +3067,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<div id=\"template-settings\" class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\">Home</span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n        <h1>Settings</h1>\n        <form action=\"\" method=\"post\" id=\"form-settings\">\n            <label for=\"form-settings-language\">Language</label>\n            <select id=\"form-settings-language\" name=\"language\">\n                <option value=\"EN\">English</option>\n                <option value=\"ES\">Spanish</option>\n            </select>\n\n            <label for=\"form-settings-mysteries\">Mysteries</label>\n            <select id=\"form-settings-mysteries\" name=\"mysteries\">\n                <option value=\"byday\">By day</option>\n                <option value=\"joyful\">Joyful</option>\n                <option value=\"luminous\">Luminous</option>\n                <option value=\"sorrowful\">Sorrowful</option>\n                <option value=\"glorious\">Glorious</option>\n            </select>\n\n            <label for=\"form-settings-rosary-language\">Rosary Language</label>\n            <select id=\"form-settings-rosary-language\" name=\"rosary-language\">\n                <option value=\"EN\">English</option>\n                <option value=\"EN_TRAD\">English - Traditional</option>\n                <option value=\"LA\">Latin</option>\n            </select>\n\n            <label for=\"form-settings-rosary-color\">\n                Rosary Color\n            </label>\n            <input id=\"form-settings-rosary-color\" value=\"\"\n                name=\"rosary-color\">&nbsp;\n            <button id=\"form-settings-reset-rosary-color\" type=\"button\">\n                Reset Color\n            </button>\n\n            <label for=\"form-settings-hide-images\">\n                Hide the prayer images.\n            </label>\n            <input type=\"checkbox\" name=\"hide-images\"\n                id=\"form-settings-hide-images\">\n\n            <label for=\"form-settings-hide-prayers\">\n                Hide the words to the prayers. Click blank space to go to the\n                next prayer.\n            </label>\n            <input type=\"checkbox\" name=\"hide-prayers\"\n                id=\"form-settings-hide-prayers\">\n\n            <label for=\"form-settings-divine-mercy\">\n                Pray the Divine Mercy Chaplet instead.\n            </label>\n            <input id=\"form-settings-divine-mercy\" name=\"divine-mercy\"\n                type=\"checkbox\">\n\n            <input type=\"submit\" value=\"Saved!\">\n\n        </form>\n    </div>\n</div>";
+var code = "<div id=\"template-settings\" class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\"><hro-localize>Home</hro-localize></span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n        <h1><hro-localize>Settings</hro-localize></h1>\n        <form action=\"\" method=\"post\" id=\"form-settings\">\n            <label for=\"form-settings-language\"><hro-localize>Language</hro-localize></label>\n            <select id=\"form-settings-language\" name=\"language\">\n                <option value=\"EN\">English</option>\n                <option value=\"ES\">Español</option>\n            </select>\n\n            <label for=\"form-settings-mysteries\"><hro-localize>Mysteries</hro-localize></label>\n            <select id=\"form-settings-mysteries\" name=\"mysteries\">\n                <option value=\"byday\" data-hro-localize>By day</option>\n                <option value=\"joyful\" data-hro-localize>Joyful</option>\n                <option value=\"luminous\" data-hro-localize>Luminous</option>\n                <option value=\"sorrowful\" data-hro-localize>Sorrowful</option>\n                <option value=\"glorious\" data-hro-localize>Glorious</option>\n            </select>\n\n            <label for=\"form-settings-rosary-language\"><hro-localize>Rosary Language</hro-localize></label>\n            <select id=\"form-settings-rosary-language\" name=\"rosary-language\">\n                <option value=\"EN\">English</option>\n                <option value=\"EN_TRAD\">English - Traditional</option>\n                <option value=\"LA\" data-hro-localize>Latin</option>\n                <option value=\"ES\">Español</option>\n            </select>\n\n            <label for=\"form-settings-rosary-color\">\n                <hro-localize>Rosary Color</hro-localize>\n            </label>\n            <input id=\"form-settings-rosary-color\" value=\"\"\n                name=\"rosary-color\">&nbsp;\n            <button id=\"form-settings-reset-rosary-color\" type=\"button\">\n                <hro-localize>Reset Color</hro-localize>\n            </button>\n\n            <label for=\"form-settings-hide-images\">\n                <hro-localize>Hide the prayer images.</hro-localize>\n            </label>\n            <input type=\"checkbox\" name=\"hide-images\"\n                id=\"form-settings-hide-images\">\n\n            <label for=\"form-settings-hide-prayers\">\n                <hro-localize>Hide the words to the prayers. Click blank space to go to the next prayer.</hro-localize>\n            </label>\n            <input type=\"checkbox\" name=\"hide-prayers\"\n                id=\"form-settings-hide-prayers\">\n\n            <label for=\"form-settings-divine-mercy\">\n                <hro-localize>Pray the Divine Mercy Chaplet instead.</hro-localize>\n            </label>\n            <input id=\"form-settings-divine-mercy\" name=\"divine-mercy\"\n                type=\"checkbox\">\n\n            <input type=\"submit\" value=\"Saved!\">\n\n        </form>\n    </div>\n</div>";
 // Exports
 module.exports = code;
 

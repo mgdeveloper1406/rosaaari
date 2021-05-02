@@ -66,7 +66,7 @@ export default function SettingsJS() {
 
             if(field['name'] === 'rosary-language') {
                 if(field['value'] === 'EN' || field['value'] === 'EN_TRAD' ||
-                    field['value'] === 'LA') {
+                    field['value'] === 'LA' || field['value'] === 'ES') {
 
                     store.settings.rosaryLanguage = field['value'];
                     localStorage.setItem('rosaryLanguage', field['value']);

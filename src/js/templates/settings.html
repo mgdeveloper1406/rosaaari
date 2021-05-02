@@ -1,57 +1,57 @@
 <div id="template-settings" class="modal">
     <div class="modal__inner">
         <a href="/" data-navigo class="modal__close">
-            <span class="sr-only">Home</span>
+            <span class="sr-only"><hro-localize>Home</hro-localize></span>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
         </a>
-        <h1>Settings</h1>
+        <h1><hro-localize>Settings</hro-localize></h1>
         <form action="" method="post" id="form-settings">
-            <label for="form-settings-language">Language</label>
+            <label for="form-settings-language"><hro-localize>Language</hro-localize></label>
             <select id="form-settings-language" name="language">
                 <option value="EN">English</option>
-                <option value="ES">Spanish</option>
+                <option value="ES">Español</option>
             </select>
 
-            <label for="form-settings-mysteries">Mysteries</label>
+            <label for="form-settings-mysteries"><hro-localize>Mysteries</hro-localize></label>
             <select id="form-settings-mysteries" name="mysteries">
-                <option value="byday">By day</option>
-                <option value="joyful">Joyful</option>
-                <option value="luminous">Luminous</option>
-                <option value="sorrowful">Sorrowful</option>
-                <option value="glorious">Glorious</option>
+                <option value="byday" data-hro-localize>By day</option>
+                <option value="joyful" data-hro-localize>Joyful</option>
+                <option value="luminous" data-hro-localize>Luminous</option>
+                <option value="sorrowful" data-hro-localize>Sorrowful</option>
+                <option value="glorious" data-hro-localize>Glorious</option>
             </select>
 
-            <label for="form-settings-rosary-language">Rosary Language</label>
+            <label for="form-settings-rosary-language"><hro-localize>Rosary Language</hro-localize></label>
             <select id="form-settings-rosary-language" name="rosary-language">
                 <option value="EN">English</option>
                 <option value="EN_TRAD">English - Traditional</option>
-                <option value="LA">Latin</option>
+                <option value="LA" data-hro-localize>Latin</option>
+                <option value="ES">Español</option>
             </select>
 
             <label for="form-settings-rosary-color">
-                Rosary Color
+                <hro-localize>Rosary Color</hro-localize>
             </label>
             <input id="form-settings-rosary-color" value=""
                 name="rosary-color">&nbsp;
             <button id="form-settings-reset-rosary-color" type="button">
-                Reset Color
+                <hro-localize>Reset Color</hro-localize>
             </button>
 
             <label for="form-settings-hide-images">
-                Hide the prayer images.
+                <hro-localize>Hide the prayer images.</hro-localize>
             </label>
             <input type="checkbox" name="hide-images"
                 id="form-settings-hide-images">
 
             <label for="form-settings-hide-prayers">
-                Hide the words to the prayers. Click blank space to go to the
-                next prayer.
+                <hro-localize>Hide the words to the prayers. Click blank space to go to the next prayer.</hro-localize>
             </label>
             <input type="checkbox" name="hide-prayers"
                 id="form-settings-hide-prayers">
 
             <label for="form-settings-divine-mercy">
-                Pray the Divine Mercy Chaplet instead.
+                <hro-localize>Pray the Divine Mercy Chaplet instead.</hro-localize>
             </label>
             <input id="form-settings-divine-mercy" name="divine-mercy"
                 type="checkbox">
