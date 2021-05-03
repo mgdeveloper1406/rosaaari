@@ -11,9 +11,9 @@ import ArtworkJS from './page-scripts/ArtworkJS';
 }; */
 
 // Fix any legacy rosary language settings
-if(store.settings.rosaryLanguage !== 'ES' || store.settings.rosaryLanguage !== 'EN' ||
-    store.settings.rosaryLanguage !== 'LA') {
-    store.settings.rosaryLanguage = 'EN';
+if(store.settings.rosaryLanguage !== 'LA') {
+    store.settings.rosaryLanguage = store.settings.language;
+    localStorage.setItem('rosaryLanguage', store.settings.language)
 }
 
 $( document ).ready(function() {
@@ -27,170 +27,170 @@ $( document ).ready(function() {
             renderView('/settings');
             SettingsJS();
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'about': function () {
             renderView('/about');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'artwork': function () {
             renderView('/artwork');
             ArtworkJS();
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_en_joyful_1': function () {
             renderView('/med_en_joyful_1');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_en_joyful_2': function () {
             renderView('/med_en_joyful_2');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_en_joyful_3': function () {
             renderView('/med_en_joyful_3');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_en_joyful_4': function () {
             renderView('/med_en_joyful_4');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_en_joyful_5': function () {
             renderView('/med_en_joyful_5');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_en_luminous_1': function () {
             renderView('/med_en_luminous_1');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_en_luminous_2': function () {
             renderView('/med_en_luminous_2');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_en_luminous_3': function () {
             renderView('/med_en_luminous_3');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_en_luminous_4': function () {
             renderView('/med_en_luminous_4');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_en_luminous_5': function () {
             renderView('/med_en_luminous_5');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_en_sorrowful_1': function () {
             renderView('/med_en_sorrowful_1');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_en_sorrowful_2': function () {
             renderView('/med_en_sorrowful_2');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_en_sorrowful_3': function () {
             renderView('/med_en_sorrowful_3');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_en_sorrowful_4': function () {
             renderView('/med_en_sorrowful_4');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_en_sorrowful_5': function () {
             renderView('/med_en_sorrowful_5');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_en_glorious_1': function () {
             renderView('/med_en_glorious_1');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_en_glorious_2': function () {
             renderView('/med_en_glorious_2');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_en_glorious_3': function () {
             renderView('/med_en_glorious_3');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_en_glorious_4': function () {
             renderView('/med_en_glorious_4');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_en_glorious_5': function () {
             renderView('/med_en_glorious_5');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
 
         // SPANISH
         'med_es_joyful_1': function () {
             renderView('/med_es_joyful_1');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_es_joyful_2': function () {
             renderView('/med_es_joyful_2');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_es_joyful_3': function () {
             renderView('/med_es_joyful_3');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_es_joyful_4': function () {
             renderView('/med_es_joyful_4');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_es_joyful_5': function () {
             renderView('/med_es_joyful_5');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_es_glorious_1': function () {
             renderView('/med_es_glorious_1');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_es_glorious_2': function () {
             renderView('/med_es_glorious_2');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_es_glorious_3': function () {
             renderView('/med_es_glorious_3');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_es_glorious_4': function () {
             renderView('/med_es_glorious_4');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
         'med_es_glorious_5': function () {
             renderView('/med_es_glorious_5');
             window.nvgo_router.updatePageLinks();
-            hro_localize();
+            hroLocalize();
         },
     })
     .resolve();
@@ -200,22 +200,24 @@ $( document ).ready(function() {
         renderView('/');
         HomeJS();
         window.nvgo_router.updatePageLinks();
-        hro_localize();
+        hroLocalize();
     }).resolve();
 
     window.nvgo_router.notFound(function () {
         renderView('404');
         window.nvgo_router.updatePageLinks();
-        hro_localize();
+        hroLocalize();
     }).resolve();
 
     // Localize. We either surround the text in the <hro-localize> tag, or when that's not
     // possible, as in, for some reason, select options, then we put the data-hro-localize
     // attribute on the element, with it not set to equal anything
-    function hro_localize() {
+    function hroLocalize() {
         $('hro-localize, [data-hro-localize]').text(function(idx, text) {
-            if(store.localization.ES[text]) {
-                text = store.localization.ES[text];
+            if(store.settings.language === 'ES') {
+                if(store.localization[store.settings.language][text]) {
+                    text = store.localization[store.settings.language][text];
+                }
             }
             return text;
         });

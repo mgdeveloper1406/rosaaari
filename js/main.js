@@ -28,8 +28,9 @@ __webpack_require__.r(__webpack_exports__);
 }; */
 // Fix any legacy rosary language settings
 
-if (_store__WEBPACK_IMPORTED_MODULE_2__.default.settings.rosaryLanguage !== 'ES' || _store__WEBPACK_IMPORTED_MODULE_2__.default.settings.rosaryLanguage !== 'EN' || _store__WEBPACK_IMPORTED_MODULE_2__.default.settings.rosaryLanguage !== 'LA') {
-  _store__WEBPACK_IMPORTED_MODULE_2__.default.settings.rosaryLanguage = 'EN';
+if (_store__WEBPACK_IMPORTED_MODULE_2__.default.settings.rosaryLanguage !== 'LA') {
+  _store__WEBPACK_IMPORTED_MODULE_2__.default.settings.rosaryLanguage = _store__WEBPACK_IMPORTED_MODULE_2__.default.settings.language;
+  localStorage.setItem('rosaryLanguage', _store__WEBPACK_IMPORTED_MODULE_2__.default.settings.language);
 }
 
 $(document).ready(function () {
@@ -44,169 +45,169 @@ $(document).ready(function () {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/settings');
       (0,_page_scripts_SettingsJS__WEBPACK_IMPORTED_MODULE_4__.default)();
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'about': function about() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/about');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'artwork': function artwork() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/artwork');
       (0,_page_scripts_ArtworkJS__WEBPACK_IMPORTED_MODULE_5__.default)();
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_en_joyful_1': function med_en_joyful_1() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_joyful_1');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_en_joyful_2': function med_en_joyful_2() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_joyful_2');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_en_joyful_3': function med_en_joyful_3() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_joyful_3');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_en_joyful_4': function med_en_joyful_4() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_joyful_4');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_en_joyful_5': function med_en_joyful_5() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_joyful_5');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_en_luminous_1': function med_en_luminous_1() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_luminous_1');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_en_luminous_2': function med_en_luminous_2() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_luminous_2');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_en_luminous_3': function med_en_luminous_3() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_luminous_3');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_en_luminous_4': function med_en_luminous_4() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_luminous_4');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_en_luminous_5': function med_en_luminous_5() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_luminous_5');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_en_sorrowful_1': function med_en_sorrowful_1() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_sorrowful_1');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_en_sorrowful_2': function med_en_sorrowful_2() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_sorrowful_2');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_en_sorrowful_3': function med_en_sorrowful_3() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_sorrowful_3');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_en_sorrowful_4': function med_en_sorrowful_4() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_sorrowful_4');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_en_sorrowful_5': function med_en_sorrowful_5() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_sorrowful_5');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_en_glorious_1': function med_en_glorious_1() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_glorious_1');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_en_glorious_2': function med_en_glorious_2() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_glorious_2');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_en_glorious_3': function med_en_glorious_3() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_glorious_3');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_en_glorious_4': function med_en_glorious_4() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_glorious_4');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_en_glorious_5': function med_en_glorious_5() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_glorious_5');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     // SPANISH
     'med_es_joyful_1': function med_es_joyful_1() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_joyful_1');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_es_joyful_2': function med_es_joyful_2() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_joyful_2');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_es_joyful_3': function med_es_joyful_3() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_joyful_3');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_es_joyful_4': function med_es_joyful_4() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_joyful_4');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_es_joyful_5': function med_es_joyful_5() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_joyful_5');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_es_glorious_1': function med_es_glorious_1() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_glorious_1');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_es_glorious_2': function med_es_glorious_2() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_glorious_2');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_es_glorious_3': function med_es_glorious_3() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_glorious_3');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_es_glorious_4': function med_es_glorious_4() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_glorious_4');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     },
     'med_es_glorious_5': function med_es_glorious_5() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_glorious_5');
       window.nvgo_router.updatePageLinks();
-      hro_localize();
+      hroLocalize();
     }
   }).resolve(); // Seems for home and 404, we have to do it this way :(
 
@@ -214,20 +215,22 @@ $(document).ready(function () {
     (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/');
     (0,_page_scripts_HomeJS__WEBPACK_IMPORTED_MODULE_3__.default)();
     window.nvgo_router.updatePageLinks();
-    hro_localize();
+    hroLocalize();
   }).resolve();
   window.nvgo_router.notFound(function () {
     (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('404');
     window.nvgo_router.updatePageLinks();
-    hro_localize();
+    hroLocalize();
   }).resolve(); // Localize. We either surround the text in the <hro-localize> tag, or when that's not
   // possible, as in, for some reason, select options, then we put the data-hro-localize
   // attribute on the element, with it not set to equal anything
 
-  function hro_localize() {
+  function hroLocalize() {
     $('hro-localize, [data-hro-localize]').text(function (idx, text) {
-      if (_store__WEBPACK_IMPORTED_MODULE_2__.default.localization.ES[text]) {
-        text = _store__WEBPACK_IMPORTED_MODULE_2__.default.localization.ES[text];
+      if (_store__WEBPACK_IMPORTED_MODULE_2__.default.settings.language === 'ES') {
+        if (_store__WEBPACK_IMPORTED_MODULE_2__.default.localization[_store__WEBPACK_IMPORTED_MODULE_2__.default.settings.language][text]) {
+          text = _store__WEBPACK_IMPORTED_MODULE_2__.default.localization[_store__WEBPACK_IMPORTED_MODULE_2__.default.settings.language][text];
+        }
       }
 
       return text;
@@ -1055,6 +1058,8 @@ function SettingsJS() {
       }
 
       if (field['name'] === 'language') {
+        var prevLangSetting = _store__WEBPACK_IMPORTED_MODULE_0__.default.settings.language;
+
         if (field['value'] === 'EN' || field['value'] === 'ES') {
           _store__WEBPACK_IMPORTED_MODULE_0__.default.settings.language = field['value'];
           localStorage.setItem('language', field['value']);
@@ -1062,6 +1067,10 @@ function SettingsJS() {
           if (_store__WEBPACK_IMPORTED_MODULE_0__.default.settings.rosaryLanguage !== 'LA') {
             _store__WEBPACK_IMPORTED_MODULE_0__.default.settings.rosaryLanguage = field['value'];
             localStorage.setItem('rosaryLanguage', field['value']);
+          }
+
+          if (prevLangSetting !== _store__WEBPACK_IMPORTED_MODULE_0__.default.settings.language) {
+            window.nvgo_router.navigate('/settings?language-change=' + _store__WEBPACK_IMPORTED_MODULE_0__.default.settings.language);
           }
         }
       }
@@ -1108,7 +1117,7 @@ function SettingsJS() {
 
     if (!enableLatinCheckboxExists) {
       _store__WEBPACK_IMPORTED_MODULE_0__.default.settings.rosaryLanguage = _store__WEBPACK_IMPORTED_MODULE_0__.default.settings.language;
-      localStorage.setItem('rosaryLanguage', false);
+      localStorage.setItem('rosaryLanguage', _store__WEBPACK_IMPORTED_MODULE_0__.default.settings.language);
     }
 
     $(this).find('input[type="submit"]').val('Saved!');
@@ -1514,7 +1523,6 @@ __webpack_require__.r(__webpack_exports__);
       "Medallion, end of rosary": "Medallón, fin del rosario",
       "Language": "Idioma",
       "Mysteries": "Misterios",
-      "Rosary Language": "Idioma del rosario",
       "By day": "Por día",
       "Joyful": "De gozos",
       "Luminous": "De luz",
@@ -1525,7 +1533,8 @@ __webpack_require__.r(__webpack_exports__);
       "Reset Color": "Use el color predeterminado",
       "Hide the prayer images.": "Esconda las pinturas de los misterios.",
       "Hide the words to the prayers. Click blank space to go to the next prayer.": "Esconda las palabras de las oraciones. Haga clíc en el espacio dentro del rosario para ir adelante.",
-      "Pray the Divine Mercy Chaplet instead.": "Rece la Coronilla de la Divina Misericordia"
+      "Pray the Divine Mercy Chaplet instead.": "Rece la Coronilla de la Divina Misericordia",
+      "Enable Latin": "Rece en Latín"
     }
   },
   prayers: {
@@ -2315,6 +2324,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "getMysteriesForCurrDay": () => (/* binding */ getMysteriesForCurrDay),
 /* harmony export */   "preloadImages": () => (/* binding */ preloadImages)
 /* harmony export */ });
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./store */ "./src/js/store.js");
+
 var getMysteriesForCurrDay = function getMysteriesForCurrDay() {
   var dayToMysteriesMap = {
     0: 'glorious',

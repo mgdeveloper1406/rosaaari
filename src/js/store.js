@@ -26,7 +26,6 @@ export default {
             "Medallion, end of rosary": "Medallón, fin del rosario",
             "Language": "Idioma",
             "Mysteries": "Misterios",
-            "Rosary Language": "Idioma del rosario",
             "By day": "Por día",
             "Joyful": "De gozos",
             "Luminous": "De luz",
@@ -37,7 +36,8 @@ export default {
             "Reset Color": "Use el color predeterminado",
             "Hide the prayer images.": "Esconda las pinturas de los misterios.",
             "Hide the words to the prayers. Click blank space to go to the next prayer.": "Esconda las palabras de las oraciones. Haga clíc en el espacio dentro del rosario para ir adelante.",
-            "Pray the Divine Mercy Chaplet instead.": "Rece la Coronilla de la Divina Misericordia"
+            "Pray the Divine Mercy Chaplet instead.": "Rece la Coronilla de la Divina Misericordia",
+            "Enable Latin": "Rece en Latín",
         }
     },
     prayers: {

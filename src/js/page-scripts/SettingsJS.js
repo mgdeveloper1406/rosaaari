@@ -63,16 +63,22 @@ export default function SettingsJS() {
             }
 
             if(field['name'] === 'language') {
+                var prevLangSetting = store.settings.language;
+
                 if(field['value'] === 'EN' || field['value'] === 'ES') {
 
                     store.settings.language = field['value'];
                     localStorage.setItem('language', field['value']);
 
+                    
                     if(store.settings.rosaryLanguage !== 'LA') {
                         store.settings.rosaryLanguage = field['value'];
                         localStorage.setItem('rosaryLanguage', field['value']);
                     }
                     
+                    if(prevLangSetting !== store.settings.language) {
+                        window.nvgo_router.navigate('/settings?language-change='+store.settings.language);
+                    }
                 }
             }
 
@@ -115,7 +121,7 @@ export default function SettingsJS() {
         }
         if(!enableLatinCheckboxExists) {
             store.settings.rosaryLanguage = store.settings.language;
-            localStorage.setItem('rosaryLanguage', false);
+            localStorage.setItem('rosaryLanguage', store.settings.language);
         }
         
         $(this).find('input[type="submit"]').val('Saved!');
