@@ -10,7 +10,7 @@ import ArtworkJS from './page-scripts/ArtworkJS';
     navigator.serviceWorker.register('/sw.js', { scope: '/' });
 }; */
 
-// Fix any legacy rosary language settings
+// Fix any legacy rosary language settings, namely removes EN_TRAD rosary language
 if(store.settings.rosaryLanguage !== 'LA') {
     store.settings.rosaryLanguage = store.settings.language;
     localStorage.setItem('rosaryLanguage', store.settings.language)

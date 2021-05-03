@@ -38,6 +38,11 @@ export default {
             "Hide the words to the prayers. Click blank space to go to the next prayer.": "Esconda las palabras de las oraciones. Haga clíc en el espacio dentro del rosario para ir adelante.",
             "Pray the Divine Mercy Chaplet instead.": "Rece la Coronilla de la Divina Misericordia",
             "Enable Latin": "Rece en Latín",
+            "Artwork Titles, Artist Names and Links": "Las obras de arte, los artistas, y vínculos",
+            "Depictions of the joyful mysteries": "Pinturas de los misterios de gozo",
+            "Depictions of the luminous mysteries": "Pinturas de los misterios de luz",
+            "Depictions of the sorrowful mysteries": "Pinturas de los misterios de dolor",
+            "Depictions of the glorious mysteries": "Pinturas de los misterios de gloria"
         }
     },
     prayers: {
