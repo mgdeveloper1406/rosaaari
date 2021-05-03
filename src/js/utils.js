@@ -1,5 +1,3 @@
-import store from './store';
-
 export const getMysteriesForCurrDay = function() {
     var dayToMysteriesMap = {
         0: 'glorious',

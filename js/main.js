@@ -2324,8 +2324,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "getMysteriesForCurrDay": () => (/* binding */ getMysteriesForCurrDay),
 /* harmony export */   "preloadImages": () => (/* binding */ preloadImages)
 /* harmony export */ });
-/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./store */ "./src/js/store.js");
-
 var getMysteriesForCurrDay = function getMysteriesForCurrDay() {
   var dayToMysteriesMap = {
     0: 'glorious',
