@@ -5,6 +5,7 @@ import HomeJS from './page-scripts/HomeJS';
 import SettingsJS from './page-scripts/SettingsJS';
 import ArtworkJS from './page-scripts/ArtworkJS';
 import AboutJS from './page-scripts/AboutJS';
+import { hroLocalize } from './utils';
 
 // Comment out during development
 /* if('serviceWorker' in navigator) {
@@ -210,18 +211,4 @@ $( document ).ready(function() {
         window.nvgo_router.updatePageLinks();
         hroLocalize();
     }).resolve();
-
-    // Localize. We either surround the text in the <hro-localize> tag, or when that's not
-    // possible, as in, for some reason, select options, then we put the data-hro-localize
-    // attribute on the element, with it not set to equal anything
-    function hroLocalize() {
-        $('hro-localize, [data-hro-localize]').text(function(idx, text) {
-            if(store.settings.language === 'ES') {
-                if(store.localization[store.settings.language][text]) {
-                    text = store.localization[store.settings.language][text];
-                }
-            }
-            return text;
-        });
-    }
 });

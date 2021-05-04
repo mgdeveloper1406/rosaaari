@@ -34,7 +34,6 @@ import med_es_glorious_3 from './templates/meditations/med_es_glorious_3.html';
 import med_es_glorious_4 from './templates/meditations/med_es_glorious_4.html';
 import med_es_glorious_5 from './templates/meditations/med_es_glorious_5.html';
 import header from './templates/partials/header.html';
-import store from './store';
 
 export default function renderView(pathname, params) {
     $('div#app').html(' ');

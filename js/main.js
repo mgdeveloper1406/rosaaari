@@ -17,6 +17,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _page_scripts_SettingsJS__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./page-scripts/SettingsJS */ "./src/js/page-scripts/SettingsJS.js");
 /* harmony import */ var _page_scripts_ArtworkJS__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./page-scripts/ArtworkJS */ "./src/js/page-scripts/ArtworkJS.js");
 /* harmony import */ var _page_scripts_AboutJS__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./page-scripts/AboutJS */ "./src/js/page-scripts/AboutJS.js");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./utils */ "./src/js/utils.js");
+
 
 
 
@@ -47,170 +49,170 @@ $(document).ready(function () {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/settings');
       (0,_page_scripts_SettingsJS__WEBPACK_IMPORTED_MODULE_4__.default)();
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'about': function about() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/about');
       (0,_page_scripts_AboutJS__WEBPACK_IMPORTED_MODULE_6__.default)();
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'artwork': function artwork() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/artwork');
       (0,_page_scripts_ArtworkJS__WEBPACK_IMPORTED_MODULE_5__.default)();
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_en_joyful_1': function med_en_joyful_1() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_joyful_1');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_en_joyful_2': function med_en_joyful_2() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_joyful_2');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_en_joyful_3': function med_en_joyful_3() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_joyful_3');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_en_joyful_4': function med_en_joyful_4() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_joyful_4');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_en_joyful_5': function med_en_joyful_5() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_joyful_5');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_en_luminous_1': function med_en_luminous_1() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_luminous_1');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_en_luminous_2': function med_en_luminous_2() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_luminous_2');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_en_luminous_3': function med_en_luminous_3() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_luminous_3');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_en_luminous_4': function med_en_luminous_4() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_luminous_4');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_en_luminous_5': function med_en_luminous_5() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_luminous_5');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_en_sorrowful_1': function med_en_sorrowful_1() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_sorrowful_1');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_en_sorrowful_2': function med_en_sorrowful_2() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_sorrowful_2');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_en_sorrowful_3': function med_en_sorrowful_3() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_sorrowful_3');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_en_sorrowful_4': function med_en_sorrowful_4() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_sorrowful_4');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_en_sorrowful_5': function med_en_sorrowful_5() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_sorrowful_5');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_en_glorious_1': function med_en_glorious_1() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_glorious_1');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_en_glorious_2': function med_en_glorious_2() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_glorious_2');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_en_glorious_3': function med_en_glorious_3() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_glorious_3');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_en_glorious_4': function med_en_glorious_4() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_glorious_4');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_en_glorious_5': function med_en_glorious_5() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_en_glorious_5');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     // SPANISH
     'med_es_joyful_1': function med_es_joyful_1() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_joyful_1');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_es_joyful_2': function med_es_joyful_2() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_joyful_2');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_es_joyful_3': function med_es_joyful_3() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_joyful_3');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_es_joyful_4': function med_es_joyful_4() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_joyful_4');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_es_joyful_5': function med_es_joyful_5() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_joyful_5');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_es_glorious_1': function med_es_glorious_1() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_glorious_1');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_es_glorious_2': function med_es_glorious_2() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_glorious_2');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_es_glorious_3': function med_es_glorious_3() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_glorious_3');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_es_glorious_4': function med_es_glorious_4() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_glorious_4');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     },
     'med_es_glorious_5': function med_es_glorious_5() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_glorious_5');
       window.nvgo_router.updatePageLinks();
-      hroLocalize();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     }
   }).resolve(); // Seems for home and 404, we have to do it this way :(
 
@@ -218,27 +220,13 @@ $(document).ready(function () {
     (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/');
     (0,_page_scripts_HomeJS__WEBPACK_IMPORTED_MODULE_3__.default)();
     window.nvgo_router.updatePageLinks();
-    hroLocalize();
+    (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
   }).resolve();
   window.nvgo_router.notFound(function () {
     (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('404');
     window.nvgo_router.updatePageLinks();
-    hroLocalize();
-  }).resolve(); // Localize. We either surround the text in the <hro-localize> tag, or when that's not
-  // possible, as in, for some reason, select options, then we put the data-hro-localize
-  // attribute on the element, with it not set to equal anything
-
-  function hroLocalize() {
-    $('hro-localize, [data-hro-localize]').text(function (idx, text) {
-      if (_store__WEBPACK_IMPORTED_MODULE_2__.default.settings.language === 'ES') {
-        if (_store__WEBPACK_IMPORTED_MODULE_2__.default.localization[_store__WEBPACK_IMPORTED_MODULE_2__.default.settings.language][text]) {
-          text = _store__WEBPACK_IMPORTED_MODULE_2__.default.localization[_store__WEBPACK_IMPORTED_MODULE_2__.default.settings.language][text];
-        }
-      }
-
-      return text;
-    });
-  }
+    (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
+  }).resolve();
 });
 
 /***/ }),
@@ -868,6 +856,7 @@ function HomeJS() {
     prependImageToBody();
     localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
     window.nvgo_router.updatePageLinks();
+    (0,_utils__WEBPACK_IMPORTED_MODULE_1__.hroLocalize)();
   }
 
   function centerPrayers() {
@@ -1281,8 +1270,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _templates_meditations_med_es_glorious_5_html__WEBPACK_IMPORTED_MODULE_34___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_es_glorious_5_html__WEBPACK_IMPORTED_MODULE_34__);
 /* harmony import */ var _templates_partials_header_html__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./templates/partials/header.html */ "./src/js/templates/partials/header.html");
 /* harmony import */ var _templates_partials_header_html__WEBPACK_IMPORTED_MODULE_35___default = /*#__PURE__*/__webpack_require__.n(_templates_partials_header_html__WEBPACK_IMPORTED_MODULE_35__);
-/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./store */ "./src/js/store.js");
-
 
 
 
@@ -1595,7 +1582,12 @@ __webpack_require__.r(__webpack_exports__);
       "Pentecost": "Pentecostés",
       "Assumption of the Virgin": "La Asunción de la Virgen",
       "Coronation of the Virgin": "La Asunción de la Virgen",
-      "Virgin and Child with a Rosary": "Virgen del Rosario con el Niño"
+      "Virgin and Child with a Rosary": "Virgen del Rosario con el Niño",
+      "Luke 1:26-31": "San Lucas 1, 26-31",
+      "Luke 1:39-45": "San Lucas 1, 39-45",
+      "Luke 2:1-7": "San Lucas 2, 1-7",
+      "Luke 2:25-32": "San Lucas 2, 25-32",
+      "Luke 2:41-51": "San Lucas 2, 41-51"
     }
   },
   prayers: {
@@ -1779,125 +1771,125 @@ __webpack_require__.r(__webpack_exports__);
       joyful: {
         EN: [{
           title: 'The First Joyful Mystery',
-          text: 'The Annunciation of Gabriel to Mary. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-38</a>)',
+          text: 'The Annunciation of Gabriel to Mary. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-31</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/annunciation.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Second Joyful Mystery',
-          text: 'The Visitation  of Mary to Elizabeth. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-56</a>)',
+          text: 'The Visitation  of Mary to Elizabeth. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-45</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/visitation.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Third Joyful Mystery',
-          text: 'The Birth of Our Lord. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-21</a>)',
+          text: 'The Birth of Our Lord. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-7</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/nativity.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Fourth Joyful Mystery',
-          text: 'The Presentation of Our Lord. (<a href="/med_en_joyful_4" data-navigo>Luke 2:22-38</a>)',
+          text: 'The Presentation of Our Lord. (<a href="/med_en_joyful_4" data-navigo>Luke 2:25-32</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/presentation.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Fifth Joyful Mystery',
-          text: 'The Finding of Our Lord in the Temple. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-52</a>)',
+          text: 'The Finding of Our Lord in the Temple. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-51</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/finding.jpg',
           imagePosition: 'right center'
         }],
         EN_TRAD: [{
           title: 'The First Joyful Mystery',
-          text: 'The Annunciation. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-38</a>)',
+          text: 'The Annunciation. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-31</a>)',
           source: 'Baronius Press, Daily Missal 1962',
           image: '/images/default/annunciation.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Second Joyful Mystery',
-          text: 'The Visitation. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-56</a>)',
+          text: 'The Visitation. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-45</a>)',
           source: 'Baronius Press, Daily Missal 1962',
           image: '/images/default/visitation.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Third Joyful Mystery',
-          text: 'The Nativity. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-21</a>)',
+          text: 'The Nativity. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-7</a>)',
           source: 'Baronius Press, Daily Missal 1962',
           image: '/images/default/nativity.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Fourth Joyful Mystery',
-          text: 'The Presentation. (<a href="/med_en_joyful_4" data-navigo>Luke 2:22-38</a>)',
+          text: 'The Presentation. (<a href="/med_en_joyful_4" data-navigo>Luke 2:25-32</a>)',
           source: 'Baronius Press, Daily Missal 1962',
           image: '/images/default/presentation.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Fifth Joyful Mystery',
-          text: 'The Finding in the Temple. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-52</a>)',
+          text: 'The Finding in the Temple. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-51</a>)',
           source: 'Baronius Press, Daily Missal 1962',
           image: '/images/default/finding.jpg',
           imagePosition: 'right center'
         }],
         LA: [{
           title: 'Prímum Mystérium Gaudiósum',
-          text: 'Annuntiátio. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-38</a>)',
+          text: 'Annuntiátio. (<a href="/med_en_joyful_1" data-navigo><hro-localize>Luke 1:26-31</hro-localize></a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/annunciation.jpg',
           imagePosition: 'center'
         }, {
           title: 'Secúndum Mystérium Gaudiósum',
-          text: 'Visitátio. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-56</a>)',
+          text: 'Visitátio. (<a href="/med_en_joyful_2" data-navigo><hro-localize>Luke 1:39-45</hro-localize></a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/visitation.jpg',
           imagePosition: 'center'
         }, {
           title: 'Tértium Mystérium Gaudiósum',
-          text: 'Natívitas Dómini nostri Jesu Christi. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-21</a>)',
+          text: 'Natívitas Dómini nostri Jesu Christi. (<a href="/med_en_joyful_3" data-navigo><hro-localize>Luke 2:1-7</hro-localize></a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/nativity.jpg',
           imagePosition: 'center'
         }, {
           title: 'Quartum Mystérium Gaudiósum',
-          text: 'Præsentátio Púeri Jesu in Templo. (<a href="/med_en_joyful_4" data-navigo>Luke 2:22-38</a>)',
+          text: 'Præsentátio Púeri Jesu in Templo. (<a href="/med_en_joyful_4" data-navigo><hro-localize>Luke 2:25-32</hro-localize></a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/presentation.jpg',
           imagePosition: 'center'
         }, {
           title: 'Quintum Mystérium Gaudiósum',
-          text: 'Invéntio Púeri Jesu in Templo. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-52</a>)',
+          text: 'Invéntio Púeri Jesu in Templo. (<a href="/med_en_joyful_5" data-navigo><hro-localize>Luke 2:41-51</hro-localize></a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/finding.jpg',
           imagePosition: 'right center'
         }],
         ES: [{
-          title: 'The First Joyful Mystery',
-          text: 'The Annunciation of Gabriel to Mary. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-38</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf',
+          title: 'El Primer Misterio de Gozo',
+          text: 'La Anunciación del Angel a María. (<a href="/med_es_joyful_1" data-navigo><hro-localize>Luke 1:26-31</hro-localize></a>)',
+          source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/annunciation.jpg',
           imagePosition: 'center'
         }, {
-          title: 'The Second Joyful Mystery',
-          text: 'The Visitation  of Mary to Elizabeth. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-56</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf',
+          title: 'El Segundo Misterio de Gozo',
+          text: 'La Visita de Nuestra Señora a Su Prima Santa Isabel. (<a href="/med_es_joyful_2" data-navigo><hro-localize>Luke 1:39-45</a>)',
+          source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/visitation.jpg',
           imagePosition: 'center'
         }, {
-          title: 'The Third Joyful Mystery',
-          text: 'The Birth of Our Lord. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-21</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf',
+          title: 'El Tercer Misterio de Gozo',
+          text: 'El Nacimiento del Hijo de Dios en Belén. (<a href="/med_es_joyful_3" data-navigo><hro-localize>Luke 2:1-7</hro-localize></a>)',
+          source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/nativity.jpg',
           imagePosition: 'center'
         }, {
-          title: 'The Fourth Joyful Mystery',
-          text: 'The Presentation of Our Lord. (<a href="/med_en_joyful_4" data-navigo>Luke 2:22-38</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf',
+          title: 'El Cuarto Misterio de Gozo',
+          text: 'La Presentación de Jesús en el Templo. (<a href="/med_es_joyful_4" data-navigo><hro-localize>Luke 2:25-32</hro-localize></a>)',
+          source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/presentation.jpg',
           imagePosition: 'center'
         }, {
-          title: 'The Fifth Joyful Mystery',
-          text: 'The Finding of Our Lord in the Temple. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-52</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf',
+          title: 'El Quinto Misterio de Gozo',
+          text: 'El Niño Perdido y Hallado en el Templo. (<a href="/med_es_joyful_5" data-navigo>Luke 2:41-51</a>)',
+          source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/finding.jpg',
           imagePosition: 'right center'
         }]
@@ -2383,8 +2375,11 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "getMysteriesForCurrDay": () => (/* binding */ getMysteriesForCurrDay),
-/* harmony export */   "preloadImages": () => (/* binding */ preloadImages)
+/* harmony export */   "preloadImages": () => (/* binding */ preloadImages),
+/* harmony export */   "hroLocalize": () => (/* binding */ hroLocalize)
 /* harmony export */ });
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./store */ "./src/js/store.js");
+
 var getMysteriesForCurrDay = function getMysteriesForCurrDay() {
   var dayToMysteriesMap = {
     0: 'glorious',
@@ -2413,6 +2408,20 @@ var preloadImages = function preloadImages(array) {
     var img = new Image();
     img.src = array[i];
   }
+}; // Localize. We either surround the text in the <hro-localize> tag, or when that's not
+// possible, as in, for some reason, select options, then we put the data-hro-localize
+// attribute on the element, with it not set to equal anything
+
+var hroLocalize = function hroLocalize() {
+  $('hro-localize, [data-hro-localize]').text(function (idx, text) {
+    if (_store__WEBPACK_IMPORTED_MODULE_0__.default.settings.language === 'ES') {
+      if (_store__WEBPACK_IMPORTED_MODULE_0__.default.localization[_store__WEBPACK_IMPORTED_MODULE_0__.default.settings.language][text]) {
+        text = _store__WEBPACK_IMPORTED_MODULE_0__.default.localization[_store__WEBPACK_IMPORTED_MODULE_0__.default.settings.language][text];
+      }
+    }
+
+    return text;
+  });
 };
 
 /***/ }),

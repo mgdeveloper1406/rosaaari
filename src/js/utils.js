@@ -1,3 +1,5 @@
+import store from './store';
+
 export const getMysteriesForCurrDay = function() {
     var dayToMysteriesMap = {
         0: 'glorious',
@@ -26,4 +28,18 @@ export const preloadImages = function(array) {
         var img = new Image();
         img.src = array[i];
     }
+};
+
+// Localize. We either surround the text in the <hro-localize> tag, or when that's not
+// possible, as in, for some reason, select options, then we put the data-hro-localize
+// attribute on the element, with it not set to equal anything
+export const hroLocalize = function() {
+    $('hro-localize, [data-hro-localize]').text(function(idx, text) {
+        if(store.settings.language === 'ES') {
+            if(store.localization[store.settings.language][text]) {
+                text = store.localization[store.settings.language][text];
+            }
+        }
+        return text;
+    });
 };

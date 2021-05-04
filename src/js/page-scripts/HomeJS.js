@@ -1,5 +1,5 @@
 import store from '../store';
-import { preloadImages, getMysteriesForCurrDay } from '../utils';
+import { preloadImages, getMysteriesForCurrDay, hroLocalize } from '../utils';
 
 export default function HomeJS() {
     if(store.settings.hidePrayers) {
@@ -560,6 +560,7 @@ export default function HomeJS() {
         localStorage.setItem('prayerId', $('.prayer--current').attr('id'));
 
         window.nvgo_router.updatePageLinks();
+        hroLocalize();
     }
 
     function centerPrayers() {

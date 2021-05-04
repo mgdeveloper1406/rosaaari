@@ -65,7 +65,12 @@ export default {
             "Pentecost": "Pentecostés",
             "Assumption of the Virgin": "La Asunción de la Virgen",
             "Coronation of the Virgin": "La Asunción de la Virgen",
-            "Virgin and Child with a Rosary": "Virgen del Rosario con el Niño"
+            "Virgin and Child with a Rosary": "Virgen del Rosario con el Niño",
+            "Luke 1:26-31": "San Lucas 1, 26-31",
+            "Luke 1:39-45": "San Lucas 1, 39-45",
+            "Luke 2:1-7": "San Lucas 2, 1-7",
+            "Luke 2:25-32": "San Lucas 2, 25-32",
+            "Luke 2:41-51": "San Lucas 2, 41-51"
         }
     },
     prayers: {
@@ -250,35 +255,35 @@ export default {
                 EN: [
                     {
                         title: 'The First Joyful Mystery',
-                        text: 'The Annunciation of Gabriel to Mary. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-38</a>)',
+                        text: 'The Annunciation of Gabriel to Mary. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-31</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/annunciation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Second Joyful Mystery',
-                        text: 'The Visitation  of Mary to Elizabeth. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-56</a>)',
+                        text: 'The Visitation  of Mary to Elizabeth. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-45</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/visitation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Third Joyful Mystery',
-                        text: 'The Birth of Our Lord. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-21</a>)',
+                        text: 'The Birth of Our Lord. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-7</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/nativity.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Fourth Joyful Mystery',
-                        text: 'The Presentation of Our Lord. (<a href="/med_en_joyful_4" data-navigo>Luke 2:22-38</a>)',
+                        text: 'The Presentation of Our Lord. (<a href="/med_en_joyful_4" data-navigo>Luke 2:25-32</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/presentation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Fifth Joyful Mystery',
-                        text: 'The Finding of Our Lord in the Temple. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-52</a>)',
+                        text: 'The Finding of Our Lord in the Temple. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-51</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/finding.jpg',
                         imagePosition: 'right center'
@@ -287,35 +292,35 @@ export default {
                 EN_TRAD: [
                     {
                         title: 'The First Joyful Mystery',
-                        text: 'The Annunciation. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-38</a>)',
+                        text: 'The Annunciation. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-31</a>)',
                         source: 'Baronius Press, Daily Missal 1962',
                         image: '/images/default/annunciation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Second Joyful Mystery',
-                        text: 'The Visitation. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-56</a>)',
+                        text: 'The Visitation. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-45</a>)',
                         source: 'Baronius Press, Daily Missal 1962',
                         image: '/images/default/visitation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Third Joyful Mystery',
-                        text: 'The Nativity. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-21</a>)',
+                        text: 'The Nativity. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-7</a>)',
                         source: 'Baronius Press, Daily Missal 1962',
                         image: '/images/default/nativity.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Fourth Joyful Mystery',
-                        text: 'The Presentation. (<a href="/med_en_joyful_4" data-navigo>Luke 2:22-38</a>)',
+                        text: 'The Presentation. (<a href="/med_en_joyful_4" data-navigo>Luke 2:25-32</a>)',
                         source: 'Baronius Press, Daily Missal 1962',
                         image: '/images/default/presentation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Fifth Joyful Mystery',
-                        text: 'The Finding in the Temple. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-52</a>)',
+                        text: 'The Finding in the Temple. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-51</a>)',
                         source: 'Baronius Press, Daily Missal 1962',
                         image: '/images/default/finding.jpg',
                         imagePosition: 'right center'
@@ -324,35 +329,35 @@ export default {
                 LA: [
                     {
                         title: 'Prímum Mystérium Gaudiósum',
-                        text: 'Annuntiátio. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-38</a>)',
+                        text: 'Annuntiátio. (<a href="/med_en_joyful_1" data-navigo><hro-localize>Luke 1:26-31</hro-localize></a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/annunciation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'Secúndum Mystérium Gaudiósum',
-                        text: 'Visitátio. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-56</a>)',
+                        text: 'Visitátio. (<a href="/med_en_joyful_2" data-navigo><hro-localize>Luke 1:39-45</hro-localize></a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/visitation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'Tértium Mystérium Gaudiósum',
-                        text: 'Natívitas Dómini nostri Jesu Christi. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-21</a>)',
+                        text: 'Natívitas Dómini nostri Jesu Christi. (<a href="/med_en_joyful_3" data-navigo><hro-localize>Luke 2:1-7</hro-localize></a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/nativity.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'Quartum Mystérium Gaudiósum',
-                        text: 'Præsentátio Púeri Jesu in Templo. (<a href="/med_en_joyful_4" data-navigo>Luke 2:22-38</a>)',
+                        text: 'Præsentátio Púeri Jesu in Templo. (<a href="/med_en_joyful_4" data-navigo><hro-localize>Luke 2:25-32</hro-localize></a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/presentation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'Quintum Mystérium Gaudiósum',
-                        text: 'Invéntio Púeri Jesu in Templo. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-52</a>)',
+                        text: 'Invéntio Púeri Jesu in Templo. (<a href="/med_en_joyful_5" data-navigo><hro-localize>Luke 2:41-51</hro-localize></a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/finding.jpg',
                         imagePosition: 'right center'
@@ -360,37 +365,37 @@ export default {
                 ],
                 ES: [
                     {
-                        title: 'The First Joyful Mystery',
-                        text: 'The Annunciation of Gabriel to Mary. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-38</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        title: 'El Primer Misterio de Gozo',
+                        text: 'La Anunciación del Angel a María. (<a href="/med_es_joyful_1" data-navigo><hro-localize>Luke 1:26-31</hro-localize></a>)',
+                        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/annunciation.jpg',
                         imagePosition: 'center'
                     },
                     {
-                        title: 'The Second Joyful Mystery',
-                        text: 'The Visitation  of Mary to Elizabeth. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-56</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        title: 'El Segundo Misterio de Gozo',
+                        text: 'La Visita de Nuestra Señora a Su Prima Santa Isabel. (<a href="/med_es_joyful_2" data-navigo><hro-localize>Luke 1:39-45</a>)',
+                        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/visitation.jpg',
                         imagePosition: 'center'
                     },
                     {
-                        title: 'The Third Joyful Mystery',
-                        text: 'The Birth of Our Lord. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-21</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        title: 'El Tercer Misterio de Gozo',
+                        text: 'El Nacimiento del Hijo de Dios en Belén. (<a href="/med_es_joyful_3" data-navigo><hro-localize>Luke 2:1-7</hro-localize></a>)',
+                        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/nativity.jpg',
                         imagePosition: 'center'
                     },
                     {
-                        title: 'The Fourth Joyful Mystery',
-                        text: 'The Presentation of Our Lord. (<a href="/med_en_joyful_4" data-navigo>Luke 2:22-38</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        title: 'El Cuarto Misterio de Gozo',
+                        text: 'La Presentación de Jesús en el Templo. (<a href="/med_es_joyful_4" data-navigo><hro-localize>Luke 2:25-32</hro-localize></a>)',
+                        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/presentation.jpg',
                         imagePosition: 'center'
                     },
                     {
-                        title: 'The Fifth Joyful Mystery',
-                        text: 'The Finding of Our Lord in the Temple. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-52</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        title: 'El Quinto Misterio de Gozo',
+                        text: 'El Niño Perdido y Hallado en el Templo. (<a href="/med_es_joyful_5" data-navigo>Luke 2:41-51</a>)',
+                        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/finding.jpg',
                         imagePosition: 'right center'
                     }
