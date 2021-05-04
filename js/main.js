@@ -16,6 +16,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _page_scripts_HomeJS__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./page-scripts/HomeJS */ "./src/js/page-scripts/HomeJS.js");
 /* harmony import */ var _page_scripts_SettingsJS__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./page-scripts/SettingsJS */ "./src/js/page-scripts/SettingsJS.js");
 /* harmony import */ var _page_scripts_ArtworkJS__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./page-scripts/ArtworkJS */ "./src/js/page-scripts/ArtworkJS.js");
+/* harmony import */ var _page_scripts_AboutJS__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./page-scripts/AboutJS */ "./src/js/page-scripts/AboutJS.js");
+
 
 
 
@@ -49,6 +51,7 @@ $(document).ready(function () {
     },
     'about': function about() {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/about');
+      (0,_page_scripts_AboutJS__WEBPACK_IMPORTED_MODULE_6__.default)();
       window.nvgo_router.updatePageLinks();
       hroLocalize();
     },
@@ -240,6 +243,35 @@ $(document).ready(function () {
 
 /***/ }),
 
+/***/ "./src/js/page-scripts/AboutJS.js":
+/*!****************************************!*\
+  !*** ./src/js/page-scripts/AboutJS.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ArtworkJS)
+/* harmony export */ });
+/* harmony import */ var _README_md__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../README.md */ "./README.md");
+/* harmony import */ var _README_md__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_README_md__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _README_es_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../README_es.md */ "./README_es.md");
+/* harmony import */ var _README_es_md__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_README_es_md__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../store */ "./src/js/store.js");
+
+
+
+function ArtworkJS() {
+  if (_store__WEBPACK_IMPORTED_MODULE_2__.default.settings.language === 'ES') {
+    $('#about-content').append((_README_es_md__WEBPACK_IMPORTED_MODULE_1___default()));
+  } else {
+    $('#about-content').append((_README_md__WEBPACK_IMPORTED_MODULE_0___default()));
+  }
+}
+
+/***/ }),
+
 /***/ "./src/js/page-scripts/ArtworkJS.js":
 /*!******************************************!*\
   !*** ./src/js/page-scripts/ArtworkJS.js ***!
@@ -251,26 +283,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ ArtworkJS)
 /* harmony export */ });
-/* harmony import */ var _images_default_agony_md__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../images/default/agony.md */ "./images/default/agony.md");
-/* harmony import */ var _images_default_agony_md__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_images_default_agony_md__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _images_default_annunciation_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../images/default/annunciation.md */ "./images/default/annunciation.md");
-/* harmony import */ var _images_default_annunciation_md__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_default_annunciation_md__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _images_default_ascension_md__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../images/default/ascension.md */ "./images/default/ascension.md");
-/* harmony import */ var _images_default_ascension_md__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_default_ascension_md__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _images_default_assumption_md__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../images/default/assumption.md */ "./images/default/assumption.md");
-/* harmony import */ var _images_default_assumption_md__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_default_assumption_md__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _images_default_baptism_md__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../images/default/baptism.md */ "./images/default/baptism.md");
-/* harmony import */ var _images_default_baptism_md__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_default_baptism_md__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _images_default_cana_md__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../images/default/cana.md */ "./images/default/cana.md");
-/* harmony import */ var _images_default_cana_md__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_default_cana_md__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _images_default_coronation_md__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../images/default/coronation.md */ "./images/default/coronation.md");
-/* harmony import */ var _images_default_coronation_md__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_images_default_coronation_md__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _images_default_cross_md__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../images/default/cross.md */ "./images/default/cross.md");
-/* harmony import */ var _images_default_cross_md__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_images_default_cross_md__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _images_default_crucifixion_md__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../images/default/crucifixion.md */ "./images/default/crucifixion.md");
-/* harmony import */ var _images_default_crucifixion_md__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_images_default_crucifixion_md__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _images_default_default_md__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../images/default/default.md */ "./images/default/default.md");
-/* harmony import */ var _images_default_default_md__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_images_default_default_md__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _images_default_default_md__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../images/default/default.md */ "./images/default/default.md");
+/* harmony import */ var _images_default_default_md__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_images_default_default_md__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _images_default_agony_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../images/default/agony.md */ "./images/default/agony.md");
+/* harmony import */ var _images_default_agony_md__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_default_agony_md__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _images_default_annunciation_md__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../images/default/annunciation.md */ "./images/default/annunciation.md");
+/* harmony import */ var _images_default_annunciation_md__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_default_annunciation_md__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _images_default_ascension_md__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../images/default/ascension.md */ "./images/default/ascension.md");
+/* harmony import */ var _images_default_ascension_md__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_default_ascension_md__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _images_default_assumption_md__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../images/default/assumption.md */ "./images/default/assumption.md");
+/* harmony import */ var _images_default_assumption_md__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_default_assumption_md__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _images_default_baptism_md__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../images/default/baptism.md */ "./images/default/baptism.md");
+/* harmony import */ var _images_default_baptism_md__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_default_baptism_md__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _images_default_cana_md__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../images/default/cana.md */ "./images/default/cana.md");
+/* harmony import */ var _images_default_cana_md__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_images_default_cana_md__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _images_default_coronation_md__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../images/default/coronation.md */ "./images/default/coronation.md");
+/* harmony import */ var _images_default_coronation_md__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_images_default_coronation_md__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _images_default_cross_md__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../images/default/cross.md */ "./images/default/cross.md");
+/* harmony import */ var _images_default_cross_md__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_images_default_cross_md__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _images_default_crucifixion_md__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../images/default/crucifixion.md */ "./images/default/crucifixion.md");
+/* harmony import */ var _images_default_crucifixion_md__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_images_default_crucifixion_md__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _images_default_descent_md__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../images/default/descent.md */ "./images/default/descent.md");
 /* harmony import */ var _images_default_descent_md__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_images_default_descent_md__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var _images_default_eucharist_md__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../images/default/eucharist.md */ "./images/default/eucharist.md");
@@ -293,6 +325,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _images_default_transfiguration_md__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_images_default_transfiguration_md__WEBPACK_IMPORTED_MODULE_19__);
 /* harmony import */ var _images_default_visitation_md__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../../images/default/visitation.md */ "./images/default/visitation.md");
 /* harmony import */ var _images_default_visitation_md__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_images_default_visitation_md__WEBPACK_IMPORTED_MODULE_20__);
+// Default is reserved in js I think
 
 
 
@@ -301,7 +334,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // Default is reserved in js I think
 
 
 
@@ -316,23 +348,24 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function ArtworkJS() {
-  appendHTML('#artwork-joyful', (_images_default_annunciation_md__WEBPACK_IMPORTED_MODULE_1___default()), 'annunciation');
+  appendHTML('#artwork-general', (_images_default_default_md__WEBPACK_IMPORTED_MODULE_0___default()), 'default');
+  appendHTML('#artwork-joyful', (_images_default_annunciation_md__WEBPACK_IMPORTED_MODULE_2___default()), 'annunciation');
   appendHTML('#artwork-joyful', (_images_default_visitation_md__WEBPACK_IMPORTED_MODULE_20___default()), 'visitation');
   appendHTML('#artwork-joyful', (_images_default_nativity_md__WEBPACK_IMPORTED_MODULE_13___default()), 'nativity');
   appendHTML('#artwork-joyful', (_images_default_presentation_md__WEBPACK_IMPORTED_MODULE_14___default()), 'presentation');
   appendHTML('#artwork-joyful', (_images_default_finding_md__WEBPACK_IMPORTED_MODULE_12___default()), 'finding');
-  appendHTML('#artwork-sorrowful', (_images_default_agony_md__WEBPACK_IMPORTED_MODULE_0___default()), 'agony');
+  appendHTML('#artwork-sorrowful', (_images_default_agony_md__WEBPACK_IMPORTED_MODULE_1___default()), 'agony');
   appendHTML('#artwork-sorrowful', (_images_default_scourging_md__WEBPACK_IMPORTED_MODULE_17___default()), 'scourging');
   appendHTML('#artwork-sorrowful', (_images_default_thorns_md__WEBPACK_IMPORTED_MODULE_18___default()), 'thorns');
-  appendHTML('#artwork-sorrowful', (_images_default_cross_md__WEBPACK_IMPORTED_MODULE_7___default()), 'cross');
-  appendHTML('#artwork-sorrowful', (_images_default_crucifixion_md__WEBPACK_IMPORTED_MODULE_8___default()), 'crucifixion');
+  appendHTML('#artwork-sorrowful', (_images_default_cross_md__WEBPACK_IMPORTED_MODULE_8___default()), 'cross');
+  appendHTML('#artwork-sorrowful', (_images_default_crucifixion_md__WEBPACK_IMPORTED_MODULE_9___default()), 'crucifixion');
   appendHTML('#artwork-glorious', (_images_default_resurrection_md__WEBPACK_IMPORTED_MODULE_16___default()), 'resurrection');
-  appendHTML('#artwork-glorious', (_images_default_ascension_md__WEBPACK_IMPORTED_MODULE_2___default()), 'ascension');
+  appendHTML('#artwork-glorious', (_images_default_ascension_md__WEBPACK_IMPORTED_MODULE_3___default()), 'ascension');
   appendHTML('#artwork-glorious', (_images_default_descent_md__WEBPACK_IMPORTED_MODULE_10___default()), 'descent');
-  appendHTML('#artwork-glorious', (_images_default_assumption_md__WEBPACK_IMPORTED_MODULE_3___default()), 'assumption');
-  appendHTML('#artwork-glorious', (_images_default_coronation_md__WEBPACK_IMPORTED_MODULE_6___default()), 'coronation');
-  appendHTML('#artwork-luminous', (_images_default_baptism_md__WEBPACK_IMPORTED_MODULE_4___default()), 'baptism');
-  appendHTML('#artwork-luminous', (_images_default_cana_md__WEBPACK_IMPORTED_MODULE_5___default()), 'cana');
+  appendHTML('#artwork-glorious', (_images_default_assumption_md__WEBPACK_IMPORTED_MODULE_4___default()), 'assumption');
+  appendHTML('#artwork-glorious', (_images_default_coronation_md__WEBPACK_IMPORTED_MODULE_7___default()), 'coronation');
+  appendHTML('#artwork-luminous', (_images_default_baptism_md__WEBPACK_IMPORTED_MODULE_5___default()), 'baptism');
+  appendHTML('#artwork-luminous', (_images_default_cana_md__WEBPACK_IMPORTED_MODULE_6___default()), 'cana');
   appendHTML('#artwork-luminous', (_images_default_proclamation_md__WEBPACK_IMPORTED_MODULE_15___default()), 'proclamation');
   appendHTML('#artwork-luminous', (_images_default_transfiguration_md__WEBPACK_IMPORTED_MODULE_19___default()), 'transfiguration');
   appendHTML('#artwork-luminous', (_images_default_eucharist_md__WEBPACK_IMPORTED_MODULE_11___default()), 'eucharist');
@@ -1532,14 +1565,37 @@ __webpack_require__.r(__webpack_exports__);
       "Rosary Color": "Color del rosario",
       "Reset Color": "Use el color predeterminado",
       "Hide the prayer images.": "Esconda las pinturas de los misterios.",
-      "Hide the words to the prayers. Click blank space to go to the next prayer.": "Esconda las palabras de las oraciones. Haga clíc en el espacio dentro del rosario para ir adelante.",
+      "Hide the words to the prayers. Click blank space to go to the next prayer.": "Esconda las palabras de las oraciones. Haga clíc en el espacio blanco para ir adelante.",
       "Pray the Divine Mercy Chaplet instead.": "Rece la Coronilla de la Divina Misericordia",
       "Enable Latin": "Rece en Latín",
       "Artwork Titles, Artist Names and Links": "Las obras de arte, los artistas, y vínculos",
       "Depictions of the joyful mysteries": "Pinturas de los misterios de gozo",
       "Depictions of the luminous mysteries": "Pinturas de los misterios de luz",
       "Depictions of the sorrowful mysteries": "Pinturas de los misterios de dolor",
-      "Depictions of the glorious mysteries": "Pinturas de los misterios de gloria"
+      "Depictions of the glorious mysteries": "Pinturas de los misterios de gloria",
+      "Artist": "Artista",
+      "Source": "Fuente",
+      "Annunciation": "La Anunciación",
+      "Visitation": "La Visitación",
+      "Nativity with the Annunciation to the Shepherds": "Natividad con el anuncio a los pastores",
+      "Presentation of Jesus Christ at the Temple": "La Presentación de Jesucristo en el Templo",
+      "Christ among the Doctors": "Cristo entre los doctores",
+      "The Baptism of Christ": "El Bautismo de Cristo",
+      "The Marriage Feast at Cana": "Bodas de Caná",
+      "Sermon on the Mount": "Sermón de la Montaña",
+      "Transfiguration": "La Transfiguración",
+      "The Last Supper": "La Santa Cena",
+      "The Agony in the Garden": "La Oración del Huerto",
+      "The Scourging of Christ": "La Flagelación de Cristo",
+      "Christ Crowned with Thorns": "La Coronación de Espinas",
+      "Christ Carrying the Cross": "Cristo Camino del Calvario",
+      "Christ Crucified": "Cristo crucificado",
+      "The Resurrected Christ Appears to the Virgin": "Cristo Resucitado Apareciéndose a Su Madre",
+      "The Ascension": "La Ascención",
+      "Pentecost": "Pentecostés",
+      "Assumption of the Virgin": "La Asunción de la Virgen",
+      "Coronation of the Virgin": "La Asunción de la Virgen",
+      "Virgin and Child with a Rosary": "Virgen del Rosario con el Niño"
     }
   },
   prayers: {
@@ -2361,6 +2417,32 @@ var preloadImages = function preloadImages(array) {
 
 /***/ }),
 
+/***/ "./README.md":
+/*!*******************!*\
+  !*** ./README.md ***!
+  \*******************/
+/***/ ((module) => {
+
+// Module
+var code = "<h1 id=\"about\">About</h1>\n<p><img src=\"/android-chrome-256x256.png\" alt=\"The Virgin of the Rosary by Bartolomé Esteban Murillo\"></p>\n<p><a href=\"https://holyrosaryonline.com\">HolyRosaryOnline.com</a> is a website meant to help people pray the Rosary. It is an open source project maintained by web developer Matt Watson. Different options are available in <a href=\"https://holyrosaryonline.com/settings\">Settings</a>.</p>\n<p>Click the beads as you go along, or click the arrows or anywhere inside the rosary to go to the next bead.</p>\n<p>Email <a href=\"mailto:matt@mattwatson.org\">matt@mattwatson.org</a> for questions or <a href=\"https://github.com/mateowatson/holyrosaryonline/issues\">leave an issue on the GitHub page</a>.</p>\n<h2 id=\"sources\">Sources</h2>\n<p>The texts of the prayers were taken in fair use from various sources. The source for each prayer is noted in the source code.</p>\n<h2 id=\"artwork\">Artwork</h2>\n<p>Artwork has been added by default as an aid to contemplation. You may find out more about these images on the <a href=\"https://holyrosaryonline.com/artwork\">artwork page</a>.</p>\n";
+// Exports
+module.exports = code;
+
+/***/ }),
+
+/***/ "./README_es.md":
+/*!**********************!*\
+  !*** ./README_es.md ***!
+  \**********************/
+/***/ ((module) => {
+
+// Module
+var code = "<h1 id=\"acerca-de-este-proyecto\">Acerca de este proyecto</h1>\n<p><img src=\"/android-chrome-256x256.png\" alt=\"Virgen del Rosario con el Niño por Bartolomé Esteban Murillo\"></p>\n<p><a href=\"https://holyrosaryonline.com\">HolyRosaryOnline.com</a> es un sitio web para ayudar rezar el Rosario. Es un proyecto de código abierto mantenido por Matt Watson, un desarrollador de web. Hay varias opciones en la página de <a href=\"https://holyrosaryonline.com/settings\">Configuración</a>.</p>\n<p>Haga clíc en las cuentas, en el espacio blanco, o en las flechas para avanzar a la próxima oración.</p>\n<p>Puede enviar un correo electrónico a <a href=\"mailto:matt@mattwatson.org\">matt@mattwatson.org</a> si tiene preguntas o <a href=\"https://github.com/mateowatson/holyrosaryonline/issues\">escribir un incidente en GitHub</a>.</p>\n<h2 id=\"fuentes\">Fuentes</h2>\n<p>El contenido de las oraciones viene de varias fuentes con el uso justo. La fuente de cada oración se nota en el código.</p>\n<h2 id=\"las-obras-de-arte\">Las obras de arte</h2>\n<p>Las obras de arte se apacece por defecto para ayudar en la contemplación. Puede descubrir más información sobre estas imágenes en <a href=\"https://holyrosaryonline.com/artwork\">la página del arte</a>.</p>\n";
+// Exports
+module.exports = code;
+
+/***/ }),
+
 /***/ "./images/default/agony.md":
 /*!*********************************!*\
   !*** ./images/default/agony.md ***!
@@ -2368,7 +2450,7 @@ var preloadImages = function preloadImages(array) {
 /***/ ((module) => {
 
 // Module
-var code = "<h1 id=\"the-agony-in-the-garden\">The Agony in the Garden</h1>\n<p>Artist: Cristóbal de Villalpando</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:The_Agony_in_the_Garden_(Crist%C3%B3bal_de_Villalpando).jpg\">https://commons.wikimedia.org/wiki/File:The_Agony_in_the_Garden_(Crist%C3%B3bal_de_Villalpando).jpg</a></p>\n";
+var code = "<h1 id=\"hro-localizethe-agony-in-the-gardenhro-localize\"><hro-localize>The Agony in the Garden</hro-localize></h1>\n<p><hro-localize>Artist</hro-localize>: Cristóbal de Villalpando</p>\n<p><hro-localize>Source</hro-localize>: <a href=\"https://commons.wikimedia.org/wiki/File:The_Agony_in_the_Garden_(Crist%C3%B3bal_de_Villalpando).jpg\">https://commons.wikimedia.org/wiki/File:The_Agony_in_the_Garden_(Crist%C3%B3bal_de_Villalpando).jpg</a></p>\n";
 // Exports
 module.exports = code;
 
@@ -2381,7 +2463,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<h1 id=\"annunciation\">Annunciation</h1>\n<p>Artist: Bartolomé Esteban Murillo</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Bartolom%C3%A9_Esteban_Perez_Murillo_-_Annunciation_-_WGA16375.jpg\">https://commons.wikimedia.org/wiki/File:Bartolom%C3%A9_Esteban_Perez_Murillo_-_Annunciation_-_WGA16375.jpg</a></p>\n";
+var code = "<h1 id=\"hro-localizeannunciationhro-localize\"><hro-localize>Annunciation</hro-localize></h1>\n<p><hro-localize>Artist</hro-localize>: Bartolomé Esteban Murillo</p>\n<p><hro-localize>Source</hro-localize>: <a href=\"https://commons.wikimedia.org/wiki/File:Bartolom%C3%A9_Esteban_Perez_Murillo_-_Annunciation_-_WGA16375.jpg\">https://commons.wikimedia.org/wiki/File:Bartolom%C3%A9_Esteban_Perez_Murillo_-_Annunciation_-_WGA16375.jpg</a></p>\n";
 // Exports
 module.exports = code;
 
@@ -2394,7 +2476,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<h1 id=\"the-ascension\">The Ascension</h1>\n<p>Artist: Paolo Veronese</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Veronese_-_The_Ascension_-_Google_Art_Project.jpg\">https://commons.wikimedia.org/wiki/File:Veronese_-_The_Ascension_-_Google_Art_Project.jpg</a></p>\n";
+var code = "<h1 id=\"hro-localizethe-ascensionhro-localize\"><hro-localize>The Ascension</hro-localize></h1>\n<p><hro-localize>Artist</hro-localize>: Paolo Veronese</p>\n<p><hro-localize>Source</hro-localize>: <a href=\"https://commons.wikimedia.org/wiki/File:Veronese_-_The_Ascension_-_Google_Art_Project.jpg\">https://commons.wikimedia.org/wiki/File:Veronese_-_The_Ascension_-_Google_Art_Project.jpg</a></p>\n";
 // Exports
 module.exports = code;
 
@@ -2407,7 +2489,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<h1 id=\"assumption-of-the-virgin\">Assumption of the Virgin</h1>\n<p>Artist: Bartolomé Esteban Murillo</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Bartolome_Murillo_-_Assumption_of_the_Virgin.jpg\">https://commons.wikimedia.org/wiki/File:Bartolome_Murillo_-_Assumption_of_the_Virgin.jpg</a></p>\n";
+var code = "<h1 id=\"hro-localizeassumption-of-the-virginhro-localize\"><hro-localize>Assumption of the Virgin</hro-localize></h1>\n<p><hro-localize>Artist</hro-localize>: Bartolomé Esteban Murillo</p>\n<p><hro-localize>Source</hro-localize>: <a href=\"https://commons.wikimedia.org/wiki/File:Bartolome_Murillo_-_Assumption_of_the_Virgin.jpg\">https://commons.wikimedia.org/wiki/File:Bartolome_Murillo_-_Assumption_of_the_Virgin.jpg</a></p>\n";
 // Exports
 module.exports = code;
 
@@ -2420,7 +2502,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<h1 id=\"the-baptism-of-christ\">The Baptism of Christ</h1>\n<p>Artist: Bartolomé Esteban Murillo</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Bartolom%C3%A9_Esteban_Perez_Murillo_-_Baptism_of_Christ_-_WGA16366.jpg\">https://commons.wikimedia.org/wiki/File:Bartolom%C3%A9_Esteban_Perez_Murillo_-_Baptism_of_Christ_-_WGA16366.jpg</a></p>\n";
+var code = "<h1 id=\"hro-localizethe-baptism-of-christhro-localize\"><hro-localize>The Baptism of Christ</hro-localize></h1>\n<p><hro-localize>Artist</hro-localize>: Bartolomé Esteban Murillo</p>\n<p><hro-localize>Source</hro-localize>: <a href=\"https://commons.wikimedia.org/wiki/File:Bartolom%C3%A9_Esteban_Perez_Murillo_-_Baptism_of_Christ_-_WGA16366.jpg\">https://commons.wikimedia.org/wiki/File:Bartolom%C3%A9_Esteban_Perez_Murillo_-_Baptism_of_Christ_-_WGA16366.jpg</a></p>\n";
 // Exports
 module.exports = code;
 
@@ -2433,7 +2515,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<h1 id=\"the-marriage-feast-at-cana\">The Marriage Feast at Cana</h1>\n<p>Artist: Bartolomé Esteban Murillo</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:The_Barber_Institute_of_Fine_Arts_-_Bartolom%C3%A9_Esteban_Murillo_-_The_Marriage_Feast_at_Cana.jpg\">https://commons.wikimedia.org/wiki/File:The_Barber_Institute_of_Fine_Arts_-_Bartolom%C3%A9_Esteban_Murillo_-_The_Marriage_Feast_at_Cana.jpg</a></p>\n";
+var code = "<h1 id=\"hro-localizethe-marriage-feast-at-canahro-localize\"><hro-localize>The Marriage Feast at Cana</hro-localize></h1>\n<p><hro-localize>Artist</hro-localize>: Bartolomé Esteban Murillo</p>\n<p><hro-localize>Source</hro-localize>: <a href=\"https://commons.wikimedia.org/wiki/File:The_Barber_Institute_of_Fine_Arts_-_Bartolom%C3%A9_Esteban_Murillo_-_The_Marriage_Feast_at_Cana.jpg\">https://commons.wikimedia.org/wiki/File:The_Barber_Institute_of_Fine_Arts_-_Bartolom%C3%A9_Esteban_Murillo_-_The_Marriage_Feast_at_Cana.jpg</a></p>\n";
 // Exports
 module.exports = code;
 
@@ -2446,7 +2528,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<h1 id=\"coronation-of-the-virgin\">Coronation of the Virgin</h1>\n<p>Artist: Diego Velázquez</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_-_Coronation_of_the_Virgin_-_Prado.jpg\">https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_-_Coronation_of_the_Virgin_-_Prado.jpg</a></p>\n";
+var code = "<h1 id=\"hro-localizecoronation-of-the-virginhro-localize\"><hro-localize>Coronation of the Virgin</hro-localize></h1>\n<p><hro-localize>Artist</hro-localize>: Diego Velázquez</p>\n<p><hro-localize>Source</hro-localize>: <a href=\"https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_-_Coronation_of_the_Virgin_-_Prado.jpg\">https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_-_Coronation_of_the_Virgin_-_Prado.jpg</a></p>\n";
 // Exports
 module.exports = code;
 
@@ -2459,7 +2541,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<h1 id=\"christ-carrying-the-cross\">Christ Carrying the Cross</h1>\n<p>Artist: Titian</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Titian_-_Christ_Carrying_the_Cross_-_WGA22830.jpg\">https://commons.wikimedia.org/wiki/File:Titian_-_Christ_Carrying_the_Cross_-_WGA22830.jpg</a></p>\n";
+var code = "<h1 id=\"hro-localizechrist-carrying-the-crosshro-localize\"><hro-localize>Christ Carrying the Cross</hro-localize></h1>\n<p><hro-localize>Artist</hro-localize>: Titian</p>\n<p><hro-localize>Source</hro-localize>: <a href=\"https://commons.wikimedia.org/wiki/File:Titian_-_Christ_Carrying_the_Cross_-_WGA22830.jpg\">https://commons.wikimedia.org/wiki/File:Titian_-_Christ_Carrying_the_Cross_-_WGA22830.jpg</a></p>\n";
 // Exports
 module.exports = code;
 
@@ -2472,7 +2554,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<h1 id=\"christ-crucified\">Christ Crucified</h1>\n<p>Artist: Diego Velázquez</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_-_Christ_on_the_Cross_-_WGA24389.jpg\">https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_-_Christ_on_the_Cross_-_WGA24389.jpg</a></p>\n";
+var code = "<h1 id=\"hro-localizechrist-crucifiedhro-localize\"><hro-localize>Christ Crucified</hro-localize></h1>\n<p><hro-localize>Artist</hro-localize>: Diego Velázquez</p>\n<p><hro-localize>Source</hro-localize>: <a href=\"https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_-_Christ_on_the_Cross_-_WGA24389.jpg\">https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_-_Christ_on_the_Cross_-_WGA24389.jpg</a></p>\n";
 // Exports
 module.exports = code;
 
@@ -2485,7 +2567,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<h1 id=\"virgin-and-child-with-a-rosary\">Virgin and Child with a Rosary</h1>\n<p>Artist: Bartolomé Esteban Murillo</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Bartolom%C3%A9_Esteban_Perez_Murillo_-_Virgin_and_Child_with_a_Rosary_-_WGA16360.jpg\">https://commons.wikimedia.org/wiki/File:Bartolom%C3%A9_Esteban_Perez_Murillo_-_Virgin_and_Child_with_a_Rosary_-_WGA16360.jpg</a></p>\n";
+var code = "<h1 id=\"hro-localizevirgin-and-child-with-a-rosaryhro-localize\"><hro-localize>Virgin and Child with a Rosary</hro-localize></h1>\n<p><hro-localize>Artist</hro-localize>: Bartolomé Esteban Murillo</p>\n<p><hro-localize>Source</hro-localize>: <a href=\"https://commons.wikimedia.org/wiki/File:Bartolom%C3%A9_Esteban_Perez_Murillo_-_Virgin_and_Child_with_a_Rosary_-_WGA16360.jpg\">https://commons.wikimedia.org/wiki/File:Bartolom%C3%A9_Esteban_Perez_Murillo_-_Virgin_and_Child_with_a_Rosary_-_WGA16360.jpg</a></p>\n";
 // Exports
 module.exports = code;
 
@@ -2498,7 +2580,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<h1 id=\"pentecost\">Pentecost</h1>\n<p>Artist: Juan Bautista Maíno</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Maino_Pentecost%C3%A9s,_1620-1625._Museo_del_Prado.jpg\">https://commons.wikimedia.org/wiki/File:Maino_Pentecost%C3%A9s,_1620-1625._Museo_del_Prado.jpg</a></p>\n";
+var code = "<h1 id=\"hro-localizepentecosthro-localize\"><hro-localize>Pentecost</hro-localize></h1>\n<p><hro-localize>Artist</hro-localize>: Juan Bautista Maíno</p>\n<p><hro-localize>Source</hro-localize>: <a href=\"https://commons.wikimedia.org/wiki/File:Maino_Pentecost%C3%A9s,_1620-1625._Museo_del_Prado.jpg\">https://commons.wikimedia.org/wiki/File:Maino_Pentecost%C3%A9s,_1620-1625._Museo_del_Prado.jpg</a></p>\n";
 // Exports
 module.exports = code;
 
@@ -2511,7 +2593,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<h1 id=\"the-last-supper\">The Last Supper</h1>\n<p>Artist: Joan de Joanes</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:La_%C3%9Altima_Cena_(Juan_de_Juanes)_(restaurada).jpg\">https://commons.wikimedia.org/wiki/File:La_%C3%9Altima_Cena_(Juan_de_Juanes)_(restaurada).jpg</a></p>\n";
+var code = "<h1 id=\"hro-localizethe-last-supperhro-localize\"><hro-localize>The Last Supper</hro-localize></h1>\n<p><hro-localize>Artist</hro-localize>: Joan de Joanes</p>\n<p><hro-localize>Source</hro-localize>: <a href=\"https://commons.wikimedia.org/wiki/File:La_%C3%9Altima_Cena_(Juan_de_Juanes)_(restaurada).jpg\">https://commons.wikimedia.org/wiki/File:La_%C3%9Altima_Cena_(Juan_de_Juanes)_(restaurada).jpg</a></p>\n";
 // Exports
 module.exports = code;
 
@@ -2524,7 +2606,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<h1 id=\"christ-among-the-doctors\">Christ among the Doctors</h1>\n<p>Artist: Circle of Jusepe de Ribera</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Follower_of_Ribera_-_Christ_among_the_Doctors.jpg\">https://commons.wikimedia.org/wiki/File:Follower_of_Ribera_-_Christ_among_the_Doctors.jpg</a></p>\n";
+var code = "<h1 id=\"hro-localizechrist-among-the-doctorshro-localize\"><hro-localize>Christ among the Doctors</hro-localize></h1>\n<p><hro-localize>Artist</hro-localize>: Circle of Jusepe de Ribera</p>\n<p><hro-localize>Source</hro-localize>: <a href=\"https://commons.wikimedia.org/wiki/File:Follower_of_Ribera_-_Christ_among_the_Doctors.jpg\">https://commons.wikimedia.org/wiki/File:Follower_of_Ribera_-_Christ_among_the_Doctors.jpg</a></p>\n";
 // Exports
 module.exports = code;
 
@@ -2537,7 +2619,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<h1 id=\"nativity-with-the-annunciation-to-the-shepherds\">Nativity with the Annunciation to the Shepherds</h1>\n<p>Artist: Bartolomé Esteban Murillo</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Murillo-atribucion_natividad_con_el_anuncio_a_los_pastores.jpg\">https://commons.wikimedia.org/wiki/File:Murillo-atribucion_natividad_con_el_anuncio_a_los_pastores.jpg</a></p>\n";
+var code = "<h1 id=\"hro-localizenativity-with-the-annunciation-to-the-shepherdshro-localize\"><hro-localize>Nativity with the Annunciation to the Shepherds</hro-localize></h1>\n<p><hro-localize>Artist</hro-localize>: Bartolomé Esteban Murillo</p>\n<p><hro-localize>Source</hro-localize>: <a href=\"https://commons.wikimedia.org/wiki/File:Murillo-atribucion_natividad_con_el_anuncio_a_los_pastores.jpg\">https://commons.wikimedia.org/wiki/File:Murillo-atribucion_natividad_con_el_anuncio_a_los_pastores.jpg</a></p>\n";
 // Exports
 module.exports = code;
 
@@ -2550,7 +2632,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<h1 id=\"presentation-of-jesus-christ-at-the-temple\">Presentation of Jesus Christ at the Temple</h1>\n<p>Artist: Palma il Giovane</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Palma_il_giovane_-_Presentation_of_Jesus_Christ_at_the_Temple_-_San_Giorgio_Maggiore.jpg\">https://commons.wikimedia.org/wiki/File:Palma_il_giovane_-_Presentation_of_Jesus_Christ_at_the_Temple_-_San_Giorgio_Maggiore.jpg</a></p>\n";
+var code = "<h1 id=\"hro-localizepresentation-of-jesus-christ-at-the-templehro-localize\"><hro-localize>Presentation of Jesus Christ at the Temple</hro-localize></h1>\n<p><hro-localize>Artist</hro-localize>: Palma il Giovane</p>\n<p><hro-localize>Source</hro-localize>: <a href=\"https://commons.wikimedia.org/wiki/File:Palma_il_giovane_-_Presentation_of_Jesus_Christ_at_the_Temple_-_San_Giorgio_Maggiore.jpg\">https://commons.wikimedia.org/wiki/File:Palma_il_giovane_-_Presentation_of_Jesus_Christ_at_the_Temple_-_San_Giorgio_Maggiore.jpg</a></p>\n";
 // Exports
 module.exports = code;
 
@@ -2563,7 +2645,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<h1 id=\"sermon-on-the-mount\">Sermon on the Mount</h1>\n<p>Artist: Cosimo Rosselli</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Cosimo_Rosselli_Sermone_della_Montagna.jpg\">https://commons.wikimedia.org/wiki/File:Cosimo_Rosselli_Sermone_della_Montagna.jpg</a></p>\n";
+var code = "<h1 id=\"hro-localizesermon-on-the-mounthro-localize\"><hro-localize>Sermon on the Mount</hro-localize></h1>\n<p><hro-localize>Artist</hro-localize>: Cosimo Rosselli</p>\n<p><hro-localize>Source</hro-localize>: <a href=\"https://commons.wikimedia.org/wiki/File:Cosimo_Rosselli_Sermone_della_Montagna.jpg\">https://commons.wikimedia.org/wiki/File:Cosimo_Rosselli_Sermone_della_Montagna.jpg</a></p>\n";
 // Exports
 module.exports = code;
 
@@ -2576,7 +2658,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<h1 id=\"the-resurrected-christ-appears-to-the-virgin\">The Resurrected Christ Appears to the Virgin</h1>\n<p>Artist: Guercino</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Guercino_Cr_ris_Madonna.jpg\">https://commons.wikimedia.org/wiki/File:Guercino_Cr_ris_Madonna.jpg</a></p>\n";
+var code = "<h1 id=\"hro-localizethe-resurrected-christ-appears-to-the-virginhro-localize\"><hro-localize>The Resurrected Christ Appears to the Virgin</hro-localize></h1>\n<p><hro-localize>Artist</hro-localize>: Guercino</p>\n<p><hro-localize>Source</hro-localize>: <a href=\"https://commons.wikimedia.org/wiki/File:Guercino_Cr_ris_Madonna.jpg\">https://commons.wikimedia.org/wiki/File:Guercino_Cr_ris_Madonna.jpg</a></p>\n";
 // Exports
 module.exports = code;
 
@@ -2589,7 +2671,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<h1 id=\"the-scourging-of-christ\">The Scourging of Christ</h1>\n<p>Artist: Giulio Cesare Procaccini</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Giulio_Cesare_Procaccini_-_The_Scourging_of_Christ_-_1981.353_-_Museum_of_Fine_Arts.jpg\">https://commons.wikimedia.org/wiki/File:Giulio_Cesare_Procaccini_-_The_Scourging_of_Christ_-_1981.353_-_Museum_of_Fine_Arts.jpg</a></p>\n";
+var code = "<h1 id=\"hro-localizethe-scourging-of-christhro-localize\"><hro-localize>The Scourging of Christ</hro-localize></h1>\n<p><hro-localize>Artist</hro-localize>: Giulio Cesare Procaccini</p>\n<p><hro-localize>Source</hro-localize>: <a href=\"https://commons.wikimedia.org/wiki/File:Giulio_Cesare_Procaccini_-_The_Scourging_of_Christ_-_1981.353_-_Museum_of_Fine_Arts.jpg\">https://commons.wikimedia.org/wiki/File:Giulio_Cesare_Procaccini_-_The_Scourging_of_Christ_-_1981.353_-_Museum_of_Fine_Arts.jpg</a></p>\n";
 // Exports
 module.exports = code;
 
@@ -2602,7 +2684,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<h1 id=\"christ-crowned-with-thorns\">Christ Crowned with Thorns</h1>\n<p>Artist: Caravaggio</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:CaravaggioCrowning01.jpg\">https://commons.wikimedia.org/wiki/File:CaravaggioCrowning01.jpg</a></p>\n";
+var code = "<h1 id=\"hro-localizechrist-crowned-with-thornshro-localize\"><hro-localize>Christ Crowned with Thorns</hro-localize></h1>\n<p><hro-localize>Artist</hro-localize>: Caravaggio</p>\n<p><hro-localize>Source</hro-localize>: <a href=\"https://commons.wikimedia.org/wiki/File:CaravaggioCrowning01.jpg\">https://commons.wikimedia.org/wiki/File:CaravaggioCrowning01.jpg</a></p>\n";
 // Exports
 module.exports = code;
 
@@ -2615,7 +2697,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<h1 id=\"transfiguration\">Transfiguration</h1>\n<p>Artist: Raphael</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Cosimo_Rosselli_Sermone_della_Montagna.jpg\">https://commons.wikimedia.org/wiki/File:Cosimo_Rosselli_Sermone_della_Montagna.jpg</a></p>\n";
+var code = "<h1 id=\"hro-localizetransfigurationhro-localize\"><hro-localize>Transfiguration</hro-localize></h1>\n<p><hro-localize>Artist</hro-localize>: Raphael</p>\n<p><hro-localize>Source</hro-localize>: <a href=\"https://commons.wikimedia.org/wiki/File:Transfiguration_Raphael.jpg\">https://commons.wikimedia.org/wiki/File:Transfiguration_Raphael.jpg</a></p>\n";
 // Exports
 module.exports = code;
 
@@ -2628,7 +2710,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<h1 id=\"visitation\">Visitation</h1>\n<p>Artist: Mariotto Albertinelli</p>\n<p>Source: <a href=\"https://commons.wikimedia.org/wiki/File:Mariotto_Albertinelli_-_Visitation_-_WGA0129.jpg\">https://commons.wikimedia.org/wiki/File:Mariotto_Albertinelli_-_Visitation_-_WGA0129.jpg</a></p>\n";
+var code = "<h1 id=\"hro-localizevisitationhro-localize\"><hro-localize>Visitation</hro-localize></h1>\n<p><hro-localize>Artist</hro-localize>: Mariotto Albertinelli</p>\n<p><hro-localize>Source</hro-localize>: <a href=\"https://commons.wikimedia.org/wiki/File:Mariotto_Albertinelli_-_Visitation_-_WGA0129.jpg\">https://commons.wikimedia.org/wiki/File:Mariotto_Albertinelli_-_Visitation_-_WGA0129.jpg</a></p>\n";
 // Exports
 module.exports = code;
 
@@ -2654,7 +2736,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<div id=\"template-about\" class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\">Home</span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1>About</h1>\n\n        <p>HolyRosaryOnline.com is a website meant to help people pray the\n        Rosary. It is an open source project maintained by web developer Matt\n        Watson. Different options are available in\n        <a href=\"/settings\" data-navigo>Settings</a>.</p>\n\n        <p>Click the beads as you go along, or click anywhere inside the rosary\n        to go to the next bead.</p>\n\n        <p>Email <a href=\"mailto:matt@mattwatson.org\">matt@mattwatson.org</a>\n        for questions or <a href=\"https://github.com/mateowatson/holyrosaryonline/issues\">\n        leave an issue on the GitHub page</a>.</p>\n\n        <h2>Sources</h2>\n\n        <p>The texts of the prayers were taken in fair use from various sources.</p>\n\n        <h2>Artwork</h2>\n\n        <p>Artwork has been added by default as an aid to contemplation. You may\n            find out more about these images on the <a href=\"/artwork\" data-navigo>artwork\n            page</a>.</p>\n    </div>\n</div>";
+var code = "<div id=\"template-about\" class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\">Home</span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <div id=\"about-content\"></div>\n    </div>\n</div>";
 // Exports
 module.exports = code;
 
@@ -2667,7 +2749,7 @@ module.exports = code;
 /***/ ((module) => {
 
 // Module
-var code = "<div id=\"template-artwork\" class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\"><hro-localize>Home</hro-localize></span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1><hro-localize>Artwork Titles, Artist Names and Links</hro-localize></h1>\n\n        <h2><hro-localize>Depictions of the joyful mysteries</hro-localize></h2>\n\n        <div id=\"artwork-joyful\"></div>\n\n        <h2><hro-localize>Depictions of the luminous mysteries</hro-localize></h2>\n\n        <div id=\"artwork-luminous\"></div>\n\n        <h2><hro-localize>Depictions of the sorrowful mysteries</hro-localize></h2>\n\n        <div id=\"artwork-sorrowful\"></div>\n\n        <h2><hro-localize>Depictions of the glorious mysteries</hro-localize></h2>\n\n        <div id=\"artwork-glorious\"></div>\n\n    </div>\n</div>";
+var code = "<div id=\"template-artwork\" class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\"><hro-localize>Home</hro-localize></span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1><hro-localize>Artwork Titles, Artist Names and Links</hro-localize></h1>\n\n        <h2><hro-localize>General</hro-localize></h2>\n\n        <div id=\"artwork-general\"></div>\n\n        <h2><hro-localize>Depictions of the joyful mysteries</hro-localize></h2>\n\n        <div id=\"artwork-joyful\"></div>\n\n        <h2><hro-localize>Depictions of the luminous mysteries</hro-localize></h2>\n\n        <div id=\"artwork-luminous\"></div>\n\n        <h2><hro-localize>Depictions of the sorrowful mysteries</hro-localize></h2>\n\n        <div id=\"artwork-sorrowful\"></div>\n\n        <h2><hro-localize>Depictions of the glorious mysteries</hro-localize></h2>\n\n        <div id=\"artwork-glorious\"></div>\n\n    </div>\n</div>";
 // Exports
 module.exports = code;
 

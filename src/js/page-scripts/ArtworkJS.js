@@ -1,3 +1,5 @@
+// Default is reserved in js I think
+import general from '../../../images/default/default.md';
 import agony from '../../../images/default/agony.md';
 import annunciation from '../../../images/default/annunciation.md';
 import ascension from '../../../images/default/ascension.md';
@@ -7,8 +9,6 @@ import cana from '../../../images/default/cana.md';
 import coronation from '../../../images/default/coronation.md';
 import cross from '../../../images/default/cross.md';
 import crucifixion from '../../../images/default/crucifixion.md';
-// Default is reserved in js I think
-import hro_default from '../../../images/default/default.md';
 import descent from '../../../images/default/descent.md';
 import eucharist from '../../../images/default/eucharist.md';
 import finding from '../../../images/default/finding.md';
@@ -22,6 +22,7 @@ import transfiguration from '../../../images/default/transfiguration.md';
 import visitation from '../../../images/default/visitation.md';
 
 export default function ArtworkJS() {
+    appendHTML('#artwork-general', general, 'default');
     appendHTML('#artwork-joyful', annunciation, 'annunciation');
     appendHTML('#artwork-joyful', visitation, 'visitation');
     appendHTML('#artwork-joyful', nativity, 'nativity');

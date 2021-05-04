@@ -1,5 +1,5 @@
-# Assumption of the Virgin
+# <hro-localize>Assumption of the Virgin</hro-localize>
 
-Artist: Bartolomé Esteban Murillo
+<hro-localize>Artist</hro-localize>: Bartolomé Esteban Murillo
 
-Source: <https://commons.wikimedia.org/wiki/File:Bartolome_Murillo_-_Assumption_of_the_Virgin.jpg>
+<hro-localize>Source</hro-localize>: <https://commons.wikimedia.org/wiki/File:Bartolome_Murillo_-_Assumption_of_the_Virgin.jpg>

@@ -1,5 +1,5 @@
-# The Resurrected Christ Appears to the Virgin
+# <hro-localize>The Resurrected Christ Appears to the Virgin</hro-localize>
 
-Artist: Guercino
+<hro-localize>Artist</hro-localize>: Guercino
 
-Source: <https://commons.wikimedia.org/wiki/File:Guercino_Cr_ris_Madonna.jpg>
+<hro-localize>Source</hro-localize>: <https://commons.wikimedia.org/wiki/File:Guercino_Cr_ris_Madonna.jpg>

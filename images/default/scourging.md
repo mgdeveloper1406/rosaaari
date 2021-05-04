@@ -1,5 +1,5 @@
-# The Scourging of Christ
+# <hro-localize>The Scourging of Christ</hro-localize>
 
-Artist: Giulio Cesare Procaccini
+<hro-localize>Artist</hro-localize>: Giulio Cesare Procaccini
 
-Source: <https://commons.wikimedia.org/wiki/File:Giulio_Cesare_Procaccini_-_The_Scourging_of_Christ_-_1981.353_-_Museum_of_Fine_Arts.jpg>
+<hro-localize>Source</hro-localize>: <https://commons.wikimedia.org/wiki/File:Giulio_Cesare_Procaccini_-_The_Scourging_of_Christ_-_1981.353_-_Museum_of_Fine_Arts.jpg>

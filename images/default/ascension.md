@@ -1,5 +1,5 @@
-# The Ascension
+# <hro-localize>The Ascension</hro-localize>
 
-Artist: Paolo Veronese
+<hro-localize>Artist</hro-localize>: Paolo Veronese
 
-Source: <https://commons.wikimedia.org/wiki/File:Veronese_-_The_Ascension_-_Google_Art_Project.jpg>
+<hro-localize>Source</hro-localize>: <https://commons.wikimedia.org/wiki/File:Veronese_-_The_Ascension_-_Google_Art_Project.jpg>

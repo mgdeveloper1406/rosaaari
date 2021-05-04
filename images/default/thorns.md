@@ -1,5 +1,5 @@
-# Christ Crowned with Thorns
+# <hro-localize>Christ Crowned with Thorns</hro-localize>
 
-Artist: Caravaggio
+<hro-localize>Artist</hro-localize>: Caravaggio
 
-Source: <https://commons.wikimedia.org/wiki/File:CaravaggioCrowning01.jpg>
+<hro-localize>Source</hro-localize>: <https://commons.wikimedia.org/wiki/File:CaravaggioCrowning01.jpg>

@@ -1,5 +1,5 @@
-# Visitation
+# <hro-localize>Visitation</hro-localize>
 
-Artist: Mariotto Albertinelli
+<hro-localize>Artist</hro-localize>: Mariotto Albertinelli
 
-Source: <https://commons.wikimedia.org/wiki/File:Mariotto_Albertinelli_-_Visitation_-_WGA0129.jpg>
+<hro-localize>Source</hro-localize>: <https://commons.wikimedia.org/wiki/File:Mariotto_Albertinelli_-_Visitation_-_WGA0129.jpg>

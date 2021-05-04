@@ -1,5 +1,5 @@
-# Presentation of Jesus Christ at the Temple
+# <hro-localize>Presentation of Jesus Christ at the Temple</hro-localize>
 
-Artist: Palma il Giovane
+<hro-localize>Artist</hro-localize>: Palma il Giovane
 
-Source: <https://commons.wikimedia.org/wiki/File:Palma_il_giovane_-_Presentation_of_Jesus_Christ_at_the_Temple_-_San_Giorgio_Maggiore.jpg>
+<hro-localize>Source</hro-localize>: <https://commons.wikimedia.org/wiki/File:Palma_il_giovane_-_Presentation_of_Jesus_Christ_at_the_Temple_-_San_Giorgio_Maggiore.jpg>

@@ -1,5 +1,5 @@
-# Sermon on the Mount
+# <hro-localize>Sermon on the Mount</hro-localize>
 
-Artist: Cosimo Rosselli
+<hro-localize>Artist</hro-localize>: Cosimo Rosselli
 
-Source: <https://commons.wikimedia.org/wiki/File:Cosimo_Rosselli_Sermone_della_Montagna.jpg>
+<hro-localize>Source</hro-localize>: <https://commons.wikimedia.org/wiki/File:Cosimo_Rosselli_Sermone_della_Montagna.jpg>

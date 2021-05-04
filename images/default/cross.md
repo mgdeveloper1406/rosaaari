@@ -1,5 +1,5 @@
-# Christ Carrying the Cross
+# <hro-localize>Christ Carrying the Cross</hro-localize>
 
-Artist: Titian
+<hro-localize>Artist</hro-localize>: Titian
 
-Source: <https://commons.wikimedia.org/wiki/File:Titian_-_Christ_Carrying_the_Cross_-_WGA22830.jpg>
+<hro-localize>Source</hro-localize>: <https://commons.wikimedia.org/wiki/File:Titian_-_Christ_Carrying_the_Cross_-_WGA22830.jpg>

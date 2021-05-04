@@ -1,5 +1,5 @@
-# Transfiguration
+# <hro-localize>Transfiguration</hro-localize>
 
-Artist: Raphael
+<hro-localize>Artist</hro-localize>: Raphael
 
-Source: <https://commons.wikimedia.org/wiki/File:Cosimo_Rosselli_Sermone_della_Montagna.jpg>
+<hro-localize>Source</hro-localize>: <https://commons.wikimedia.org/wiki/File:Transfiguration_Raphael.jpg>

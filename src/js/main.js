@@ -4,6 +4,7 @@ import store from './store';
 import HomeJS from './page-scripts/HomeJS';
 import SettingsJS from './page-scripts/SettingsJS';
 import ArtworkJS from './page-scripts/ArtworkJS';
+import AboutJS from './page-scripts/AboutJS';
 
 // Comment out during development
 /* if('serviceWorker' in navigator) {
@@ -31,6 +32,7 @@ $( document ).ready(function() {
         },
         'about': function () {
             renderView('/about');
+            AboutJS();
             window.nvgo_router.updatePageLinks();
             hroLocalize();
         },
