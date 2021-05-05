@@ -121,6 +121,10 @@ export default {
             "Acts 2:1-4": "Apóstoles 2, 1-4",
             "From the Sermons of St. John of Damascus. Second on the Falling-asleep of Blessed Mary.": "Sermón de San Juan Damasceno. Segundo sobre la dormición de la Santísima Virgen.",
             "Sermon of St. Peter Canisius, Priest On the Incomparable Virgin Mary, Mother of God": "Sermón de San Pedro Canisio, Presbítero. De María Madre de Dios, Virgen incomparable",
+            "Conclude with (three times):": "Al terminar (3 veces):",
+            "(Repeat 3 times)": "(Repita 3 veces)",
+            "Optional Opening": "Oración Opcional",
+            "Optional Closing": "Oración Opcional"
         }
     },
     prayers: {
@@ -920,9 +924,9 @@ export default {
                     source: 'http://www.windsorlatinmass.org/wtnews/170423.pdf'
                 },
                 ES: {
-                    title: 'Eternal Father',
-                    text: 'Eternal Father, I offer You the Body and Blood, Soul and Divinity of Your dearly beloved Son, Our Lord Jesus Christ, in atonement for our sins and those of the whole world.',
-                    source: 'Baronius Press, Daily Missal 1962'
+                    title: 'Padre Eterno',
+                    text: 'Padre Eterno, Te ofrezco el Cuerpo y la Sangre, el Alma y la Divinidad de Tu amadísimo Hijo, nuestro Señor Jesucristo, como propiciación de nuestros pecados y los del mundo entero.',
+                    source: 'https://divinamisericordia.es/espiritualidad/coronilla/'
                 },
             },
             forTheSake: {
@@ -942,75 +946,75 @@ export default {
                     source: 'http://www.windsorlatinmass.org/wtnews/170423.pdf'
                 },
                 ES: {
-                    title: 'For the Sake of His Sorrowful Passion',
-                    text: 'For the sake of His sorrowful Passion, have mercy on us and on the whole world.',
-                    source: 'Baronius Press, Daily Missal 1962'
+                    title: 'Por Su dolorosa Pasión',
+                    text: 'Por Su dolorosa Pasión, ten misericordia de nosotros y del mundo entero.',
+                    source: 'https://divinamisericordia.es/espiritualidad/coronilla/'
                 },
             },
             holyGod: {
                 EN: {
                     title: 'Holy God',
-                    text: '<em>Conclude with (three times):</em> Holy God, Holy Mighty One, Holy Immortal One, have mercy on us and on the whole world.',
+                    text: '<em><hro-localize>Conclude with (three times):</hro-localize></em> Holy God, Holy Mighty One, Holy Immortal One, have mercy on us and on the whole world.',
                     source: 'Baronius Press, Daily Missal 1962'
                 },
                 EN_TRAD: {
                     title: 'Holy God',
-                    text: '<em>Conclude with (three times):</em> Holy God, Holy Mighty One, Holy Immortal One, have mercy on us and on the whole world.',
+                    text: '<em><hro-localize>Conclude with (three times):</hro-localize></em> Holy God, Holy Mighty One, Holy Immortal One, have mercy on us and on the whole world.',
                     source: 'Baronius Press, Daily Missal 1962'
                 },
                 LA: {
                     title: 'Sanctus Deus',
-                    text: '<em>Conclude with (three times):</em> Sanctus Deus, Sanctus Fortis, Sanctus Immortális, miserére nobis et totíus mundi.',
+                    text: '<em><hro-localize>Conclude with (three times):</hro-localize></em> Sanctus Deus, Sanctus Fortis, Sanctus Immortális, miserére nobis et totíus mundi.',
                     source: 'http://www.windsorlatinmass.org/wtnews/170423.pdf'
                 },
                 ES: {
                     title: 'Holy God',
-                    text: '<em>Conclude with (three times):</em> Holy God, Holy Mighty One, Holy Immortal One, have mercy on us and on the whole world.',
-                    source: 'Baronius Press, Daily Missal 1962'
+                    text: '<em><hro-localize>Conclude with (three times):</hro-localize></em> Santo Dios, Santo Fuerte, Santo Inmortal, ten piedad de nosotros y del mundo entero.',
+                    source: 'https://divinamisericordia.es/espiritualidad/'
                 },
             },
             optionalOpening: {
                 EN: {
-                    title: 'Optional Opening',
-                    text: 'You expired, Jesus, but the source of life gushed forth for souls, and the ocean of mercy opened up for the whole world. O Fount of Life, unfathomable Divine Mercy, envelop the whole world and empty Yourself out upon us. <br><br> <em>(Repeat 3 times)</em> O Blood and Water, which gushed forth from the Heart of Jesus as a fountain of Mercy for us, I trust in You!',
+                    title: '<hro-localize>Optional Opening</hro-localize>',
+                    text: 'You expired, Jesus, but the source of life gushed forth for souls, and the ocean of mercy opened up for the whole world. O Fount of Life, unfathomable Divine Mercy, envelop the whole world and empty Yourself out upon us. <br><br> <em><hro-localize>(Repeat 3 times)</hro-localize></em> O Blood and Water, which gushed forth from the Heart of Jesus as a fountain of Mercy for us, I trust in You!',
                     source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
                 },
                 EN_TRAD: {
-                    title: 'Optional Opening',
-                    text: 'You expired, Jesus, but the source of life gushed forth for souls, and the ocean of mercy opened up for the whole world. O Fount of Life, unfathomable Divine Mercy, envelop the whole world and empty Yourself out upon us. <br><br> <em>(Repeat 3 times)</em> O Blood and Water, which gushed forth from the Heart of Jesus as a fountain of Mercy for us, I trust in You!',
+                    title: '<hro-localize>Optional Opening</hro-localize>',
+                    text: 'You expired, Jesus, but the source of life gushed forth for souls, and the ocean of mercy opened up for the whole world. O Fount of Life, unfathomable Divine Mercy, envelop the whole world and empty Yourself out upon us. <br><br> <em><hro-localize>(Repeat 3 times)</hro-localize></em> O Blood and Water, which gushed forth from the Heart of Jesus as a fountain of Mercy for us, I trust in You!',
                     source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
                 },
                 LA: {
-                    title: 'Optional Opening',
-                    text: 'You expired, Jesus, but the source of life gushed forth for souls, and the ocean of mercy opened up for the whole world. O Fount of Life, unfathomable Divine Mercy, envelop the whole world and empty Yourself out upon us. <br><br> <em>(Repeat 3 times)</em> O Blood and Water, which gushed forth from the Heart of Jesus as a fountain of Mercy for us, I trust in You!',
+                    title: '<hro-localize>Optional Opening</hro-localize>',
+                    text: 'You expired, Jesus, but the source of life gushed forth for souls, and the ocean of mercy opened up for the whole world. O Fount of Life, unfathomable Divine Mercy, envelop the whole world and empty Yourself out upon us. <br><br> <em><hro-localize>(Repeat 3 times)</hro-localize></em> O Blood and Water, which gushed forth from the Heart of Jesus as a fountain of Mercy for us, I trust in You!',
                     source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
                 },
                 ES: {
-                    title: 'Optional Opening',
-                    text: 'You expired, Jesus, but the source of life gushed forth for souls, and the ocean of mercy opened up for the whole world. O Fount of Life, unfathomable Divine Mercy, envelop the whole world and empty Yourself out upon us. <br><br> <em>(Repeat 3 times)</em> O Blood and Water, which gushed forth from the Heart of Jesus as a fountain of Mercy for us, I trust in You!',
-                    source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
+                    title: '<hro-localize>Optional Opening</hro-localize>',
+                    text: 'Expiraste, Jesús, pero Tu muerte hizo brotar un manantial de  vida para las almas y el océano de Tu misericordia inundó todo el mundo. Oh, Fuente de Vida, insondable misericordia  divina,  anega el mundo entero derramando sobre nosotros hasta Tu última gota. <br><br> <em><hro-localize>(Repeat 3 times)</hro-localize></em> Oh, Sangre y Agua que brotaste del Corazón de Jesús, manantial de misericordia para nosotros, en Ti confío.',
+                    source: 'https://divinamisericordia.es/wp-content/uploads/Oraciones-de-la-Divina-Misericordia.pdf'
                 },
             },
             optionalClosing: {
                 EN: {
-                    title: 'Optional Closing',
+                    title: '<hro-localize>Optional Closing</hro-localize>',
                     text: 'Eternal God, in whom mercy is endless and the treasury of compassion inexhaustible, look kindly upon us and increase Your mercy in us, that in difficult moments we might not despair nor become despondent, but with great confidence submit ourselves to Your holy will, which is Love and Mercy itself.',
                     source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
                 },
                 EN_TRAD: {
-                    title: 'Optional Closing',
+                    title: '<hro-localize>Optional Closing</hro-localize>',
                     text: 'Eternal God, in whom mercy is endless and the treasury of compassion inexhaustible, look kindly upon us and increase Your mercy in us, that in difficult moments we might not despair nor become despondent, but with great confidence submit ourselves to Your holy will, which is Love and Mercy itself.',
                     source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
                 },
                 LA: {
-                    title: 'Optional Closing',
+                    title: '<hro-localize>Optional Closing</hro-localize>',
                     text: 'Eternal God, in whom mercy is endless and the treasury of compassion inexhaustible, look kindly upon us and increase Your mercy in us, that in difficult moments we might not despair nor become despondent, but with great confidence submit ourselves to Your holy will, which is Love and Mercy itself.',
                     source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
                 },
                 ES: {
-                    title: 'Optional Closing',
-                    text: 'Eternal God, in whom mercy is endless and the treasury of compassion inexhaustible, look kindly upon us and increase Your mercy in us, that in difficult moments we might not despair nor become despondent, but with great confidence submit ourselves to Your holy will, which is Love and Mercy itself.',
-                    source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
+                    title: '<hro-localize>Optional Closing</hro-localize>',
+                    text: 'Oh Dios, en quien la misericordia es infinita y el tesoro de compasión inagotable, vuelve a nosotros tu mirada bondadosa y aumenta tu misericordia en nosotros, para que nunca, ni siquiera en los momentos más difíciles nos desesperemos, sino que, con confianza, nos sometamos a tu santa voluntad que es la misericordia misma. Por nuestro Señor Jesucristo, Rey de la misericordia que contigo y con el Espíritu Santo nos manifiesta misericordia ahora y por los siglos. Amén.',
+                    source: 'https://divinamisericordia.es/wp-content/uploads/Oraciones-de-la-Divina-Misericordia.pdf'
                 },
             },
         },
