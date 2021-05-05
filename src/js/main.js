@@ -195,6 +195,56 @@ $( document ).ready(function() {
             window.nvgo_router.updatePageLinks();
             hroLocalize();
         },
+        'med_es_sorrowful_1': function () {
+            renderView('/med_es_sorrowful_1');
+            window.nvgo_router.updatePageLinks();
+            hroLocalize();
+        },
+        'med_es_sorrowful_2': function () {
+            renderView('/med_es_sorrowful_2');
+            window.nvgo_router.updatePageLinks();
+            hroLocalize();
+        },
+        'med_es_sorrowful_3': function () {
+            renderView('/med_es_sorrowful_3');
+            window.nvgo_router.updatePageLinks();
+            hroLocalize();
+        },
+        'med_es_sorrowful_4': function () {
+            renderView('/med_es_sorrowful_4');
+            window.nvgo_router.updatePageLinks();
+            hroLocalize();
+        },
+        'med_es_sorrowful_5': function () {
+            renderView('/med_es_sorrowful_5');
+            window.nvgo_router.updatePageLinks();
+            hroLocalize();
+        },
+        'med_es_luminous_1': function () {
+            renderView('/med_es_luminous_1');
+            window.nvgo_router.updatePageLinks();
+            hroLocalize();
+        },
+        'med_es_luminous_2': function () {
+            renderView('/med_es_luminous_2');
+            window.nvgo_router.updatePageLinks();
+            hroLocalize();
+        },
+        'med_es_luminous_3': function () {
+            renderView('/med_es_luminous_3');
+            window.nvgo_router.updatePageLinks();
+            hroLocalize();
+        },
+        'med_es_luminous_4': function () {
+            renderView('/med_es_luminous_4');
+            window.nvgo_router.updatePageLinks();
+            hroLocalize();
+        },
+        'med_es_luminous_5': function () {
+            renderView('/med_es_luminous_5');
+            window.nvgo_router.updatePageLinks();
+            hroLocalize();
+        },
     })
     .resolve();
 

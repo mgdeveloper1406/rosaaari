@@ -213,6 +213,56 @@ $(document).ready(function () {
       (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_glorious_5');
       window.nvgo_router.updatePageLinks();
       (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
+    },
+    'med_es_sorrowful_1': function med_es_sorrowful_1() {
+      (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_sorrowful_1');
+      window.nvgo_router.updatePageLinks();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
+    },
+    'med_es_sorrowful_2': function med_es_sorrowful_2() {
+      (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_sorrowful_2');
+      window.nvgo_router.updatePageLinks();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
+    },
+    'med_es_sorrowful_3': function med_es_sorrowful_3() {
+      (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_sorrowful_3');
+      window.nvgo_router.updatePageLinks();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
+    },
+    'med_es_sorrowful_4': function med_es_sorrowful_4() {
+      (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_sorrowful_4');
+      window.nvgo_router.updatePageLinks();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
+    },
+    'med_es_sorrowful_5': function med_es_sorrowful_5() {
+      (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_sorrowful_5');
+      window.nvgo_router.updatePageLinks();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
+    },
+    'med_es_luminous_1': function med_es_luminous_1() {
+      (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_luminous_1');
+      window.nvgo_router.updatePageLinks();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
+    },
+    'med_es_luminous_2': function med_es_luminous_2() {
+      (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_luminous_2');
+      window.nvgo_router.updatePageLinks();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
+    },
+    'med_es_luminous_3': function med_es_luminous_3() {
+      (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_luminous_3');
+      window.nvgo_router.updatePageLinks();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
+    },
+    'med_es_luminous_4': function med_es_luminous_4() {
+      (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_luminous_4');
+      window.nvgo_router.updatePageLinks();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
+    },
+    'med_es_luminous_5': function med_es_luminous_5() {
+      (0,_renderView__WEBPACK_IMPORTED_MODULE_1__.default)('/med_es_luminous_5');
+      window.nvgo_router.updatePageLinks();
+      (0,_utils__WEBPACK_IMPORTED_MODULE_7__.hroLocalize)();
     }
   }).resolve(); // Seems for home and 404, we have to do it this way :(
 
@@ -1268,8 +1318,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _templates_meditations_med_es_glorious_4_html__WEBPACK_IMPORTED_MODULE_33___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_es_glorious_4_html__WEBPACK_IMPORTED_MODULE_33__);
 /* harmony import */ var _templates_meditations_med_es_glorious_5_html__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./templates/meditations/med_es_glorious_5.html */ "./src/js/templates/meditations/med_es_glorious_5.html");
 /* harmony import */ var _templates_meditations_med_es_glorious_5_html__WEBPACK_IMPORTED_MODULE_34___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_es_glorious_5_html__WEBPACK_IMPORTED_MODULE_34__);
-/* harmony import */ var _templates_partials_header_html__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./templates/partials/header.html */ "./src/js/templates/partials/header.html");
-/* harmony import */ var _templates_partials_header_html__WEBPACK_IMPORTED_MODULE_35___default = /*#__PURE__*/__webpack_require__.n(_templates_partials_header_html__WEBPACK_IMPORTED_MODULE_35__);
+/* harmony import */ var _templates_meditations_med_es_sorrowful_1_html__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./templates/meditations/med_es_sorrowful_1.html */ "./src/js/templates/meditations/med_es_sorrowful_1.html");
+/* harmony import */ var _templates_meditations_med_es_sorrowful_1_html__WEBPACK_IMPORTED_MODULE_35___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_es_sorrowful_1_html__WEBPACK_IMPORTED_MODULE_35__);
+/* harmony import */ var _templates_meditations_med_es_sorrowful_2_html__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./templates/meditations/med_es_sorrowful_2.html */ "./src/js/templates/meditations/med_es_sorrowful_2.html");
+/* harmony import */ var _templates_meditations_med_es_sorrowful_2_html__WEBPACK_IMPORTED_MODULE_36___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_es_sorrowful_2_html__WEBPACK_IMPORTED_MODULE_36__);
+/* harmony import */ var _templates_meditations_med_es_sorrowful_3_html__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./templates/meditations/med_es_sorrowful_3.html */ "./src/js/templates/meditations/med_es_sorrowful_3.html");
+/* harmony import */ var _templates_meditations_med_es_sorrowful_3_html__WEBPACK_IMPORTED_MODULE_37___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_es_sorrowful_3_html__WEBPACK_IMPORTED_MODULE_37__);
+/* harmony import */ var _templates_meditations_med_es_sorrowful_4_html__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./templates/meditations/med_es_sorrowful_4.html */ "./src/js/templates/meditations/med_es_sorrowful_4.html");
+/* harmony import */ var _templates_meditations_med_es_sorrowful_4_html__WEBPACK_IMPORTED_MODULE_38___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_es_sorrowful_4_html__WEBPACK_IMPORTED_MODULE_38__);
+/* harmony import */ var _templates_meditations_med_es_sorrowful_5_html__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./templates/meditations/med_es_sorrowful_5.html */ "./src/js/templates/meditations/med_es_sorrowful_5.html");
+/* harmony import */ var _templates_meditations_med_es_sorrowful_5_html__WEBPACK_IMPORTED_MODULE_39___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_es_sorrowful_5_html__WEBPACK_IMPORTED_MODULE_39__);
+/* harmony import */ var _templates_meditations_med_es_luminous_1_html__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./templates/meditations/med_es_luminous_1.html */ "./src/js/templates/meditations/med_es_luminous_1.html");
+/* harmony import */ var _templates_meditations_med_es_luminous_1_html__WEBPACK_IMPORTED_MODULE_40___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_es_luminous_1_html__WEBPACK_IMPORTED_MODULE_40__);
+/* harmony import */ var _templates_meditations_med_es_luminous_2_html__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./templates/meditations/med_es_luminous_2.html */ "./src/js/templates/meditations/med_es_luminous_2.html");
+/* harmony import */ var _templates_meditations_med_es_luminous_2_html__WEBPACK_IMPORTED_MODULE_41___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_es_luminous_2_html__WEBPACK_IMPORTED_MODULE_41__);
+/* harmony import */ var _templates_meditations_med_es_luminous_3_html__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./templates/meditations/med_es_luminous_3.html */ "./src/js/templates/meditations/med_es_luminous_3.html");
+/* harmony import */ var _templates_meditations_med_es_luminous_3_html__WEBPACK_IMPORTED_MODULE_42___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_es_luminous_3_html__WEBPACK_IMPORTED_MODULE_42__);
+/* harmony import */ var _templates_meditations_med_es_luminous_4_html__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./templates/meditations/med_es_luminous_4.html */ "./src/js/templates/meditations/med_es_luminous_4.html");
+/* harmony import */ var _templates_meditations_med_es_luminous_4_html__WEBPACK_IMPORTED_MODULE_43___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_es_luminous_4_html__WEBPACK_IMPORTED_MODULE_43__);
+/* harmony import */ var _templates_meditations_med_es_luminous_5_html__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./templates/meditations/med_es_luminous_5.html */ "./src/js/templates/meditations/med_es_luminous_5.html");
+/* harmony import */ var _templates_meditations_med_es_luminous_5_html__WEBPACK_IMPORTED_MODULE_44___default = /*#__PURE__*/__webpack_require__.n(_templates_meditations_med_es_luminous_5_html__WEBPACK_IMPORTED_MODULE_44__);
+/* harmony import */ var _templates_partials_header_html__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./templates/partials/header.html */ "./src/js/templates/partials/header.html");
+/* harmony import */ var _templates_partials_header_html__WEBPACK_IMPORTED_MODULE_45___default = /*#__PURE__*/__webpack_require__.n(_templates_partials_header_html__WEBPACK_IMPORTED_MODULE_45__);
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1323,7 +1403,7 @@ function renderView(pathname, params) {
           Home = Home.replace(spotsToTranslate[i], phrase);
       } */
 
-      $('div#app').append((_templates_partials_header_html__WEBPACK_IMPORTED_MODULE_35___default()) + (_templates_home_html__WEBPACK_IMPORTED_MODULE_0___default()));
+      $('div#app').append((_templates_partials_header_html__WEBPACK_IMPORTED_MODULE_45___default()) + (_templates_home_html__WEBPACK_IMPORTED_MODULE_0___default()));
       break;
 
     case '/settings':
@@ -1491,6 +1571,56 @@ function renderView(pathname, params) {
       $('div#app').append((_templates_meditations_med_es_glorious_5_html__WEBPACK_IMPORTED_MODULE_34___default()));
       break;
 
+    case '/med_es_sorrowful_1':
+      $('body').removeClass('fixed');
+      $('div#app').append((_templates_meditations_med_es_sorrowful_1_html__WEBPACK_IMPORTED_MODULE_35___default()));
+      break;
+
+    case '/med_es_sorrowful_2':
+      $('body').removeClass('fixed');
+      $('div#app').append((_templates_meditations_med_es_sorrowful_2_html__WEBPACK_IMPORTED_MODULE_36___default()));
+      break;
+
+    case '/med_es_sorrowful_3':
+      $('body').removeClass('fixed');
+      $('div#app').append((_templates_meditations_med_es_sorrowful_3_html__WEBPACK_IMPORTED_MODULE_37___default()));
+      break;
+
+    case '/med_es_sorrowful_4':
+      $('body').removeClass('fixed');
+      $('div#app').append((_templates_meditations_med_es_sorrowful_4_html__WEBPACK_IMPORTED_MODULE_38___default()));
+      break;
+
+    case '/med_es_sorrowful_5':
+      $('body').removeClass('fixed');
+      $('div#app').append((_templates_meditations_med_es_sorrowful_5_html__WEBPACK_IMPORTED_MODULE_39___default()));
+      break;
+
+    case '/med_es_luminous_1':
+      $('body').removeClass('fixed');
+      $('div#app').append((_templates_meditations_med_es_luminous_1_html__WEBPACK_IMPORTED_MODULE_40___default()));
+      break;
+
+    case '/med_es_luminous_2':
+      $('body').removeClass('fixed');
+      $('div#app').append((_templates_meditations_med_es_luminous_2_html__WEBPACK_IMPORTED_MODULE_41___default()));
+      break;
+
+    case '/med_es_luminous_3':
+      $('body').removeClass('fixed');
+      $('div#app').append((_templates_meditations_med_es_luminous_3_html__WEBPACK_IMPORTED_MODULE_42___default()));
+      break;
+
+    case '/med_es_luminous_4':
+      $('body').removeClass('fixed');
+      $('div#app').append((_templates_meditations_med_es_luminous_4_html__WEBPACK_IMPORTED_MODULE_43___default()));
+      break;
+
+    case '/med_es_luminous_5':
+      $('body').removeClass('fixed');
+      $('div#app').append((_templates_meditations_med_es_luminous_5_html__WEBPACK_IMPORTED_MODULE_44___default()));
+      break;
+
     case '404':
       $('body').removeClass('fixed');
       $('div#app').append((_templates_404_html__WEBPACK_IMPORTED_MODULE_4___default()));
@@ -1517,6 +1647,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */ "./src/js/utils.js");
 
+var mysteryVersesMarkup = {
+  joyful: [null, '<hro-localize>Luke 1:26-31</hro-localize>', '<hro-localize>Luke 1:39-45</hro-localize>', '<hro-localize>Luke 2:1-7</hro-localize>', '<hro-localize>Luke 2:25-32</hro-localize>', '<hro-localize>Luke 2:41-51</hro-localize>'],
+  luminous: [null, '<hro-localize>Matthew 3:13-16</hro-localize>', '<hro-localize>John 2:1-11</hro-localize>', '<hro-localize>Mark 1:14-15</hro-localize>', '<hro-localize>Matthew 17:1-2</hro-localize>', '<hro-localize>Matthew 26:26-28</hro-localize>'],
+  sorrowful: [null, '<hro-localize>Matthew 26:36-39</hro-localize>', '<hro-localize>Matthew 27:24-26</hro-localize>', '<hro-localize>Matthew 27:28-29</hro-localize>', '<hro-localize>Matthew 27:32</hro-localize>', '<hro-localize>Matthew 27:46-54</hro-localize>'],
+  glorious: [null, '<hro-localize>John 20:1-9</hro-localize>', '<hro-localize>Luke 24:44-53</hro-localize>', '<hro-localize>Acts 2:1-4</hro-localize>', '<hro-localize>From the Sermons of St. John of Damascus. Second on the Falling-asleep of Blessed Mary.</hro-localize>', '<hro-localize>Sermon of St. Peter Canisius, Priest On the Incomparable Virgin Mary, Mother of God</hro-localize>']
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   settings: {
     mysteries: localStorage.getItem('mysteries') || (0,_utils__WEBPACK_IMPORTED_MODULE_0__.getMysteriesForCurrDay)(),
@@ -1587,7 +1723,22 @@ __webpack_require__.r(__webpack_exports__);
       "Luke 1:39-45": "San Lucas 1, 39-45",
       "Luke 2:1-7": "San Lucas 2, 1-7",
       "Luke 2:25-32": "San Lucas 2, 25-32",
-      "Luke 2:41-51": "San Lucas 2, 41-51"
+      "Luke 2:41-51": "San Lucas 2, 41-51",
+      "Matthew 3:13-16": "San Mateo 3, 13-16",
+      "John 2:1-11": "San Juan 2, 1-11",
+      "Mark 1:14-15": "San Marcos 1, 14-15",
+      "Matthew 17:1-2": "San Mateo 17, 1-2",
+      "Matthew 26:26-28": "San Mateo 26, 26-28",
+      "Matthew 26:36-39": "San Mateo 26, 36-39",
+      "Matthew 27:24-26": "San Mateo 27, 24-26",
+      "Matthew 27:28-29": "San Mateo 27, 28-29",
+      "Matthew 27:32": "San Mateo 27, 32",
+      "Matthew 27:46-54": "San Mateo 27, 46-54",
+      "John 20:1-9": "San Juan 20, 1-9",
+      "Luke 24:44-53": "San Lucas 24, 44-53",
+      "Acts 2:1-4": "Apóstoles 2, 1-4",
+      "From the Sermons of St. John of Damascus. Second on the Falling-asleep of Blessed Mary.": "Sermón de San Juan Damasceno. Segundo sobre la dormición de la Santísima Virgen.",
+      "Sermon of St. Peter Canisius, Priest On the Incomparable Virgin Mary, Mother of God": "Sermón de San Pedro Canisio, Presbítero. De María Madre de Dios, Virgen incomparable"
     }
   },
   prayers: {
@@ -1771,124 +1922,124 @@ __webpack_require__.r(__webpack_exports__);
       joyful: {
         EN: [{
           title: 'The First Joyful Mystery',
-          text: 'The Annunciation of Gabriel to Mary. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-31</a>)',
+          text: 'The Annunciation of Gabriel to Mary. (<a href="/med_en_joyful_1" data-navigo>' + mysteryVersesMarkup.joyful[1] + '</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/annunciation.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Second Joyful Mystery',
-          text: 'The Visitation  of Mary to Elizabeth. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-45</a>)',
+          text: 'The Visitation  of Mary to Elizabeth. (<a href="/med_en_joyful_2" data-navigo>' + mysteryVersesMarkup.joyful[2] + '</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/visitation.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Third Joyful Mystery',
-          text: 'The Birth of Our Lord. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-7</a>)',
+          text: 'The Birth of Our Lord. (<a href="/med_en_joyful_3" data-navigo>' + mysteryVersesMarkup.joyful[3] + '</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/nativity.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Fourth Joyful Mystery',
-          text: 'The Presentation of Our Lord. (<a href="/med_en_joyful_4" data-navigo>Luke 2:25-32</a>)',
+          text: 'The Presentation of Our Lord. (<a href="/med_en_joyful_4" data-navigo>' + mysteryVersesMarkup.joyful[4] + '</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/presentation.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Fifth Joyful Mystery',
-          text: 'The Finding of Our Lord in the Temple. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-51</a>)',
+          text: 'The Finding of Our Lord in the Temple. (<a href="/med_en_joyful_5" data-navigo>' + mysteryVersesMarkup.joyful[5] + '</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/finding.jpg',
           imagePosition: 'right center'
         }],
         EN_TRAD: [{
           title: 'The First Joyful Mystery',
-          text: 'The Annunciation. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-31</a>)',
+          text: 'The Annunciation. (<a href="/med_en_joyful_1" data-navigo>' + mysteryVersesMarkup.joyful[1] + '</a>)',
           source: 'Baronius Press, Daily Missal 1962',
           image: '/images/default/annunciation.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Second Joyful Mystery',
-          text: 'The Visitation. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-45</a>)',
+          text: 'The Visitation. (<a href="/med_en_joyful_2" data-navigo>' + mysteryVersesMarkup.joyful[2] + '</a>)',
           source: 'Baronius Press, Daily Missal 1962',
           image: '/images/default/visitation.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Third Joyful Mystery',
-          text: 'The Nativity. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-7</a>)',
+          text: 'The Nativity. (<a href="/med_en_joyful_3" data-navigo>' + mysteryVersesMarkup.joyful[3] + '</a>)',
           source: 'Baronius Press, Daily Missal 1962',
           image: '/images/default/nativity.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Fourth Joyful Mystery',
-          text: 'The Presentation. (<a href="/med_en_joyful_4" data-navigo>Luke 2:25-32</a>)',
+          text: 'The Presentation. (<a href="/med_en_joyful_4" data-navigo>' + mysteryVersesMarkup.joyful[4] + '</a>)',
           source: 'Baronius Press, Daily Missal 1962',
           image: '/images/default/presentation.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Fifth Joyful Mystery',
-          text: 'The Finding in the Temple. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-51</a>)',
+          text: 'The Finding in the Temple. (<a href="/med_en_joyful_5" data-navigo>' + mysteryVersesMarkup.joyful[5] + '</a>)',
           source: 'Baronius Press, Daily Missal 1962',
           image: '/images/default/finding.jpg',
           imagePosition: 'right center'
         }],
         LA: [{
           title: 'Prímum Mystérium Gaudiósum',
-          text: 'Annuntiátio. (<a href="/med_en_joyful_1" data-navigo><hro-localize>Luke 1:26-31</hro-localize></a>)',
+          text: 'Annuntiátio. (<a href="/med_en_joyful_1" data-navigo>' + mysteryVersesMarkup.joyful[1] + '</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/annunciation.jpg',
           imagePosition: 'center'
         }, {
           title: 'Secúndum Mystérium Gaudiósum',
-          text: 'Visitátio. (<a href="/med_en_joyful_2" data-navigo><hro-localize>Luke 1:39-45</hro-localize></a>)',
+          text: 'Visitátio. (<a href="/med_en_joyful_2" data-navigo>' + mysteryVersesMarkup.joyful[2] + '</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/visitation.jpg',
           imagePosition: 'center'
         }, {
           title: 'Tértium Mystérium Gaudiósum',
-          text: 'Natívitas Dómini nostri Jesu Christi. (<a href="/med_en_joyful_3" data-navigo><hro-localize>Luke 2:1-7</hro-localize></a>)',
+          text: 'Natívitas Dómini nostri Jesu Christi. (<a href="/med_en_joyful_3" data-navigo>' + mysteryVersesMarkup.joyful[3] + '</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/nativity.jpg',
           imagePosition: 'center'
         }, {
           title: 'Quartum Mystérium Gaudiósum',
-          text: 'Præsentátio Púeri Jesu in Templo. (<a href="/med_en_joyful_4" data-navigo><hro-localize>Luke 2:25-32</hro-localize></a>)',
+          text: 'Præsentátio Púeri Jesu in Templo. (<a href="/med_en_joyful_4" data-navigo>' + mysteryVersesMarkup.joyful[4] + '</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/presentation.jpg',
           imagePosition: 'center'
         }, {
           title: 'Quintum Mystérium Gaudiósum',
-          text: 'Invéntio Púeri Jesu in Templo. (<a href="/med_en_joyful_5" data-navigo><hro-localize>Luke 2:41-51</hro-localize></a>)',
+          text: 'Invéntio Púeri Jesu in Templo. (<a href="/med_en_joyful_5" data-navigo>' + mysteryVersesMarkup.joyful[5] + '</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/finding.jpg',
           imagePosition: 'right center'
         }],
         ES: [{
           title: 'El Primer Misterio de Gozo',
-          text: 'La Anunciación del Angel a María. (<a href="/med_es_joyful_1" data-navigo><hro-localize>Luke 1:26-31</hro-localize></a>)',
+          text: 'La Anunciación del Angel a María. (<a href="/med_es_joyful_1" data-navigo>' + mysteryVersesMarkup.joyful[1] + '</a>)',
           source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/annunciation.jpg',
           imagePosition: 'center'
         }, {
           title: 'El Segundo Misterio de Gozo',
-          text: 'La Visita de Nuestra Señora a Su Prima Santa Isabel. (<a href="/med_es_joyful_2" data-navigo><hro-localize>Luke 1:39-45</a>)',
+          text: 'La Visita de Nuestra Señora a Su Prima Santa Isabel. (<a href="/med_es_joyful_2" data-navigo>' + mysteryVersesMarkup.joyful[2] + '</a>)',
           source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/visitation.jpg',
           imagePosition: 'center'
         }, {
           title: 'El Tercer Misterio de Gozo',
-          text: 'El Nacimiento del Hijo de Dios en Belén. (<a href="/med_es_joyful_3" data-navigo><hro-localize>Luke 2:1-7</hro-localize></a>)',
+          text: 'El Nacimiento del Hijo de Dios en Belén. (<a href="/med_es_joyful_3" data-navigo>' + mysteryVersesMarkup.joyful[3] + '</a>)',
           source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/nativity.jpg',
           imagePosition: 'center'
         }, {
           title: 'El Cuarto Misterio de Gozo',
-          text: 'La Presentación de Jesús en el Templo. (<a href="/med_es_joyful_4" data-navigo><hro-localize>Luke 2:25-32</hro-localize></a>)',
+          text: 'La Presentación de Jesús en el Templo. (<a href="/med_es_joyful_4" data-navigo>' + mysteryVersesMarkup.joyful[4] + '</a>)',
           source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/presentation.jpg',
           imagePosition: 'center'
         }, {
           title: 'El Quinto Misterio de Gozo',
-          text: 'El Niño Perdido y Hallado en el Templo. (<a href="/med_es_joyful_5" data-navigo>Luke 2:41-51</a>)',
+          text: 'El Niño Perdido y Hallado en el Templo. (<a href="/med_es_joyful_5" data-navigo>' + mysteryVersesMarkup.joyful[5] + '</a>)',
           source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/finding.jpg',
           imagePosition: 'right center'
@@ -1897,125 +2048,125 @@ __webpack_require__.r(__webpack_exports__);
       luminous: {
         EN: [{
           title: 'The First Luminous Mystery',
-          text: 'The Baptism of Our Lord in the River Jordan. (<a href="/med_en_luminous_1" data-navigo>Matthew 3:13-16</a>)',
+          text: 'The Baptism of Our Lord in the River Jordan. (<a href="/med_en_luminous_1" data-navigo>' + mysteryVersesMarkup.luminous[1] + '</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/baptism.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Second Luminous Mystery',
-          text: 'The Wedding at Cana, when Christ manifested Himself. (<a href="/med_en_luminous_2" data-navigo>John 2:1-11</a>)',
+          text: 'The Wedding at Cana, when Christ manifested Himself. (<a href="/med_en_luminous_2" data-navigo>' + mysteryVersesMarkup.luminous[2] + '</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/cana.jpg',
           imagePosition: 'left center'
         }, {
           title: 'The Third Luminous Mystery',
-          text: 'The Proclamation of the Kingdom of God. (<a href="/med_en_luminous_3" data-navigo>Mark 1:14-15</a>)',
+          text: 'The Proclamation of the Kingdom of God. (<a href="/med_en_luminous_3" data-navigo>' + mysteryVersesMarkup.luminous[3] + '</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/proclamation.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Fourth Luminous Mystery',
-          text: 'The Transfiguration of Our Lord. (<a href="/med_en_luminous_4" data-navigo>Matthew 17:1-8</a>)',
+          text: 'The Transfiguration of Our Lord. (<a href="/med_en_luminous_4" data-navigo>' + mysteryVersesMarkup.luminous[4] + '</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/transfiguration.jpg',
           imagePosition: 'center top'
         }, {
           title: 'The Fifth Luminous Mystery',
-          text: 'The Last Supper, when Our Lord gave us the Holy Eucharist. (<a href="/med_en_luminous_5" data-navigo>Matthew 26:17-29</a>)',
+          text: 'The Last Supper, when Our Lord gave us the Holy Eucharist. (<a href="/med_en_luminous_5" data-navigo>' + mysteryVersesMarkup.luminous[5] + '</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/eucharist.jpg',
           imagePosition: 'center'
         }],
         EN_TRAD: [{
           title: 'The First Luminous Mystery',
-          text: 'The Baptism of Christ in the Jordan. (<a href="/med_en_luminous_1" data-navigo>Matthew 3:13-16</a>)',
+          text: 'The Baptism of Christ in the Jordan. (<a href="/med_en_luminous_1" data-navigo>' + mysteryVersesMarkup.luminous[1] + '</a>)',
           source: 'http://www.usccb.org/prayer-and-worship/prayers-and-devotions/rosaries/how-to-pray-the-rosary.cfm',
           image: '/images/default/baptism.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Second Luminous Mystery',
-          text: 'The Wedding Feast at Cana. (<a href="/med_en_luminous_2" data-navigo>John 2:1-11</a>)',
+          text: 'The Wedding Feast at Cana. (<a href="/med_en_luminous_2" data-navigo>' + mysteryVersesMarkup.luminous[2] + '</a>)',
           source: 'http://www.usccb.org/prayer-and-worship/prayers-and-devotions/rosaries/how-to-pray-the-rosary.cfm',
           image: '/images/default/cana.jpg',
           imagePosition: 'left center'
         }, {
           title: 'The Third Luminous Mystery',
-          text: 'Jesus&rsquo; Proclamation of the Coming of the Kingdom of God. (<a href="/med_en_luminous_3" data-navigo>Mark 1:14-15</a>)',
+          text: 'Jesus&rsquo; Proclamation of the Coming of the Kingdom of God. (<a href="/med_en_luminous_3" data-navigo>' + mysteryVersesMarkup.luminous[3] + '</a>)',
           source: 'http://www.usccb.org/prayer-and-worship/prayers-and-devotions/rosaries/how-to-pray-the-rosary.cfm',
           image: '/images/default/proclamation.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Fourth Luminous Mystery',
-          text: 'The Transfiguration. (<a href="/med_en_luminous_4" data-navigo>Matthew 17:1-8</a>)',
+          text: 'The Transfiguration. (<a href="/med_en_luminous_4" data-navigo>' + mysteryVersesMarkup.luminous[4] + '</a>)',
           source: 'http://www.usccb.org/prayer-and-worship/prayers-and-devotions/rosaries/how-to-pray-the-rosary.cfm',
           image: '/images/default/transfiguration.jpg',
           imagePosition: 'center top'
         }, {
           title: 'The Fifth Luminous Mystery',
-          text: 'The Institution of the Eucharist. (<a href="/med_en_luminous_5" data-navigo>Matthew 26:17-29</a>)',
+          text: 'The Institution of the Eucharist. (<a href="/med_en_luminous_5" data-navigo>' + mysteryVersesMarkup.luminous[5] + '</a>)',
           source: 'http://www.usccb.org/prayer-and-worship/prayers-and-devotions/rosaries/how-to-pray-the-rosary.cfm',
           image: '/images/default/eucharist.jpg',
           imagePosition: 'center'
         }],
         LA: [{
           title: 'Prímum Mystérium Luminósum',
-          text: 'Baptísma Dómini nostri Jesu Christi apud Jordánem. (<a href="/med_en_luminous_1" data-navigo>Matthew 3:13-16</a>)',
+          text: 'Baptísma Dómini nostri Jesu Christi apud Jordánem. (<a href="/med_en_luminous_1" data-navigo>' + mysteryVersesMarkup.luminous[1] + '</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/baptism.jpg',
           imagePosition: 'center'
         }, {
           title: 'Secúndum Mystérium Luminósum',
-          text: 'Núptiæ Canénses. (<a href="/med_en_luminous_2" data-navigo>John 2:1-11</a>)',
+          text: 'Núptiæ Canénses. (<a href="/med_en_luminous_2" data-navigo>' + mysteryVersesMarkup.luminous[2] + '</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/cana.jpg',
           imagePosition: 'left center'
         }, {
           title: 'Tértium Mystérium Luminósum',
-          text: 'Proclamátio Regni Dei. (<a href="/med_en_luminous_3" data-navigo>Mark 1:14-15</a>)',
+          text: 'Proclamátio Regni Dei. (<a href="/med_en_luminous_3" data-navigo>' + mysteryVersesMarkup.luminous[3] + '</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/proclamation.jpg',
           imagePosition: 'center'
         }, {
           title: 'Quartum Mystérium Luminósum',
-          text: 'Transfigurátio. (<a href="/med_en_luminous_4" data-navigo>Matthew 17:1-8</a>)',
+          text: 'Transfigurátio. (<a href="/med_en_luminous_4" data-navigo>' + mysteryVersesMarkup.luminous[4] + '</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/transfiguration.jpg',
           imagePosition: 'center top'
         }, {
           title: 'Quintum Mystérium Luminósum',
-          text: 'Institútio Eucharístiæ. (<a href="/med_en_luminous_5" data-navigo>Matthew 26:17-29</a>)',
+          text: 'Institútio Eucharístiæ. (<a href="/med_en_luminous_5" data-navigo>' + mysteryVersesMarkup.luminous[5] + '</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/eucharist.jpg',
           imagePosition: 'center'
         }],
         ES: [{
-          title: 'The First Luminous Mystery',
-          text: 'The Baptism of Our Lord in the River Jordan. (<a href="/med_en_luminous_1" data-navigo>Matthew 3:13-16</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf',
+          title: 'El Primer Misterio de Luz',
+          text: 'El Bautismo de Jesús en el Jordán. (<a href="/med_es_luminous_1" data-navigo>' + mysteryVersesMarkup.luminous[1] + '</a>)',
+          source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/baptism.jpg',
           imagePosition: 'center'
         }, {
-          title: 'The Second Luminous Mystery',
-          text: 'The Wedding at Cana, when Christ manifested Himself. (<a href="/med_en_luminous_2" data-navigo>John 2:1-11</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf',
+          title: 'El Segundo Misterio de Luz',
+          text: 'La Autorrevelación de Jesús en las Bodas de Caná. (<a href="/med_es_luminous_2" data-navigo>' + mysteryVersesMarkup.luminous[2] + '</a>)',
+          source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/cana.jpg',
           imagePosition: 'left center'
         }, {
-          title: 'The Third Luminous Mystery',
-          text: 'The Proclamation of the Kingdom of God. (<a href="/med_en_luminous_3" data-navigo>Mark 1:14-15</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf',
+          title: 'El Tercer Misterio de Luz',
+          text: 'El Anuncio del Reino de Dios. (<a href="/med_es_luminous_3" data-navigo>' + mysteryVersesMarkup.luminous[3] + '</a>)',
+          source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/proclamation.jpg',
           imagePosition: 'center'
         }, {
-          title: 'The Fourth Luminous Mystery',
-          text: 'The Transfiguration of Our Lord. (<a href="/med_en_luminous_4" data-navigo>Matthew 17:1-8</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf',
+          title: 'El Cuarto Misterio de Luz',
+          text: 'La Transfiguración de Jesús. (<a href="/med_es_luminous_4" data-navigo>' + mysteryVersesMarkup.luminous[4] + '</a>)',
+          source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/transfiguration.jpg',
           imagePosition: 'center top'
         }, {
-          title: 'The Fifth Luminous Mystery',
-          text: 'The Last Supper, when Our Lord gave us the Holy Eucharist. (<a href="/med_en_luminous_5" data-navigo>Matthew 26:17-29</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf',
+          title: 'El Quinto Misterio de Luz',
+          text: 'La Institución de la Eucaristía. (<a href="/med_es_luminous_5" data-navigo>' + mysteryVersesMarkup.luminous[5] + '</a>)',
+          source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/eucharist.jpg',
           imagePosition: 'center'
         }]
@@ -2023,125 +2174,125 @@ __webpack_require__.r(__webpack_exports__);
       sorrowful: {
         EN: [{
           title: 'The First Sorrowful Mystery',
-          text: 'The Agony of Our Lord in the Garden. (<a href="/med_en_sorrowful_1" data-navigo>Matthew 26:36-56</a>)',
+          text: 'The Agony of Our Lord in the Garden. (<a href="/med_en_sorrowful_1" data-navigo>' + mysteryVersesMarkup.sorrowful[1] + '</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/agony.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Second Sorrowful Mystery',
-          text: 'Our Lord is Scourged at the Pillar. (<a href="/med_en_sorrowful_2" data-navigo>Matthew 27:24-26</a>)',
+          text: 'Our Lord is Scourged at the Pillar. (<a href="/med_en_sorrowful_2" data-navigo>' + mysteryVersesMarkup.sorrowful[2] + '></a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/scourging.jpg',
           imagePosition: 'center top'
         }, {
           title: 'The Third Sorrowful Mystery',
-          text: 'Our Lord is Crowned with Thorns. (<a href="/med_en_sorrowful_3" data-navigo>Matthew 27:27-31</a>)',
+          text: 'Our Lord is Crowned with Thorns. (<a href="/med_en_sorrowful_3" data-navigo>' + mysteryVersesMarkup.sorrowful[3] + '</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/thorns.jpg',
           imagePosition: 'center top'
         }, {
           title: 'The Fourth Sorrowful Mystery',
-          text: 'Our Lord Carries the Cross to Calvary. (<a href="/med_en_sorrowful_4" data-navigo>Matthew 27:32</a>)',
+          text: 'Our Lord Carries the Cross to Calvary. (<a href="/med_en_sorrowful_4" data-navigo>' + mysteryVersesMarkup.sorrowful[4] + '</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/cross.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Fifth Sorrowful Mystery',
-          text: 'The Crucifixion of Our Lord. (<a href="/med_en_sorrowful_5" data-navigo>Matthew 27:33-56</a>)',
+          text: 'The Crucifixion of Our Lord. (<a href="/med_en_sorrowful_5" data-navigo>' + mysteryVersesMarkup.sorrowful[5] + '</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/crucifixion.jpg',
           imagePosition: 'center top'
         }],
         EN_TRAD: [{
           title: 'The First Sorrowful Mystery',
-          text: 'The Agony in the Garden. (<a href="/med_en_sorrowful_1" data-navigo>Matthew 26:36-56</a>)',
+          text: 'The Agony in the Garden. (<a href="/med_en_sorrowful_1" data-navigo>' + mysteryVersesMarkup.sorrowful[1] + '</a>)',
           source: 'Baronius Press, Daily Missal 1962',
           image: '/images/default/agony.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Second Sorrowful Mystery',
-          text: 'The Scourging of Our Blessed Lord at the Pillar. (<a href="/med_en_sorrowful_2" data-navigo>Matthew 27:24-26</a>)',
+          text: 'The Scourging of Our Blessed Lord at the Pillar. (<a href="/med_en_sorrowful_2" data-navigo>' + mysteryVersesMarkup.sorrowful[2] + '</a>)',
           source: 'Baronius Press, Daily Missal 1962',
           image: '/images/default/scourging.jpg',
           imagePosition: 'center top'
         }, {
           title: 'The Third Sorrowful Mystery',
-          text: 'The Crowning of our Blessed Lord with Thorns. (<a href="/med_en_sorrowful_3" data-navigo>Matthew 27:27-31</a>)',
+          text: 'The Crowning of our Blessed Lord with Thorns. (<a href="/med_en_sorrowful_3" data-navigo>' + mysteryVersesMarkup.sorrowful[3] + '</a>)',
           source: 'Baronius Press, Daily Missal 1962',
           image: '/images/default/thorns.jpg',
           imagePosition: 'center top'
         }, {
           title: 'The Fourth Sorrowful Mystery',
-          text: 'Our Blessed Lord carrying His Cross. (<a href="/med_en_sorrowful_4" data-navigo>Matthew 27:32</a>)',
+          text: 'Our Blessed Lord carrying His Cross. (<a href="/med_en_sorrowful_4" data-navigo>' + mysteryVersesMarkup.sorrowful[4] + '</a>)',
           source: 'Baronius Press, Daily Missal 1962',
           image: '/images/default/cross.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Fifth Sorrowful Mystery',
-          text: 'The Crucifixion. (<a href="/med_en_sorrowful_5" data-navigo>Matthew 27:33-56</a>)',
+          text: 'The Crucifixion. (<a href="/med_en_sorrowful_5" data-navigo>' + mysteryVersesMarkup.sorrowful[5] + '</a>)',
           source: 'Baronius Press, Daily Missal 1962',
           image: '/images/default/crucifixion.jpg',
           imagePosition: 'center top'
         }],
         LA: [{
           title: 'Prímum Mystérium Dolorósum',
-          text: 'Agónia in Horto. (<a href="/med_en_sorrowful_1" data-navigo>Matthew 26:36-56</a>)',
+          text: 'Agónia in Horto. (<a href="/med_en_sorrowful_1" data-navigo>' + mysteryVersesMarkup.sorrowful[1] + '</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/agony.jpg',
           imagePosition: 'center'
         }, {
           title: 'Secúndum Mystérium Dolorósum',
-          text: 'Flagellátio. (<a href="/med_en_sorrowful_2" data-navigo>Matthew 27:24-26</a>)',
+          text: 'Flagellátio. (<a href="/med_en_sorrowful_2" data-navigo>' + mysteryVersesMarkup.sorrowful[2] + '</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/scourging.jpg',
           imagePosition: 'center top'
         }, {
           title: 'Tértium Mystérium Dolorósum',
-          text: 'Coronátio spinis. (<a href="/med_en_sorrowful_3" data-navigo>Matthew 27:27-31</a>)',
+          text: 'Coronátio spinis. (<a href="/med_en_sorrowful_3" data-navigo>' + mysteryVersesMarkup.sorrowful[3] + '</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/thorns.jpg',
           imagePosition: 'center top'
         }, {
           title: 'Quartum Mystérium Dolorósum',
-          text: 'Bajulátio Crucis. (<a href="/med_en_sorrowful_4" data-navigo>Matthew 27:32</a>)',
+          text: 'Bajulátio Crucis. (<a href="/med_en_sorrowful_4" data-navigo>' + mysteryVersesMarkup.sorrowful[4] + '</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/cross.jpg',
           imagePosition: 'center'
         }, {
           title: 'Quintum Mystérium Dolorósum',
-          text: 'Crucifíxio et Mors Dómini nostri Jesu Christi. (<a href="/med_en_sorrowful_5" data-navigo>Matthew 27:33-56</a>)',
+          text: 'Crucifíxio et Mors Dómini nostri Jesu Christi. (<a href="/med_en_sorrowful_5" data-navigo>' + mysteryVersesMarkup.sorrowful[5] + '</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/crucifixion.jpg',
           imagePosition: 'center top'
         }],
         ES: [{
-          title: 'The First Sorrowful Mystery',
-          text: 'The Agony of Our Lord in the Garden. (<a href="/med_en_sorrowful_1" data-navigo>Matthew 26:36-56</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf',
+          title: 'El Primer Misterio de Dolor',
+          text: 'La Oración de Jesús en el Huerto de Getsemaní. (<a href="/med_en_sorrowful_1" data-navigo>' + mysteryVersesMarkup.sorrowful[1] + '</a>)',
+          source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/agony.jpg',
           imagePosition: 'center'
         }, {
-          title: 'The Second Sorrowful Mystery',
-          text: 'Our Lord is Scourged at the Pillar. (<a href="/med_en_sorrowful_2" data-navigo>Matthew 27:24-26</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf',
+          title: 'El Segundo Misterio de Dolor',
+          text: 'La Flagelación. (<a href="/med_en_sorrowful_2" data-navigo>' + mysteryVersesMarkup.sorrowful[2] + '</a>)',
+          source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/scourging.jpg',
           imagePosition: 'center top'
         }, {
-          title: 'The Third Sorrowful Mystery',
-          text: 'Our Lord is Crowned with Thorns. (<a href="/med_en_sorrowful_3" data-navigo>Matthew 27:27-31</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf',
+          title: 'El Tercer Misterio de Dolor',
+          text: 'La Coronación de Espinas. (<a href="/med_en_sorrowful_3" data-navigo>' + mysteryVersesMarkup.sorrowful[3] + '</a>)',
+          source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/thorns.jpg',
           imagePosition: 'center top'
         }, {
-          title: 'The Fourth Sorrowful Mystery',
-          text: 'Our Lord Carries the Cross to Calvary. (<a href="/med_en_sorrowful_4" data-navigo>Matthew 27:32</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf',
+          title: 'El Cuarto Misterio de Dolor',
+          text: 'La Cruz a Cuestas. (<a href="/med_en_sorrowful_4" data-navigo>' + mysteryVersesMarkup.sorrowful[4] + '</a>)',
+          source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/cross.jpg',
           imagePosition: 'center'
         }, {
-          title: 'The Fifth Sorrowful Mystery',
-          text: 'The Crucifixion of Our Lord. (<a href="/med_en_sorrowful_5" data-navigo>Matthew 27:33-56</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf',
+          title: 'El Quinto Misterio de Dolor',
+          text: 'Jesús Muere en la Cruz. (<a href="/med_en_sorrowful_5" data-navigo>' + mysteryVersesMarkup.sorrowful[5] + '</a>)',
+          source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/crucifixion.jpg',
           imagePosition: 'center top'
         }]
@@ -2149,125 +2300,125 @@ __webpack_require__.r(__webpack_exports__);
       glorious: {
         EN: [{
           title: 'The First Glorious Mystery',
-          text: 'The Glorious Resurrection of Our Lord. (<a href="/med_en_glorious_1" data-navigo>John 20:1-29</a>)',
+          text: 'The Glorious Resurrection of Our Lord. (<a href="/med_en_glorious_1" data-navigo>' + mysteryVersesMarkup.glorious[1] + '</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/resurrection.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Second Glorious Mystery',
-          text: 'The Ascension of Our Lord. (<a href="/med_en_glorious_2" data-navigo>Luke 24:36-53</a>)',
+          text: 'The Ascension of Our Lord. (<a href="/med_en_glorious_2" data-navigo>' + mysteryVersesMarkup.glorious[2] + '</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/ascension.jpg',
           imagePosition: 'center top'
         }, {
           title: 'The Third Glorious Mystery',
-          text: 'The Descent of the Holy Spirit at Pentecost. (<a href="/med_en_glorious_3" data-navigo>Acts 2:1-41</a>)',
+          text: 'The Descent of the Holy Spirit at Pentecost. (<a href="/med_en_glorious_3" data-navigo>' + mysteryVersesMarkup.glorious[3] + '</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/descent.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Fourth Glorious Mystery',
-          text: 'The Assumption of Mary into Heaven. (<a href="/med_en_glorious_4" data-navigo>St. John of Damascus, Excerpt from Second Sermon On the Assumption of Mary</a>)',
+          text: 'The Assumption of Mary into Heaven. (<a href="/med_en_glorious_4" data-navigo>' + mysteryVersesMarkup.glorious[4] + '</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/assumption.jpg',
           imagePosition: 'center top'
         }, {
           title: 'The Fifth Glorious Mystery',
-          text: 'The Coronation of Mary as Queen of Heaven and Earth. (<a href="/med_en_glorious_5" data-navigo>Sermon of St. Peter Canisius On the Incomparable Virgin Mary, Mother of God</a>)',
+          text: 'The Coronation of Mary as Queen of Heaven and Earth. (<a href="/med_en_glorious_5" data-navigo>' + mysteryVersesMarkup.glorious[5] + '</a>)',
           source: 'http://www.newadvent.org/images/rosary.pdf',
           image: '/images/default/coronation.jpg',
           imagePosition: 'center top'
         }],
         EN_TRAD: [{
           title: 'The First Glorious Mystery',
-          text: 'The Resurrection. (<a href="/med_en_glorious_1" data-navigo>John 20:1-29</a>)',
+          text: 'The Resurrection. (<a href="/med_en_glorious_1" data-navigo>' + mysteryVersesMarkup.glorious[1] + '</a>)',
           source: 'Baronius Press, Daily Missal 1962',
           image: '/images/default/resurrection.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Second Glorious Mystery',
-          text: 'The Ascension. (<a href="/med_en_glorious_2" data-navigo>Luke 24:36-53</a>)',
+          text: 'The Ascension. (<a href="/med_en_glorious_2" data-navigo>' + mysteryVersesMarkup.glorious[2] + '</a>)',
           source: 'Baronius Press, Daily Missal 1962',
           image: '/images/default/ascension.jpg',
           imagePosition: 'center top'
         }, {
           title: 'The Third Glorious Mystery',
-          text: 'The Descent of the Holy Ghost on the Apostles. (<a href="/med_en_glorious_3" data-navigo>Acts 2:1-41</a>)',
+          text: 'The Descent of the Holy Ghost on the Apostles. (<a href="/med_en_glorious_3" data-navigo>' + mysteryVersesMarkup.glorious[3] + '</a>)',
           source: 'Baronius Press, Daily Missal 1962',
           image: '/images/default/descent.jpg',
           imagePosition: 'center'
         }, {
           title: 'The Fourth Glorious Mystery',
-          text: 'The Assumption of Our Lady into Heaven. (<a href="/med_en_glorious_4" data-navigo>St. John of Damascus, Excerpt from Second Sermon On the Assumption of Mary</a>)',
+          text: 'The Assumption of Our Lady into Heaven. (<a href="/med_en_glorious_4" data-navigo>' + mysteryVersesMarkup.glorious[4] + '</a>)',
           source: 'Baronius Press, Daily Missal 1962',
           image: '/images/default/assumption.jpg',
           imagePosition: 'center top'
         }, {
           title: 'The Fifth Glorious Mystery',
-          text: 'The Coronation of Our Lady and the Glory of all the Saints. (<a href="/med_en_glorious_5" data-navigo>Sermon of St. Peter Canisius On the Incomparable Virgin Mary, Mother of God</a>)',
+          text: 'The Coronation of Our Lady and the Glory of all the Saints. (<a href="/med_en_glorious_5" data-navigo>' + mysteryVersesMarkup.glorious[5] + '</a>)',
           source: 'Baronius Press, Daily Missal 1962',
           image: '/images/default/coronation.jpg',
           imagePosition: 'center top'
         }],
         LA: [{
           title: 'Prímum Mystérium Gloriósum',
-          text: 'Resurréctio. (<a href="/med_en_glorious_1" data-navigo>John 20:1-29</a>)',
+          text: 'Resurréctio. (<a href="/med_en_glorious_1" data-navigo>' + mysteryVersesMarkup.glorious[1] + '</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/resurrection.jpg',
           imagePosition: 'center'
         }, {
           title: 'Secúndum Mystérium Gloriósum',
-          text: 'Ascénsio. (<a href="/med_en_glorious_2" data-navigo>Luke 24:36-53</a>)',
+          text: 'Ascénsio. (<a href="/med_en_glorious_2" data-navigo>' + mysteryVersesMarkup.glorious[2] + '</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/ascension.jpg',
           imagePosition: 'center top'
         }, {
           title: 'Tértium Mystérium Gloriósum',
-          text: 'Descénsus Spíritus Sancti. (<a href="/med_en_glorious_3" data-navigo>Acts 2:1-41</a>)',
+          text: 'Descénsus Spíritus Sancti. (<a href="/med_en_glorious_3" data-navigo>' + mysteryVersesMarkup.glorious[3] + '</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/descent.jpg',
           imagePosition: 'center'
         }, {
           title: 'Quartum Mystérium Gloriósum',
-          text: 'Assúmptio. (<a href="/med_en_glorious_4" data-navigo>St. John of Damascus, Excerpt from Second Sermon On the Assumption of Mary</a>)',
+          text: 'Assúmptio. (<a href="/med_en_glorious_4" data-navigo>' + mysteryVersesMarkup.glorious[4] + '</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/assumption.jpg',
           imagePosition: 'center top'
         }, {
           title: 'Quintum Mystérium Gloriósum',
-          text: 'Coronátio Beátæ Maríæ Vírginis in Cælis. (<a href="/med_en_glorious_5" data-navigo>Sermon of St. Peter Canisius On the Incomparable Virgin Mary, Mother of God</a>)',
+          text: 'Coronátio Beátæ Maríæ Vírginis in Cælis. (<a href="/med_en_glorious_5" data-navigo>' + mysteryVersesMarkup.glorious[5] + '</a>)',
           source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
           image: '/images/default/coronation.jpg',
           imagePosition: 'center top'
         }],
         ES: [{
-          title: 'The First Glorious Mystery',
-          text: 'The Glorious Resurrection of Our Lord. (<a href="/med_en_glorious_1" data-navigo>John 20:1-29</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf',
+          title: 'El Primer Misterio de Gloria',
+          text: 'La Resurrección de Nuestro Señor. (<a href="/med_en_glorious_1" data-navigo>' + mysteryVersesMarkup.glorious[1] + '</a>)',
+          source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/resurrection.jpg',
           imagePosition: 'center'
         }, {
-          title: 'The Second Glorious Mystery',
-          text: 'The Ascension of Our Lord. (<a href="/med_en_glorious_2" data-navigo>Luke 24:36-53</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf',
+          title: 'El Segundo Misterio de Gloria',
+          text: 'La Ascención del Señor. (<a href="/med_en_glorious_2" data-navigo>' + mysteryVersesMarkup.glorious[2] + '</a>)',
+          source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/ascension.jpg',
           imagePosition: 'center top'
         }, {
-          title: 'The Third Glorious Mystery',
-          text: 'The Descent of the Holy Spirit at Pentecost. (<a href="/med_en_glorious_3" data-navigo>Acts 2:1-41</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf',
+          title: 'El Tercer Misterio de Gloria',
+          text: 'La Venida del Espíritu Santo. (<a href="/med_en_glorious_3" data-navigo>' + mysteryVersesMarkup.glorious[3] + '</a>)',
+          source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/descent.jpg',
           imagePosition: 'center'
         }, {
-          title: 'The Fourth Glorious Mystery',
-          text: 'The Assumption of Mary into Heaven. (<a href="/med_en_glorious_4" data-navigo>St. John of Damascus, Excerpt from Second Sermon On the Assumption of Mary</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf',
+          title: 'El Cuarto Misterio de Gloria',
+          text: 'La Asunción de la Virgen María al Cielo. (<a href="/med_en_glorious_4" data-navigo>' + mysteryVersesMarkup.glorious[4] + '</a>)',
+          source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/assumption.jpg',
           imagePosition: 'center top'
         }, {
-          title: 'The Fifth Glorious Mystery',
-          text: 'The Coronation of Mary as Queen of Heaven and Earth. (<a href="/med_en_glorious_5" data-navigo>Sermon of St. Peter Canisius On the Incomparable Virgin Mary, Mother of God</a>)',
-          source: 'http://www.newadvent.org/images/rosary.pdf',
+          title: 'El Quinto Misterio de Gloria',
+          text: 'La Coronación de María como Reina del Universo. (<a href="/med_en_glorious_5" data-navigo>' + mysteryVersesMarkup.glorious[5] + '</a>)',
+          source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
           image: '/images/default/coronation.jpg',
           imagePosition: 'center top'
         }]
@@ -2289,6 +2440,11 @@ __webpack_require__.r(__webpack_exports__);
           title: 'Pater Æterne',
           text: 'Pater ætérne, óffero tibi Corpus et Sánguinem, ánimam et divinitátem dilectíssimi Fílii Tui, Dómini nostri, Jesu Christi, in propitiatióne pro peccátis nostris et totíus mundi.',
           source: 'http://www.windsorlatinmass.org/wtnews/170423.pdf'
+        },
+        ES: {
+          title: 'Eternal Father',
+          text: 'Eternal Father, I offer You the Body and Blood, Soul and Divinity of Your dearly beloved Son, Our Lord Jesus Christ, in atonement for our sins and those of the whole world.',
+          source: 'Baronius Press, Daily Missal 1962'
         }
       },
       forTheSake: {
@@ -2306,6 +2462,11 @@ __webpack_require__.r(__webpack_exports__);
           title: 'Pro Dolorosa Ejus Passione',
           text: 'Pro dolorosa Ejus passióne, miserére nobis et totíus mundi.',
           source: 'http://www.windsorlatinmass.org/wtnews/170423.pdf'
+        },
+        ES: {
+          title: 'For the Sake of His Sorrowful Passion',
+          text: 'For the sake of His sorrowful Passion, have mercy on us and on the whole world.',
+          source: 'Baronius Press, Daily Missal 1962'
         }
       },
       holyGod: {
@@ -2323,6 +2484,11 @@ __webpack_require__.r(__webpack_exports__);
           title: 'Sanctus Deus',
           text: '<em>Conclude with (three times):</em> Sanctus Deus, Sanctus Fortis, Sanctus Immortális, miserére nobis et totíus mundi.',
           source: 'http://www.windsorlatinmass.org/wtnews/170423.pdf'
+        },
+        ES: {
+          title: 'Holy God',
+          text: '<em>Conclude with (three times):</em> Holy God, Holy Mighty One, Holy Immortal One, have mercy on us and on the whole world.',
+          source: 'Baronius Press, Daily Missal 1962'
         }
       },
       optionalOpening: {
@@ -2340,6 +2506,11 @@ __webpack_require__.r(__webpack_exports__);
           title: 'Optional Opening',
           text: 'You expired, Jesus, but the source of life gushed forth for souls, and the ocean of mercy opened up for the whole world. O Fount of Life, unfathomable Divine Mercy, envelop the whole world and empty Yourself out upon us. <br><br> <em>(Repeat 3 times)</em> O Blood and Water, which gushed forth from the Heart of Jesus as a fountain of Mercy for us, I trust in You!',
           source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
+        },
+        ES: {
+          title: 'Optional Opening',
+          text: 'You expired, Jesus, but the source of life gushed forth for souls, and the ocean of mercy opened up for the whole world. O Fount of Life, unfathomable Divine Mercy, envelop the whole world and empty Yourself out upon us. <br><br> <em>(Repeat 3 times)</em> O Blood and Water, which gushed forth from the Heart of Jesus as a fountain of Mercy for us, I trust in You!',
+          source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
         }
       },
       optionalClosing: {
@@ -2354,6 +2525,11 @@ __webpack_require__.r(__webpack_exports__);
           source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
         },
         LA: {
+          title: 'Optional Closing',
+          text: 'Eternal God, in whom mercy is endless and the treasury of compassion inexhaustible, look kindly upon us and increase Your mercy in us, that in difficult moments we might not despair nor become despondent, but with great confidence submit ourselves to Your holy will, which is Love and Mercy itself.',
+          source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
+        },
+        ES: {
           title: 'Optional Closing',
           text: 'Eternal God, in whom mercy is endless and the treasury of compassion inexhaustible, look kindly upon us and increase Your mercy in us, that in difficult moments we might not despair nor become despondent, but with great confidence submit ourselves to Your holy will, which is Love and Mercy itself.',
           source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
@@ -2421,6 +2597,12 @@ var hroLocalize = function hroLocalize() {
     }
 
     return text;
+  }); // quick fix
+
+  $('a[href^="/med_en"').each(function (idx, el) {
+    if (_store__WEBPACK_IMPORTED_MODULE_0__.default.settings.language === 'ES') {
+      $(this).attr('href', $(this).attr('href').replace('/med_en', '/med_es'));
+    }
   });
 };
 
@@ -3162,6 +3344,136 @@ module.exports = code;
 
 // Module
 var code = "<div class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\"><hro-localize>Home</hro-localize></span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1 class=\"label\">San Lucas 2, 41-51 (Nácar-Colunga)</h1>\n\n        <p>Sus padres iban cada año a Jerusalén en la fiesta de la Pascua. Y cuando era ya de doce años, al subir sus padres según el rito festivo, al volverse acabados los días, el niño Jesús se quedó en Jerusalén, sin que sus padres lo echasen de ver. Pensando que estaba en la caravana, anduvieron camino de un día. Buscáronle entre los parientes y conocidos, y al no hallarlo, se volvieron a Jerusalén en busca suya. Y aconteció que al cabo de tres días le hallaron en el templo, sentado en medio de los doctores, oyéndolos y preguntándoles. Y cuantos le oían se maravillaban de su inteligencia y de sus respuestas</p>\n\n        <p>Cuando sus padres le vieron se maravillaron, y le dijo su madre: Hijo, ¿por qué nos has hecho así? Mira que tu padre y yo, apenados, te andábamos buscando. Y El les dijo: ¿Y por qué me buscábais? ¿No sabíais que conviene que me ocupe en las cosas de mi Padre? Y ellos no entendieron lo que les decía. Bajó con ellos, y vino a Nazaret, y les estaba sujeto, y su madre conservaba todo esto en su corazón.</p>\n\n        <hr>\n\n        <p><em>Sagrada Biblia</em>.\n            Eloíno Nácar Fuster y Alberto Colunga.\n            La Editorial Católica: Madrid, 1944\n            <a href=\"https://archive.org/details/SagradaBibliaNacarColunga19441Edicin/\">archive.org</a></p>\n    </div>\n</div>";
+// Exports
+module.exports = code;
+
+/***/ }),
+
+/***/ "./src/js/templates/meditations/med_es_luminous_1.html":
+/*!*************************************************************!*\
+  !*** ./src/js/templates/meditations/med_es_luminous_1.html ***!
+  \*************************************************************/
+/***/ ((module) => {
+
+// Module
+var code = "<div class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\"><hro-localize>Home</hro-localize></span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n\n        <h1 class=\"label\">San Mateo 3, 13-16 (Nácar-Colunga)</h1>\n\n        <p>Vino Jesús de Galilea al Jordán y se presentó a Juan para ser bautizado por él. Juan se oponía, diciendo: Soy yo quien debe ser por ti bautizado, ¿y vienes tú a mí? Pero Jesús le respondió: Déjame a mí ahora hacer, pues conviene que cumplamos toda justicia. Entonces condescendió. Bautizado Jesús, al instante salió del agua. Y he aquí que vi ó abrírsele los cielos y al Espíritu de Dios descender como paloma y venir sobre él.</p>\n\n        <hr>\n\n        <p><em>Sagrada Biblia</em>.\n            Eloíno Nácar Fuster y Alberto Colunga.\n            La Editorial Católica: Madrid, 1944\n            <a href=\"https://archive.org/details/SagradaBibliaNacarColunga19441Edicin/\">archive.org</a></p>\n    </div>\n</div>";
+// Exports
+module.exports = code;
+
+/***/ }),
+
+/***/ "./src/js/templates/meditations/med_es_luminous_2.html":
+/*!*************************************************************!*\
+  !*** ./src/js/templates/meditations/med_es_luminous_2.html ***!
+  \*************************************************************/
+/***/ ((module) => {
+
+// Module
+var code = "<div class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\"><hro-localize>Home</hro-localize></span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n\n        <h1 class=\"label\">San Juan 2, 1-11 (Nácar-Colunga)</h1>\n\n        <p>Al tercer día hubo una boda en Caná de Galilea, y estaba allí la madre de Jesús. Fué invitado también Jesús con sus discípulos a la boda. Y no tenían vino, porque el vino de la boda se había acabado. En esto dijo la madre de Jesús a éste: No tienen vino. Díjole Jesús: Mujer, ¿qué nos va a mí y a ti?. No es aún llegada mi hora. Dijo la madre a los servidores: Haced lo que El os dijere.</p>\n\n        <p>Había allí seis tinajas de piedra para las purificaciones de los judíos, en cada una de las cuales cabían dos o tres metretas. Díjoles Jesús: Llenad las tinajas de agua. Y las llenaron hasta el borde. El les dice: Sacad ahora y llevad al maestresala. Y se lo llevaron. Luego que el maestresala probó el agua convertida en vino&mdash;él no sabía de dónde venía, pero lo sabían los servidores, que habían sacado el agua&mdash;, llamó al novio, y le dijo: Todos sirven primero el vino bueno, y cuando están ya bebidos, el peor; pero tú has guardado hasta ahora el vino mejor. Este fué el primer milagro que hizo Jesús en Caná de Galilea, manifestando su gloria y creyeron en El sus discípulos.</p>\n\n        <hr>\n\n        <p><em>Sagrada Biblia</em>.\n            Eloíno Nácar Fuster y Alberto Colunga.\n            La Editorial Católica: Madrid, 1944\n            <a href=\"https://archive.org/details/SagradaBibliaNacarColunga19441Edicin/\">archive.org</a></p>\n    </div>\n</div>";
+// Exports
+module.exports = code;
+
+/***/ }),
+
+/***/ "./src/js/templates/meditations/med_es_luminous_3.html":
+/*!*************************************************************!*\
+  !*** ./src/js/templates/meditations/med_es_luminous_3.html ***!
+  \*************************************************************/
+/***/ ((module) => {
+
+// Module
+var code = "<div class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\"><hro-localize>Home</hro-localize></span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1 class=\"label\">San Marcos 1, 14-15 (Nácar-Colunga)</h1>\n\n        <p>Después que Juan fué preso, vino Jesús a Galilea predicando el evangelio de Dios, y diciendo: Cumplido es el tiempo, y el reino de Dios está cercano; arrepentíos y creed en el evangelio.</p>\n        \n\n        <hr>\n\n        <p><em>Sagrada Biblia</em>.\n            Eloíno Nácar Fuster y Alberto Colunga.\n            La Editorial Católica: Madrid, 1944\n            <a href=\"https://archive.org/details/SagradaBibliaNacarColunga19441Edicin/\">archive.org</a></p>\n    </div>\n</div>";
+// Exports
+module.exports = code;
+
+/***/ }),
+
+/***/ "./src/js/templates/meditations/med_es_luminous_4.html":
+/*!*************************************************************!*\
+  !*** ./src/js/templates/meditations/med_es_luminous_4.html ***!
+  \*************************************************************/
+/***/ ((module) => {
+
+// Module
+var code = "<div class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\"><hro-localize>Home</hro-localize></span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1 class=\"label\">San Mateo 17, 1-2 (Nácar-Colunga)</h1>\n\n        <p>Seis días después tomó Jesús a Pedro, a Santiago y a Juan, su hermano, y los llevó aparte, a un monte alto, y se transfiguró ante ellos; y brilló su rostro como el sol, y sus vestidos se volvieron blancos como la luz.</p>\n        \n\n        <hr>\n\n        <p><em>Sagrada Biblia</em>.\n            Eloíno Nácar Fuster y Alberto Colunga.\n            La Editorial Católica: Madrid, 1944\n            <a href=\"https://archive.org/details/SagradaBibliaNacarColunga19441Edicin/\">archive.org</a></p>\n    </div>\n</div>";
+// Exports
+module.exports = code;
+
+/***/ }),
+
+/***/ "./src/js/templates/meditations/med_es_luminous_5.html":
+/*!*************************************************************!*\
+  !*** ./src/js/templates/meditations/med_es_luminous_5.html ***!
+  \*************************************************************/
+/***/ ((module) => {
+
+// Module
+var code = "<div class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\"><hro-localize>Home</hro-localize></span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1 class=\"label\">San Mateo 26, 26-28 (Nácar-Colunga)</h1>\n\n        <p>Mientras comían, Jesús tomó pan, y bendicicndolo, lo partió y dándoselo a los discípulos, dijo: Tomad y comed, éste es mi cuerpo. Y tomando un cáliz y dando gracias, se lo dió, diciendo: Bebed de él todos, porque ésta es mi sangre del Nuevo Testamento, que será derramada por muchos para remisión de los pecados.</p>\n        \n\n        <hr>\n\n        <p><em>Sagrada Biblia</em>.\n            Eloíno Nácar Fuster y Alberto Colunga.\n            La Editorial Católica: Madrid, 1944\n            <a href=\"https://archive.org/details/SagradaBibliaNacarColunga19441Edicin/\">archive.org</a></p>\n    </div>\n</div>";
+// Exports
+module.exports = code;
+
+/***/ }),
+
+/***/ "./src/js/templates/meditations/med_es_sorrowful_1.html":
+/*!**************************************************************!*\
+  !*** ./src/js/templates/meditations/med_es_sorrowful_1.html ***!
+  \**************************************************************/
+/***/ ((module) => {
+
+// Module
+var code = "<div class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\"><hro-localize>Home</hro-localize></span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1 class=\"label\">San Mateo 26, 36-39 (Nácar-Colunga)</h1>\n\n        <p>Entonces vino Jesús con ellos a un lugar llamado Gctsemaní y les dijo: Sentaos aquí mientras yo voy allá a orar. Y tomando a Pedro y a los hijos de Zebedeo, comenzó a entristecerse y angustiarse. Entonces les dijo: Triste está mi alma hasta la muerte; quedaos aquí y velad conmigo. Y yendo un poco más allá, se postró sobre su rostro, orando y diciendo: Padre mío, si es posible, pase de mí este cáliz; sin embargo, no se haga como yo quiero, sino como quieres tú.</p>\n\n        <hr>\n\n        <p><em>Sagrada Biblia</em>.\n            Eloíno Nácar Fuster y Alberto Colunga.\n            La Editorial Católica: Madrid, 1944\n            <a href=\"https://archive.org/details/SagradaBibliaNacarColunga19441Edicin/\">archive.org</a></p>\n    </div>\n</div>";
+// Exports
+module.exports = code;
+
+/***/ }),
+
+/***/ "./src/js/templates/meditations/med_es_sorrowful_2.html":
+/*!**************************************************************!*\
+  !*** ./src/js/templates/meditations/med_es_sorrowful_2.html ***!
+  \**************************************************************/
+/***/ ((module) => {
+
+// Module
+var code = "<div class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\"><hro-localize>Home</hro-localize></span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1 class=\"label\">San Mateo 27, 24-26 (Nácar-Colunga)</h1>\n\n        <p>Viendo, pues, Pilato que nada conseguía, sino que el tumulto crecía cada vez más, tomó agua y se lavó las manos delante de la muchedumbre, diciendo: Yo soy inocente de esta sangre; vosotros veáis. Y todo el pueblo contestó diciendo: Caiga su sangre sobre nosotros y sobre nuestros hijos. Entonces dió libertad a Barrabás; y a Jesús, después de haberlo hecho azotar, se lo entregó para que le crucificaran.</p>\n\n        <hr>\n\n        <p><em>Sagrada Biblia</em>.\n            Eloíno Nácar Fuster y Alberto Colunga.\n            La Editorial Católica: Madrid, 1944\n            <a href=\"https://archive.org/details/SagradaBibliaNacarColunga19441Edicin/\">archive.org</a></p>\n    </div>\n</div>";
+// Exports
+module.exports = code;
+
+/***/ }),
+
+/***/ "./src/js/templates/meditations/med_es_sorrowful_3.html":
+/*!**************************************************************!*\
+  !*** ./src/js/templates/meditations/med_es_sorrowful_3.html ***!
+  \**************************************************************/
+/***/ ((module) => {
+
+// Module
+var code = "<div class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\"><hro-localize>Home</hro-localize></span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1 class=\"label\">San Mateo 27, 28-29 (Nácar-Colunga)</h1>\n\n        <p>Y despojándole de sus vestiduras le echaron encima una clámide de púrpura, y, tejiendo una corona de espinas, se la pusieron sobre la cabeza, y en la mano una caña; y doblando la rodilla delante de El, se burlaban de El, diciendo: ¡Salve, rey de los judíos!</p>\n\n        <hr>\n\n        <p><em>Sagrada Biblia</em>.\n            Eloíno Nácar Fuster y Alberto Colunga.\n            La Editorial Católica: Madrid, 1944\n            <a href=\"https://archive.org/details/SagradaBibliaNacarColunga19441Edicin/\">archive.org</a></p>\n    </div>\n</div>";
+// Exports
+module.exports = code;
+
+/***/ }),
+
+/***/ "./src/js/templates/meditations/med_es_sorrowful_4.html":
+/*!**************************************************************!*\
+  !*** ./src/js/templates/meditations/med_es_sorrowful_4.html ***!
+  \**************************************************************/
+/***/ ((module) => {
+
+// Module
+var code = "<div class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\"><hro-localize>Home</hro-localize></span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1 class=\"label\">San Mateo 27, 32 (Nácar-Colunga)</h1>\n\n        <p>Al salir encontraron a un hombre de Cirene, de nombre Simón, al cual requirieron para que llevase la cruz.</p>\n\n        <hr>\n\n        <p><em>Sagrada Biblia</em>.\n            Eloíno Nácar Fuster y Alberto Colunga.\n            La Editorial Católica: Madrid, 1944\n            <a href=\"https://archive.org/details/SagradaBibliaNacarColunga19441Edicin/\">archive.org</a></p>\n    </div>\n</div>";
+// Exports
+module.exports = code;
+
+/***/ }),
+
+/***/ "./src/js/templates/meditations/med_es_sorrowful_5.html":
+/*!**************************************************************!*\
+  !*** ./src/js/templates/meditations/med_es_sorrowful_5.html ***!
+  \**************************************************************/
+/***/ ((module) => {
+
+// Module
+var code = "<div class=\"modal\">\n    <div class=\"modal__inner\">\n        <a href=\"/\" data-navigo class=\"modal__close\">\n            <span class=\"sr-only\"><hro-localize>Home</hro-localize></span>\n            <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path d=\"M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z\"/></svg>\n        </a>\n\n        <h1 class=\"label\">San Mateo 27, 46-54 (Nácar-Colunga)</h1>\n\n        <p>Hacia la hora de nona clamó Jesús con voz fuerte, diciendo: <em>¡Eli, Eli, lemma sabactani!</em> Que quiere decir: Dios mío, Dios mío, ¿por qué me has desamparado? Algunos de los que allí estaban, oyéndole, decían: A Elías llama éste. Y luego, corriendo, uno de ellos tomó una esponja, la empapó en vinagre y la fijó en una caña y le dió a beber (6). Otros decían: Deja, veamos si viene Elías a salvarle. Jesús, dando de nuevo un fuerte grito, expiró.</p>\n\n        <p>La cortina del Templo se rasgó de arriba abajo en dos partes, la tierra tembló y se rajaron las rocas, se abrieron los monumentos, y muchos cuerpos de santos, que habían muerto resucitaron, y saliendo de sus sepulcros, vinieron a la ciudad santa y se aparecieron a muchos. El centurión y los que con él guardaban a Jesús, viendo el terremoto y cuanto había sucedido, temieron sobremanera y se decían: Verdaderamente, éste era hijo de Dios.</p>\n\n        <hr>\n\n        <p><em>Sagrada Biblia</em>.\n            Eloíno Nácar Fuster y Alberto Colunga.\n            La Editorial Católica: Madrid, 1944\n            <a href=\"https://archive.org/details/SagradaBibliaNacarColunga19441Edicin/\">archive.org</a></p>\n    </div>\n</div>";
 // Exports
 module.exports = code;
 

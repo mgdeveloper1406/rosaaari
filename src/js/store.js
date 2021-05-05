@@ -1,5 +1,40 @@
 import { getMysteriesForCurrDay } from './utils';
 
+let mysteryVersesMarkup = {
+    joyful: [
+        null,
+        '<hro-localize>Luke 1:26-31</hro-localize>',
+        '<hro-localize>Luke 1:39-45</hro-localize>',
+        '<hro-localize>Luke 2:1-7</hro-localize>',
+        '<hro-localize>Luke 2:25-32</hro-localize>',
+        '<hro-localize>Luke 2:41-51</hro-localize>'
+    ],
+    luminous: [
+        null,
+        '<hro-localize>Matthew 3:13-16</hro-localize>',
+        '<hro-localize>John 2:1-11</hro-localize>',
+        '<hro-localize>Mark 1:14-15</hro-localize>',
+        '<hro-localize>Matthew 17:1-2</hro-localize>',
+        '<hro-localize>Matthew 26:26-28</hro-localize>'
+    ],
+    sorrowful: [
+        null,
+        '<hro-localize>Matthew 26:36-39</hro-localize>',
+        '<hro-localize>Matthew 27:24-26</hro-localize>',
+        '<hro-localize>Matthew 27:28-29</hro-localize>',
+        '<hro-localize>Matthew 27:32</hro-localize>',
+        '<hro-localize>Matthew 27:46-54</hro-localize>'
+    ],
+    glorious: [
+        null,
+        '<hro-localize>John 20:1-9</hro-localize>',
+        '<hro-localize>Luke 24:44-53</hro-localize>',
+        '<hro-localize>Acts 2:1-4</hro-localize>',
+        '<hro-localize>From the Sermons of St. John of Damascus. Second on the Falling-asleep of Blessed Mary.</hro-localize>',
+        '<hro-localize>Sermon of St. Peter Canisius, Priest On the Incomparable Virgin Mary, Mother of God</hro-localize>'
+    ]
+};
+
 export default {
     settings: {
         mysteries: localStorage.getItem('mysteries') || getMysteriesForCurrDay(),
@@ -70,7 +105,22 @@ export default {
             "Luke 1:39-45": "San Lucas 1, 39-45",
             "Luke 2:1-7": "San Lucas 2, 1-7",
             "Luke 2:25-32": "San Lucas 2, 25-32",
-            "Luke 2:41-51": "San Lucas 2, 41-51"
+            "Luke 2:41-51": "San Lucas 2, 41-51",
+            "Matthew 3:13-16": "San Mateo 3, 13-16",
+            "John 2:1-11": "San Juan 2, 1-11",
+            "Mark 1:14-15": "San Marcos 1, 14-15",
+            "Matthew 17:1-2": "San Mateo 17, 1-2",
+            "Matthew 26:26-28": "San Mateo 26, 26-28",
+            "Matthew 26:36-39": "San Mateo 26, 36-39",
+            "Matthew 27:24-26": "San Mateo 27, 24-26",
+            "Matthew 27:28-29": "San Mateo 27, 28-29",
+            "Matthew 27:32": "San Mateo 27, 32",
+            "Matthew 27:46-54": "San Mateo 27, 46-54",
+            "John 20:1-9": "San Juan 20, 1-9",
+            "Luke 24:44-53": "San Lucas 24, 44-53",
+            "Acts 2:1-4": "Apóstoles 2, 1-4",
+            "From the Sermons of St. John of Damascus. Second on the Falling-asleep of Blessed Mary.": "Sermón de San Juan Damasceno. Segundo sobre la dormición de la Santísima Virgen.",
+            "Sermon of St. Peter Canisius, Priest On the Incomparable Virgin Mary, Mother of God": "Sermón de San Pedro Canisio, Presbítero. De María Madre de Dios, Virgen incomparable",
         }
     },
     prayers: {
@@ -255,35 +305,35 @@ export default {
                 EN: [
                     {
                         title: 'The First Joyful Mystery',
-                        text: 'The Annunciation of Gabriel to Mary. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-31</a>)',
+                        text: 'The Annunciation of Gabriel to Mary. (<a href="/med_en_joyful_1" data-navigo>'+mysteryVersesMarkup.joyful[1]+'</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/annunciation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Second Joyful Mystery',
-                        text: 'The Visitation  of Mary to Elizabeth. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-45</a>)',
+                        text: 'The Visitation  of Mary to Elizabeth. (<a href="/med_en_joyful_2" data-navigo>'+mysteryVersesMarkup.joyful[2]+'</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/visitation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Third Joyful Mystery',
-                        text: 'The Birth of Our Lord. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-7</a>)',
+                        text: 'The Birth of Our Lord. (<a href="/med_en_joyful_3" data-navigo>'+mysteryVersesMarkup.joyful[3]+'</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/nativity.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Fourth Joyful Mystery',
-                        text: 'The Presentation of Our Lord. (<a href="/med_en_joyful_4" data-navigo>Luke 2:25-32</a>)',
+                        text: 'The Presentation of Our Lord. (<a href="/med_en_joyful_4" data-navigo>'+mysteryVersesMarkup.joyful[4]+'</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/presentation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Fifth Joyful Mystery',
-                        text: 'The Finding of Our Lord in the Temple. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-51</a>)',
+                        text: 'The Finding of Our Lord in the Temple. (<a href="/med_en_joyful_5" data-navigo>'+mysteryVersesMarkup.joyful[5]+'</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/finding.jpg',
                         imagePosition: 'right center'
@@ -292,35 +342,35 @@ export default {
                 EN_TRAD: [
                     {
                         title: 'The First Joyful Mystery',
-                        text: 'The Annunciation. (<a href="/med_en_joyful_1" data-navigo>Luke 1:26-31</a>)',
+                        text: 'The Annunciation. (<a href="/med_en_joyful_1" data-navigo>'+mysteryVersesMarkup.joyful[1]+'</a>)',
                         source: 'Baronius Press, Daily Missal 1962',
                         image: '/images/default/annunciation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Second Joyful Mystery',
-                        text: 'The Visitation. (<a href="/med_en_joyful_2" data-navigo>Luke 1:39-45</a>)',
+                        text: 'The Visitation. (<a href="/med_en_joyful_2" data-navigo>'+mysteryVersesMarkup.joyful[2]+'</a>)',
                         source: 'Baronius Press, Daily Missal 1962',
                         image: '/images/default/visitation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Third Joyful Mystery',
-                        text: 'The Nativity. (<a href="/med_en_joyful_3" data-navigo>Luke 2:1-7</a>)',
+                        text: 'The Nativity. (<a href="/med_en_joyful_3" data-navigo>'+mysteryVersesMarkup.joyful[3]+'</a>)',
                         source: 'Baronius Press, Daily Missal 1962',
                         image: '/images/default/nativity.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Fourth Joyful Mystery',
-                        text: 'The Presentation. (<a href="/med_en_joyful_4" data-navigo>Luke 2:25-32</a>)',
+                        text: 'The Presentation. (<a href="/med_en_joyful_4" data-navigo>'+mysteryVersesMarkup.joyful[4]+'</a>)',
                         source: 'Baronius Press, Daily Missal 1962',
                         image: '/images/default/presentation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Fifth Joyful Mystery',
-                        text: 'The Finding in the Temple. (<a href="/med_en_joyful_5" data-navigo>Luke 2:41-51</a>)',
+                        text: 'The Finding in the Temple. (<a href="/med_en_joyful_5" data-navigo>'+mysteryVersesMarkup.joyful[5]+'</a>)',
                         source: 'Baronius Press, Daily Missal 1962',
                         image: '/images/default/finding.jpg',
                         imagePosition: 'right center'
@@ -329,35 +379,35 @@ export default {
                 LA: [
                     {
                         title: 'Prímum Mystérium Gaudiósum',
-                        text: 'Annuntiátio. (<a href="/med_en_joyful_1" data-navigo><hro-localize>Luke 1:26-31</hro-localize></a>)',
+                        text: 'Annuntiátio. (<a href="/med_en_joyful_1" data-navigo>'+mysteryVersesMarkup.joyful[1]+'</a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/annunciation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'Secúndum Mystérium Gaudiósum',
-                        text: 'Visitátio. (<a href="/med_en_joyful_2" data-navigo><hro-localize>Luke 1:39-45</hro-localize></a>)',
+                        text: 'Visitátio. (<a href="/med_en_joyful_2" data-navigo>'+mysteryVersesMarkup.joyful[2]+'</a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/visitation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'Tértium Mystérium Gaudiósum',
-                        text: 'Natívitas Dómini nostri Jesu Christi. (<a href="/med_en_joyful_3" data-navigo><hro-localize>Luke 2:1-7</hro-localize></a>)',
+                        text: 'Natívitas Dómini nostri Jesu Christi. (<a href="/med_en_joyful_3" data-navigo>'+mysteryVersesMarkup.joyful[3]+'</a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/nativity.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'Quartum Mystérium Gaudiósum',
-                        text: 'Præsentátio Púeri Jesu in Templo. (<a href="/med_en_joyful_4" data-navigo><hro-localize>Luke 2:25-32</hro-localize></a>)',
+                        text: 'Præsentátio Púeri Jesu in Templo. (<a href="/med_en_joyful_4" data-navigo>'+mysteryVersesMarkup.joyful[4]+'</a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/presentation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'Quintum Mystérium Gaudiósum',
-                        text: 'Invéntio Púeri Jesu in Templo. (<a href="/med_en_joyful_5" data-navigo><hro-localize>Luke 2:41-51</hro-localize></a>)',
+                        text: 'Invéntio Púeri Jesu in Templo. (<a href="/med_en_joyful_5" data-navigo>'+mysteryVersesMarkup.joyful[5]+'</a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/finding.jpg',
                         imagePosition: 'right center'
@@ -366,35 +416,35 @@ export default {
                 ES: [
                     {
                         title: 'El Primer Misterio de Gozo',
-                        text: 'La Anunciación del Angel a María. (<a href="/med_es_joyful_1" data-navigo><hro-localize>Luke 1:26-31</hro-localize></a>)',
+                        text: 'La Anunciación del Angel a María. (<a href="/med_es_joyful_1" data-navigo>'+mysteryVersesMarkup.joyful[1]+'</a>)',
                         source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/annunciation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'El Segundo Misterio de Gozo',
-                        text: 'La Visita de Nuestra Señora a Su Prima Santa Isabel. (<a href="/med_es_joyful_2" data-navigo><hro-localize>Luke 1:39-45</a>)',
+                        text: 'La Visita de Nuestra Señora a Su Prima Santa Isabel. (<a href="/med_es_joyful_2" data-navigo>'+mysteryVersesMarkup.joyful[2]+'</a>)',
                         source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/visitation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'El Tercer Misterio de Gozo',
-                        text: 'El Nacimiento del Hijo de Dios en Belén. (<a href="/med_es_joyful_3" data-navigo><hro-localize>Luke 2:1-7</hro-localize></a>)',
+                        text: 'El Nacimiento del Hijo de Dios en Belén. (<a href="/med_es_joyful_3" data-navigo>'+mysteryVersesMarkup.joyful[3]+'</a>)',
                         source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/nativity.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'El Cuarto Misterio de Gozo',
-                        text: 'La Presentación de Jesús en el Templo. (<a href="/med_es_joyful_4" data-navigo><hro-localize>Luke 2:25-32</hro-localize></a>)',
+                        text: 'La Presentación de Jesús en el Templo. (<a href="/med_es_joyful_4" data-navigo>'+mysteryVersesMarkup.joyful[4]+'</a>)',
                         source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/presentation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'El Quinto Misterio de Gozo',
-                        text: 'El Niño Perdido y Hallado en el Templo. (<a href="/med_es_joyful_5" data-navigo>Luke 2:41-51</a>)',
+                        text: 'El Niño Perdido y Hallado en el Templo. (<a href="/med_es_joyful_5" data-navigo>'+mysteryVersesMarkup.joyful[5]+'</a>)',
                         source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/finding.jpg',
                         imagePosition: 'right center'
@@ -405,35 +455,35 @@ export default {
                 EN: [
                     {
                         title: 'The First Luminous Mystery',
-                        text: 'The Baptism of Our Lord in the River Jordan. (<a href="/med_en_luminous_1" data-navigo>Matthew 3:13-16</a>)',
+                        text: 'The Baptism of Our Lord in the River Jordan. (<a href="/med_en_luminous_1" data-navigo>'+mysteryVersesMarkup.luminous[1]+'</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/baptism.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Second Luminous Mystery',
-                        text: 'The Wedding at Cana, when Christ manifested Himself. (<a href="/med_en_luminous_2" data-navigo>John 2:1-11</a>)',
+                        text: 'The Wedding at Cana, when Christ manifested Himself. (<a href="/med_en_luminous_2" data-navigo>'+mysteryVersesMarkup.luminous[2]+'</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/cana.jpg',
                         imagePosition: 'left center'
                     },
                     {
                         title: 'The Third Luminous Mystery',
-                        text: 'The Proclamation of the Kingdom of God. (<a href="/med_en_luminous_3" data-navigo>Mark 1:14-15</a>)',
+                        text: 'The Proclamation of the Kingdom of God. (<a href="/med_en_luminous_3" data-navigo>'+mysteryVersesMarkup.luminous[3]+'</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/proclamation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Fourth Luminous Mystery',
-                        text: 'The Transfiguration of Our Lord. (<a href="/med_en_luminous_4" data-navigo>Matthew 17:1-8</a>)',
+                        text: 'The Transfiguration of Our Lord. (<a href="/med_en_luminous_4" data-navigo>'+mysteryVersesMarkup.luminous[4]+'</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/transfiguration.jpg',
                         imagePosition: 'center top'
                     },
                     {
                         title: 'The Fifth Luminous Mystery',
-                        text: 'The Last Supper, when Our Lord gave us the Holy Eucharist. (<a href="/med_en_luminous_5" data-navigo>Matthew 26:17-29</a>)',
+                        text: 'The Last Supper, when Our Lord gave us the Holy Eucharist. (<a href="/med_en_luminous_5" data-navigo>'+mysteryVersesMarkup.luminous[5]+'</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/eucharist.jpg',
                         imagePosition: 'center'
@@ -442,35 +492,35 @@ export default {
                 EN_TRAD: [
                     {
                         title: 'The First Luminous Mystery',
-                        text: 'The Baptism of Christ in the Jordan. (<a href="/med_en_luminous_1" data-navigo>Matthew 3:13-16</a>)',
+                        text: 'The Baptism of Christ in the Jordan. (<a href="/med_en_luminous_1" data-navigo>'+mysteryVersesMarkup.luminous[1]+'</a>)',
                         source: 'http://www.usccb.org/prayer-and-worship/prayers-and-devotions/rosaries/how-to-pray-the-rosary.cfm',
                         image: '/images/default/baptism.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Second Luminous Mystery',
-                        text: 'The Wedding Feast at Cana. (<a href="/med_en_luminous_2" data-navigo>John 2:1-11</a>)',
+                        text: 'The Wedding Feast at Cana. (<a href="/med_en_luminous_2" data-navigo>'+mysteryVersesMarkup.luminous[2]+'</a>)',
                         source: 'http://www.usccb.org/prayer-and-worship/prayers-and-devotions/rosaries/how-to-pray-the-rosary.cfm',
                         image: '/images/default/cana.jpg',
                         imagePosition: 'left center'
                     },
                     {
                         title: 'The Third Luminous Mystery',
-                        text: 'Jesus&rsquo; Proclamation of the Coming of the Kingdom of God. (<a href="/med_en_luminous_3" data-navigo>Mark 1:14-15</a>)',
+                        text: 'Jesus&rsquo; Proclamation of the Coming of the Kingdom of God. (<a href="/med_en_luminous_3" data-navigo>'+mysteryVersesMarkup.luminous[3]+'</a>)',
                         source: 'http://www.usccb.org/prayer-and-worship/prayers-and-devotions/rosaries/how-to-pray-the-rosary.cfm',
                         image: '/images/default/proclamation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Fourth Luminous Mystery',
-                        text: 'The Transfiguration. (<a href="/med_en_luminous_4" data-navigo>Matthew 17:1-8</a>)',
+                        text: 'The Transfiguration. (<a href="/med_en_luminous_4" data-navigo>'+mysteryVersesMarkup.luminous[4]+'</a>)',
                         source: 'http://www.usccb.org/prayer-and-worship/prayers-and-devotions/rosaries/how-to-pray-the-rosary.cfm',
                         image: '/images/default/transfiguration.jpg',
                         imagePosition: 'center top'
                     },
                     {
                         title: 'The Fifth Luminous Mystery',
-                        text: 'The Institution of the Eucharist. (<a href="/med_en_luminous_5" data-navigo>Matthew 26:17-29</a>)',
+                        text: 'The Institution of the Eucharist. (<a href="/med_en_luminous_5" data-navigo>'+mysteryVersesMarkup.luminous[5]+'</a>)',
                         source: 'http://www.usccb.org/prayer-and-worship/prayers-and-devotions/rosaries/how-to-pray-the-rosary.cfm',
                         image: '/images/default/eucharist.jpg',
                         imagePosition: 'center'
@@ -479,35 +529,35 @@ export default {
                 LA: [
                     {
                         title: 'Prímum Mystérium Luminósum',
-                        text: 'Baptísma Dómini nostri Jesu Christi apud Jordánem. (<a href="/med_en_luminous_1" data-navigo>Matthew 3:13-16</a>)',
+                        text: 'Baptísma Dómini nostri Jesu Christi apud Jordánem. (<a href="/med_en_luminous_1" data-navigo>'+mysteryVersesMarkup.luminous[1]+'</a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/baptism.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'Secúndum Mystérium Luminósum',
-                        text: 'Núptiæ Canénses. (<a href="/med_en_luminous_2" data-navigo>John 2:1-11</a>)',
+                        text: 'Núptiæ Canénses. (<a href="/med_en_luminous_2" data-navigo>'+mysteryVersesMarkup.luminous[2]+'</a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/cana.jpg',
                         imagePosition: 'left center'
                     },
                     {
                         title: 'Tértium Mystérium Luminósum',
-                        text: 'Proclamátio Regni Dei. (<a href="/med_en_luminous_3" data-navigo>Mark 1:14-15</a>)',
+                        text: 'Proclamátio Regni Dei. (<a href="/med_en_luminous_3" data-navigo>'+mysteryVersesMarkup.luminous[3]+'</a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/proclamation.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'Quartum Mystérium Luminósum',
-                        text: 'Transfigurátio. (<a href="/med_en_luminous_4" data-navigo>Matthew 17:1-8</a>)',
+                        text: 'Transfigurátio. (<a href="/med_en_luminous_4" data-navigo>'+mysteryVersesMarkup.luminous[4]+'</a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/transfiguration.jpg',
                         imagePosition: 'center top'
                     },
                     {
                         title: 'Quintum Mystérium Luminósum',
-                        text: 'Institútio Eucharístiæ. (<a href="/med_en_luminous_5" data-navigo>Matthew 26:17-29</a>)',
+                        text: 'Institútio Eucharístiæ. (<a href="/med_en_luminous_5" data-navigo>'+mysteryVersesMarkup.luminous[5]+'</a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/eucharist.jpg',
                         imagePosition: 'center'
@@ -515,37 +565,37 @@ export default {
                 ],
                 ES: [
                     {
-                        title: 'The First Luminous Mystery',
-                        text: 'The Baptism of Our Lord in the River Jordan. (<a href="/med_en_luminous_1" data-navigo>Matthew 3:13-16</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        title: 'El Primer Misterio de Luz',
+                        text: 'El Bautismo de Jesús en el Jordán. (<a href="/med_es_luminous_1" data-navigo>'+mysteryVersesMarkup.luminous[1]+'</a>)',
+                        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/baptism.jpg',
                         imagePosition: 'center'
                     },
                     {
-                        title: 'The Second Luminous Mystery',
-                        text: 'The Wedding at Cana, when Christ manifested Himself. (<a href="/med_en_luminous_2" data-navigo>John 2:1-11</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        title: 'El Segundo Misterio de Luz',
+                        text: 'La Autorrevelación de Jesús en las Bodas de Caná. (<a href="/med_es_luminous_2" data-navigo>'+mysteryVersesMarkup.luminous[2]+'</a>)',
+                        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/cana.jpg',
                         imagePosition: 'left center'
                     },
                     {
-                        title: 'The Third Luminous Mystery',
-                        text: 'The Proclamation of the Kingdom of God. (<a href="/med_en_luminous_3" data-navigo>Mark 1:14-15</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        title: 'El Tercer Misterio de Luz',
+                        text: 'El Anuncio del Reino de Dios. (<a href="/med_es_luminous_3" data-navigo>'+mysteryVersesMarkup.luminous[3]+'</a>)',
+                        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/proclamation.jpg',
                         imagePosition: 'center'
                     },
                     {
-                        title: 'The Fourth Luminous Mystery',
-                        text: 'The Transfiguration of Our Lord. (<a href="/med_en_luminous_4" data-navigo>Matthew 17:1-8</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        title: 'El Cuarto Misterio de Luz',
+                        text: 'La Transfiguración de Jesús. (<a href="/med_es_luminous_4" data-navigo>'+mysteryVersesMarkup.luminous[4]+'</a>)',
+                        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/transfiguration.jpg',
                         imagePosition: 'center top'
                     },
                     {
-                        title: 'The Fifth Luminous Mystery',
-                        text: 'The Last Supper, when Our Lord gave us the Holy Eucharist. (<a href="/med_en_luminous_5" data-navigo>Matthew 26:17-29</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        title: 'El Quinto Misterio de Luz',
+                        text: 'La Institución de la Eucaristía. (<a href="/med_es_luminous_5" data-navigo>'+mysteryVersesMarkup.luminous[5]+'</a>)',
+                        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/eucharist.jpg',
                         imagePosition: 'center'
                     }
@@ -555,35 +605,35 @@ export default {
                 EN: [
                     {
                         title: 'The First Sorrowful Mystery',
-                        text: 'The Agony of Our Lord in the Garden. (<a href="/med_en_sorrowful_1" data-navigo>Matthew 26:36-56</a>)',
+                        text: 'The Agony of Our Lord in the Garden. (<a href="/med_en_sorrowful_1" data-navigo>'+mysteryVersesMarkup.sorrowful[1]+'</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/agony.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Second Sorrowful Mystery',
-                        text: 'Our Lord is Scourged at the Pillar. (<a href="/med_en_sorrowful_2" data-navigo>Matthew 27:24-26</a>)',
+                        text: 'Our Lord is Scourged at the Pillar. (<a href="/med_en_sorrowful_2" data-navigo>'+mysteryVersesMarkup.sorrowful[2]+'></a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/scourging.jpg',
                         imagePosition: 'center top'
                     },
                     {
                         title: 'The Third Sorrowful Mystery',
-                        text: 'Our Lord is Crowned with Thorns. (<a href="/med_en_sorrowful_3" data-navigo>Matthew 27:27-31</a>)',
+                        text: 'Our Lord is Crowned with Thorns. (<a href="/med_en_sorrowful_3" data-navigo>'+mysteryVersesMarkup.sorrowful[3]+'</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/thorns.jpg',
                         imagePosition: 'center top'
                     },
                     {
                         title: 'The Fourth Sorrowful Mystery',
-                        text: 'Our Lord Carries the Cross to Calvary. (<a href="/med_en_sorrowful_4" data-navigo>Matthew 27:32</a>)',
+                        text: 'Our Lord Carries the Cross to Calvary. (<a href="/med_en_sorrowful_4" data-navigo>'+mysteryVersesMarkup.sorrowful[4]+'</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/cross.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Fifth Sorrowful Mystery',
-                        text: 'The Crucifixion of Our Lord. (<a href="/med_en_sorrowful_5" data-navigo>Matthew 27:33-56</a>)',
+                        text: 'The Crucifixion of Our Lord. (<a href="/med_en_sorrowful_5" data-navigo>'+mysteryVersesMarkup.sorrowful[5]+'</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/crucifixion.jpg',
                         imagePosition: 'center top'
@@ -592,35 +642,35 @@ export default {
                 EN_TRAD: [
                     {
                         title: 'The First Sorrowful Mystery',
-                        text: 'The Agony in the Garden. (<a href="/med_en_sorrowful_1" data-navigo>Matthew 26:36-56</a>)',
+                        text: 'The Agony in the Garden. (<a href="/med_en_sorrowful_1" data-navigo>'+mysteryVersesMarkup.sorrowful[1]+'</a>)',
                         source: 'Baronius Press, Daily Missal 1962',
                         image: '/images/default/agony.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Second Sorrowful Mystery',
-                        text: 'The Scourging of Our Blessed Lord at the Pillar. (<a href="/med_en_sorrowful_2" data-navigo>Matthew 27:24-26</a>)',
+                        text: 'The Scourging of Our Blessed Lord at the Pillar. (<a href="/med_en_sorrowful_2" data-navigo>'+mysteryVersesMarkup.sorrowful[2]+'</a>)',
                         source: 'Baronius Press, Daily Missal 1962',
                         image: '/images/default/scourging.jpg',
                         imagePosition: 'center top'
                     },
                     {
                         title: 'The Third Sorrowful Mystery',
-                        text: 'The Crowning of our Blessed Lord with Thorns. (<a href="/med_en_sorrowful_3" data-navigo>Matthew 27:27-31</a>)',
+                        text: 'The Crowning of our Blessed Lord with Thorns. (<a href="/med_en_sorrowful_3" data-navigo>'+mysteryVersesMarkup.sorrowful[3]+'</a>)',
                         source: 'Baronius Press, Daily Missal 1962',
                         image: '/images/default/thorns.jpg',
                         imagePosition: 'center top'
                     },
                     {
                         title: 'The Fourth Sorrowful Mystery',
-                        text: 'Our Blessed Lord carrying His Cross. (<a href="/med_en_sorrowful_4" data-navigo>Matthew 27:32</a>)',
+                        text: 'Our Blessed Lord carrying His Cross. (<a href="/med_en_sorrowful_4" data-navigo>'+mysteryVersesMarkup.sorrowful[4]+'</a>)',
                         source: 'Baronius Press, Daily Missal 1962',
                         image: '/images/default/cross.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Fifth Sorrowful Mystery',
-                        text: 'The Crucifixion. (<a href="/med_en_sorrowful_5" data-navigo>Matthew 27:33-56</a>)',
+                        text: 'The Crucifixion. (<a href="/med_en_sorrowful_5" data-navigo>'+mysteryVersesMarkup.sorrowful[5]+'</a>)',
                         source: 'Baronius Press, Daily Missal 1962',
                         image: '/images/default/crucifixion.jpg',
                         imagePosition: 'center top'
@@ -629,35 +679,35 @@ export default {
                 LA: [
                     {
                         title: 'Prímum Mystérium Dolorósum',
-                        text: 'Agónia in Horto. (<a href="/med_en_sorrowful_1" data-navigo>Matthew 26:36-56</a>)',
+                        text: 'Agónia in Horto. (<a href="/med_en_sorrowful_1" data-navigo>'+mysteryVersesMarkup.sorrowful[1]+'</a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/agony.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'Secúndum Mystérium Dolorósum',
-                        text: 'Flagellátio. (<a href="/med_en_sorrowful_2" data-navigo>Matthew 27:24-26</a>)',
+                        text: 'Flagellátio. (<a href="/med_en_sorrowful_2" data-navigo>'+mysteryVersesMarkup.sorrowful[2]+'</a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/scourging.jpg',
                         imagePosition: 'center top'
                     },
                     {
                         title: 'Tértium Mystérium Dolorósum',
-                        text: 'Coronátio spinis. (<a href="/med_en_sorrowful_3" data-navigo>Matthew 27:27-31</a>)',
+                        text: 'Coronátio spinis. (<a href="/med_en_sorrowful_3" data-navigo>'+mysteryVersesMarkup.sorrowful[3]+'</a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/thorns.jpg',
                         imagePosition: 'center top'
                     },
                     {
                         title: 'Quartum Mystérium Dolorósum',
-                        text: 'Bajulátio Crucis. (<a href="/med_en_sorrowful_4" data-navigo>Matthew 27:32</a>)',
+                        text: 'Bajulátio Crucis. (<a href="/med_en_sorrowful_4" data-navigo>'+mysteryVersesMarkup.sorrowful[4]+'</a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/cross.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'Quintum Mystérium Dolorósum',
-                        text: 'Crucifíxio et Mors Dómini nostri Jesu Christi. (<a href="/med_en_sorrowful_5" data-navigo>Matthew 27:33-56</a>)',
+                        text: 'Crucifíxio et Mors Dómini nostri Jesu Christi. (<a href="/med_en_sorrowful_5" data-navigo>'+mysteryVersesMarkup.sorrowful[5]+'</a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/crucifixion.jpg',
                         imagePosition: 'center top'
@@ -665,37 +715,37 @@ export default {
                 ],
                 ES: [
                     {
-                        title: 'The First Sorrowful Mystery',
-                        text: 'The Agony of Our Lord in the Garden. (<a href="/med_en_sorrowful_1" data-navigo>Matthew 26:36-56</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        title: 'El Primer Misterio de Dolor',
+                        text: 'La Oración de Jesús en el Huerto de Getsemaní. (<a href="/med_en_sorrowful_1" data-navigo>'+mysteryVersesMarkup.sorrowful[1]+'</a>)',
+                        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/agony.jpg',
                         imagePosition: 'center'
                     },
                     {
-                        title: 'The Second Sorrowful Mystery',
-                        text: 'Our Lord is Scourged at the Pillar. (<a href="/med_en_sorrowful_2" data-navigo>Matthew 27:24-26</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        title: 'El Segundo Misterio de Dolor',
+                        text: 'La Flagelación. (<a href="/med_en_sorrowful_2" data-navigo>'+mysteryVersesMarkup.sorrowful[2]+'</a>)',
+                        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/scourging.jpg',
                         imagePosition: 'center top'
                     },
                     {
-                        title: 'The Third Sorrowful Mystery',
-                        text: 'Our Lord is Crowned with Thorns. (<a href="/med_en_sorrowful_3" data-navigo>Matthew 27:27-31</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        title: 'El Tercer Misterio de Dolor',
+                        text: 'La Coronación de Espinas. (<a href="/med_en_sorrowful_3" data-navigo>'+mysteryVersesMarkup.sorrowful[3]+'</a>)',
+                        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/thorns.jpg',
                         imagePosition: 'center top'
                     },
                     {
-                        title: 'The Fourth Sorrowful Mystery',
-                        text: 'Our Lord Carries the Cross to Calvary. (<a href="/med_en_sorrowful_4" data-navigo>Matthew 27:32</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        title: 'El Cuarto Misterio de Dolor',
+                        text: 'La Cruz a Cuestas. (<a href="/med_en_sorrowful_4" data-navigo>'+mysteryVersesMarkup.sorrowful[4]+'</a>)',
+                        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/cross.jpg',
                         imagePosition: 'center'
                     },
                     {
-                        title: 'The Fifth Sorrowful Mystery',
-                        text: 'The Crucifixion of Our Lord. (<a href="/med_en_sorrowful_5" data-navigo>Matthew 27:33-56</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        title: 'El Quinto Misterio de Dolor',
+                        text: 'Jesús Muere en la Cruz. (<a href="/med_en_sorrowful_5" data-navigo>'+mysteryVersesMarkup.sorrowful[5]+'</a>)',
+                        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/crucifixion.jpg',
                         imagePosition: 'center top'
                     }
@@ -705,35 +755,35 @@ export default {
                 EN: [
                     {
                         title: 'The First Glorious Mystery',
-                        text: 'The Glorious Resurrection of Our Lord. (<a href="/med_en_glorious_1" data-navigo>John 20:1-29</a>)',
+                        text: 'The Glorious Resurrection of Our Lord. (<a href="/med_en_glorious_1" data-navigo>'+mysteryVersesMarkup.glorious[1]+'</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/resurrection.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Second Glorious Mystery',
-                        text: 'The Ascension of Our Lord. (<a href="/med_en_glorious_2" data-navigo>Luke 24:36-53</a>)',
+                        text: 'The Ascension of Our Lord. (<a href="/med_en_glorious_2" data-navigo>'+mysteryVersesMarkup.glorious[2]+'</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/ascension.jpg',
                         imagePosition: 'center top'
                     },
                     {
                         title: 'The Third Glorious Mystery',
-                        text: 'The Descent of the Holy Spirit at Pentecost. (<a href="/med_en_glorious_3" data-navigo>Acts 2:1-41</a>)',
+                        text: 'The Descent of the Holy Spirit at Pentecost. (<a href="/med_en_glorious_3" data-navigo>'+mysteryVersesMarkup.glorious[3]+'</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/descent.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Fourth Glorious Mystery',
-                        text: 'The Assumption of Mary into Heaven. (<a href="/med_en_glorious_4" data-navigo>St. John of Damascus, Excerpt from Second Sermon On the Assumption of Mary</a>)',
+                        text: 'The Assumption of Mary into Heaven. (<a href="/med_en_glorious_4" data-navigo>'+mysteryVersesMarkup.glorious[4]+'</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/assumption.jpg',
                         imagePosition: 'center top'
                     },
                     {
                         title: 'The Fifth Glorious Mystery',
-                        text: 'The Coronation of Mary as Queen of Heaven and Earth. (<a href="/med_en_glorious_5" data-navigo>Sermon of St. Peter Canisius On the Incomparable Virgin Mary, Mother of God</a>)',
+                        text: 'The Coronation of Mary as Queen of Heaven and Earth. (<a href="/med_en_glorious_5" data-navigo>'+mysteryVersesMarkup.glorious[5]+'</a>)',
                         source: 'http://www.newadvent.org/images/rosary.pdf',
                         image: '/images/default/coronation.jpg',
                         imagePosition: 'center top'
@@ -742,35 +792,35 @@ export default {
                 EN_TRAD: [
                     {
                         title: 'The First Glorious Mystery',
-                        text: 'The Resurrection. (<a href="/med_en_glorious_1" data-navigo>John 20:1-29</a>)',
+                        text: 'The Resurrection. (<a href="/med_en_glorious_1" data-navigo>'+mysteryVersesMarkup.glorious[1]+'</a>)',
                         source: 'Baronius Press, Daily Missal 1962',
                         image: '/images/default/resurrection.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Second Glorious Mystery',
-                        text: 'The Ascension. (<a href="/med_en_glorious_2" data-navigo>Luke 24:36-53</a>)',
+                        text: 'The Ascension. (<a href="/med_en_glorious_2" data-navigo>'+mysteryVersesMarkup.glorious[2]+'</a>)',
                         source: 'Baronius Press, Daily Missal 1962',
                         image: '/images/default/ascension.jpg',
                         imagePosition: 'center top'
                     },
                     {
                         title: 'The Third Glorious Mystery',
-                        text: 'The Descent of the Holy Ghost on the Apostles. (<a href="/med_en_glorious_3" data-navigo>Acts 2:1-41</a>)',
+                        text: 'The Descent of the Holy Ghost on the Apostles. (<a href="/med_en_glorious_3" data-navigo>'+mysteryVersesMarkup.glorious[3]+'</a>)',
                         source: 'Baronius Press, Daily Missal 1962',
                         image: '/images/default/descent.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'The Fourth Glorious Mystery',
-                        text: 'The Assumption of Our Lady into Heaven. (<a href="/med_en_glorious_4" data-navigo>St. John of Damascus, Excerpt from Second Sermon On the Assumption of Mary</a>)',
+                        text: 'The Assumption of Our Lady into Heaven. (<a href="/med_en_glorious_4" data-navigo>'+mysteryVersesMarkup.glorious[4]+'</a>)',
                         source: 'Baronius Press, Daily Missal 1962',
                         image: '/images/default/assumption.jpg',
                         imagePosition: 'center top'
                     },
                     {
                         title: 'The Fifth Glorious Mystery',
-                        text: 'The Coronation of Our Lady and the Glory of all the Saints. (<a href="/med_en_glorious_5" data-navigo>Sermon of St. Peter Canisius On the Incomparable Virgin Mary, Mother of God</a>)',
+                        text: 'The Coronation of Our Lady and the Glory of all the Saints. (<a href="/med_en_glorious_5" data-navigo>'+mysteryVersesMarkup.glorious[5]+'</a>)',
                         source: 'Baronius Press, Daily Missal 1962',
                         image: '/images/default/coronation.jpg',
                         imagePosition: 'center top'
@@ -779,35 +829,35 @@ export default {
                 LA: [
                     {
                         title: 'Prímum Mystérium Gloriósum',
-                        text: 'Resurréctio. (<a href="/med_en_glorious_1" data-navigo>John 20:1-29</a>)',
+                        text: 'Resurréctio. (<a href="/med_en_glorious_1" data-navigo>'+mysteryVersesMarkup.glorious[1]+'</a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/resurrection.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'Secúndum Mystérium Gloriósum',
-                        text: 'Ascénsio. (<a href="/med_en_glorious_2" data-navigo>Luke 24:36-53</a>)',
+                        text: 'Ascénsio. (<a href="/med_en_glorious_2" data-navigo>'+mysteryVersesMarkup.glorious[2]+'</a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/ascension.jpg',
                         imagePosition: 'center top'
                     },
                     {
                         title: 'Tértium Mystérium Gloriósum',
-                        text: 'Descénsus Spíritus Sancti. (<a href="/med_en_glorious_3" data-navigo>Acts 2:1-41</a>)',
+                        text: 'Descénsus Spíritus Sancti. (<a href="/med_en_glorious_3" data-navigo>'+mysteryVersesMarkup.glorious[3]+'</a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/descent.jpg',
                         imagePosition: 'center'
                     },
                     {
                         title: 'Quartum Mystérium Gloriósum',
-                        text: 'Assúmptio. (<a href="/med_en_glorious_4" data-navigo>St. John of Damascus, Excerpt from Second Sermon On the Assumption of Mary</a>)',
+                        text: 'Assúmptio. (<a href="/med_en_glorious_4" data-navigo>'+mysteryVersesMarkup.glorious[4]+'</a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/assumption.jpg',
                         imagePosition: 'center top'
                     },
                     {
                         title: 'Quintum Mystérium Gloriósum',
-                        text: 'Coronátio Beátæ Maríæ Vírginis in Cælis. (<a href="/med_en_glorious_5" data-navigo>Sermon of St. Peter Canisius On the Incomparable Virgin Mary, Mother of God</a>)',
+                        text: 'Coronátio Beátæ Maríæ Vírginis in Cælis. (<a href="/med_en_glorious_5" data-navigo>'+mysteryVersesMarkup.glorious[5]+'</a>)',
                         source: 'http://www.windsorlatinmass.org/wtnews/070408.pdf',
                         image: '/images/default/coronation.jpg',
                         imagePosition: 'center top'
@@ -815,37 +865,37 @@ export default {
                 ],
                 ES: [
                     {
-                        title: 'The First Glorious Mystery',
-                        text: 'The Glorious Resurrection of Our Lord. (<a href="/med_en_glorious_1" data-navigo>John 20:1-29</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        title: 'El Primer Misterio de Gloria',
+                        text: 'La Resurrección de Nuestro Señor. (<a href="/med_en_glorious_1" data-navigo>'+mysteryVersesMarkup.glorious[1]+'</a>)',
+                        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/resurrection.jpg',
                         imagePosition: 'center'
                     },
                     {
-                        title: 'The Second Glorious Mystery',
-                        text: 'The Ascension of Our Lord. (<a href="/med_en_glorious_2" data-navigo>Luke 24:36-53</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        title: 'El Segundo Misterio de Gloria',
+                        text: 'La Ascención del Señor. (<a href="/med_en_glorious_2" data-navigo>'+mysteryVersesMarkup.glorious[2]+'</a>)',
+                        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/ascension.jpg',
                         imagePosition: 'center top'
                     },
                     {
-                        title: 'The Third Glorious Mystery',
-                        text: 'The Descent of the Holy Spirit at Pentecost. (<a href="/med_en_glorious_3" data-navigo>Acts 2:1-41</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        title: 'El Tercer Misterio de Gloria',
+                        text: 'La Venida del Espíritu Santo. (<a href="/med_en_glorious_3" data-navigo>'+mysteryVersesMarkup.glorious[3]+'</a>)',
+                        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/descent.jpg',
                         imagePosition: 'center'
                     },
                     {
-                        title: 'The Fourth Glorious Mystery',
-                        text: 'The Assumption of Mary into Heaven. (<a href="/med_en_glorious_4" data-navigo>St. John of Damascus, Excerpt from Second Sermon On the Assumption of Mary</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        title: 'El Cuarto Misterio de Gloria',
+                        text: 'La Asunción de la Virgen María al Cielo. (<a href="/med_en_glorious_4" data-navigo>'+mysteryVersesMarkup.glorious[4]+'</a>)',
+                        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/assumption.jpg',
                         imagePosition: 'center top'
                     },
                     {
-                        title: 'The Fifth Glorious Mystery',
-                        text: 'The Coronation of Mary as Queen of Heaven and Earth. (<a href="/med_en_glorious_5" data-navigo>Sermon of St. Peter Canisius On the Incomparable Virgin Mary, Mother of God</a>)',
-                        source: 'http://www.newadvent.org/images/rosary.pdf',
+                        title: 'El Quinto Misterio de Gloria',
+                        text: 'La Coronación de María como Reina del Universo. (<a href="/med_en_glorious_5" data-navigo>'+mysteryVersesMarkup.glorious[5]+'</a>)',
+                        source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479',
                         image: '/images/default/coronation.jpg',
                         imagePosition: 'center top'
                     }
@@ -868,7 +918,12 @@ export default {
                     title: 'Pater Æterne',
                     text: 'Pater ætérne, óffero tibi Corpus et Sánguinem, ánimam et divinitátem dilectíssimi Fílii Tui, Dómini nostri, Jesu Christi, in propitiatióne pro peccátis nostris et totíus mundi.',
                     source: 'http://www.windsorlatinmass.org/wtnews/170423.pdf'
-                }
+                },
+                ES: {
+                    title: 'Eternal Father',
+                    text: 'Eternal Father, I offer You the Body and Blood, Soul and Divinity of Your dearly beloved Son, Our Lord Jesus Christ, in atonement for our sins and those of the whole world.',
+                    source: 'Baronius Press, Daily Missal 1962'
+                },
             },
             forTheSake: {
                 EN: {
@@ -885,7 +940,12 @@ export default {
                     title: 'Pro Dolorosa Ejus Passione',
                     text: 'Pro dolorosa Ejus passióne, miserére nobis et totíus mundi.',
                     source: 'http://www.windsorlatinmass.org/wtnews/170423.pdf'
-                }
+                },
+                ES: {
+                    title: 'For the Sake of His Sorrowful Passion',
+                    text: 'For the sake of His sorrowful Passion, have mercy on us and on the whole world.',
+                    source: 'Baronius Press, Daily Missal 1962'
+                },
             },
             holyGod: {
                 EN: {
@@ -902,7 +962,12 @@ export default {
                     title: 'Sanctus Deus',
                     text: '<em>Conclude with (three times):</em> Sanctus Deus, Sanctus Fortis, Sanctus Immortális, miserére nobis et totíus mundi.',
                     source: 'http://www.windsorlatinmass.org/wtnews/170423.pdf'
-                }
+                },
+                ES: {
+                    title: 'Holy God',
+                    text: '<em>Conclude with (three times):</em> Holy God, Holy Mighty One, Holy Immortal One, have mercy on us and on the whole world.',
+                    source: 'Baronius Press, Daily Missal 1962'
+                },
             },
             optionalOpening: {
                 EN: {
@@ -919,7 +984,12 @@ export default {
                     title: 'Optional Opening',
                     text: 'You expired, Jesus, but the source of life gushed forth for souls, and the ocean of mercy opened up for the whole world. O Fount of Life, unfathomable Divine Mercy, envelop the whole world and empty Yourself out upon us. <br><br> <em>(Repeat 3 times)</em> O Blood and Water, which gushed forth from the Heart of Jesus as a fountain of Mercy for us, I trust in You!',
                     source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
-                }
+                },
+                ES: {
+                    title: 'Optional Opening',
+                    text: 'You expired, Jesus, but the source of life gushed forth for souls, and the ocean of mercy opened up for the whole world. O Fount of Life, unfathomable Divine Mercy, envelop the whole world and empty Yourself out upon us. <br><br> <em>(Repeat 3 times)</em> O Blood and Water, which gushed forth from the Heart of Jesus as a fountain of Mercy for us, I trust in You!',
+                    source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
+                },
             },
             optionalClosing: {
                 EN: {
@@ -936,7 +1006,12 @@ export default {
                     title: 'Optional Closing',
                     text: 'Eternal God, in whom mercy is endless and the treasury of compassion inexhaustible, look kindly upon us and increase Your mercy in us, that in difficult moments we might not despair nor become despondent, but with great confidence submit ourselves to Your holy will, which is Love and Mercy itself.',
                     source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
-                }
+                },
+                ES: {
+                    title: 'Optional Closing',
+                    text: 'Eternal God, in whom mercy is endless and the treasury of compassion inexhaustible, look kindly upon us and increase Your mercy in us, that in difficult moments we might not despair nor become despondent, but with great confidence submit ourselves to Your holy will, which is Love and Mercy itself.',
+                    source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
+                },
             },
         },
     }

@@ -42,4 +42,11 @@ export const hroLocalize = function() {
         }
         return text;
     });
+
+    // quick fix
+    $('a[href^="/med_en"').each(function(idx, el) {
+        if(store.settings.language === 'ES') {
+            $(this).attr('href', $(this).attr('href').replace('/med_en', '/med_es'));
+        }
+    });
 };
