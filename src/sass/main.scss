@@ -139,6 +139,55 @@ label, .label {
     }
 }
 
+.dark-text-ml {
+    @include min-landscape($tablet) {
+        color: $dark-text-color !important;
+    }
+}
+
+.citation {
+    color: lighten($dark-text-color, 75%);
+
+    @include min-landscape($tablet) {
+        color: lighten($dark-text-color, 30%);
+    }
+
+    a {
+        color: lighten($dark-text-color, 75%);
+
+        @include min-landscape($tablet) {
+            color: lighten($dark-text-color, 30%);
+        }
+
+        &:hover, &:visited {
+            color: lighten($dark-text-color, 75%);
+
+            @include min-landscape($tablet) {
+                color: lighten($dark-text-color, 30%);
+            }
+        }
+    }
+
+    hr {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 1px;
+        margin: 25px 0 12px 0;
+        border: 0;
+        clear: both;
+        background-color: lighten($dark-text-color, 50%);
+        box-shadow: 10px 10px 10px rgba(0,0,0, 0.26),
+            -5px -5px 10px rgba(255,255,255, 0.26),
+            0px 0px 7px #000;
+
+        @include min-landscape($tablet) {
+            background-color: lighten($dark-text-color, 50%);
+            box-shadow: none;
+        }
+    }
+}
+
 h1, h2, h3 {
     font-style: normal;
     font-family: $sans-serif;

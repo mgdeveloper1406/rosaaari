@@ -141,7 +141,7 @@ export default {
             },
             ES: {
                 title: 'La Señal de la Cruz',
-                text: '<span class="red-text">+</span> En el nombre del Padre, y del Hijo, y del Espíritu Santo.',
+                text: '<span class="red-text">+</span> En el nombre del Padre, y del Hijo, y del Espíritu Santo. Amén.',
                 source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479'
             },
             LA: {
@@ -163,7 +163,7 @@ export default {
             },
             ES: {
                 title: 'Símbolo de los Apóstoles',
-                text: 'Creo en Dios Padre, Todopoderoso, Creador del cielo y de la tierra. Y en Jesucristo su único Hijo, Nuestro Señor; que fue concebido por obra y gracia del Espíritu Santo; y nació de Santa María Virgen; padeció bajo el poder de Poncio Pilato; fué crucificado, muerto y sepultado; descendió a los infiernos; al tercer día resucitó de entre los muertos; subió a los cielos y está sentado a la diestra de Dios Padre Todopoderoso; desde allí ha de venir a juzgar a los vivos y a los muertos. Creo en el Esprítu Santo, en la Santa Iglesia Católica; la comunión de los santos; el perdón de los pecados; la resurrección de la carne y la vida eterna. Amén.',
+                text: 'Creo en Dios Padre, Todopoderoso, Creador del cielo y de la tierra. Y en Jesucristo su único Hijo, Nuestro Señor; que fue concebido por obra y gracia del Espíritu Santo; y nació de Santa María Virgen; padeció bajo el poder de Poncio Pilato; fué crucificado, muerto y sepultado; descendió a los infiernos; al tercer día resucitó de entre los muertos; subió a los cielos y está sentado a la diestra de Dios Padre Todopoderoso; desde allí ha de venir a juzgar a los vivos y a los muertos. Creo en el Espíritu Santo, en la Santa Iglesia Católica; la comunión de los santos; el perdón de los pecados; la resurrección de la carne y la vida eterna. Amén.',
                 source: 'https://www.ewtn.com/es/catolicismo/devociones/santo-rosario-20479'
             },
             LA: {
