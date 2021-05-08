@@ -282,8 +282,8 @@ export default function HomeJS() {
             } else {
                 prayers = [
                     {
-                        title: store.prayers.divineMercy.optionalOpening[language].title,
-                        text: store.prayers.divineMercy.optionalOpening[language].text
+                        title: store.prayers.divineMercy.optionalOpening[store.settings.language].title,
+                        text: store.prayers.divineMercy.optionalOpening[store.settings.language].text
                     }
                 ];
             }
@@ -498,8 +498,8 @@ export default function HomeJS() {
                         text: store.prayers.divineMercy.holyGod[language].text
                     },
                     {
-                        title: store.prayers.divineMercy.optionalClosing[language].title,
-                        text: store.prayers.divineMercy.optionalClosing[language].text
+                        title: store.prayers.divineMercy.optionalClosing[store.settings.language].title,
+                        text: store.prayers.divineMercy.optionalClosing[store.settings.language].text
                     }
                 ];
             }

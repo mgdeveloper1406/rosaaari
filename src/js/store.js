@@ -985,13 +985,13 @@ export default {
                     source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
                 },
                 LA: {
-                    title: '<hro-localize>Optional Opening</hro-localize>',
-                    text: 'You expired, Jesus, but the source of life gushed forth for souls, and the ocean of mercy opened up for the whole world. O Fount of Life, unfathomable Divine Mercy, envelop the whole world and empty Yourself out upon us. <br><br> <em><hro-localize>(Repeat 3 times)</hro-localize></em> O Blood and Water, which gushed forth from the Heart of Jesus as a fountain of Mercy for us, I trust in You!',
-                    source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
+                    title: 'defaults to language setting',
+                    text: 'defaults to language setting',
+                    source: ''
                 },
                 ES: {
                     title: '<hro-localize>Optional Opening</hro-localize>',
-                    text: 'Expiraste, Jesús, pero Tu muerte hizo brotar un manantial de  vida para las almas y el océano de Tu misericordia inundó todo el mundo. Oh, Fuente de Vida, insondable misericordia  divina,  anega el mundo entero derramando sobre nosotros hasta Tu última gota. <br><br> <em><hro-localize>(Repeat 3 times)</hro-localize></em> Oh, Sangre y Agua que brotaste del Corazón de Jesús, manantial de misericordia para nosotros, en Ti confío.',
+                    text: 'Expiraste, Jesús, pero Tu muerte hizo brotar un manantial de  vida para las almas y el océano de Tu misericordia inundó todo el mundo. Oh, Fuente de Vida, insondable misericordia  divina, anega el mundo entero derramando sobre nosotros hasta Tu última gota. <br><br> <em><hro-localize>(Repeat 3 times)</hro-localize></em> Oh, Sangre y Agua que brotaste del Corazón de Jesús, manantial de misericordia para nosotros, en Ti confío.',
                     source: 'https://divinamisericordia.es/wp-content/uploads/Oraciones-de-la-Divina-Misericordia.pdf'
                 },
             },
@@ -1007,9 +1007,9 @@ export default {
                     source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
                 },
                 LA: {
-                    title: '<hro-localize>Optional Closing</hro-localize>',
-                    text: 'Eternal God, in whom mercy is endless and the treasury of compassion inexhaustible, look kindly upon us and increase Your mercy in us, that in difficult moments we might not despair nor become despondent, but with great confidence submit ourselves to Your holy will, which is Love and Mercy itself.',
-                    source: 'http://www.usccb.org/beliefs-and-teachings/how-we-teach/new-evangelization/year-of-faith/how-to-pray-the-chaplet-of-divine-mercy.cfm'
+                    title: 'defaults to language setting',
+                    text: 'defaults to language setting',
+                    source: ''
                 },
                 ES: {
                     title: '<hro-localize>Optional Closing</hro-localize>',
