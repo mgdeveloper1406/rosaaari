@@ -8,9 +8,9 @@ import AboutJS from './page-scripts/AboutJS';
 import { hroLocalize } from './utils';
 
 // Comment out during development
-/* if('serviceWorker' in navigator) {
+if('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js', { scope: '/' });
-}; */
+};
 
 // Fix any legacy rosary language settings, namely removes EN_TRAD rosary language
 if(store.settings.rosaryLanguage !== 'LA') {
