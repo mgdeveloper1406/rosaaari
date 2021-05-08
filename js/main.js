@@ -323,47 +323,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _images_default_default_md__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../images/default/default.md */ "./images/default/default.md");
 /* harmony import */ var _images_default_default_md__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_images_default_default_md__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _images_default_agony_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../images/default/agony.md */ "./images/default/agony.md");
-/* harmony import */ var _images_default_agony_md__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_default_agony_md__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _images_default_annunciation_md__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../images/default/annunciation.md */ "./images/default/annunciation.md");
-/* harmony import */ var _images_default_annunciation_md__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_default_annunciation_md__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _images_default_ascension_md__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../images/default/ascension.md */ "./images/default/ascension.md");
-/* harmony import */ var _images_default_ascension_md__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_default_ascension_md__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _images_default_assumption_md__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../images/default/assumption.md */ "./images/default/assumption.md");
-/* harmony import */ var _images_default_assumption_md__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_default_assumption_md__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _images_default_baptism_md__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../images/default/baptism.md */ "./images/default/baptism.md");
-/* harmony import */ var _images_default_baptism_md__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_default_baptism_md__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _images_default_cana_md__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../images/default/cana.md */ "./images/default/cana.md");
-/* harmony import */ var _images_default_cana_md__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_images_default_cana_md__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _images_default_coronation_md__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../images/default/coronation.md */ "./images/default/coronation.md");
-/* harmony import */ var _images_default_coronation_md__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_images_default_coronation_md__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _images_default_cross_md__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../images/default/cross.md */ "./images/default/cross.md");
-/* harmony import */ var _images_default_cross_md__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_images_default_cross_md__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _images_default_crucifixion_md__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../images/default/crucifixion.md */ "./images/default/crucifixion.md");
-/* harmony import */ var _images_default_crucifixion_md__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_images_default_crucifixion_md__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _images_default_descent_md__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../images/default/descent.md */ "./images/default/descent.md");
-/* harmony import */ var _images_default_descent_md__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_images_default_descent_md__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _images_default_eucharist_md__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../images/default/eucharist.md */ "./images/default/eucharist.md");
-/* harmony import */ var _images_default_eucharist_md__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_images_default_eucharist_md__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _images_default_finding_md__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../images/default/finding.md */ "./images/default/finding.md");
-/* harmony import */ var _images_default_finding_md__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_images_default_finding_md__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _images_default_nativity_md__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../images/default/nativity.md */ "./images/default/nativity.md");
-/* harmony import */ var _images_default_nativity_md__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_images_default_nativity_md__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _images_default_presentation_md__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../images/default/presentation.md */ "./images/default/presentation.md");
-/* harmony import */ var _images_default_presentation_md__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_images_default_presentation_md__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _images_default_proclamation_md__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../images/default/proclamation.md */ "./images/default/proclamation.md");
-/* harmony import */ var _images_default_proclamation_md__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_images_default_proclamation_md__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var _images_default_resurrection_md__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../../images/default/resurrection.md */ "./images/default/resurrection.md");
-/* harmony import */ var _images_default_resurrection_md__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_images_default_resurrection_md__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var _images_default_scourging_md__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../../images/default/scourging.md */ "./images/default/scourging.md");
-/* harmony import */ var _images_default_scourging_md__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_images_default_scourging_md__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var _images_default_thorns_md__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../../images/default/thorns.md */ "./images/default/thorns.md");
-/* harmony import */ var _images_default_thorns_md__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_images_default_thorns_md__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var _images_default_transfiguration_md__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../../images/default/transfiguration.md */ "./images/default/transfiguration.md");
-/* harmony import */ var _images_default_transfiguration_md__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_images_default_transfiguration_md__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var _images_default_visitation_md__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../../images/default/visitation.md */ "./images/default/visitation.md");
-/* harmony import */ var _images_default_visitation_md__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_images_default_visitation_md__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var _images_default_divine_mercy_md__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../images/default/divine-mercy.md */ "./images/default/divine-mercy.md");
+/* harmony import */ var _images_default_divine_mercy_md__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_default_divine_mercy_md__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _images_default_agony_md__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../images/default/agony.md */ "./images/default/agony.md");
+/* harmony import */ var _images_default_agony_md__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_default_agony_md__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _images_default_annunciation_md__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../images/default/annunciation.md */ "./images/default/annunciation.md");
+/* harmony import */ var _images_default_annunciation_md__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_default_annunciation_md__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _images_default_ascension_md__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../images/default/ascension.md */ "./images/default/ascension.md");
+/* harmony import */ var _images_default_ascension_md__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_default_ascension_md__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _images_default_assumption_md__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../images/default/assumption.md */ "./images/default/assumption.md");
+/* harmony import */ var _images_default_assumption_md__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_default_assumption_md__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _images_default_baptism_md__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../images/default/baptism.md */ "./images/default/baptism.md");
+/* harmony import */ var _images_default_baptism_md__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_images_default_baptism_md__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _images_default_cana_md__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../images/default/cana.md */ "./images/default/cana.md");
+/* harmony import */ var _images_default_cana_md__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_images_default_cana_md__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _images_default_coronation_md__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../images/default/coronation.md */ "./images/default/coronation.md");
+/* harmony import */ var _images_default_coronation_md__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_images_default_coronation_md__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _images_default_cross_md__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../images/default/cross.md */ "./images/default/cross.md");
+/* harmony import */ var _images_default_cross_md__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_images_default_cross_md__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _images_default_crucifixion_md__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../images/default/crucifixion.md */ "./images/default/crucifixion.md");
+/* harmony import */ var _images_default_crucifixion_md__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_images_default_crucifixion_md__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _images_default_descent_md__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../images/default/descent.md */ "./images/default/descent.md");
+/* harmony import */ var _images_default_descent_md__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_images_default_descent_md__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _images_default_eucharist_md__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../images/default/eucharist.md */ "./images/default/eucharist.md");
+/* harmony import */ var _images_default_eucharist_md__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_images_default_eucharist_md__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _images_default_finding_md__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../images/default/finding.md */ "./images/default/finding.md");
+/* harmony import */ var _images_default_finding_md__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_images_default_finding_md__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _images_default_nativity_md__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../images/default/nativity.md */ "./images/default/nativity.md");
+/* harmony import */ var _images_default_nativity_md__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_images_default_nativity_md__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _images_default_presentation_md__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../images/default/presentation.md */ "./images/default/presentation.md");
+/* harmony import */ var _images_default_presentation_md__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_images_default_presentation_md__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _images_default_proclamation_md__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../../images/default/proclamation.md */ "./images/default/proclamation.md");
+/* harmony import */ var _images_default_proclamation_md__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_images_default_proclamation_md__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _images_default_resurrection_md__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../../images/default/resurrection.md */ "./images/default/resurrection.md");
+/* harmony import */ var _images_default_resurrection_md__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_images_default_resurrection_md__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _images_default_scourging_md__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../../images/default/scourging.md */ "./images/default/scourging.md");
+/* harmony import */ var _images_default_scourging_md__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_images_default_scourging_md__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _images_default_thorns_md__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../../images/default/thorns.md */ "./images/default/thorns.md");
+/* harmony import */ var _images_default_thorns_md__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_images_default_thorns_md__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var _images_default_transfiguration_md__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../../images/default/transfiguration.md */ "./images/default/transfiguration.md");
+/* harmony import */ var _images_default_transfiguration_md__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_images_default_transfiguration_md__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var _images_default_visitation_md__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../../../images/default/visitation.md */ "./images/default/visitation.md");
+/* harmony import */ var _images_default_visitation_md__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_images_default_visitation_md__WEBPACK_IMPORTED_MODULE_21__);
 // Default is reserved in js I think
+
 
 
 
@@ -387,26 +390,27 @@ __webpack_require__.r(__webpack_exports__);
 
 function ArtworkJS() {
   appendHTML('#artwork-general', (_images_default_default_md__WEBPACK_IMPORTED_MODULE_0___default()), 'default');
-  appendHTML('#artwork-joyful', (_images_default_annunciation_md__WEBPACK_IMPORTED_MODULE_2___default()), 'annunciation');
-  appendHTML('#artwork-joyful', (_images_default_visitation_md__WEBPACK_IMPORTED_MODULE_20___default()), 'visitation');
-  appendHTML('#artwork-joyful', (_images_default_nativity_md__WEBPACK_IMPORTED_MODULE_13___default()), 'nativity');
-  appendHTML('#artwork-joyful', (_images_default_presentation_md__WEBPACK_IMPORTED_MODULE_14___default()), 'presentation');
-  appendHTML('#artwork-joyful', (_images_default_finding_md__WEBPACK_IMPORTED_MODULE_12___default()), 'finding');
-  appendHTML('#artwork-sorrowful', (_images_default_agony_md__WEBPACK_IMPORTED_MODULE_1___default()), 'agony');
-  appendHTML('#artwork-sorrowful', (_images_default_scourging_md__WEBPACK_IMPORTED_MODULE_17___default()), 'scourging');
-  appendHTML('#artwork-sorrowful', (_images_default_thorns_md__WEBPACK_IMPORTED_MODULE_18___default()), 'thorns');
-  appendHTML('#artwork-sorrowful', (_images_default_cross_md__WEBPACK_IMPORTED_MODULE_8___default()), 'cross');
-  appendHTML('#artwork-sorrowful', (_images_default_crucifixion_md__WEBPACK_IMPORTED_MODULE_9___default()), 'crucifixion');
-  appendHTML('#artwork-glorious', (_images_default_resurrection_md__WEBPACK_IMPORTED_MODULE_16___default()), 'resurrection');
-  appendHTML('#artwork-glorious', (_images_default_ascension_md__WEBPACK_IMPORTED_MODULE_3___default()), 'ascension');
-  appendHTML('#artwork-glorious', (_images_default_descent_md__WEBPACK_IMPORTED_MODULE_10___default()), 'descent');
-  appendHTML('#artwork-glorious', (_images_default_assumption_md__WEBPACK_IMPORTED_MODULE_4___default()), 'assumption');
-  appendHTML('#artwork-glorious', (_images_default_coronation_md__WEBPACK_IMPORTED_MODULE_7___default()), 'coronation');
-  appendHTML('#artwork-luminous', (_images_default_baptism_md__WEBPACK_IMPORTED_MODULE_5___default()), 'baptism');
-  appendHTML('#artwork-luminous', (_images_default_cana_md__WEBPACK_IMPORTED_MODULE_6___default()), 'cana');
-  appendHTML('#artwork-luminous', (_images_default_proclamation_md__WEBPACK_IMPORTED_MODULE_15___default()), 'proclamation');
-  appendHTML('#artwork-luminous', (_images_default_transfiguration_md__WEBPACK_IMPORTED_MODULE_19___default()), 'transfiguration');
-  appendHTML('#artwork-luminous', (_images_default_eucharist_md__WEBPACK_IMPORTED_MODULE_11___default()), 'eucharist');
+  appendHTML('#artwork-general', (_images_default_divine_mercy_md__WEBPACK_IMPORTED_MODULE_1___default()), 'divine-mercy');
+  appendHTML('#artwork-joyful', (_images_default_annunciation_md__WEBPACK_IMPORTED_MODULE_3___default()), 'annunciation');
+  appendHTML('#artwork-joyful', (_images_default_visitation_md__WEBPACK_IMPORTED_MODULE_21___default()), 'visitation');
+  appendHTML('#artwork-joyful', (_images_default_nativity_md__WEBPACK_IMPORTED_MODULE_14___default()), 'nativity');
+  appendHTML('#artwork-joyful', (_images_default_presentation_md__WEBPACK_IMPORTED_MODULE_15___default()), 'presentation');
+  appendHTML('#artwork-joyful', (_images_default_finding_md__WEBPACK_IMPORTED_MODULE_13___default()), 'finding');
+  appendHTML('#artwork-sorrowful', (_images_default_agony_md__WEBPACK_IMPORTED_MODULE_2___default()), 'agony');
+  appendHTML('#artwork-sorrowful', (_images_default_scourging_md__WEBPACK_IMPORTED_MODULE_18___default()), 'scourging');
+  appendHTML('#artwork-sorrowful', (_images_default_thorns_md__WEBPACK_IMPORTED_MODULE_19___default()), 'thorns');
+  appendHTML('#artwork-sorrowful', (_images_default_cross_md__WEBPACK_IMPORTED_MODULE_9___default()), 'cross');
+  appendHTML('#artwork-sorrowful', (_images_default_crucifixion_md__WEBPACK_IMPORTED_MODULE_10___default()), 'crucifixion');
+  appendHTML('#artwork-glorious', (_images_default_resurrection_md__WEBPACK_IMPORTED_MODULE_17___default()), 'resurrection');
+  appendHTML('#artwork-glorious', (_images_default_ascension_md__WEBPACK_IMPORTED_MODULE_4___default()), 'ascension');
+  appendHTML('#artwork-glorious', (_images_default_descent_md__WEBPACK_IMPORTED_MODULE_11___default()), 'descent');
+  appendHTML('#artwork-glorious', (_images_default_assumption_md__WEBPACK_IMPORTED_MODULE_5___default()), 'assumption');
+  appendHTML('#artwork-glorious', (_images_default_coronation_md__WEBPACK_IMPORTED_MODULE_8___default()), 'coronation');
+  appendHTML('#artwork-luminous', (_images_default_baptism_md__WEBPACK_IMPORTED_MODULE_6___default()), 'baptism');
+  appendHTML('#artwork-luminous', (_images_default_cana_md__WEBPACK_IMPORTED_MODULE_7___default()), 'cana');
+  appendHTML('#artwork-luminous', (_images_default_proclamation_md__WEBPACK_IMPORTED_MODULE_16___default()), 'proclamation');
+  appendHTML('#artwork-luminous', (_images_default_transfiguration_md__WEBPACK_IMPORTED_MODULE_20___default()), 'transfiguration');
+  appendHTML('#artwork-luminous', (_images_default_eucharist_md__WEBPACK_IMPORTED_MODULE_12___default()), 'eucharist');
 
   function appendHTML(el, copy, img) {
     $(el).append('<div id="img-copy' + img + '">' + copy + '</div>');
@@ -878,7 +882,8 @@ function HomeJS() {
         output += '<div class="prayer__image ' + noGradient + '"><img src="' + prayer.image + '" alt="Image of this mystery" class="object-position-' + prayer.imagePosition.split(' ').join('-') + '"></div>';
       } else if (!_store__WEBPACK_IMPORTED_MODULE_0__.default.settings.hideImages) {
         var noGradient = _store__WEBPACK_IMPORTED_MODULE_0__.default.settings.hidePrayers ? 'prayer__image--hide-prayers' : '';
-        output += '<div class="prayer__image ' + noGradient + '"><img src="' + '/images/default/default.jpg' + '" alt="Image of this mystery" class="object-position-center-top"></div>';
+        var curr_img = _store__WEBPACK_IMPORTED_MODULE_0__.default.settings.divineMercy ? 'divine-mercy.jpg' : 'default.jpg';
+        output += '<div class="prayer__image ' + noGradient + '"><img src="/images/default/' + curr_img + '" alt="Image of this mystery" class="object-position-center-top"></div>';
       }
 
       output += '</div>';
@@ -2776,6 +2781,19 @@ module.exports = code;
 
 // Module
 var code = "<h1 id=\"hro-localizepentecosthro-localize\"><hro-localize>Pentecost</hro-localize></h1>\n<p><hro-localize>Artist</hro-localize>: Juan Bautista Maíno</p>\n<p><hro-localize>Source</hro-localize>: <a href=\"https://commons.wikimedia.org/wiki/File:Maino_Pentecost%C3%A9s,_1620-1625._Museo_del_Prado.jpg\">https://commons.wikimedia.org/wiki/File:Maino_Pentecost%C3%A9s,_1620-1625._Museo_del_Prado.jpg</a></p>\n";
+// Exports
+module.exports = code;
+
+/***/ }),
+
+/***/ "./images/default/divine-mercy.md":
+/*!****************************************!*\
+  !*** ./images/default/divine-mercy.md ***!
+  \****************************************/
+/***/ ((module) => {
+
+// Module
+var code = "<h1 id=\"hro-localizedivine-mercyhro-localize\"><hro-localize>Divine Mercy</hro-localize></h1>\n<p><hro-localize>Artist</hro-localize>: Eugeniusz Kazimirowski</p>\n<p><hro-localize>Source</hro-localize>: <a href=\"https://commons.wikimedia.org/wiki/File:Kazimirowski_Eugeniusz,_Divine_Mercy,_1934.jpg\">https://commons.wikimedia.org/wiki/File:Kazimirowski_Eugeniusz,_Divine_Mercy,_1934.jpg</a></p>\n";
 // Exports
 module.exports = code;
 

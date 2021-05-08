@@ -1,5 +1,6 @@
 // Default is reserved in js I think
-import general from '../../../images/default/default.md';
+import def_img from '../../../images/default/default.md';
+import divine_mercy from '../../../images/default/divine-mercy.md';
 import agony from '../../../images/default/agony.md';
 import annunciation from '../../../images/default/annunciation.md';
 import ascension from '../../../images/default/ascension.md';
@@ -22,7 +23,8 @@ import transfiguration from '../../../images/default/transfiguration.md';
 import visitation from '../../../images/default/visitation.md';
 
 export default function ArtworkJS() {
-    appendHTML('#artwork-general', general, 'default');
+    appendHTML('#artwork-general', def_img, 'default');
+    appendHTML('#artwork-general', divine_mercy, 'divine-mercy');
     appendHTML('#artwork-joyful', annunciation, 'annunciation');
     appendHTML('#artwork-joyful', visitation, 'visitation');
     appendHTML('#artwork-joyful', nativity, 'nativity');

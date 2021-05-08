@@ -524,9 +524,8 @@ export default function HomeJS() {
             } else if(!store.settings.hideImages) {
                 var noGradient = store.settings.hidePrayers ?
                     'prayer__image--hide-prayers' : '';
-                output += '<div class="prayer__image '+noGradient+'"><img src="'+
-                    '/images/default/default.jpg'+
-                    '" alt="Image of this mystery" class="object-position-center-top"></div>';
+                var curr_img = store.settings.divineMercy ? 'divine-mercy.jpg' : 'default.jpg';
+                output += '<div class="prayer__image '+noGradient+'"><img src="/images/default/'+curr_img+'" alt="Image of this mystery" class="object-position-center-top"></div>';
             }
             output += '</div>';
             return output;
