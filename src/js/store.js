@@ -124,7 +124,8 @@ export default {
             "Conclude with (three times):": "Al terminar (3 veces):",
             "(Repeat 3 times)": "(Repita 3 veces)",
             "Optional Opening": "Oración Opcional",
-            "Optional Closing": "Oración Opcional"
+            "Optional Closing": "Oración Opcional",
+            "Would you like to change mysteries in Settings?": "¿Quiere cambiar los misterios en la página de Configuración?"
         }
     },
     prayers: {

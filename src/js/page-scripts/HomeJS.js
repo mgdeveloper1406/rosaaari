@@ -1,5 +1,5 @@
 import store from '../store';
-import { preloadImages, getMysteriesForCurrDay, hroLocalize } from '../utils';
+import { preloadImages, getMysteriesForCurrDay, hroLocalize, hroLocalizeString } from '../utils';
 
 export default function HomeJS() {
     if(store.settings.hidePrayers) {
@@ -583,41 +583,16 @@ export default function HomeJS() {
             var $beadSelected = $('button.bead--selected');
             if($currPrayer.attr('id') === 'prayer-4' &&
                 $beadSelected.attr('id') === 'medallion') {
-                var byDayReminder = '';
-                if(!localStorage.getItem('mysteries')) {
-                    byDayReminder = ' You will need to switch back to "By Day" in Settings tomorrow.';
-                }
-                if(store.settings.mysteries === 'joyful') {
-                    var advanceMysteries = confirm(
-                        'Would you like to switch to the Luminous mysteries?'+byDayReminder
-                    );
-                    if(advanceMysteries) {
-                        store.settings.mysteries = 'luminous';
-                        localStorage.setItem('mysteries', 'luminous');
-                    }
-                } else if(store.settings.mysteries === 'luminous') {
-                    var advanceMysteries = confirm(
-                        'Would you like to switch to the Sorrowful mysteries?'+byDayReminder
-                    );
-                    if(advanceMysteries) {
-                        store.settings.mysteries = 'sorrowful';
-                        localStorage.setItem('mysteries', 'sorrowful');
-                    }
-                } else if(store.settings.mysteries === 'sorrowful') {
-                    var advanceMysteries = confirm(
-                        'Would you like to switch to the Glorious mysteries?'+byDayReminder
-                    );
-                    if(advanceMysteries) {
-                        store.settings.mysteries = 'glorious';
-                        localStorage.setItem('mysteries', 'glorious');
-                    }
-                } else if(store.settings.mysteries === 'glorious') {
-                    var advanceMysteries = confirm(
-                        'Would you like to switch to the Joyful mysteries?'+byDayReminder
-                    );
-                    if(advanceMysteries) {
-                        store.settings.mysteries = 'joyful';
-                        localStorage.setItem('mysteries', 'joyful');
+                if(store.settings.mysteries) {
+                    if(window.confirm(hroLocalizeString(
+                        'Would you like to change mysteries in Settings?'
+                    ))) {
+                        if(window.nvgo_router) {
+                            $('#intro-our-father-2').click();
+                            nextPrayer();
+                            nextPrayer();
+                            window.nvgo_router.navigate('/settings');
+                        }
                     }
                 }
                 $('#intro-our-father-2').click();

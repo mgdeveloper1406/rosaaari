@@ -50,3 +50,13 @@ export const hroLocalize = function() {
         }
     });
 };
+
+// Localize an input string
+export const hroLocalizeString = function(text) {
+    if(store.settings.language === 'ES') {
+        if(store.localization[store.settings.language][text]) {
+            text = store.localization[store.settings.language][text];
+        }
+    }
+    return text;
+};
